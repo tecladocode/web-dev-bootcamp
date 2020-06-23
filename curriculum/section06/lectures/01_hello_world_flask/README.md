@@ -111,7 +111,7 @@ C:\path\to\app>set FLASK_ENV=development
 Then run:
 
 ```
-python -m flask run
+python flask run
 ```
 
 Now using your browser, head over to http://127.0.0.1:5000/, and you should see your `hello world` greeting.
