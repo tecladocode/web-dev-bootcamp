@@ -8,7 +8,7 @@ Flask lets you quickly get started with building web applications in pure Python
 
 ## Installing Flask
 
-Assuming you've got Python 3 installed on your local development machine, let's create a [virtual environment][^venv] and install Flask in it. For this demonstration, we'll be using `Python 3.8`. Run the following commands on your terminal based on your operating system:
+Assuming you've got Python 3 installed on your local development machine, let's create a virtual environment[^venv] and install Flask in it. For this demonstration, we'll be using `Python 3.8`. Run the following commands on your terminal based on your operating system:
 
 ### Linux / MacOS:
 
