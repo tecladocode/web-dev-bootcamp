@@ -50,7 +50,7 @@ Install Flask via pip
 pip install Flask
 ```
 
-If you're having trouble with your installation, checkout this detailed installation guide [here][^flask-install].
+If you're having trouble with your installation, checkout this detailed installation guide here[^flask-install].
 
 ## Making a "Hello, World!" Flask Application
 
