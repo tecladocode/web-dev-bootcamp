@@ -6,7 +6,7 @@ Flask[^flask] is known as a lightweight WSGI[^wsgi] application framework. A fra
 
 ## Installing Flask
 
-Assuming you've got Python 3 installed on your local development machine, let's create a virtual environment and install Flask in it. For this demonstration, we'll be using `Python 3.8`. Run the following commands on your terminal based on your operating system:
+Assuming you've got Python 3 installed on your local development machine, let's create a [virtual environment][^venv] and install Flask in it. For this demonstration, we'll be using `Python 3.8`. Run the following commands on your terminal based on your operating system:
 
 ### Linux / MacOS:
 
@@ -160,4 +160,5 @@ In this lesson, you've learned how to build and serve simple APIs with Flask fra
 
 * [^flask]: [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
 * [^wsgi]: [Getting Started with WSGI](https://wsgi.readthedocs.io/en/latest/what.html)
+* [^venv]: [Python virtual environment](https://docs.python.org/3/library/venv.html#:~:text=A%20virtual%20environment%20is%20a,part%20of%20your%20operating%20system.)
 * [^flask-install]: [Installing Flask](https://flask.palletsprojects.com/en/1.1.x/installation/)
