@@ -159,7 +159,7 @@ Notice, how we've introduced another function called `hello_world_fancy()` and d
 
 ## Conclusion
 
-In this lesson, you've learned how to build and serve simple APIs with Flask framework. You've also learned how endpoints work and how to access the server from a client. The later section teaches you about adding new routes to your app and displaying a simple html string on your browser.
+In this lesson you've learned how to build and serve simple APIs with Flask framework. You've also learned how endpoints work and how to access the server from a client and how to add new routes to your app to send HTML to the browser.
 
 * [^flask]: [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
 * [^wsgi]: [Getting Started with WSGI](https://wsgi.readthedocs.io/en/latest/what.html)
