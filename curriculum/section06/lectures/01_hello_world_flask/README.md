@@ -54,7 +54,7 @@ If you're having trouble with your installation, checkout this detailed installa
 
 ## Making a "Hello, World!" Flask Application
 
-If you go to the Flask website, you are welcomed with a very simple example application that has just five lines of code. We'll be building the same application here just to get a hang of how the entire process works.
+If you go to the Flask[^flask-web] website, you are welcomed with a very simple example application that has just five lines of code. We'll be building the same application here just to get a hang of how the entire process works.
 
 ### Prepare Your Application Directory
 
@@ -161,6 +161,7 @@ Notice, how we've introduced another function called `hello_world_fancy()` and d
 
 In this lesson you've learned how to build and serve simple APIs with Flask framework. You've also learned how endpoints work and how to access the server from a client and how to add new routes to your app to send HTML to the browser.
 
+* [^flask-web]: [Flask Website](https://flask.pocoo.org)
 * [^flask]: [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
 * [^wsgi]: [Getting Started with WSGI](https://wsgi.readthedocs.io/en/latest/what.html)
 * [^venv]: [Python virtual environment](https://docs.python.org/3/library/venv.html#:~:text=A%20virtual%20environment%20is%20a,part%20of%20your%20operating%20system.)
