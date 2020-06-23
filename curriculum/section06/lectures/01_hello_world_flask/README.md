@@ -12,19 +12,19 @@ Assuming you've got Python 3 installed on your local development machine, let's 
 
 ### Linux / MacOS:
 
-Create the virtual environment
+Create the virtual environment:
 
 ```bash
 python3 -m venv venv
 ```
 
-Activate the virtual environment
+Activate the virtual environment:
 
 ```bash
 . venv/bin/activate
 ```
 
-Install Flask via pip
+Install Flask via pip:
 
 ```bash
 pip install Flask
@@ -32,19 +32,19 @@ pip install Flask
 
 ### Windows
 
-Create the virtual environment
+Create the virtual environment:
 
 ```bash
 py -3 -m venv venv
 ```
 
-Activate the virtual environment
+Activate the virtual environment:
 
 ```bash
 venv\Scripts\activate
 ```
 
-Install Flask via pip
+Install Flask via pip:
 
 ```bash
 pip install Flask
