@@ -4,7 +4,7 @@
 
 Flask[^flask] is known as a lightweight WSGI[^wsgi] application framework. A framework is a code library that makes a developer's life easier while writing application code. Flask helps us build reliable, scalable, and maintainable web applications
 
-Flask lets you quickly get started with building web applications in pure Python. In the following sections, you'll install Flask on your local development machine and make a simple `hello-world` application. Let's jump right in!
+Flask lets you quickly get started with building web applications in pure Python. In the following sections, you'll install Flask on your local development machine and make a simple 'Hello, world!' application. Let's jump right in!
 
 ## Installing Flask
 
@@ -114,16 +114,16 @@ Then run:
 python flask run
 ```
 
-Now using your browser, head over to http://127.0.0.1:5000/, and you should see your `hello world` greeting.
+Now using your browser, head over to http://127.0.0.1:5000/, and you should see your 'Hello, world!' greeting.
 
 ![Simple hello world](https://user-images.githubusercontent.com/30027932/85382453-cda74200-b560-11ea-810e-a357545531ee.png)
 
 
-Here, you've created your first API. An Application Programming Interface (API) allows two systems to communicate with one another. Running the Flask application creates a server that allows a client to access the ‘Hello, world!’ string. Your browser is the client that accesses the server via an API endpoint. The final part of the link `http://127.0.0.1:5000/` that you've used to interact with the API is called an endpoint. When the browser accessed the URL, the server runs the `hello_world()` function and returns a string that the browser then displays. The `route()` decorator takes care of the back and forth communication between the server and the client.
+Here, you've created your first API. An Application Programming Interface (API) allows two systems to communicate with one another. Running the Flask application creates a server that allows a client to access the 'Hello, world!' string. Your browser is the client that accesses the server via an API endpoint. The final part of the link `http://127.0.0.1:5000/` that you've used to interact with the API is called an endpoint. When the browser accessed the URL, the server runs the `hello_world()` function and returns a string that the browser then displays. The `route()` decorator takes care of the back and forth communication between the server and the client.
 
 ## Serving an HTML String
 
-Let's make our `hello-world` app a bit more exciting. Here, you'll create a new endpoint and display the *hello world* greeting in a fancy `html` format. Head over to your `app.py` file and modify it like the following:
+Let's make our 'Hello, world!' app a bit more exciting. Here, you'll create a new endpoint and display the 'Hello, world!' greeting in a fancy `html` format. Head over to your `app.py` file and modify it like the following:
 
 ```python
 # app.py
@@ -153,7 +153,7 @@ def hello_world_fancy():
     return greetings
 ```
 
-Notice, how we've introduced another function called `hello_world_fancy()` and decorated it like the previously defined `hello_world()` function. This time the `route()` decorator defines a new endpoint named `/fancy`. Flask will automatically append this endpoint to your host URL `http://localhost:5000`. So, the final URL will be http://localhost:5000/fancy. If you've stopped your server, then run the application again by following the previously mentioned instructions. Then head over to http://localhost:5000/fancy on your browser and you'll be greeted by a fancier *hello world* page.
+Notice, how we've introduced another function called `hello_world_fancy()` and decorated it like the previously defined `hello_world()` function. This time the `route()` decorator defines a new endpoint named `/fancy`. Flask will automatically append this endpoint to your host URL `http://localhost:5000`. So, the final URL will be http://localhost:5000/fancy. If you've stopped your server, then run the application again by following the previously mentioned instructions. Then head over to http://localhost:5000/fancy on your browser and you'll be greeted by a fancier 'Hello, world!' page.
 
 ![Hello world with html](https://user-images.githubusercontent.com/30027932/85393520-f7676580-b56e-11ea-93ed-fc6621116e04.png)
 
