@@ -119,7 +119,7 @@ Now using your browser, head over to http://127.0.0.1:5000/, and you should see 
 ![Screenshot from 2020-06-23 14-49-09](https://user-images.githubusercontent.com/30027932/85382453-cda74200-b560-11ea-810e-a357545531ee.png)
 
 
-Here, you've created your first API. An Application Programming Interface (API) allows two systems to communicate with one another. Running the Flask application creates a server that allows a client to access the ‘Hello, world!’ string. Your browser is the client that accesses the server via an API endpoint. The final part of the link `http://127.0.0.1:5000/` that you've used to interact with the API is called an endpoint. When the browser accessed the URL, the server runs the hello_world() function and returns a string that the browser then displays. The `route()` decorator takes care of the back and forth communication between the server and the client.
+Here, you've created your first API. An Application Programming Interface (API) allows two systems to communicate with one another. Running the Flask application creates a server that allows a client to access the ‘Hello, world!’ string. Your browser is the client that accesses the server via an API endpoint. The final part of the link `http://127.0.0.1:5000/` that you've used to interact with the API is called an endpoint. When the browser accessed the URL, the server runs the `hello_world()` function and returns a string that the browser then displays. The `route()` decorator takes care of the back and forth communication between the server and the client.
 
 ## Serving an HTML String
 
