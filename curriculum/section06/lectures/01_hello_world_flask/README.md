@@ -4,7 +4,7 @@
 
 Flask[^flask] is known as a lightweight WSGI[^wsgi] application framework. A framework is a code library that makes a developer's life easier while writing application code. Flask helps us build reliable, scalable, and maintainable web applications
 
-Flask lets you quickly get started with building web applications in pure Python. In the following sections, you'll be installing Flask on your local development machine and make a simple `hello-world` application. Let's jump right in!
+Flask lets you quickly get started with building web applications in pure Python. In the following sections, you'll install Flask on your local development machine and make a simple `hello-world` application. Let's jump right in!
 
 ## Installing Flask
 
