@@ -2,7 +2,7 @@
   "scripts": {
     "cur:dev": "vuepress dev curriculum",
     "cur:build": "vuepress build curriculum",
-    "deploy": "yarn run cur:build && surge --project ./curriculum/.vuepress/dist/ --domain https://pysql.tecladocode.com"
+    "deploy": "yarn run cur:build && surge --project ./curriculum/.vuepress/dist/ --domain https://fullstack-python.tecladocode.com"
   },
   "devDependencies": {
     "surge": "^0.21.3",
