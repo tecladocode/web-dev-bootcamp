@@ -58,18 +58,18 @@ If you go to the Flask website, you are welcomed with a very simple example appl
 
 ### Prepare Your Application Directory
 
-We'll create a folder called `app` and put all our application code inside that. Go to your development directory(where you want to place your code) and run the following command to create the `app` folder:
+We'll create a folder called `hello-world` and put all our application code inside that. Go to your development directory (where you want to place your code) and run the following command to create the `app` folder:
 
 ```bash
-mkdir app
+mkdir hello-world
 ```
 
 ### Write Your First "Hello, World!" Application
 
-Now go to the `app` folder that you've just created and create a new Python file called `hello.py`. Add the following lines to the `hello.py` file.
+Now go to the `hello-world` folder that you've just created and create a new Python file called `app.py`. Add the following lines to the `app.py` file.
 
 ```python
-# hello.py
+# app.py
 from flask import Flask
 
 app = Flask(__name__)
@@ -95,7 +95,7 @@ Let's see what did the above code do:
 To run the application, you can either use the `flask` command or Python’s `-m` switch with `Flask`. Before you can do that you need to tell your terminal the application to work with by exporting the `FLASK_APP` environment variable. Also, during development, you should turn on the debugging mode by setting the `FLASK_ENV` environment variable to `development`. Run the following commands if you're on **Linux/MacOS**:
 
 ```bash
-export FLASK_APP=hello.py
+export FLASK_APP=app.py
 export FLASK_ENV=development
 flask run
 ```
@@ -104,7 +104,7 @@ flask run
 Now, if you're on **Windows** then export `FLASK_APP` and `FLASK_ENV` variables on command prompt like this:
 
 ```
-C:\path\to\app>set FLASK_APP=hello.py
+C:\path\to\app>set FLASK_APP=app.py
 C:\path\to\app>set FLASK_ENV=development
 ```
 
@@ -123,9 +123,10 @@ Here, you've created your first API. An Application Programming Interface (API) 
 
 ## Serving an HTML String
 
-Let's make our `hello-world` app a bit more exciting. Here, you'll create a new endpoint and display the *hello world* greeting in a fancy `html` format. Head over to your `hello.py` file and modify it like the following:
+Let's make our `hello-world` app a bit more exciting. Here, you'll create a new endpoint and display the *hello world* greeting in a fancy `html` format. Head over to your `app.py` file and modify it like the following:
 
 ```python
+# app.py
 from flask import Flask
 
 
