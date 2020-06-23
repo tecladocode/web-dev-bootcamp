@@ -101,11 +101,19 @@ flask run
 ```
 
 
-Now, if you're on **Windows** then export `FLASK_APP` and `FLASK_ENV` variables on command prompt like this:
+Now, if you're on **Windows** then export `FLASK_APP` and `FLASK_ENV` variables on *Command Prompt* like this:
 
 ```
 C:\path\to\app>set FLASK_APP=app.py
 C:\path\to\app>set FLASK_ENV=development
+
+```
+
+Or on *Powershell*, run:
+
+```
+PS C:\path\to\app> $env:FLASK_APP = "app.py"
+PS C:\path\to\app> $env:FLASK_ENV = "development"
 ```
 
 Then run:
