@@ -58,7 +58,7 @@ If you go to the Flask[^flask-web] website, you are welcomed with a very simple 
 
 ### Prepare Your Application Directory
 
-We'll create a folder called `hello-world` and put all our application code inside that. Go to your development directory (where you want to place your code) and run the following command to create the `app` folder:
+We'll create a folder called `hello-world` and put all our application code inside that. Go to your development directory (where you want to place your code) and run the following command to create the `hello-world` folder:
 
 ```bash
 mkdir hello-world
