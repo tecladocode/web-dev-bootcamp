@@ -90,7 +90,7 @@ Let's see what did the above code do:
 
 ### Run the Application
 
-To run the application, you can either use the `flask` command or python’s `-m` switch with `Flask`. Before you can do that you need to tell your terminal the application to work with by exporting the `FLASK_APP` environment variable. Also, during development, you should turn on the debugging mode by setting the `FLASK_ENV` environment variable to `development`. Run the following commands if you're on Linux/MacOS:
+To run the application, you can either use the `flask` command or python’s `-m` switch with `Flask`. Before you can do that you need to tell your terminal the application to work with by exporting the `FLASK_APP` environment variable. Also, during development, you should turn on the debugging mode by setting the `FLASK_ENV` environment variable to `development`. Run the following commands if you're on **Linux/MacOS**:
 
 ```bash
 export FLASK_APP=hello.py
@@ -99,7 +99,7 @@ flask run
 ```
 
 
-Now, if you're on windows then export `FLASK_APP` and `FLASK_ENV` variables on command prompt like this:
+Now, if you're on **Windows** then export `FLASK_APP` and `FLASK_ENV` variables on command prompt like this:
 
 ```
 C:\path\to\app>set FLASK_APP=hello.py
