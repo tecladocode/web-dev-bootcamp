@@ -2,7 +2,9 @@
 
 ## Why Flask?
 
-Flask[^flask] is known as a lightweight WSGI[^wsgi] application framework. A framework *is a code library that makes a developer's life easier while building reliable, scalable, and maintainable web applications* by providing reusable code or extensions for common operations. Flask lets you quickly get started with building web applications in pure python. In the following sections, you'll be installing Flask on your local development machine and start making a simple `hello-world` application. Let's jump right in!
+Flask[^flask] is known as a lightweight WSGI[^wsgi] application framework. A framework *is a code library that makes a developer's life easier while building reliable, scalable, and maintainable web applications* by providing reusable code or extensions for common operations.
+
+Flask lets you quickly get started with building web applications in pure Python. In the following sections, you'll be installing Flask on your local development machine and start making a simple `hello-world` application. Let's jump right in!
 
 ## Installing Flask
 
@@ -64,7 +66,7 @@ mkdir app
 
 ### Write Your First "Hello, World!" Application
 
-Now go to the `app` folder that you've just created and create a new python file called `hello.py`. Add the following lines to the `hello.py` file.
+Now go to the `app` folder that you've just created and create a new Python file called `hello.py`. Add the following lines to the `hello.py` file.
 
 ```python
 # hello.py
@@ -90,7 +92,7 @@ Let's see what did the above code do:
 
 ### Run the Application
 
-To run the application, you can either use the `flask` command or python’s `-m` switch with `Flask`. Before you can do that you need to tell your terminal the application to work with by exporting the `FLASK_APP` environment variable. Also, during development, you should turn on the debugging mode by setting the `FLASK_ENV` environment variable to `development`. Run the following commands if you're on **Linux/MacOS**:
+To run the application, you can either use the `flask` command or Python’s `-m` switch with `Flask`. Before you can do that you need to tell your terminal the application to work with by exporting the `FLASK_APP` environment variable. Also, during development, you should turn on the debugging mode by setting the `FLASK_ENV` environment variable to `development`. Run the following commands if you're on **Linux/MacOS**:
 
 ```bash
 export FLASK_APP=hello.py
