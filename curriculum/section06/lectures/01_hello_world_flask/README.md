@@ -2,7 +2,7 @@
 
 ## Why Flask?
 
-[Flask][flask] is known as a lightweight [WSGI][wsgi] application framework. A framework *is a code library that makes a developer's life easier while building reliable, scalable, and maintainable web applications* by providing reusable code or extensions for common operations. Flask lets you quickly get started with building web applications in pure python. In the following sections, you'll be installing Flask on your local development machine and start making a simple `hello-world` application. Let's jump right in!
+[Flask][^flask] is known as a lightweight [WSGI][wsgi] application framework. A framework *is a code library that makes a developer's life easier while building reliable, scalable, and maintainable web applications* by providing reusable code or extensions for common operations. Flask lets you quickly get started with building web applications in pure python. In the following sections, you'll be installing Flask on your local development machine and start making a simple `hello-world` application. Let's jump right in!
 
 ## Installing Flask
 
@@ -48,7 +48,7 @@ Assuming you've got Python 3 installed on your local development machine, let's 
     pip install Flask
     ```
 
-If you're having trouble with your installation, checkout this detailed installation guide [here][flask-install].
+If you're having trouble with your installation, checkout this detailed installation guide [here][^flask-install].
 
 ## Making a "Hello, World!" Flask Application
 
@@ -150,7 +150,7 @@ def hello_world_fancy():
     return greetings
 ```
 
-Notice, how we've introduced another function called `hello_world_fancy()` and decorated it like the previously defined `hello_world()` function. This time the `route()` decorator defines a new endpoint named `/fancy`. Flask will automatically append this endpoint to your host URL `http://localhost:5000`. So, the final URL will be http://localhost:5000/fancy. If you've stopped your server, then run the application again by following the previously mentioned [instructions][#instructions]. Then head over to http://localhost:5000/fancy on your browser and you'll be greeted by a fancier *hello world* page.
+Notice, how we've introduced another function called `hello_world_fancy()` and decorated it like the previously defined `hello_world()` function. This time the `route()` decorator defines a new endpoint named `/fancy`. Flask will automatically append this endpoint to your host URL `http://localhost:5000`. So, the final URL will be http://localhost:5000/fancy. If you've stopped your server, then run the application again by following the previously mentioned instructions. Then head over to http://localhost:5000/fancy on your browser and you'll be greeted by a fancier *hello world* page.
 
 ![Screenshot from 2020-06-23 16-30-52](https://user-images.githubusercontent.com/30027932/85393520-f7676580-b56e-11ea-93ed-fc6621116e04.png)
 
@@ -158,7 +158,6 @@ Notice, how we've introduced another function called `hello_world_fancy()` and d
 
 In this lesson, you've learned how to build and serve simple APIs with Flask framework. You've also learned how endpoints work and how to access the server from a client. The later section teaches you about adding new routes to your app and displaying a simple html string on your browser.
 
-[flask]:https://flask.palletsprojects.com/en/1.1.x/
-[wsgi]: https://wsgi.readthedocs.io/en/latest/what.html
-[flask-install]: https://flask.palletsprojects.com/en/1.1.x/installation/
-[instructions]: #install-instructions
+* [^flask]: [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
+* [^wsgi]: [Getting Started with WSGI](https://wsgi.readthedocs.io/en/latest/what.html)
+* [^flask-install]: [Installing Flask](https://flask.palletsprojects.com/en/1.1.x/installation/)
