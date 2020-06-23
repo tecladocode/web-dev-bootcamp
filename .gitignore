@@ -28,3 +28,4 @@ promo/
 node_modules
 data.db
 .env
+venv
