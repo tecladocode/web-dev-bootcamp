@@ -114,7 +114,7 @@ Then run:
 python flask run
 ```
 
-Now using your browser, head over to http://127.0.0.1:5000/, and you should see your 'Hello, world!' greeting.
+Now using your browser, head over to [http://127.0.0.1:5000/](http://127.0.0.1:5000/), and you should see your 'Hello, world!' greeting.
 
 ![Simple hello world](https://user-images.githubusercontent.com/30027932/85382453-cda74200-b560-11ea-810e-a357545531ee.png)
 
@@ -153,7 +153,7 @@ def hello_world_fancy():
     return greetings
 ```
 
-Notice, how we've introduced another function called `hello_world_fancy()` and decorated it like the previously defined `hello_world()` function. This time the `route()` decorator defines a new endpoint named `/fancy`. Flask will automatically append this endpoint to your host URL `http://localhost:5000`. So, the final URL will be http://localhost:5000/fancy. If you've stopped your server, then run the application again by following the previously mentioned instructions. Then head over to http://localhost:5000/fancy on your browser and you'll be greeted by a fancier 'Hello, world!' page.
+Notice, how we've introduced another function called `hello_world_fancy()` and decorated it like the previously defined `hello_world()` function. This time the `route()` decorator defines a new endpoint named `/fancy`. Flask will automatically append this endpoint to your host URL `http://localhost:5000`. So, the final URL will be [http://localhost:5000/fancy](http://localhost:5000/fancy). If you've stopped your server, then run the application again by following the previously mentioned instructions. Then head over to [http://localhost:5000/fancy](http://localhost:5000/fancy) on your browser and you'll be greeted by a fancier 'Hello, world!' page.
 
 ![Hello world with html](https://user-images.githubusercontent.com/30027932/85393520-f7676580-b56e-11ea-93ed-fc6621116e04.png)
 
