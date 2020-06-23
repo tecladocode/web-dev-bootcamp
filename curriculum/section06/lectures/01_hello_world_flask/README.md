@@ -82,7 +82,7 @@ def hello_world():
 
 Let's see what did the above code do:
 
-* First we imported the Flask class.
+* First we imported the `Flask` class.
 
 * Then we've create an instance of the class and assigned that to `app` variable. This instance of the class will be our WSGI application.
 
