@@ -124,7 +124,7 @@ def render_second_page():
     return render_template("second_page.html")
 ```
 
-In the above code snippet, we've imported the `render_template` method from Flask and used that to send the static contents to our browsers. Here, using the `route` decorator, we've created two different endpoints to display the pages. Notice we didn't mention the full path of the HTML files inside the `render_template()` method; Flask automatically looks for static files in the `templates` folder.
+In the above code snippet, we've imported the `render_template` method from Flask and used that to send the static contents to the browser. Here, using the `route` decorator, we've created two different endpoints to display the pages. Notice we didn't mention the full path of the HTML files inside the `render_template()` method; Flask automatically looks for static files in the `templates` folder.
 
 Now run the application (refer to the previous lesson[^run-flask] if you don't know how to run Flask applications) and go to following URL to view the `first_page.html`:
 
