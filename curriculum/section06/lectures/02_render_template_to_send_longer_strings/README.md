@@ -12,9 +12,6 @@ Static content is any content that can be delivered to an end user without havin
 
 Any kind of file can be served as static content as long as it does not change in response to a user’s actions or inputs. This includes images, JavaScript files, HTML files, CSS files, videos, Flash files, even web pages.
 
-## Rendering
-
-The process of displaying static contents are also known as *rendering*. In this lesson, we'll be strictly rendering static HTML contents. In the next lesson, you'll see how you can render dynamic contents through dynamic templating language[^templating-language] and render_template[^render-template].
 
 ## Render HTML String
 
@@ -148,6 +145,5 @@ http://localhost:5000/first-page
 
 In this lesson, you've learned the what static contents are, what rendering static files means and how to render static HTML files using Flask's `render_template` method.
 
-[^templating-language]: [Templating Language](https://collectiveidea.com/blog/archives/2018/03/06/what-s-in-a-templating-language-part-1)
-[^render-template]: [Flask's render_template](https://flask.palletsprojects.com/en/1.1.x/quickstart/#rendering-templates)
+
 [^run-flask]: [Running Flask Applications](https://github.com/tecladocode/python-web-2020/tree/master/curriculum/section06/lectures/01_hello_world_flask#run-the-application)
