@@ -103,7 +103,7 @@ The above static are kept simple for demonstration purpose. In real life, you'll
 
 ### Render the Files via render_template
 
-Now you've created the necessary static files, let's see how you can render them in your browser. If you've gone through the previous lesson, the following code snippet should be familiar. Here, we'll be exposing two API endpoints for rendering two HTML static files:
+Now that you've created the necessary HTML static files, let's see how you can use `render_template` to send the files to the browser. If you've gone through the previous lesson, the following code snippet should be familiar. Here, we'll be exposing two API endpoints for accessing the static files from your browser:
 
 ``` python{4,11,16}
 # app.py
