@@ -2,7 +2,7 @@
 
 You've already learned about APIs, endpoints and how you can make quick APIs with Flask. Also, you've seen how Flask lets you display HTML decorated texts in your browser.
 
-Writing HTML string directory into your application code is okay as long as the size of the string is minimal. However, if you want display multiple HTML pages or large HTML stings, embedding that directly into your application code may not be the best idea.
+Writing HTML string directly into your application code is okay as long as the size of the string is minimal. However, if you want display multiple HTML pages or large HTML strings, embedding that directly into your application code may not be the best idea.
 
 In this lesson, we'll see how you can write separate HTML files and use Flask's `render_template()` method to display your static contents.
 
