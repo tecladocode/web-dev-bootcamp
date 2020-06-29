@@ -138,8 +138,8 @@ Now run the application (refer to the previous lesson[^run-flask] if you don't k
 To access `second_page.html`, go to:
 
 
-[http://localhost:5000/first-page
-](http://localhost:5000/first-page)
+[http://localhost:5000/second-page
+](http://localhost:5000/second-page)
 
 ![second-page](./assets/second-page.png)
 
