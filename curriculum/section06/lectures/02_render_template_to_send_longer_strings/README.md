@@ -15,7 +15,7 @@ Any kind of file can be served as static content as long as it does not change i
 
 ## Render HTML String
 
-From the previous lesson, you probably recall that you can render HTML string in the following manner:
+From the previous lesson, you probably recall that you can send HTML string to your browser in the following manner:
 
 ```python
 # app.py
@@ -45,7 +45,7 @@ Running the code gives you this nicely formatted greeting in your browser:
 
 ![Hello world with html](https://user-images.githubusercontent.com/30027932/85437519-847cdf80-b5ac-11ea-8e3c-9bcfd558f447.png)
 
-While this is good for simple cases, in the next section you'll see how you can manage and server larger HTML content with Flask.
+While this is good for simple cases, in the next section you'll see how you can manage and serve larger HTML content with Flask.
 
 ## Render HTML Page
 
