@@ -15,7 +15,7 @@ Any kind of file can be served as static content as long as it does not change i
 
 ## Render HTML Strings
 
-From the previous lesson, you probably recall that you can send HTML strings to your browser in the following manner:
+By now, you already know that you can send HTML strings to your browser in the following manner:
 
 ```python
 # app.py
