@@ -8,7 +8,7 @@ In this lesson, we'll see how you can write separate HTML files and use Flask's 
 
 ## Static Content
 
-Static content is any content that can be delivered to an end user without having to be generated, modified, or processed. The server delivers the same file to each user, making static content one of the simplest and most efficient content types to transmit over the Internet. In our case, the HTML files that we want to display in the browser are static contents.
+Static content[^static-content] is any content that can be delivered to an end user without having to be generated, modified, or processed. The server delivers the same file to each user, making static content one of the simplest and most efficient content types to transmit over the Internet. In our case, the HTML files that we want to display in the browser are static contents.
 
 Any kind of file can be served as static content as long as it does not change in response to a user’s actions or inputs. This includes images, JavaScript files, HTML files, CSS files, videos, Flash files, even web pages.
 
@@ -43,7 +43,7 @@ def hello_world_fancy():
 Running the code starts the Flask server and accessing the URL http://localhost:5000/fancy gives you this nicely formatted greeting in your browser:
 
 
-![Hello world with html](https://user-images.githubusercontent.com/30027932/85437519-847cdf80-b5ac-11ea-8e3c-9bcfd558f447.png)
+![greetings](./assets/greetings.png)
 
 While this is good for simple cases, in the next section you'll see how you can manage and serve larger HTML content with Flask.
 
@@ -132,7 +132,7 @@ Now run the application (refer to the previous lesson[^run-flask] if you don't k
 http://localhost:5000/first-page
 
 
-![first-page](https://user-images.githubusercontent.com/30027932/85944375-0b88d980-b958-11ea-91d8-d00b44bfd18b.png)
+![first-page](./assets/second-page.png)
 
 To access `second_page.html`, go to:
 
@@ -140,11 +140,11 @@ To access `second_page.html`, go to:
 http://localhost:5000/first-page
 
 
-![second-page](https://user-images.githubusercontent.com/30027932/85944379-0f1c6080-b958-11ea-9cdc-d37c22101e4f.png)
+![second-page](./assets/second-page.png)
 
 ## Conclusion
 
 In this lesson, you've learned the what static contents are, what sending static files to the browser actually means and how you can send static HTML files to your browser using Flask's `render_template` method.
 
-
+[^static-content]: [Static Content](https://blog.stackpath.com/static-content/)
 [^run-flask]: [Running Flask Applications](https://github.com/tecladocode/python-web-2020/tree/master/curriculum/section06/lectures/01_hello_world_flask#run-the-application)
