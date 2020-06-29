@@ -51,7 +51,7 @@ While this is good for simple cases, in the next section you'll see how you can 
 
 ### Create the Static Files
 
-Let's create a folder named `template` inside your project folder. Create two empty HTML files called `first_page.html` and `second_page.html` in the `template` folder. Your project folder should have the following structure:
+Let's create a folder named `templates` inside your project folder. Create two empty HTML files called `first_page.html` and `second_page.html` in the `templates` folder. Your project folder should have the following structure:
 
 ```
 .
