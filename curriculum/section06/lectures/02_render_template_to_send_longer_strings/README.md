@@ -10,6 +10,8 @@ In this lesson, we'll see how you can write separate HTML files and use Flask's 
 
 Static content is any content that can be delivered to an end user without having to be generated, modified, or processed. The server delivers the same file to each user, making static content one of the simplest and most efficient content types to transmit over the Internet. In our case, the HTML files that we want to display in the browser are static contents.
 
+Any kind of file can be served as static content as long as it does not change in response to a user’s actions or inputs. This includes images, JavaScript files, HTML files, CSS files, videos, Flash files, even web pages.
+
 ## Rendering
 
 The process of displaying static contents are also known as *rendering*. In this lesson, we'll be strictly rendering static HTML contents. In the next lesson, you'll see how you can render dynamic contents through dynamic templating language[^templating-language] and render_template[^render-template].
