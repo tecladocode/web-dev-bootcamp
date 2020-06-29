@@ -124,7 +124,7 @@ python -m flask run
 
 Now using your browser, head over to [http://127.0.0.1:5000/](http://127.0.0.1:5000/), and you should see your 'Hello, world!' greeting.
 
-![Simple hello world](https://user-images.githubusercontent.com/30027932/85437514-821a8580-b5ac-11ea-8413-bd2f158a4e7b.png)
+![simple-hello-world](./assests/simple-hello-world.png)
 
 
 Here, you've created your first API. An Application Programming Interface (API) allows two systems to communicate with one another. Running the Flask application creates a server that allows a client to access the 'Hello, world!' string. Your browser is the client that accesses the server via an API endpoint. The final part of the link `http://127.0.0.1:5000/` that you've used to interact with the API is called an endpoint. When the browser accessed the URL, the server runs the `hello_world()` function and returns a string that the browser then displays. The `route()` decorator takes care of the back and forth communication between the server and the client.
@@ -163,7 +163,7 @@ def hello_world_fancy():
 
 Notice, how we've introduced another function called `hello_world_fancy()` and decorated it like the previously defined `hello_world()` function. This time the `route()` decorator defines a new endpoint named `/fancy`. Flask will automatically append this endpoint to your host URL `http://localhost:5000`. So, the final URL will be [http://localhost:5000/fancy](http://localhost:5000/fancy). If you've stopped your server, then run the application again by following the previously mentioned instructions. Then head over to [http://localhost:5000/fancy](http://localhost:5000/fancy) on your browser and you'll be greeted by a fancier 'Hello, world!' page.
 
-![Hello world with html](https://user-images.githubusercontent.com/30027932/85437519-847cdf80-b5ac-11ea-8e3c-9bcfd558f447.png)
+![greetings-html](./assests/greetings.png)
 
 ## Conclusion
 
