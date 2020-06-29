@@ -40,7 +40,7 @@ def hello_world_fancy():
     return greetings
 ```
 
-Running the code gives you this nicely formatted greeting in your browser:
+Running the code starts the Flask server and accessing the URL http://localhost:5000/fancy gives you this nicely formatted greeting in your browser:
 
 
 ![Hello world with html](https://user-images.githubusercontent.com/30027932/85437519-847cdf80-b5ac-11ea-8e3c-9bcfd558f447.png)
