@@ -2,7 +2,7 @@
 
 You've already learned about APIs, endpoints and how you can make quick APIs with Flask. Also, you've seen how Flask lets you display HTML decorated texts in your browser.
 
-Writing HTML string directly into your application code is okay as long as the size of the string is minimal. However, if you want display multiple HTML pages or large HTML strings, embedding that directly into your application code may not be the best idea.
+Writing HTML strings directly into your application code is okay as long as the size of the string is minimal. However, if you want display multiple HTML pages or large HTML strings, embedding that directly into your application code may not be the best idea.
 
 In this lesson, we'll see how you can write separate HTML files and use Flask's `render_template()` method to display your static contents.
 
@@ -13,9 +13,9 @@ Static content[^static-content] is any content that can be delivered to an end u
 Any kind of file can be served as static content as long as it does not change in response to a user’s actions or inputs. This includes images, JavaScript files, HTML files, CSS files, videos, Flash files etc.
 
 
-## Render HTML String
+## Render HTML Strings
 
-From the previous lesson, you probably recall that you can send HTML string to your browser in the following manner:
+From the previous lesson, you probably recall that you can send HTML strings to your browser in the following manner:
 
 ```python
 # app.py
@@ -40,14 +40,14 @@ def hello_world_fancy():
     return greetings
 ```
 
-Running the code starts the Flask server and accessing the URL http://localhost:5000/fancy gives you this nicely formatted greeting in your browser:
+Running the code starts the Flask server and accessing the URL [http://localhost:5000/fancy](http://localhost:5000/fancy) gives you this nicely formatted greeting in your browser:
 
 
 ![greetings](./assets/greetings.png)
 
 While this is good for simple cases, in the next section you'll see how you can manage and serve larger HTML content with Flask.
 
-## Render HTML Page
+## Render HTML Pages
 
 ### Create the Static Files
 
@@ -129,7 +129,8 @@ In the above code snippet, we've imported the `render_template` method from Flas
 Now run the application (refer to the previous lesson[^run-flask] if you don't know how to run Flask applications) and go to following URL to view the `first_page.html`:
 
 
-http://localhost:5000/first-page
+[http://localhost:5000/first-page
+](http://localhost:5000/first-page)
 
 
 ![first-page](./assets/first-page.png)
@@ -137,8 +138,8 @@ http://localhost:5000/first-page
 To access `second_page.html`, go to:
 
 
-http://localhost:5000/first-page
-
+[http://localhost:5000/first-page
+](http://localhost:5000/first-page)
 
 ![second-page](./assets/second-page.png)
 
