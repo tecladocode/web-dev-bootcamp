@@ -129,8 +129,7 @@ In the above code snippet, we've imported the `render_template` method from Flas
 Now run the application (refer to the previous lesson[^run-flask] if you don't know how to run Flask applications) and go to following URL to view the `first_page.html`:
 
 
-[http://localhost:5000/first-page
-](http://localhost:5000/first-page)
+[http://localhost:5000/first-page](http://localhost:5000/first-page)
 
 
 ![first-page](./assets/first-page.png)
@@ -138,8 +137,7 @@ Now run the application (refer to the previous lesson[^run-flask] if you don't k
 To access `second_page.html`, go to:
 
 
-[http://localhost:5000/second-page
-](http://localhost:5000/second-page)
+[http://localhost:5000/second-page](http://localhost:5000/second-page)
 
 ![second-page](./assets/second-page.png)
 
