@@ -145,7 +145,7 @@ To access `second_page.html`, go to:
 
 ## Conclusion
 
-In this lesson, you've learned the what static contents are, what sending static files to the browser actually means and how you can send static HTML files to your browser using Flask's `render_template` method.
+In this lesson, you've learned the what static contents are and how you can send static HTML files to your browser using Flask's `render_template` method.
 
 [^static-content]: [Static Content](https://blog.stackpath.com/static-content/)
 [^run-flask]: [Running Flask Applications](https://github.com/tecladocode/python-web-2020/tree/master/curriculum/section06/lectures/01_hello_world_flask#run-the-application)
