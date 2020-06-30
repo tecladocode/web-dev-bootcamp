@@ -99,7 +99,7 @@ Now, go ahead and add the following contents to your static files.
 </html>
 ```
 
-The above static are kept simple for demonstration purpose. In real life, you'll be dealing with much larger and more complex static files.
+The above static files are kept simple for demonstration purposes. In real life, you'll be dealing with much larger and more complex static files.
 
 ### Render the Files via render_template
 
