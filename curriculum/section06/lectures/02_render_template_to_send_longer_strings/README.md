@@ -1,6 +1,6 @@
 # Using render_template to Send Longer HTML Strings
 
-You've already learned about APIs, endpoints and how you can make quick APIs with Flask. Also, you've seen how Flask lets you display HTML decorated texts in your browser.
+You've already learned about APIs, endpoints and how you can make quick APIs with Flask. Also, you've seen how Flask lets you send HTML decorated texts to your browser.
 
 Writing HTML strings directly into your application code is okay as long as the size of the string is minimal. However, if you want to send multiple HTML pages or large HTML strings to your browser, embedding that directly into your application code may not be the best idea.
 
