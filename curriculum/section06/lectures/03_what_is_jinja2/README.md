@@ -113,7 +113,7 @@ Run the flask app and go to [localhost:5000/jinja2](localhost:5000/jinja2). Your
 
 ## Conclusion
 
-In this tutorial you've learned how to interpolate placeholder values in HTML strings using Jinja2 template language. Also, you've learned how to fill in placeholder values in HTML files and render it into your browser via Flask's `render_template` method.
+In this tutorial you've learned how to interpolate placeholder values in strings using Jinja2 template language. Also, you've learned how to render Jinja2 code into HTML and send the file to your browser via Flask's `render_template` method.
 
 [^django-template-language]: [The Django Template Language](https://docs.djangoproject.com/en/3.0/ref/templates/language/)
 [^jinja2]: [Jinja2 Official Documentation](https://jinja.palletsprojects.com/en/2.11.x/)
