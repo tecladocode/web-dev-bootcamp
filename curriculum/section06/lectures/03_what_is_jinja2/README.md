@@ -14,7 +14,7 @@ For example, the Django web framework has an embedded template language called t
 Jinja, also commonly known as "Jinja2" to specify the newest release version, is a Python template engine used to create HTML, XML or other markup formats that are returned to the users via an HTTP response. In our case, we'll mostly be creating HTML files from the templates.
 
 ::: tip
-Jinja Templates are just `.html` files. By convention, they live in the `/templates` directory in a Flask project.
+Jinja Templates are just `.html` files with the added Jinja code. By convention, they live in the `/templates` directory in a Flask project.
 :::
 
 ## Why Use Jinja2
