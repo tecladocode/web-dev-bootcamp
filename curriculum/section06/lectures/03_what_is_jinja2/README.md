@@ -4,7 +4,7 @@
 
 A template is a text file. It can generate any text-based format (HTML, XML, CSV, etc). It usually contains variables, which get replaced with values when the template is evaluated, and tags, which control the logic of the template.
 
-The syntax used in a template is usually known as a template language and the underlying entity that evaluates the template is called a template engine.
+The syntax used in a template is usually known as a template language and the underlying code that evaluates the template is called a template engine.
 
 For example, the Django web framework has an embedded template language called the *Django Template Language*[^django-template-language]. Flask comes packaged with the powerful Jinja2[^jinja2] template language.
 
