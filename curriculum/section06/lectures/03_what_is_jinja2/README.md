@@ -21,7 +21,7 @@ Jinja Templates are just `.html` files with the added Jinja code. By convention,
 
 Jinja2 is useful because it has a consistent template syntax and the project is now regarded as an independent open source project. This means it can be used as an external dependency by other code libraries.
 
-Unlike the Django Template Language which is tied to the Django ecosystem, you can use Jinja2 in any of your project as a third party library.
+Unlike the Django Template Language which is tied to the Django ecosystem, you can use Jinja2 in any of your projects as a third party library.
 
 ## Introduction to Jinja2 Syntax
 
