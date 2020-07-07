@@ -88,7 +88,9 @@ Now, add the following HTML string to the `/templates/jinja2-intro.html` file:
 
 The above HTML string has two placeholders, `name` and `template_name`. We'll push values to these placeholders from our Flask code.
 
-Flask's `render_template` method will be used to send our interpolated HTML file to the browser. For this to work, you'll have to create a new endpoint to access this newly created page from browser. Your `app.py` should look like the following:
+Flask's `render_template` method will be used to send our interpolated HTML file to the browser. This method is called *render_template* because it evaluates the Jinja code in your HTML file, fills in the necessary placeholders and shows (renders) the content of the file to the browser.
+
+For this to work, you'll have to create a new endpoint to access this newly created page from browser. Your `app.py` should look like the following:
 
 ```python{10}
 # app.py
