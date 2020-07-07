@@ -29,7 +29,7 @@ Jinja2 syntax can contain variables as well as some programming logic, which whe
 
 The variables and/or logic are placed between tags or delimiters. Jinja templates use `{% ... %}` for expressions or logic (like `for` loops). Double curly braces `{​{ ... }​}` are used for outputting the results of an expression or a variable to the end user.
 
-Let's take a quick look at a self-contained example. In this example, you'll use the `{​{ ...  }​}` syntax to interpolate values to an HTML string. If you've already installed Flask in your current environment, Jinja2 should already be there. If not, you can always install it to your current development environment via `pip install jinja2`.
+Let's take a quick look at a self-contained example. In this example, you'll use the `{​{ ...  }​}` syntax to interpolate values to an HTML string. If you've already installed Flask in your current environment, Jinja2 should already be installed. If not, you can always install it to your current development environment via `pip install jinja2`.
 
 ```python{7,12}
 from jinja2 import Template
