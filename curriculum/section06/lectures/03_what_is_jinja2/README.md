@@ -107,7 +107,7 @@ def render_jinja2_intro():
 
 Here, we've created a new endpoint `/jinja2`. Pay attention to line 10, where we've passed the name of the HTML file `jinja2-intro.html` as the first argument of the `render_template` method. The other two arguments `name` and `template_name` pass values to the Jinja2 template engine. The `render_template` method replaces the placeholders with actual values and renders the final HTML file into the browser.
 
-Run the flask app and go to [localhost:5000/jinja2](localhost:5000/jinja2). Your browser should show a page like this:
+Run the Flask app and go to [localhost:5000/jinja2](localhost:5000/jinja2). Your browser should show a page like this:
 
 ![jinja2-intro](./assets/jinja2-intro.png)
 
