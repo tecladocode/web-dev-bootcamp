@@ -2,8 +2,7 @@
 
 ## What is a Template Language
 
-A template is a text file. It can generate any text-based format (HTML, XML, CSV, etc.).
-It usually contains variables, which get replaced with values when the template is evaluated, and tags, which control the logic of the template.
+A template is a text file. It can generate any text-based format (HTML, XML, CSV, etc). It usually contains variables, which get replaced with values when the template is evaluated, and tags, which control the logic of the template.
 
 The syntax used in a template is usually known as a template language and the underlying entity that evaluates the template is called a template engine.
 
