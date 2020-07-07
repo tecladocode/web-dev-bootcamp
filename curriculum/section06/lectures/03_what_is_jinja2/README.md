@@ -109,7 +109,7 @@ Here, we've created a new endpoint `/jinja2`. Pay attention to line 10, where we
 
 Run the Flask app and go to [localhost:5000/jinja2](localhost:5000/jinja2). Your browser should show a page like this:
 
-![jinja2-intro](./assets/jinja2-intro.png)
+![jinja2-rendering](./assets/jinja2-intro.png)
 
 ## Conclusion
 
