@@ -19,7 +19,7 @@ Jinja Templates are just `.html` files with the added Jinja code. By convention,
 
 ## Why Use Jinja2
 
-Jinja2 is useful because it has a consistent template syntax and is an independent open-source project. This means it can be used as an external dependency by other code libraries, and it doesn't depend on Flask.
+Jinja2 is a good choice because it's popular, has simple syntax and is an independent open-source project. It can be used as an external dependency by other code libraries, and it doesn't depend on Flask.
 
 Unlike the Django Template Language which is tied to the Django ecosystem, you can use Jinja2 in any of your projects as a third party library.
 
