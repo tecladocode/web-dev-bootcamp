@@ -19,7 +19,7 @@ Jinja Templates are just `.html` files with the added Jinja code. By convention,
 
 ## Why Use Jinja2
 
-Jinja2 is useful because it has a consistent template syntax and the project is now regarded as an independent open source project. This means it can be used as an external dependency by other code libraries.
+Jinja2 is useful because it has a consistent template syntax and is an independent open-source project. This means it can be used as an external dependency by other code libraries, and it doesn't depend on Flask.
 
 Unlike the Django Template Language which is tied to the Django ecosystem, you can use Jinja2 in any of your projects as a third party library.
 
@@ -113,7 +113,7 @@ Run the Flask app and go to [localhost:5000/jinja2](localhost:5000/jinja2). Your
 
 ## Conclusion
 
-In this tutorial you've learned how to interpolate placeholder values in strings using Jinja2 template language. Also, you've learned how to render Jinja2 code into HTML and send the file to your browser via Flask's `render_template` method.
+In this tutorial you've learned how to interpolate placeholder values in strings using the Jinja2 template language. Also, you've learned how to fill in the placeholder values inside an HTML file using Jinja2 and send it to your browser via Flask's `render_template` method.
 
 [^django-template-language]: [The Django Template Language](https://docs.djangoproject.com/en/3.0/ref/templates/language/)
 [^jinja2]: [Jinja2 Official Documentation](https://jinja.palletsprojects.com/en/2.11.x/)
