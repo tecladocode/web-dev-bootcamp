@@ -64,5 +64,6 @@ While these additional resources download, the browser behins constructing a mod
 
 In this course we're going to be predominantly focusing on steps 3 and 4. We're going to be writing client side code to interact with servers through a web browser, and we're going to be writing server side code to handle those requests.
 
+Throughout the next couple of sections we're going to be taking a closer look at the technologies involved in actually displaying a web page to the user, and then we're going to look into writing server-side code to handle user requests with Python and Flask,
 
 [^server]: [What is a server?](https://www.techopedia.com/definition/2282/server)
