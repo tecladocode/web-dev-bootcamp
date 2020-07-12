@@ -12,6 +12,26 @@ In Python, an expression[^expression] represents something; like a number, a str
 
 For example, `>>> foo = 2 + 2` is an expression that evaluates to a single value `4`. In contrast, a Python instruction that doesn't evaluate down to a single value is generally known as a statement, i.e. an `if-else` statement.
 
+## Expressions in Jinja2
+
+### Basic Operations
+
+* Float/integer addition, subtraction
+* String concatenation
+
+### Function Evaluation
+
+## Data Structures in Jinja2
+
+### Built in Data Structures
+
+* Lists
+* Dicts
+* Sets
+
+### Custom Data Structures
+
+* Custom classes
 
 ## Conclusion
 
