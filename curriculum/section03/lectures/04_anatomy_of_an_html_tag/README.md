@@ -75,7 +75,7 @@ Let's look at some examples of common attributes in practice.
 
 One thing we're going to be doing a lot in this course is adding `class` attributes to our HTML elements. Classes are used for identifying particular elements when applying styles, or when we need to select certain groups of elements in any JavaScript code.
 
-Unlike many attributes, the `class` attribute can be applied to any HTML element.
+Unlike many attributes, the `class` attribute can be applied to any HTML element. We call this kind of attribute a *global attribute*.
 
 Here is an example of a `<p>` element with a new `class` attribute. The value of this attribute is `text`, so we've said that this element can be identified by the class `text` elsewhere in our program.
 
@@ -108,6 +108,18 @@ Ids are unique in theory, but this is a convention more than a strict rule. If y
 
 While nothing will break, you should respect the convention of having unique ids, as having a unique identifier can be extremely useful. We already have classes for identifying groups of elements, so there's no need to duplicate this pattern with ids as well.
 :::
+
+### Shorthand attributes
+
+In some cases, you may see attributes written as just the attribute name, without the following `=` and value. This is a shorthand for writing `=""` after the attribute name, and it's used for attributes which don't take any value.
+
+An example is the `required` attribute for form fields, which can be written as either `required=""` or, more commonly, as `required`.
+
+### Other attributes
+
+There are lots of other attributes available to us in HTML, many of which are specific to certain element types. We've already seen one example: the `required` attribute.
+
+You don't need to memorise the available attributes, but if you ever need to look something up, you can find a good reference on the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes). The MDN &mdash; short for **M**ozilla **D**eveloper **N**etwork &mdash; is a great resource for looking up and learning about web technologies. It's an invaluable tool that you should spend some time getting familiar with.
 
 [^p]: [The usage of `<p>` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)
 
