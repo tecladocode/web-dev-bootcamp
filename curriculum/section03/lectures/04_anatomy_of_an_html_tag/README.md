@@ -65,17 +65,49 @@ In almost all cases, any extra whitespace in your HTML document is irrelevant, a
 
 In the examples we've seen so far, the opening tag for an element has just been the name of the element, but we can also write attributes in this opening tag as well.
 
-Different HTML elements accept different attributes, and they're used for a wide variety of purposes. For example, we can use an attribute to declare that a form field is required, or we can anchors that make it easy to refer back to a particular element or group of elements.
+Different HTML elements accept different attributes, and they're used for a wide variety of purposes. For example, we can use an attribute to declare that a form field is required, or we can add anchors that make it easy to refer to a particular element or group of elements.
 
 An attibute is composed of three parts: the attribute name, an assignment operator (`=`), and the value to be associated with this attribute. This value is surrounded by quotation marks.
 
-One thing we're going to be doing a lot in this course is adding `class` attributes to our HTML elements. Classes are used for identifying particular elements when applying styles, or when we need to select certain groups of elements in our JavaScript code.
+Let's look at some examples of common attributes in practice.
+
+### The `class` attribute
+
+One thing we're going to be doing a lot in this course is adding `class` attributes to our HTML elements. Classes are used for identifying particular elements when applying styles, or when we need to select certain groups of elements in any JavaScript code.
+
+Unlike many attributes, the `class` attribute can be applied to any HTML element.
 
 Here is an example of a `<p>` element with a new `class` attribute. The value of this attribute is `text`, so we've said that this element can be identified by the class `text` elsewhere in our program.
 
 ```html
 <p class="text">I have a class now. Fancy.</p>
 ```
+
+We can add multiple classes to an element by writing several class names between the quotation marks, separated by spaces.
+
+```html
+<p class="class-one class-two class-three">That's a lot of classes!</p>
+```
+
+### The `id` attribute
+
+Another common attribute which can be used with any HTML element is the `id` attribute. Ids are very similar to classes in that they're for identifying particular HTML elements, but unlike classes, ids are supposed to be unique identifiers.
+
+Here is an element with both a `class` and an `id` attribute:
+
+```html
+<h1 class="title awesome" id="pageTitle">
+    Awesome Page Title
+</h1>
+```
+
+Ids are not generally used for styling purposes, because it makes it hard to reuse styles. After all any styles we apply to elements with a given id will only affect a single element. However, ids are very useful when working with JavaScript, as we often want to implement behaviour for a particular element only.
+
+::: warning ID uniqueness
+Ids are unique in theory, but this is a convention more than a strict rule. If you add the same id to several HTML elements, the parser won't complain, and your site will work just find.
+
+While nothing will break, you should respect the convention of having unique ids, as having a unique identifier can be extremely useful. We already have classes for identifying groups of elements, so there's no need to duplicate this pattern with ids as well.
+:::
 
 [^p]: [The usage of `<p>` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)
 
