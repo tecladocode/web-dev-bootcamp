@@ -58,6 +58,8 @@ This document describes the structure and meaning of the page's content, and wil
 
 The browser has to send additional requests to the server for all of these resources, just like it did for the HTML document itself.
 
+JOSE: could we put an example here of loading a page that has a few images, to bring the point home that one request is needed per resource?
+
 While these additional resources download, the browser behins constructing a model of the site's structure, and starts painting content to the browser window. Once this painting is complete, and all of the site resources have finished downloading, we're left with a complete web page.
 
 ## This course

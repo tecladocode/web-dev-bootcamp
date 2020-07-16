@@ -6,15 +6,15 @@ In this section we're going to dive into the HTML syntax. Don't worry, HTML is n
 
 First of all, what is a tag?
 
-An HTML document is composed of units which describe the structure and meaning of a page's content. These components are called HTML *elements*. We write elements using tags, which delimit the start and end a particular element within the document. Content between these two tags are considered to be *inside* the element.
+An HTML document is composed of units which describe the structure and meaning of a page's content. These components are called HTML *elements*. We write elements using tags, which delimit the start and end a particular element within the document. Content between these two tags (JOSE: I might change "these two tags" to "the start and end tags"? When I was reading this I felt it wasn't so clear that these two tags referred to the start and end tags mentioned earlier) are considered to be *inside* the element.
 
 ::: tip Void elements
-Some elements aren't permitted to have content like this and are called *void elements*. These are written with a single tag in HTML5, rather than an opening an closing tag.
+Some elements aren't permitted to have content (JOSE: what about adding "inside them" here?) like this and are called *void elements*. These are written with a single tag in HTML5, rather than an opening an closing tag.
 
 We'll look at some examples thoughout this chapter.
 :::
 
-We can place other tags inside the start and end tags of other elements, and this is how we construct a hierarchy within the document. We can also place plain text between tags, which is generally how we add text content to a page.
+We can place other tags inside (JOSE: Maybe "between"? Otherwise this reads as putting a tag inside another tag, rather than an element inside another element) the start and end tags of other elements, and this is how we construct a hierarchy within the document. We can also place plain text between tags, which is generally how we add text content to a page.
 
 ## An example HTML element
 
@@ -33,7 +33,7 @@ The opening tag is the name of the element &mdash; `<p>` &mdash; but the closing
 ::: warning Missing closing tags
 The HTML parser in our browsers will do its best to fill in missing closing tags when we omit them, but we shouldn't rely on this. It might not put the closing tag where you intended!
 
-Sometimes whole elements will be added if they're missing as well. A good example is the `<html>` element which encapsulates the document's content.
+Sometimes whole elements will be added if they're missing as well. A good example is the `<html>` element which encapsulates the document's content. (Note for Jose, show an example of this happening with the dev tools).
 :::
 
 ## Nested HTML elements
@@ -53,7 +53,7 @@ Here we have two new types of element: `<article>` and `<h1>`.
 
 `<article>` elements denote any kind of self-contained content in the document, and `<h1>` elements represent the primary heading for the page.
 
-In the example above, the `<article>` element encloses the `<h1>` and `<p>` elements. The page content here is just some silly pirate themed *lorem ipsum* text.[^lorem]
+In the example above, the `<article>` element encloses the `<h1>` and `<p>` elements. The page content here is just some silly pirate themed *lorem ipsum* text.[^lorem]  (JOSE: a silly thing but I always wondered this. Does the footnote go before or after the full stop?)
 
 ::: tip Whitespace in HTML
 Note that in the example above the opening and closing tags for the `<p>` element are on different lines. This is perfectly legal and extremely common in HTML, especially when lines start getting long.
@@ -62,6 +62,8 @@ In almost all cases, any extra whitespace in your HTML document is irrelevant, a
 :::
 
 ## HTML attributes
+
+(JOSE: we've got a whole lecture for this later on in the curriculum plan, let's talk about where to put this section! Maybe we can mention it / show it quickly here, and explain it a bit later when we get to using them.)
 
 In the examples we've seen so far, the opening tag for an element has just been the name of the element, but we can also write attributes in this opening tag as well.
 
@@ -91,7 +93,7 @@ We can add multiple classes to an element by writing several class names between
 
 ### The `id` attribute
 
-Another common attribute which can be used with any HTML element is the `id` attribute. Ids are very similar to classes in that they're for identifying particular HTML elements, but unlike classes, ids are supposed to be unique identifiers.
+Another common attribute which can be used with any HTML element is the `id` attribute. Ids (JOSE: another thing I wonder, should it be `Ids` or `IDs`?) are very similar to classes in that they're for identifying particular HTML elements, but unlike classes, ids are supposed to be unique identifiers.
 
 Here is an element with both a `class` and an `id` attribute:
 
@@ -101,10 +103,10 @@ Here is an element with both a `class` and an `id` attribute:
 </h1>
 ```
 
-Ids are not generally used for styling purposes, because it makes it hard to reuse styles. After all any styles we apply to elements with a given id will only affect a single element. However, ids are very useful when working with JavaScript, as we often want to implement behaviour for a particular element only.
+Ids are not generally used for styling purposes (JOSE: wondering about talking about styling here, students might not know what it means yet.), because it makes it hard to reuse styles (JOSE: they might also not know what we mean by "reuse styles" or why that is important). After all any styles we apply to elements with a given id will only affect a single element. However, ids are very useful when working with JavaScript, as we often want to implement behaviour for a particular element only.
 
 ::: warning ID uniqueness
-Ids are unique in theory, but this is a convention more than a strict rule. If you add the same id to several HTML elements, the parser won't complain, and your site will work just find.
+Ids are unique in theory, but this is a convention more than a strict rule. If you add the same id to several HTML elements, the parser won't complain, and your site will work just fine.
 
 While nothing will break, you should respect the convention of having unique ids, as having a unique identifier can be extremely useful. We already have classes for identifying groups of elements, so there's no need to duplicate this pattern with ids as well.
 :::
