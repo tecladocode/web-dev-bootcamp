@@ -6,7 +6,7 @@ In this lesson, you'll see how you can evaluate different Python expressions, in
 
 ## What is an Expression?
 
-A Python expression[^expression] is any piece of code; like a number, a string, or an instance of a class that evaluates down to a single value.
+A Python expression[^expression] is any piece of code—like a number, a string, or a class instance—that evaluates down to a single value.
 
 > An expression is an instruction that combines values and operators and always evaluates down to a single value.
 
@@ -109,7 +109,7 @@ If you run the Flask application and go to [http://localhost:5000/expressions/](
 
 ## Data Structures in Jinja2
 
-Jinja2 templating language also lets you use Python's built-in or user defined data structures inside a template. This can give you a lot of power since it means you can basically define many valid Python operation inside an HTML template and the template engine will evaluate that.
+Jinja2 templating language also lets you use Python's built-in or user defined data structures inside a template. This can give you a lot of power since it means you can basically define many valid Python operations inside an HTML template and the template engine will evaluate that.
 
 Let's see how you can perform various operations using Python's built-in data structures like **list**, **dict** as well as user-defined data structures like **custom classes** in an HTML template.
 
