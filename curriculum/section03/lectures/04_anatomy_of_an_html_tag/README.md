@@ -6,15 +6,15 @@ In this section we're going to dive into the HTML syntax. Don't worry, HTML is n
 
 First of all, what is a tag?
 
-An HTML document is composed of units which describe the structure and meaning of a page's content. These components are called HTML *elements*. We write elements using tags, which delimit the start and end a particular element within the document. Content between these two tags are considered to be *inside* the element.
+An HTML document is composed of units which describe the structure and meaning of a page's content. These components are called HTML *elements*. We write elements using tags, which delimit the start and end a particular element within the document. Content between these two start and end tags is considered to be *inside* the element.
 
 ::: tip Void elements
-Some elements aren't permitted to have content like this and are called *void elements*. These are written with a single tag in HTML5, rather than an opening an closing tag.
+Some elements aren't permitted to have content inside them and are called *void elements*. These are written with a single tag in HTML5, rather than an opening an closing tag.
 
 We'll look at some examples thoughout this chapter.
 :::
 
-We can place other tags inside the start and end tags of other elements, and this is how we construct a hierarchy within the document. We can also place plain text between tags, which is generally how we add text content to a page.
+We can place other tags between the start and end tags of other elements, and this is how we construct a hierarchy within the document. We can also place plain text between tags, which is generally how we add text content to a page.
 
 ## An example HTML element
 
@@ -101,10 +101,10 @@ Here is an element with both a `class` and an `id` attribute:
 </h1>
 ```
 
-Ids are not generally used for styling purposes, because it makes it hard to reuse styles. After all any styles we apply to elements with a given id will only affect a single element. However, ids are very useful when working with JavaScript, as we often want to implement behaviour for a particular element only.
+Unlike classes, ids are not generally used for applying styles, because they make it hard to reuse our CSS code. After all any styles we apply to elements with a given id will only affect a single element. However, ids are very useful when working with JavaScript, as we often want to implement behaviour for a particular element only.
 
 ::: warning ID uniqueness
-Ids are unique in theory, but this is a convention more than a strict rule. If you add the same id to several HTML elements, the parser won't complain, and your site will work just find.
+Ids are unique in theory, but this is a convention more than a strict rule. If you add the same id to several HTML elements, the parser won't complain, and your site will work just fine.
 
 While nothing will break, you should respect the convention of having unique ids, as having a unique identifier can be extremely useful. We already have classes for identifying groups of elements, so there's no need to duplicate this pattern with ids as well.
 :::

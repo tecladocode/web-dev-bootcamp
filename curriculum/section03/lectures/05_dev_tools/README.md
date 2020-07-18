@@ -18,7 +18,7 @@ In Chrome, Chromium, and Brave you can simply right click somewhere on the page 
 
 If you prefer to use keyboard shortcuts, you can press either `F12` or `ctrl` + `shift` + `i`.
 
-regardless of which method you choose, you'll be presented with something like this:
+Regardless of which method you choose, you'll be presented with something like this:
 
 ![Chrome dev tools](./assets/chrome_dev_tools.png)
 
@@ -62,7 +62,7 @@ If we want to inspect an element on the page, we can press the button in the top
 
 ![Chrome dev tools element selection](./assets/chrome_element_select.png)
 
-Here I've hovered over an input field for the MDN mailing list sign up form. When I do this, I get this nice tooltip which gives ,e some information about the element, like its size and background colour. In addition, the element browser has also highlighted the HTML element which I'm currently viewing.
+Here I've hovered over an input field for the MDN mailing list sign up form. When I do this, I get this nice tooltip which gives me some information about the element, like its size and background colour. In addition, the element browser has also highlighted the HTML element which I'm currently viewing.
 
 If we look in the element browser, we can see that it's an `<input>` element of type `email`. We can see that it also has a number of other attributes.
 
