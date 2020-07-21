@@ -36,7 +36,7 @@ Define a template named `conditionals_basics.html` in your Flask project's `/tem
 {% endif %}
 ```
 
-Notice how we added conditional blocks to the template via `{% %}` blocks in line 6, 14, 22. The `{% endif %}` block in line 25 marks the end of the conditional block. Now let's create an endpoint named `/conditionals-basics/` in your Flask project's `app.py` file to render the template:
+Notice how we added conditional blocks to the template via `{% %}` blocks in line 6, 14 and 22. The `{% endif %}` block in line 25 marks the end of the conditional block. Now let's create an endpoint named `/conditionals-basics/` in your Flask project's `app.py` file to render the template:
 
 ```python{10,11}
 # app.py
@@ -82,7 +82,7 @@ If you assign a different name other than `Apple` and `Microsoft` to the variabl
 
 ## Checking Truthy / Falsy Values
 
-You can also use conditional statements to test if a variable is *Truthy*[^truthy-falsy] (or *Falsy*) and take action based on that. For a variable to be *Truthy*, it has to be defined, not empty and not false. Make a new template named `conditionals_truthy.html` and add the following contents to it:
+You can also use conditional statements to test if a variable is *truthy*[^truthy-falsy] (or *falsy*) and take action based on that. For a variable to be *truthy*, it has to be defined, not empty and not false. Make a new template named `conditionals_truthy.html` and add the following contents to it:
 
 ```html{6,8}
 <!-- templates/conditionals_truthy.html -->
@@ -95,7 +95,7 @@ You can also use conditional statements to test if a variable is *Truthy*[^truth
 {% endif %}
 ```
 
-The above template first checks whether the variable `user` is *Truthy* and then it also checks whether attribute `user.username` is also a *Truthy* value. If both of the conditions are true, the template returns the name defined in the `user` class.
+The above template first checks whether the variable `user` is *truthy* and then it also checks whether attribute `user.username` is also a *truthy* value. If both of the conditions are true, the template returns the name defined in the `user` class.
 
 Let's define an endpoint named `/conditionals-truthy` in the `app.py` file:
 
@@ -121,14 +121,14 @@ def render_conditionals_truthy():
     return render_template("conditionals_truthy.html", user=user)
 ```
 
-In line 8, we've defined a class called `User`. The class takes a single argument `username`. An instance of the class has been created in line 18. Here, the value of the argument `username = "Adam"` is Truthy.
+In line 8, we've defined a class called `User`. The class takes a single argument `username`. An instance of the class has been created in line 18. Here, the value of the argument `username = "Adam"` is *truthy*.
 
 Run the Flask application and head over to [http://localhost:5000/conditionals-truthy](http://localhost:5000/conditionals-truthy) in your browser. You should see the template gets rendered like this:
 
 
 ![conditionals_basics_1](./assets/conditionals_truthy.png)
 
-Now if you instantiate the class `User` with a *Falsy* value - for example, an empty string `""` - the greeting statement of the template won't be rendered. Here, your `app.py` will look like this:
+Now if you instantiate the class `User` with a *falsy* value - for example, an empty string `""` - the greeting statement of the template won't be rendered. Here, your `app.py` will look like this:
 
 ```python{8,19}
 # app.py
@@ -159,7 +159,7 @@ This time if you go to the [http://localhost:5000/conditionals-truthy](http://lo
 
 ## Conclusion
 
-In this post, you've learned how to perform basic comparisons in Jinja2 templates using conditional statements. You've also seen how you can leverage *Truthy* and *Falsy* values of variables to control your logic directly from the Jinja2 template.
+In this post, you've learned how to perform basic comparisons in Jinja2 templates using conditional statements. You've also seen how you can leverage *truthy* and *falsy* values of variables to control your logic directly from the Jinja2 template.
 
 [^conditional-statements]: [Conditional (computer programming)](https://en.wikipedia.org/wiki/Conditional_(computer_programming)#:~:text=In%20computer%20science%2C%20conditional%20statements,evaluates%20to%20true%20or%20false.)
 
