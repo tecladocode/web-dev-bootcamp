@@ -11,11 +11,11 @@ Define a template named `conditionals_basics.html` in your Flask project's `/tem
 ```html{6,14,23,26}
 <!-- templates/conditionals_basics.html -->
 
-<h2>Conditionals in Jinja2</h2>
-<h3>Basic Comparisons</h3>
+<h1>Conditionals in Jinja2</h1>
+<h2>Basic Comparisons</h2>
 
 {% if company == "Apple" %}
-    <h4>Available {{ company }} Products</h4>
+    <h3>Available {{ company }} Products</h3>
     <ul>
         <li>iPhone</li>
         <li>iPad</li>
@@ -23,7 +23,7 @@ Define a template named `conditionals_basics.html` in your Flask project's `/tem
     </ul>
 
 {% elif company == "Microsoft" %}
-    <h4>Available {{ company }} Products</h4>
+    <h3>Available {{ company }} Products</h3>
     <ul>
         <li>Windows Phone</li>
         <li>Surface Pro</li>
@@ -87,8 +87,8 @@ You can also use conditional statements to test if a variable is *truthy*[^truth
 ```html{6,8}
 <!-- templates/conditionals_truthy.html -->
 
-<h2>Conditionals in Jinja2</h2>
-<h3>Checking Truthy/ Falsy Variables</h3>
+<h1>Conditionals in Jinja2</h1>
+<h2>Checking Truthy / Falsy Variables</h2>
 
 {% if user and user.username %}
     <p>Hi, I'm {{ user.username }}.</p>
