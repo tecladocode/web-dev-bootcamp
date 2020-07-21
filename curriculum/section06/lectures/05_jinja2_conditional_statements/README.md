@@ -8,31 +8,35 @@
 
 Define a template named `conditionals_basics.html` in your Flask project's `/templates` folder. In this example, we'll render different lists of products depending on the name of different companies provided by a user-defined variable called `company`. Here, we'll directly embed the conditional statements into the template.
 
-```html{6,12,19,22}
+```html{6,14,23,26}
 <!-- templates/conditionals_basics.html -->
 
 <h2>Conditionals in Jinja2</h2>
 <h3>Basic Comparisons</h3>
 
 {% if company == "Apple" %}
-<h4>Available {{ company }} Products</h4>
-    <ul>iPhone</ul>
-    <ul>iPad</ul>
-    <ul>iMac</ul>
+    <h4>Available {{ company }} Products</h4>
+    <ul>
+        <li>iPhone</li>
+        <li>iPad</li>
+        <li>iMac</li>
+    </ul>
 
 {% elif company == "Microsoft" %}
-<h4>Available {{ company }} Products</h4>
-    <ul>Windows Phone</ul>
-    <ul>Surface Pro</ul>
-    <ul>Surface Book</ul>
+    <h4>Available {{ company }} Products</h4>
+    <ul>
+        <li>Windows Phone</li>
+        <li>Surface Pro</li>
+        <li>Surface Book</li>
+    </ul>
 
 {% else %}
-    No {{ company }} product available.
+    No {{ company }} products available.
 
 {% endif %}
 ```
 
-Notice how conditional blocks were introduced to the template via `{% %}` blocks in line 6, 12, 18. The `{% endif %}` block in line 21 marks the end of the conditional block. Now let's create an endpoint named `/conditionals-basics/` in your Flask project's `app.py` file to render the template:
+Notice how we added conditional blocks to the template via `{% %}` blocks in line 6, 14, 22. The `{% endif %}` block in line 25 marks the end of the conditional block. Now let's create an endpoint named `/conditionals-basics/` in your Flask project's `app.py` file to render the template:
 
 ```python{10,11}
 # app.py
@@ -68,7 +72,7 @@ def render_conditionals_basics():
     return render_template("conditionals_basics.html", company=company)
 ```
 
-This time going to the [link](http://localhost:5000/conditionals-basics) on your brwoser should show a different list of products.
+This time going to the [http://localhost:5000/conditionals-basics](http://localhost:5000/conditionals-basics) on your brwoser should show a different list of products.
 
 ![conditionals_basics_1](./assets/conditionals_basics_2.png)
 
@@ -80,16 +84,14 @@ If you assign a different name other than `Apple` and `Microsoft` to the variabl
 
 You can also use conditional statements to test if a variable is *Truthy*[^truthy-falsy] (or *Falsy*) and take action based on that. For a variable to be *Truthy*, it has to be defined, not empty and not false. Make a new template named `conditionals_truthy.html` and add the following contents to it:
 
-```html{6,7}
+```html{6,8}
 <!-- templates/conditionals_truthy.html -->
 
 <h2>Conditionals in Jinja2</h2>
 <h3>Checking Truthy/ Falsy Variables</h3>
 
-{% if user %}
-{% if user.username %}
+{% if user and user.username %}
     <p>Hi, I'm {{ user.username }}.</p>
-{% endif %}
 {% endif %}
 ```
 
@@ -119,7 +121,7 @@ def render_conditionals_truthy():
     return render_template("conditionals_truthy.html", user=user)
 ```
 
-In line 8, we've defined a class called `User`. The class takes a single argument `username`. An instance of the class has been created in line 18. Here, the value of the argument `username = "Adam"` is a Truthy.
+In line 8, we've defined a class called `User`. The class takes a single argument `username`. An instance of the class has been created in line 18. Here, the value of the argument `username = "Adam"` is Truthy.
 
 Run the Flask application and head over to [http://localhost:5000/conditionals-truthy](http://localhost:5000/conditionals-truthy) in your browser. You should see the template gets rendered like this:
 
@@ -150,7 +152,7 @@ def render_conditionals_truthy():
     return render_template("conditionals_truthy.html", user=user)
 ```
 
-This time if you go to the [link](http://localhost:5000/conditionals-truthy), you'll notice that the greeting statement hasn't been rendered.
+This time if you go to the [http://localhost:5000/conditionals-truthy](http://localhost:5000/conditionals-truthy), you'll notice that the greeting statement hasn't been rendered.
 
 
 ![conditionals_basics_1](./assets/conditionals_falsy.png)
