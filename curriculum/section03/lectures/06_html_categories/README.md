@@ -1,6 +1,6 @@
 # HTML Element Categories
 
-HTML elements are grouped into content categories based on their function. These categories are important for understanding what constitutes valid markup in HTML. Some elements can only contain specific elements, while others are permitted to contain anything of a given category type.
+HTML elements are grouped into content categories based on their function. These categories are important for understanding what constitutes valid markup in HTML. We'll see some example of this in the next lecture when we talk about nesting HTML elements.
 
 Some categories are subsets of other categories. For example, all elements which fall into the *phrasing content* category also fall into the *flow content* category.
 
