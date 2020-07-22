@@ -32,7 +32,11 @@ Here is an element with both a `class` and an `id` attribute:
 </h1>
 ```
 
-Unlike classes, ids are not generally used for applying styles, because they make it hard to reuse our CSS code. After all any styles we apply to elements with a given id will only affect a single element. However, ids are very useful when working with JavaScript, as we often want to implement behaviour for a particular element only.
+Unlike classes, ids are not generally used for applying styles, because they make it hard to reuse our CSS code. After all any styles we apply to elements with a given id will only affect a single element.
+
+Being able to reuse CSS styles is important to us as developers, because it reduces the opportunity for error, and it also reduces the overall size of our stylesheets, which leads to faster loading websites.
+
+While not very useful for styling purposes, ids are very useful when working with JavaScript, as we often want to implement behaviour for a particular element only.
 
 ::: warning ID uniqueness
 Ids are unique in theory, but this is a convention more than a strict rule. If you add the same id to several HTML elements, the parser won't complain, and your site will work just fine.
