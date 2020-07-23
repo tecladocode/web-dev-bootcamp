@@ -16,7 +16,7 @@ In this section, we'll see how you can add *for loop* based logic to your Jinja2
 
 <ul>
     {% for planet in planets %}
-    <li>{{ planet }}</li>
+        <li>{{ planet }}</li>
     {% endfor %}
 </ul>
 ```
@@ -65,7 +65,7 @@ Let's explore another example where you'll traverse through the keys and the val
 
 <ul>
     {% for key, value in cuisines.items() %}
-    <li>Country: {{ key }} => Cuisine: {{ value }}</li>
+        <li>Country: {{ key }} => Cuisine: {{ value }}</li>
     {% endfor %}
 </ul>
 ```
