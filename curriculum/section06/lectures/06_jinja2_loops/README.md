@@ -5,7 +5,7 @@ Like conditional statements, the Jinja2 templating language also allows you to w
 
 ## Looping Through List Objects
 
-In this section, we'll see how you can add *for loop* based logic to your Jinja2 template. Make a template named `for_loop.html` and place that in your Flask project's `/templates` folder. Then, add the following contents to the template:
+In this section, we'll see how you can add *for loop* logic to your Jinja2 template. Make a template named `for_loop.html` and place that in your Flask project's `/templates` folder. Then, add the following contents to the template:
 
 ```html
 <!-- templates/for_loop.html -->
@@ -155,6 +155,6 @@ Run the application and head over to [http://localhost:5000/for-loop/conditional
 
 ## Conclusion
 
-In this lesson, you've learned about using *for loops* in the Jinja2 template. You've also learned how you can traverse through dictionary objects and combine *for loops* with conditional statements to implement more complex logic directly in the template.
+In this lesson, you've learned about using *for loops* in a Jinja2 template. You've also learned how you can traverse through dictionary objects and combine *for loops* with conditional statements to implement more complex logic directly in the template.
 
 [^loop-jinja2]: [Loops in Jinja2 Template](https://jinja.palletsprojects.com/en/2.11.x/templates/#for)
