@@ -1,4 +1,4 @@
-# HTML elements
+# HTML attributes
 
 In this lecture we're going to take a closer look at a pair of important attributes: `class` and `id`.
 
