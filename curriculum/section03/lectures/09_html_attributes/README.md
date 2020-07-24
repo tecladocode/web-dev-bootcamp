@@ -48,4 +48,4 @@ While nothing will break, you should respect the convention of having unique ids
 
 There are lots of other attributes available to us in HTML, many of which are specific to certain element types. We've already seen one example: the `required` attribute.
 
-You don't need to memorise the available attributes, but if you ever need to look something up, you can find a good reference on the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes). The MDN &mdash; short for **M**ozilla **D**eveloper **N**etwork &mdash; is a great resource for looking up and learning about web technologies. It's an invaluable tool that you should spend some time getting familiar with.
+You don't need to memorise the available attributes, but if you ever need to look something up, you can find a good reference on the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
