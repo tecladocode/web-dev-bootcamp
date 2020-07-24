@@ -2,11 +2,11 @@
 
 This is not an easy question to answer, because different elements within a given content category permit wildly different content. For example, the `<a>` element and the `<select>` element are both [phrasing content](../06_html_categories/#phrasing-content); however, the `<a>` element is permitted to contain any non-interactive [flow content](../06_html_categories/#flow-content), while `<select>` is limited to zero or more `<option>` or `<optgroup>` elements.
 
-Navigating this tangle of element relationships is one of the hardest parts about writing good HTML. Lukcily there are great resources out there which can help us, such at the [MDN](https://developer.mozilla.org/).
+Navigating this tangle of element relationships is one of the hardest parts about writing good HTML. Luckily there are great resources out there which can help us, such at the [MDN](https://developer.mozilla.org/).
 
 The MDN &mdash; short for **M**ozilla **D**eveloper **N**etwork &mdash; is a great resource for looking up and learning about web technologies. It's an invaluable tool that you should spend some time getting familiar with.
 
-For example, we can look up the page for the `<a>` element [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Properties), where we can find all kinds of information about the `<a>` element, including its content categories, and its permitted content.
+We can look up the page for the `<a>` element [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Properties), where we can find all kinds of information about the `<a>` element, including its content categories, and its permitted content.
 
 We can do the same thing for `<select>`[^select], `<option>`[^option], `<optgroup>`[^optgroup] too.
 
