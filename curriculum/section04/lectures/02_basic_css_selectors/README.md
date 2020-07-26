@@ -44,6 +44,10 @@ h1 {
 
 Try it for yourself!
 
+::: warning Spelling!
+Note that CSS properties use American English spellings. That means `color` and not `colour`!
+:::
+
 Now let's say we want to make all the text inside the `<p>` elements green as well. We can extend our style definitions in one of two ways.
 
 We can write a whole new block below the first one like this:
