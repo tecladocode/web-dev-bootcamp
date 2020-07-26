@@ -9,7 +9,7 @@ NoSQL[^nosql] databases (aka "not only SQL") are non-tabular and store data diff
 
 Relational[^rdbms] databases like MySQL, PostgreSQL primarily use tables, rows, and columns to store data in rigid schemas. MongoDB doesn't use these constructions; instead, it employs a document-driven NoSQL data model. It provides flexible schemas and scales effortlessly with large amounts of data and high user loads.
 
-## Data Model
+## Key Components of MongoDB Architecture
 
 MongoDB stores data in **documents** similar to **JSON** (JavaScript Object Notation) objects. Each document belongs to a specific **collection** and contains pairs of fields and values. The values can typically be a variety of types like strings, numbers, booleans, arrays, or objects, and their structures typically align with objects developers are working within code.
 
@@ -18,6 +18,21 @@ MongoDB stores data in **documents** similar to **JSON** (JavaScript Object Nota
 The following diagram shows the anatomy of a MongoDB document:
 
 ![MongoDB data model](./assets/mongo_data_model.svg)
+
+
+Below are a few of the common terms used in MongoDB:
+
+* **_id** – This is a field required in every MongoDB document. The _id field represents a unique value in the MongoDB document. The _id field is like the document's primary key. If you create a new document without an _id field, MongoDB will automatically create the field.
+
+* **Collection** – This is a grouping of MongoDB documents. A collection is the equivalent of a table which is created in any other RDMS such as Oracle or MS SQL. A collection exists within a single database. As seen from the introduction collections don't enforce any sort of structure.
+
+* **Cursor** – This is a pointer to the result set of a query. Clients can iterate through a cursor to retrieve results.
+
+* **Database** – This is a container for collections like in RDMS wherein it is a container for tables. Each database gets its own set of files on the file system. A MongoDB server can store multiple databases.
+
+* **Document** - A record in a MongoDB collection is basically called a document. The document, in turn, will consist of field name and values.
+
+* **Field** - A name-value pair in a document. A document has zero or more fields. Fields are analogous to columns in relational databases.
 
 ## Feature Sets
 
