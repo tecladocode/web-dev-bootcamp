@@ -40,4 +40,18 @@ This is due to the default display properties of these elements.
 
 Play around with the `background-color` and `display` properties of different elements to see this in action.
 
-## Different ways to define colours in CSS
+## Different ways to specify colours in CSS
+
+There are many ways to specify colours in CSS, with the most widely used formats being hexadecimal, `rgb`, and `hsl`. All of these have variants that allow for transparency.
+
+We also have special keywords and named colours that we can make use of.
+
+### Named colours
+
+Let's start with named colours, since we've seen several examples of these already.
+
+The number of named colours in CSS is surprisingly large, and has grown with each new version of CSS. We can use any of these specially defined names in place of a colour defined in, say, `rgb`.
+
+Some of these colour names are aliases for other colours. Most notably `gray` and `grey` can be swapped freely in any colour names which include them.
+
+You can find a complete list of named colours [here](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
