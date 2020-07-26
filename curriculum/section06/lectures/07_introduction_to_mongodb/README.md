@@ -36,7 +36,7 @@ Below are a few of the common terms used in MongoDB:
 
 ## Feature Sets
 
-NoSQL databases like MongoDB offer many advantages over their SQL counterparts. Here's an overview of the features that aim to give you a glimpse of how MongoDB can make web development easier:
+NoSQL databases like MongoDB offer many advantages[^mongo-features] over their SQL counterparts. Here's an overview of the features that aim to give you a glimpse of how MongoDB can make web development easier:
 
 * The size and contents of each document can be different from each other. This flexibility in the data model often leads to faster development cadence.
 
@@ -59,3 +59,5 @@ In the next section, you'll learn how you can get up and running with MongoDB vi
 [^nosql]: [NoSQL Explained](https://www.mongodb.com/nosql-explained#what-is-nosql)
 
 [^rdbms]: [What is SQL?](https://www.mongodb.com/nosql-explained#what-is-sql)
+
+[^mongo-features]: [MongoDB Features](https://www.guru99.com/what-is-mongodb.html#2)
