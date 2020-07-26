@@ -34,7 +34,7 @@ One subtlety to be aware of is the amount of space an element takes up. For exam
 
 This is due to the default display properties of these elements.
 
-`<h1>` and `<p>` elements have a default style of `display: block;`, and so they fill up the width of their contains.
+`<h1>` and `<p>` elements have a default style of `display: block;`, and so they fill up the width of their containers.
 
 `<span>` and `<em>` elements have a defauly style of `display: inline;`, and these take up only the space required to acommodate the element's content.
 
