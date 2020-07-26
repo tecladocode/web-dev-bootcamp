@@ -116,7 +116,7 @@ Lightness, also represented as a percentage, indicates the amount of white and b
 
 A lightness value of `50%` is sometimes referred to as "normal" lightness.
 
-Here is a representation of `purple` in HSL: HSL(300, 100%, 25%).
+Here is a representation of `purple` in HSL: `hsl(300, 100%, 25%)`.
 
 ::: tip Specifying angles for HSL values
 One thing to note is that we don't need to write the `°` symbol when writing HSL values. If you want to be explicit about the fact that this is a degree measurement, however, you can add `deg` directly after the angle value.
@@ -124,6 +124,18 @@ One thing to note is that we don't need to write the `°` symbol when writing HS
 You can also specify values in radians if you prefer, adding `rad` after the value.
 :::
 
-### Transparency
+### Transparency and opacity
 
+Both RGB and HSL can be extended to also include an alpha channel, which represents opacity. If you want to use this additional value, you need to write `rgba` or `hsla` as appropriate when defining the colour.
 
+After doing this, you'll be able to provide a fourth value as either a percentage or a decimal, which represents how opaque you want the colour to be. This allows you to create layers of colour for overlapping elements.
+
+A value of `100%` or `1` is fully opaque, which `0%` or `0` is completely transparent.
+
+We can also provide opacity when using hexadecimal representations of RGB by adding a 7th and 8th digit. However, browser support for this feature is not universal, so some colours may not be displayed correctly, depending on which browser your users access your site through. This is mostly a problem for mobile browsers.
+
+You can find support statistics [here](https://caniuse.com/#feat=css-rrggbbaa).
+
+Instead of using the `rgba` or `hsla` definitions, you can also specify a property called `opacity` which will change the opacity for an entire element. This is useful if you want the opacity effects to apply to all aspects of the element.
+
+There's also a named "colour" called `transparent` which can be used to create a full transparent component. This is roughly equivalent to writing an `rgba` or `hsla` colour with an alpha value of `0`.
