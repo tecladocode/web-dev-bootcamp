@@ -24,7 +24,9 @@ The HTML document we're going to be working with looks like this:
     <p>I'm a plain old paragraph element.</p>
     <p class="red">I have a class!</p>
     <p id="orange">I have an id!</p>
-    <p class="red" id="purple">I'm super fancy. I have a class <em>and</em> an id!</p>
+    <p class="red" id="purple">
+        I'm super fancy. I have a class <em>and</em> an id!
+    </p>
 </body>
 
 </html>
