@@ -70,7 +70,7 @@ The primary colours for subtractive mixing are cyan, magenta, and yellow. In sub
 The primary colours for additive mixing are red, blue, and green. In additive mixing, we add light of different wavelengths, and the combination of these different light sources produces a composite colour.
 :::
 
-We specify these values individually using values between `0` and `255` for 8-bit colour, where `rgb(0, 0, 0)` is black, and `rgb(255, 255, 255)` is white.
+We generally specify these values individually using values between `0` and `255` for 8-bit colour, where `rgb(0, 0, 0)` is black, and `rgb(255, 255, 255)` is white. We can also use percentages, but this is very uncommon in practice.
 
 The CSS named colour `purple` is represented as `rgb(128, 0, 128)`. As you can see, we need a moderate amount of red light, no green light, and a moderate amount of blue light to produce this colour.
 
@@ -101,3 +101,29 @@ We can do the same for black, which is just `#000`.
 :::
 
 ### HSL
+
+The HSL colour model is somewhat different to RGB. The initialism stands for **H**ue, **S**aturation, and **L**ightness, and what may be surprising to you is that the first value is an angle.
+
+HSL uses a cylindrical model to represent the available colour space. The angle provded as a value for the hue is essentially a direction on a colour wheel, as though you were looking directly down on the coloured cylinder.
+
+At an angle of `0°` we find the colour red; at `120°` we find the colour green; and at `240°` we find the colour blue.
+
+As we move from the edge of the cylinder to the centre, the colours change from very vibrant to dull. This change is represented by the saturation value, which we write as a percentage in CSS.
+
+A value of `100%` indicates a fully saturated colour, but what this looks like is dependent on the lightness value. A value of `0%` will be some shade of grey.
+
+Lightness, also represented as a percentage, indicates the amount of white and black added to the colour. A lightness value of `100%` will produce the colour white, while `0%` will produce pure black. At a lightness value of `50%`, a saturation value of `100%` will produce the most saturated version of a given colour.
+
+A lightness value of `50%` is sometimes referred to as "normal" lightness.
+
+Here is a representation of `purple` in HSL: HSL(300, 100%, 25%).
+
+::: tip Specifying angles for HSL values
+One thing to note is that we don't need to write the `°` symbol when writing HSL values. If you want to be explicit about the fact that this is a degree measurement, however, you can add `deg` directly after the angle value.
+
+You can also specify values in radians if you prefer, adding `rad` after the value.
+:::
+
+### Transparency
+
+
