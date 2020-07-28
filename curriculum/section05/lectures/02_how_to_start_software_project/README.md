@@ -1,14 +1,5 @@
 # How to start a new software project
 
-- Not just coding
-- Traditionally: waterfall process
-  - Not recommended in most cases
-  - What it's good for
-  - What it's not good for
-- Agile and what that means
-  - Incremental complete "versions" of the project
-- Keep track of your planned work
-
 Planning, running, and keeping a software project alive _really_ doesn't have to be hard. Follow just a couple of systems to stay on top of everything.
 
 In this chapter we'll talk about how software projects are usually ran in software companies, as well as what you can take from their processes personally to manage your software projects better.
@@ -20,6 +11,10 @@ In just a few minutes a day you can completely remove all the accidental complex
 
 Plus if you work or want to work at a software company, knowing how projects are ran will be extremely helpful!
 :::
+
+We've recorded a video that talks about this topic as well:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UvVuXt2Ak8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## The Traditional Process: Waterfall
 
