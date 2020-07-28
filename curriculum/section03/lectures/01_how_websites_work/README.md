@@ -44,7 +44,7 @@ A `GET` request isn't the only type of request we can make, and we'll be coverin
 
 After our browser sends the request for us, it's up to the site's server to handle the request and give us what we asked for in the form of an HTTP response. The HTTP response contains lots of information such as the time the response was sent, and information about the content being returned.
 
-The server may not always be able to fulfill our request, and the response contains a status line to let us know the status of the request. This line includes the HTTP version being used, a status code for the response, and some explanatory phrase for the status code.
+The server may not always be able to fulfill our request, and the response contains a line to let us know the status of the request. This line includes the HTTP version being used, a status code for the response, and some explanatory phrase for the status code.
 
 These status codes are how the server communicates whether anything went wrong with the initial request, or if anything else noteworthy happened. You're probably familiar with the `404` status code, which indicates that a resource could not be found. It usually means that we're trying to access a page which doesn't exist.
 
@@ -58,12 +58,12 @@ This document describes the structure and meaning of the page's content, and wil
 
 The browser has to send additional requests to the server for all of these resources, just like it did for the HTML document itself.
 
-While these additional resources download, the browser behins constructing a model of the site's structure, and starts painting content to the browser window. Once this painting is complete, and all of the site resources have finished downloading, we're left with a complete web page.
+While these additional resources download, the browser begins constructing a model of the site's structure, and starts painting content to the browser window. Once this painting is complete, and all of the site resources have finished downloading, we're left with a complete web page.
 
 ## This course
 
 In this course we're going to be predominantly focusing on steps 3 and 4. We're going to be writing client side code to interact with servers through a web browser, and we're going to be writing server side code to handle those requests.
 
-Throughout the next couple of sections we're going to be taking a closer look at the technologies involved in actually displaying a web page to the user, and then we're going to look into writing server-side code to handle user requests with Python and Flask,
+Throughout the next couple of sections we're going to be taking a closer look at the technologies involved in actually displaying a web page to the user, and then we're going to look into writing server-side code to handle user requests with Python and Flask.
 
 [^server]: [What is a server?](https://www.techopedia.com/definition/2282/server)

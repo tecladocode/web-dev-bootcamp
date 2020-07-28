@@ -13,7 +13,7 @@ Here is a simple example:
 </article>
 ```
 
-Here we have a new types of element, `<article>`, which denotes any kind of self-contained content in the document.
+Here we have a new type of element, `<article>`, which denotes any kind of self-contained content in the document.
 
 In the example above, the `<article>` element encloses the `<h1>` and `<p>` elements. The page content here is just some silly pirate themed *lorem ipsum* text.[^lorem]
 

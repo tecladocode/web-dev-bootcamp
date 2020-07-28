@@ -1,6 +1,6 @@
 # HTML Element Categories
 
-HTML elements are grouped into content categories based on their function. These categories are important for understanding what constitutes valid markup in HTML. We'll see some example of this in the next lecture when we talk about nesting HTML elements.
+HTML elements are grouped into content categories based on their function. These categories are important for understanding what constitutes valid markup in HTML. We'll see some examples of this in the next lecture when we talk about nesting HTML elements.
 
 Some categories are subsets of other categories. For example, all elements which fall into the *phrasing content* category also fall into the *flow content* category.
 
@@ -12,9 +12,9 @@ Not all HTML elements have a content category. A notable example is the `<html>`
 
 ## Flow content
 
-Elements which fall into the flow content category generally contain text or ebedded content such as images or videos.
+Elements which fall into the flow content category generally contain text or embedded content such as images or videos.
 
-Almost all HTML elements fall into this category, and every other category we're going to discuss in this section is going to be a special subset of flow content.
+Almost all HTML elements fall into this category, and every other category we're going to discuss in this section is a special subset of flow content.
 
 Common elements which don't fall within these special subcategories include `<div>` elements, which are used as generic grouping elements, and `<form>` elements.
 
@@ -36,7 +36,7 @@ The `<section>` element is similar to `<article>`, but a `<section>` represents 
 
 Note that `<article>` elements can be inside `<section>` elements, but `<section>` elements also make sense inside `<article>` elements, particularly in the context of something like a news report.
 
-`<nav>` is perhaps the most straightforward elemenent in this category to undestand. It's a container for navigation items, like links in a header bar.
+`<nav>` is perhaps the most straightforward element in this category to understand. It's a container for navigation items, like links in a header bar.
 
 ::: warning Notable exceptions
 One thing to note is that the `<header>`, `<main>`, and `<footer>` elements are not considered sectioning content. Instead, they're considered flow content.
@@ -56,6 +56,6 @@ All heading elements can only contain phrasing content.
 
 For the most part, phrasing content represents the text of the document and the elements which mark up that text. However, phrasing content also includes some unexpected elements: `<img>`, `<audio>`, `<video>`, and others. This is because these elements revert to being plain text if the relevant resource can't be retrieved.
 
-All elements which accept phrasing content are expected to have a decendent which contains some amount of plain text, and this is expected to contain content other than whitespace.
+All elements which accept phrasing content are expected to have a descendent which contains some amount of plain text, and this is expected to contain content other than whitespace.
 
 You can find a complete list of phrasing content element [here](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Phrasing_content).
