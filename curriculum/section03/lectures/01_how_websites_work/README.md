@@ -17,7 +17,7 @@ For sites you've visited before, IP addresses can often be found in one of sever
 If a matching record isn't found in one of these caches, it's up to your Internet service provider to tell your browser the IP address of the site you're hoping to access.
 
 ::: tip IP addresses
-IP stands for **I**nternet **P**rotocol, and there are two IP versions in common use today: IPv4 and IPv6. IPv6 was created to deal with the rapidly depleting number of available IPv4 addresses as Internet access became more widespread in the 1990s.
+IP stands for **I**nternet **P**rotocol, and there are two IP versions in common use today: IPv4 and IPv6. IPv6 was created to deal with the rapidly depleting[^ipv6] number of available IPv4 addresses as Internet access became more widespread in the 1990s.
 :::
 
 ### Step 2: Connecting to the server
@@ -66,4 +66,5 @@ In this course we're going to be predominantly focusing on steps 3 and 4. We're 
 
 Throughout the next couple of sections we're going to be taking a closer look at the technologies involved in actually displaying a web page to the user, and then we're going to look into writing server-side code to handle user requests with Python and Flask.
 
+[^ipv6]: [IPv6](https://www.networkworld.com/article/3254575/what-is-ipv6-and-why-aren-t-we-there-yet.html)
 [^server]: [What is a server?](https://www.techopedia.com/definition/2282/server)
