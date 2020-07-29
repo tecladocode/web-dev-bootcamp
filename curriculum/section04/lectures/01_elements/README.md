@@ -1,4 +1,4 @@
-# Anatomy of an HTML element
+# Elements: The basic components of HTML
 
 In this section we're going to dive into the HTML syntax. Don't worry, HTML is not very complicated, and you'll have a good understanding of what everything means in no time!
 
