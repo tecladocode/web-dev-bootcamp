@@ -12,6 +12,14 @@ The code we write to produce this interface and behaviour is sometime called *cl
 
 The languages we use to write this code in modern web development are are HTML5, CSS3, and JavaScript, each of which fills a specific role. We'll talk about these technologies in detail in the next lecture and throughout the next couple of sections.
 
+::: warning Compatibility
+Because our HTML, CSS, and JavaScript executes in the user's browser, it's up to the browser vendors to implement the behaviour defined in the specifications for these languages.
+
+While there's a single description of how these features should work, different browsers sometimes interpret this specification differently. Older browsers may also lack support for newer features of these languages.
+
+Browser compatibility is a big part of writing front end code, so make sure that you're testing things in several browsers as you work through the course!
+:::
+
 ## Back end development
 
 The back end is the other side of the coin. When we do things in the browser which trigger requests to a server &mdash; such as when we submit a form &mdash; the back end code is what handles and responds to this request.
