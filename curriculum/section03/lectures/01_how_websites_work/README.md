@@ -34,7 +34,7 @@ When accessing a website, this is generally going to be a `GET` request, where w
 
 The request also includes lots of useful meta-information, such as language preferences.
 
-In addition to the request, your browser will also send any relevant cookies to the site at this stage, which are used to preserve information between page visits. This can be used to keep items in your shopping cart on e-commerce sites, for example, even after you leave the page.
+In addition to the request, your browser will also send any relevant HTTP cookies to the site at this stage. These cookies are small pieces of data stored by your browser, and are frequently used to preserve information between page visits. Common use cases are things like keeping track of items in a user's shopping cart, or keeping users logged across several page loads.
 
 ::: tip Request types
 A `GET` request isn't the only type of request we can make, and we'll be covering some other request types throughout the course, such as `POST` requests.
