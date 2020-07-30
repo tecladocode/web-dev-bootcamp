@@ -98,41 +98,6 @@ So this is more or less what I'm envisioning the structure of the page will look
 
 IMAGE
 
-And it translates roughly to this code:
-
-```html
-<body>
-  <header></header>
-  <main>
-    <section>
-      <form></form>
-    </section>
-    <section>
-      <h1>Recent Posts</h1>
-      <article>
-        <div>
-          <h2>A bit of a chill day today</h2>
-          <time datetime="24-10-2019">Oct 24</time>
-        </div>
-        <p>Today I couldn’t do much programming, but that’s OK! Can’t be too awesome every day now!</p>
-      </article>
-      <article>
-        <div>
-          <h2>More Python Web</h2>
-          <time datetime="24-10-2019">Oct 24</time>
-        </div>
-        <p>Today I learned how to create Jinja2 macros.</p>
-      </article>
-    </section>
-  </main>
-  <footer></footer>
-</body>
-```
-
-With CSS we'll be able to change the width, margin, and padding of each element separately.
-
-Remember, HTML is about meaning. CSS is about styling!
-
 ## Conclusion
 
 Now that we've learned how to begin identifying the layout and nesting of elements in an HTML page, let's get to actually coding this page in our code editor!

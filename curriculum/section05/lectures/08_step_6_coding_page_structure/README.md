@@ -4,8 +4,111 @@ Finally, we can code the page structure and transfer all our thoughts into HTML.
 
 In programming, and I find especially in HTML, there's no _one way to do things_. Everyone that codes in HTML finds a slightly different way to do the same thing: be that the nesting of elements, or the tags used, the class names, or really anything else.
 
-That's OK! Over time you'll learn more and come up with simpler HTML code that achieves the same outcome.
+## The main page structure
 
-- HTML boilerplate: DOCTYPE, html, head, body, meta tags, title
-- Overall page structure
-- What elements go in which
+We've discussed that the structure of our Microblog is going to look like this:
+
+IMAGE
+
+There will be a central content column, with the header, main content, and footer. Let's start coding that structure:
+
+```html
+<body>
+    <header></header>
+    <main>
+    </main>
+    <footer></footer>
+</body>
+```
+
+If you remember our design, you'll notice that the footer occupied the full width of the page. However, the header did not. That's alright! We can style them differently using CSS later on.
+
+Remember, HTML is about meaning. CSS is about styling!
+
+## Adding the form and recent posts sections
+
+Inside the `<main>` element, we'll add our form and recent posts.
+
+The recent posts part of the page is what HTML considers a "section", because it is a distinct part of the site that can be identified by a heading, and doesn't have meaning on its own.
+
+The form is also its own section because it is also a distinct part of the site. Although `section` normally has a heading, they don't have to have one. We can use the `<section>` element for parts of the site that don't have a more specific semantic element to represent it.
+
+The form on its own cannot be accurately represented by an `<article>` element (which should have meaning on their own).
+
+```html
+<body>
+    <header></header>
+    <main>
+        <section>
+            <form></form>
+        </section>
+        <section>
+            <h1>Recent Posts</h1>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+```
+
+## Adding recent posts
+
+Finally, we can add the actual posts that we have already written using the form.
+
+Each post is relatively self-contained, and makes sense on its own. I can imagine seeing recent posts as standalone elements of a page (e.g. in something like a Twitter feed, or as separate articles of a blog).
+
+Hence each recent post will be an `<article>` element.
+
+Inside each element, we'll have the heading, the date of posting, and the content:
+
+```html
+<article>
+    <div>
+        <h2>A bit of a chill day today</h2>
+        <time datetime="24-10-2019">Oct 24</time>
+    </div>
+    <p>Today I couldn’t do much programming, but that’s OK! Can’t be too awesome every day now!</p>
+</article>
+```
+
+I've contained the heading and the date inside a `<div>` element, which doesn't have semantic element. That is so we can keep them together in one line. We'll achieve that with CSS.
+
+So in this case, we're using the `<div>` so that later on we can target it with CSS easily.
+
+For each new post we create, we'll add a new `<article>` element with that post's contents!
+
+## The complete site structure
+
+Now that we've got everything, let's take a look at our site structure holistically:
+
+```html
+<body>
+    <header></header>
+    <main>
+        <section>
+            <form></form>
+        </section>
+        <section>
+            <h1>Recent Posts</h1>
+            <article>
+                <div>
+                    <h2>A bit of a chill day today</h2>
+                    <time datetime="24-10-2019">Oct 24</time>
+                </div>
+                <p>Today I couldn’t do much programming, but that’s OK! Can’t be too awesome every day now!</p>
+            </article>
+            <article>
+                <div>
+                    <h2>A bit of a chill day today</h2>
+                    <time datetime="24-10-2019">Oct 24</time>
+                </div>
+                <p>Today I couldn’t do much programming, but that’s OK! Can’t be too awesome every day now!</p>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+```
+
+There are three things we haven't discussed yet: the contents of the header, the form, and the footer.
+
+Let's talk about those in that order, in the next few lectures!
