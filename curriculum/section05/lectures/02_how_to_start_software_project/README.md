@@ -2,21 +2,21 @@
 
 Planning, running, and keeping a software project alive _really_ doesn't have to be hard. Follow just a couple of systems to stay on top of everything.
 
-In this chapter we'll talk about how software projects are usually ran in software companies, as well as what you can take from their processes personally to manage your software projects better.
+In this chapter we'll talk about how software projects are usually managed in software companies, as well as what you can take from their processes personally to better manage your software projects.
 
 ::: tip Why spend time managing a software project?
 Software projects can become messy over time, as you add features, come up with new ideas, change old parts of the code...
 
 In just a few minutes a day you can completely remove all the accidental complexity that comes from this chaos, and instead focus on what brings the most value to your users.
 
-Plus if you work or want to work at a software company, knowing how projects are ran will be extremely helpful!
+Plus if you work or want to work at a software company, knowing how projects are managed will be extremely helpful!
 :::
 
 We've recorded a video that talks about this topic as well:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UvVuXt2Ak8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## The Traditional Process: Waterfall
+## The traditional process: Waterfall
 
 The traditional software development process is called waterfall, because, like in a waterfall, the steps are followed one after another and there's generally no turning back (it's expensive to, as you'll see).
 
@@ -32,24 +32,24 @@ Each step is long, and often the outcome of each stage is a lot of documentation
 
 There are pros and cons to a waterfall process.
 
-### The Cons of Waterfall
+### The cons of Waterfall
 
 - From stage to stage, everything has to be extremely well defined and documented. This requires a lot of work in each stage.
 - If you move from one stage to another and you find out you're missing things (e.g. missing requirements or missing planning), then fixing those things requires a lot of work.
   - This is especially true if you find, for example, missing requirements when you're in the Evaluation phase. Those missing requirements might affect how other features are implemented, so you have to go through Planning, Implementation, and Testing again for a large part of your app.
 - Since every phase takes a lot of time and effort, nobody involved in the project wants to find out that their work was wasted. This, however, does happen often in software projects. For example, the customer might think they want a certain feature, but when they get to the Evaluation phase they realise that actually, that feature isn't so useful or necessary anymore. Happens all the time!
-- Differe phases are often carried out by different teams. For example, a Testing team might carry out extensive testing of the application in the Testing phase, but a Development team did the implementation. Working like this often leads to "throwing over the fence", or a handover of the project between teams such that the previous team washes their hands off the project before moving onto something else.
+- Different phases are often carried out by different teams. For example, a Testing team might carry out extensive testing of the application in the Testing phase, but a Development team did the implementation. Working like this often leads to "throwing over the fence", or a handover of the project between teams such that the previous team washes their hands off the project before moving onto something else.
   - It happens that, for example, if the Testing team finds bugs, the Development team might feel _angry_ or _slighted_ by this. This is often due to a feeling of being "done" with the project, and now it's someone else's responsibility.
 
-I'm sure there's more cons, but we'll leave it there for now!
+I'm sure there are more cons, but we'll leave it there for now!
 
-### The Pros of Waterfall
+### The pros of Waterfall
 
-The main "pro" of waterfall processes defines what they are often used for:
+The main "pro" of waterfall processes also happens to be a "con":
 
 - Every stage needs to be done, finished, and verified, before moving onto the next one. Lots of documentation is often produced at each stage that formalizes everything that happens next.
 
-I put this as a "con" earlier as well, but it's both.
+But this point is precisely why waterfall processes are often used.
 
 If you have a lot of documentation and a very formal set of requirements, this means that those requirements and those plans can be validated thoroughly.
 
@@ -57,7 +57,7 @@ Therefore, waterfall processes are often used in critical systems and applicatio
 
 For most software projects though, waterfall is not the right process to follow. That is because **software is easy to change**, and because of that, we often do change it!
 
-## Agile, and What That Means
+## Agile, and what that means
 
 I'll preface this section by saying that there is a lot of misinformation, many misconceptions, some cargo cult, and a lot of stress placed on Agile. What I'm about to talk about probably has nothing to do with anything you have read about or heard of before.
 
@@ -129,4 +129,4 @@ There's much more to learn about agile working, and especially to absorb about w
 
 ## Conclusion
 
-In the next few chapters we'll talk about how you might develop this Microblog project following an agile way of working so you gain first-hand experience!
+In the next few chapters we'll talk about how you might develop this Microblog project following an Agile way of working so you gain first-hand experience!

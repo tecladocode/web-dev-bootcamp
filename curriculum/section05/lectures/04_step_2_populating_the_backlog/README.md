@@ -24,7 +24,7 @@ Boards are initially empty, and you can create lists in them. Here's my default 
 
 Don't get too bogged down with writing everything you can think of at the very start.
 
-Instead, focus on big ideas. Focus on your users and User Stories.
+Instead, focus on big ideas. Focus on your users and User stories.
 
 I'll write those first in the Product Backlog:
 
@@ -36,7 +36,7 @@ Once you've got down all your big user-focused ideas, you can order them by what
 2. As a User I would like to be able to access my journal using a website so that I can do so from any of my devices.
 3. As a User I would like to be able to easily see past journal entries in a simple way so that I can remember what I've learned.
 
-Note that User Story 2 is not something that can be done on its own. It's a description of how users want to interact with our product. That's fine! It means we'll probably do it in parallel to a feature-centric User Story.
+Note that user story 2 is not something that can be done on its own. It's a description of how users want to interact with our product. That's fine! It means we'll probably do it in parallel to a feature-centric user story.
 
 ## Types of backlog item in your project
 
@@ -58,7 +58,7 @@ I've gone ahead and done that, as well as deleted labels I don't need just now:
 
 ![View of my final labels](./assets/trello-final-labels.png)
 
-Then you can go through each card and add the appropriate label. This can sometimes be a bit subjective! I think Stories 1 and 3 should be classed as "Features", and Story 2 should be classed as a "Technical Improvement".
+Then you can go through each card and add the appropriate label. This can sometimes be a bit subjective! I think stories 1 and 3 should be classed as "Features", and story 2 should be classed as a "Technical Improvement".
 
 Once you've done that, you'll see this:
 
@@ -103,9 +103,9 @@ This is my new Product Backlog based on this thinking:
 
 What I've done here is:
 
-- Created two cards, one for each distinct implementation work
-- Deleted the User Story
-- Copied the User Story contents into each of the implementation parts (shown below)
+- Created two cards, one for each distinct piece of implementation work
+- Deleted the user story
+- Copied the user story contents into each of the implementation parts (shown below)
 
 Both card's descriptions look like this:
 

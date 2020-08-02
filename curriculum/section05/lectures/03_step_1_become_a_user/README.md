@@ -34,16 +34,16 @@ However, if you were building a company, you might decide to do things _differen
 
 A lot of startups begin as a way to do things _better_ than their competitors. Don't focus only on ideas; it's the end product that really matters when building software!
 
-## User Stories
+## User stories
 
-The outcome of becoming a user should be descriptions of what a user would want. I like writing these in the form of User Stories:
+The outcome of becoming a user should be descriptions of what a user would want. I like writing these in the form of *user stories*:
 
 - As a User I would like to be able to add new journal entries so that I can keep track of my programming learning over time.
 - As a User I would like to be able to easily see past journal entries in a simple way so that I can remember what I've learned.
 - As a User I would like to be able to access my journal using a website so that I can do so from any of my devices.
 
-::: tip Writing User Stories
-User Stories should look as though they're written by users. They contain a _what_ and a _why_. They should never contain a _how_.
+::: tip Writing user stories
+User stories should look as though they're written by users. They contain a _what_ and a _why_. They should never contain a _how_.
 
 However, a development team often does need to keep track of _how_. Don't be afraid to add extra detail to each work item in your project planning tool of choice.
 :::
