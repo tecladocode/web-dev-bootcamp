@@ -93,6 +93,12 @@ One `<meta>` element that should be present in all of your documents is this:
 
 This is a vital component for responsive design, which we'll discuss in more detail in the next section when we learn about CSS.
 
+:::tip Responsive Design
+Responsive design is an approach taken to designing and implementing modern websites. The idea is that our sites should be viewable on a wide variety of screen sizes, from mobile displays to ultrawide monitors, and the user experience should be largely the same.
+
+We're going to look at responsive design in a lot of detail in the next section, as its a fundamental cornerstone of modern front end web development.
+:::
+
 ::: v-pre
 ### The HTML `<body>` element
 :::
