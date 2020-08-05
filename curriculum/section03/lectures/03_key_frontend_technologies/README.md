@@ -24,7 +24,7 @@ We'll be covering CSS in section 5.
 
 ## JavaScript
 
-JavaScript is a fully fledged programming language which is supported in every major browser. This makes it somewhat unique. We can't just execute our Python code in the browser, for example. The browser simply doesn't understand it.
+JavaScript is a fully fledged programming language which is supported by every major browser. This makes it somewhat unique. We can't just execute our Python code in the browser, for example. The browser simply doesn't understand it.
 
 JavaScript is primarily used for handling complex user interactions and manipulating the other code that exists on the page. This might include adding and removing elements or making requests to the server without reloading the page.
 

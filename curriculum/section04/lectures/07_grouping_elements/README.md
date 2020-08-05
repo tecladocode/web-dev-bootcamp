@@ -18,7 +18,20 @@ They should be used very sparingly, because we have a lot of more specific conta
 
 `<section>` elements are one such example of a more specific element. The content of a `<section>` element represent a thematically related group of elements, but which form a component of a larger whole.
 
-For example, perhaps we have a website with several blog posts on the home page, but the home page also features an area with links to various pieces of merchandise. These are thematically unrelated sections of the site, and we could use `<section>` elements to distinguish them from one another.
+For example, perhaps we have a website with several blog posts on the home page, but the home page also features an area with links to various pieces of merchandise. There is a clear division in the content here, with the blogs being one thematically related group, and ther merch links being another.
+
+We could use `<section>` elements to distinguish these two distinct groups.
+
+```html
+<body>
+    <section>
+        <!-- Merch items -->
+    </section>
+    <section>
+        <!-- Blog posts -->
+    </section>
+</body>
+```
 
 :::tip An alternative approach to the merch store
 In a moment we're going to discuss another element called `<article>`. In the example above, it may actually make more sense to wrap the merch section in an `<article>` element instead.
