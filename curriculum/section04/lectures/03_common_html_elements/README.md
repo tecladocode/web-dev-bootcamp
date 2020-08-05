@@ -29,6 +29,24 @@ This is **not** a good job for `<span>`, because we have an HTML element which i
 If we wanted to change the colour of the word "ticket", however, we the `<span>` element would be a great choice, because there's no special meaning we can ascribe to the word "ticket" in this instance. We simply need the `<span>` to make targetting the word easier with our styles.
 
 ::: v-pre
+## `<a>` elements
+:::
+
+`<a>` element are called *anchor elements*, and they're used for links. They're really one of the most important elements we have in our arsenal, and the Internet as we know it is built on these linking elements.
+
+We can provide a destination for a link using the `href` attribute, which stands for **h**ypertext **ref**erence. The content between the opening and closing tags of the `<a>` element is what the user will click on to trigger the link.
+
+```html
+<a href="www.google.com">Go to Google!</a>
+```
+
+:::tip Interesting destinations
+We can actually do a lot more than link to websites using an `<a>` tag. For example, if we start the `href` attribute value with `tel:`, we can use this link to start a phone call, or we can open an email application with `mailto:` followed by the email address of the intended recipient.
+
+We can also link to specific parts of a page by using the `#` symbol at the end of a URL, followed by an id of an element on the page. This will cause the page to open at the location of that element. If the link is to the current page, the user will be navigated to that section of the page. This can be really useful for intra-page navigation.
+:::
+
+::: v-pre
 ## List elements: `<ol>`, `<ul>`, and `<li>`
 :::
 
