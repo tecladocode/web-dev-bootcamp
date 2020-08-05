@@ -42,6 +42,10 @@ There can only be a single `<head>` element in the document, and it contains ele
 
 The `<head>` element is required for all HTML5 documents. If you don't include one, the browser will generate one for you, because the HTML markup is not valid without it.
 
+::: warning
+Note that the `<head>` and `<header>` elements are different elements with very different purposes!
+:::
+
 ### Setting a page title
 
 We can use the `<title>` element to set a title for our page in the HTML `<head>`, like so:
