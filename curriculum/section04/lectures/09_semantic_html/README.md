@@ -1,6 +1,6 @@
 # What is semantic HTML?
 
-In this final lecture of the section, we need to talk about an important concept in modern HTML which cuts to the core of what HTML is actually for.
+In this lecture we need to talk about an important concept in modern HTML which cuts to the core of what HTML is actually for.
 
 So far we've discussed HTML in the context of describing and structuring the content on the page. When we talk about describing the content of the page, it's worth asking, what features are we interested in describing? And, who are we describing these features for?
 

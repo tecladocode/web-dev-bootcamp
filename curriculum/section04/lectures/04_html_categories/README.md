@@ -28,15 +28,9 @@ You can find a complete list of flow content element [here](https://developer.mo
 
 ## Sectioning content
 
-Sectioning content includes specific container types for grouping other elements into meaningful collections. This category includes elements like `<article>`, `<section>` and `<nav>`.
+Sectioning content includes special container elements used for grouping other elements into meaningful collections. This category includes elements like `<article>`, `<section>` and `<nav>`.
 
-`<article>` elements mark some self-contained content within the HTML document. This might be product cards on an e-commerce site, or blog posts. Like many HTML elements, its use case is a lot broader than the name would initially imply.
-
-The `<section>` element is similar to `<article>`, but a `<section>` represents content which wouldn't stand on its own. It requires some additional context.
-
-Note that `<article>` elements can be inside `<section>` elements, but `<section>` elements also make sense inside `<article>` elements, particularly in the context of something like a news report.
-
-`<nav>` is perhaps the most straightforward element in this category to understand. It's a container for navigation items, like links in a header bar.
+We're going to talk about each of these elements in detail later in this section, as you're going to be using them *a lot*!
 
 ::: warning Notable exceptions
 One thing to note is that the `<header>`, `<main>`, and `<footer>` elements are not considered sectioning content. Instead, they're considered flow content.

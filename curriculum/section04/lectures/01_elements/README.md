@@ -6,7 +6,7 @@ In this section we're going to dive into the HTML syntax. Don't worry, HTML is n
 
 First of all, what is a element in HTML?
 
-An HTML document is composed of units which describe the structure and meaning of a page's content. These components are called HTML *elements*. We write elements using *tags*, which delimit the start and end a particular element within the document. Content between these "opening" and "closing" tags is considered to be *inside* the element.
+An HTML document is composed of units which describe the structure and meaning of a page's content. These components are called HTML *elements*. We write elements using *tags*, which delimit the start and end of a particular element within the document. Content between these "opening" and "closing" tags is considered to be *inside* the element.
 
 ::: tip Void elements
 Some elements aren't permitted to have content inside them and are called *void elements*. These are written with a single tag in HTML5, rather than an opening an closing tag.

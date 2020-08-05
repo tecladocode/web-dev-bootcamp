@@ -113,7 +113,7 @@ ARIA is a big topic on its own, but you can [read about it on the MDN](https://d
 ## The `<main>` element
 :::
 
-`<main>` represent the main content of the document. It's the content which is unique to this particular page, so it doesn't include things like the header bar, navigation, the page footer, *etc.*
+`<main>` represents the main content of the document. It's the content which is unique to this particular page, so it doesn't include things like the header bar, navigation, the page footer, *etc.*
 
 Your document should contain a single `<main>` element, which should be placed inside the `<body>` element.
 

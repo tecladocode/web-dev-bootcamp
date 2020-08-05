@@ -101,7 +101,7 @@ Below you'll find an example of an unordered list:
 </ul>
 ```
 
-Here we might be listing the animals we have available at our pet shop, and the order here is irrelevant. We're not listing dogs first because we have more of them, or because they're more important than the other animals. It's completely arbitrary, and that's why we should us an `<ul>` element.
+Here we might be listing the animals we have available at our pet shop, and the order here is irrelevant. We're not listing dogs first because we have more of them, or because they're more important than the other animals. It's completely arbitrary, and that's why we should use a `<ul>` element.
 
 ::: v-pre
 ## `<form>` elements
