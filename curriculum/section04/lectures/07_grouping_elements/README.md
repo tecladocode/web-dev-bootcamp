@@ -3,20 +3,10 @@
 Now that we've looked at which elements *can't* be nested, let's take a look at some elements which are specifically designed to contain other elements.
 
 ::: v-pre
-## `<div>` elements
-:::
-
-`<div>` elements, much like `<span>` elements, are very generic by design. They don't carry any inherent meaning, which makes them very useful as generic grouping elements.
-
-We use `<div>` elements primarily to aid in styling a page or to add behaviour to some section of the browser window.
-
-They should be used very sparingly, because we have a lot of more specific container types which describe the content of our document far better. When you're about to add `<div>` to your document, take a moment to think if there's something which you can use instead which better describes the group of elements you're placing inside the `<div>`.
-
-::: v-pre
 ## `<section>` elements
 :::
 
-`<section>` elements are one such example of a more specific element. The content of a `<section>` element represent a thematically related group of elements, but which form a component of a larger whole.
+The content of a `<section>` element represent a thematically related group of elements, but which form a component of a larger whole.
 
 For example, perhaps we have a website with several blog posts on the home page, but the home page also features an area with links to various pieces of merchandise. There is a clear division in the content here, with the blogs being one thematically related group, and ther merch links being another.
 
@@ -77,7 +67,19 @@ This may seem a little weird, but if we think back to what an `<article>` is rea
 
 One interesting thing, however, is that the `<article>` contains other `<article>` elements. Each of the daily forecasts is also wrapped in an `<article>`. This again makes some sense. We can completely understand the meaning of the forecasts for the individual days, even if we pluck them out of the contect of the weather widget. Many people have something very similar on their desktops after all, or as a widget on their phone.
 
-`<article>` elements are actually one of your go-to elements, so don't forget about them. Don't fall into the trap of using `<div>` everywhere, which is a pattern you see online far too often.
+`<article>` elements are actually one of your go-to elements, so don't forget about them.
+
+::: v-pre
+## `<div>` elements
+:::
+
+`<div>` elements, much like `<span>` elements, are very generic by design. They don't carry any inherent meaning, which makes them very useful as generic grouping elements.
+
+We use `<div>` elements primarily to aid in styling a page or to add behaviour to some section of the browser window.
+
+They should be used very sparingly, because we have a lot of more specific container types which describe the content of our document far better, such as `<article>`.
+
+When you're about to add `<div>` to your document, take a moment to think if there's something which you can use instead which better describes the group of elements you're placing inside the `<div>`.
 
 ::: v-pre
 ## `<header>` elements
