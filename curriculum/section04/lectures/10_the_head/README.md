@@ -103,7 +103,7 @@ We're going to look at responsive design in a lot of detail in the next section,
 ### The HTML `<body>` element
 :::
 
-The `<body>` element is the main container for the content of the page, along with any associted markup. Generally the `<body>` will have `<header>`, `<main>`, and `<footer>` as direct children, but this is not a requirement.
+The `<body>` element is the main container for the content of the page, along with any associated markup. Generally the `<body>` will have `<header>`, `<main>`, and `<footer>` as direct children, but this is not a requirement.
 
 Much like the HTML `<head>` element, there can only be a single `<body>` element, and it must come after the `<head>`.
 
