@@ -6,7 +6,7 @@ In this lecture we're going to talk about HTML, CSS, and Javascript. In particul
 
 HTML is a markup language, which means it's for annotating the content of a document. Since the introduction of HTML5, these annotations have had a very specific purpose: to describe the structure and meaning of this content.
 
-This is in stark contrast to older versions of HTML, and many other markup languages, which are concerned with the *appearance* of the content. A good example of this is Markdown, which is commonly used by instance messenging services and forums to change the appearance of text.
+This is in stark contrast to older versions of HTML, and many other markup languages, which are concerned with the *appearance* of the content. A good example of this is Markdown, which is commonly used by instant messaging services and forums to change the appearance of text.
 
 Our HTML documents are going to contain the main content of our pages, augmented by annotations in the form of HTML tags. This includes things like images and videos, forms, and of course the text content of our pages.
 
