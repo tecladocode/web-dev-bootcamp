@@ -1,8 +1,8 @@
 # Accessing MongoDB with Compass & Atlas
 
-Setting up MongoDB and accessing data from it properly can be a bit challenging for beginners. MongoDB Atlas provides an easy way to host and manage data in the cloud without setting anything up locally.
+Setting up MongoDB and accessing data from it properly can be a bit challenging for beginners. MongoDB Atlas[^atlas] provides an easy way to host and manage data in the cloud without setting anything up locally.
 
-This tutorial guides you through creating an Atlas cluster, connecting to it, inserting data, and querying data. We'll also use a MongoDB client called Compass to access data from our local machine.
+This tutorial guides you through creating an Atlas cluster, connecting to it, and inserting data into it. We'll also use a MongoDB client called Compass to access data from our local machine.
 
 ## Create an Atlas Account
 
@@ -10,7 +10,7 @@ This tutorial guides you through creating an Atlas cluster, connecting to it, in
 
     ![MongoDB registration page](./assets/mongo_register.png)
 
-* You'll notice that there are two ways you can complete the process - Sign up with Google or Sign up via email. Let's do it using email. To do so, you'll need to provide the following information:
+* You'll notice that there are two ways you can complete the signup process - Sign up with a Google account or Sign up via an email. Let's do it using an email. To do so, you'll need to provide the following information:
 
     * Email Address
     * First Name
@@ -28,7 +28,7 @@ This tutorial guides you through creating an Atlas cluster, connecting to it, in
 
 ## Deploy a Free Tier Cluster
 
-* Go to the Atlas login page[^page], provide your account credentials and sign into your account.
+* Go to the Atlas login page[^page], provide your account credentials and sign in to your account.
 
 * You should be able to see the following page where you can start setting up your free MongoDB cluster:
 
@@ -38,13 +38,13 @@ This tutorial guides you through creating an Atlas cluster, connecting to it, in
 
     ![MongoDB cluster type](./assets/mongo_cluster_type.png)
 
-    In this tutorial we'll be using the free tier Atlas cluster. Click the button corresponding to the free tier in the leftmost panel.
+    In this tutorial, we'll be using the free tier Atlas cluster. Click the button corresponding to the free tier in the leftmost panel.
 
 * Select the host service and region (The default selections should be fine as well):
 
     ![MongoDB cluster region](./assets/mongo_cluster_region.png)
 
-    This page also shows you the the specifications of the free cluster:
+    This page also shows you the specifications of the free cluster:
 
     ![MongoDB cluster region](./assets/mongo_cluster_spec.png)
 
@@ -66,7 +66,7 @@ An IP address is a unique numeric identifier for a device connecting to a networ
 
     ![MongoDB ip whitelist](./assets/mongo_ip_whitelist.png)
 
-    You can add your static IP address here. To avoid IP related complication, for now, we'll select the third option that says **Allow Access from Anywhere**.
+    You can add your static IP address here. To avoid IP related complications, for now, we'll select the third option that says **Allow Access from Anywhere**. This means Atlas will allow you to access the cluster from any IP address.
 
 * When you select **Allow Access from Anywhere**, a prompt asks for IP description. Provide a description and select the *Add IP Address* button:
 
@@ -76,18 +76,18 @@ An IP address is a unique numeric identifier for a device connecting to a networ
 
 You must create a database user to access your cluster. For security purposes, Atlas requires clients to authenticate as MongoDB database users to access clusters.
 
-* From your Clusters view, click the Connect button for your cluster:
+* From your Clusters view, click the **Connect** button for your cluster:
 
     ![MongoDB cluster create](./assets/mongo_cluster_create.png)
 
-* Since you've already configured the IP address, the first option below should show a green check mark beside it. Now, add your database username and password to the corresponding fields and click on the **Create Database User** button:
+* Since you've already configured the IP address whitelist, the first option below should show a green checkmark beside it. Now, add your database username and password to the corresponding fields and click on the **Create Database User** button:
 
     ![MongoDB user create](./assets/mongo_user_create.png)
 
 
 ## Set Up Compass & Connect to Your Cluster
 
-You can connect to your cluster in a variety of ways. This section describes how to connect to your cluster using MongoDB **Compass**. This section also assumes that you've an Atlas account with an active cluster, a whitelisted IP address and, a MongoDB user on your cluster.
+You can connect to your cluster in a variety of ways. This section describes how to connect to your cluster using MongoDB Compass[^compass]. This section also assumes that you've configured an Atlas account with an active cluster, a whitelisted IP address and, a MongoDB user on your cluster.
 
 * From the *cluster* view, select connect:
 
@@ -109,7 +109,7 @@ You can connect to your cluster in a variety of ways. This section describes how
 
     ![MongoDB Compass connect](./assets/mongo_compass_connect.png)
 
-    MongoDB Compass will auto-detect the connection string you copied. To connect, edit and provide your own database password in the `<password>` section. When entering your password, make sure that any special characters are URL encoded.
+    MongoDB Compass will auto-detect the connection string you copied. To connect, edit and provide your database password in the `<password>` section. When entering your password, make sure that any special characters are URL encoded.
 
 * Once you've completed the authentication procedures, you'll be taken to the database dashboard:
 
@@ -123,7 +123,7 @@ You can connect to your cluster in a variety of ways. This section describes how
 
 ## Insert and View Data in Your Cluster
 
-Select your newly created database from the left panel of Compass dashboard. In this case, we've created a database named *test-database* and a collection named *test-collection*.
+Select your newly created database from the left panel of the Compass dashboard. In this case, we've created a database named *test-database* and a collection named *test-collection*.
 
 * Select *test-collection* from the left panel and click the **Add Data** button:
 
@@ -147,15 +147,15 @@ Select your newly created database from the left panel of Compass dashboard. In 
     ```
     ![MongoDB insert data](./assets/mongo_insert_data.png)
 
-    Now click inset and you should be able to see your recently added document in the document view panel:
+    Now click insert and you should be able to see your recently added document in the document view panel:
 
     ![MongoDB document view](./assets/mongo_document_view.png)
 
 ## Conclusion
 
-In this lession you've learned how to set up a free MongoDB Atlas cluster and connect MongoDB Compass client to the cluster. You've also learned how to create database, add a collection to the databse and finally add documents to a collection.
+In this lesson, you've learned how to set up a free MongoDB Atlas cluster and connect MongoDB Compass client to the cluster. You've also learned how to create a database, add a collection to the database and finally add documents to the collection.
 
-In the next lesson, you'll learn how you can access your Mongo database using Python.
-
-[^registration]:[Atlas signup page](https://account.mongodb.com/account/register)
-[^page]:[Atlas login page](https://account.mongodb.com/account/login)
+[^atlas]:[MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+[^registration]:[MongoDB Atlas signup](https://account.mongodb.com/account/register)
+[^page]:[MongoDB Atlas login](https://account.mongodb.com/account/login)
+[^compass]:[MongoDB Compass](https://www.mongodb.com/products/compass)
