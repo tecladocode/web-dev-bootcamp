@@ -47,12 +47,12 @@ If we reload the page, the text should now be coloured orange. There's also some
 
 We have a new `color` property being applied to the `<p>` tag, and the Chrome developer tools is very usefully telling us that this property was inherited from the parent `<div>` with the `container` class.
 
-This style was inherited because `color` is an inheritable property, and the `<p>` element didn't have an existing defintion for this property being applied to the element.
+This style was inherited because `color` is an inherited property, and the `<p>` element didn't have an existing defintion for this property being applied to the element.
 
-:::tip Non-inheritable properties
-Not everything in CSS can be inherited, and for some properties it simply doesn't make sense. We'll be looking at some examples in the next lecture.
+:::tip Non-inherited properties
+Not every property in CSS is inherited by default, and for some properties it simply doesn't make sense. We'll be looking at some examples in the next lecture.
 
-You can find out whether a property is inheritable by going to the documentation page for a given property on the MDN &mdash; [border, for example](https://developer.mozilla.org/en-US/docs/Web/CSS/border#Formal_definition). Every property lists whether or not any values set are inherited.
+You can find out whether a property is inherited by going to the documentation page for a given property on the MDN &mdash; [border, for example](https://developer.mozilla.org/en-US/docs/Web/CSS/border#Formal_definition). Every property lists whether or not any values set are inherited.
 :::
 
 
@@ -98,4 +98,4 @@ While we've used the example of an `<a>` tag inheriting colours from a parent el
 Always keep usability in mind when creating your sites. Don't hide links and other interactive elements!
 :::
 
-We can use the `inherit` keyword for any inheritable properties.
+We can use the `inherit` keyword for any properties, regardless of whether or not that property is an inherited property. The `inherit` keyword can therefore also be used to force inheritance of non-inherited properties.
