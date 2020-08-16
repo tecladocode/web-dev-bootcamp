@@ -6,7 +6,7 @@ This tutorial guides you through creating an Atlas cluster, connecting to it, an
 
 ## Create an Atlas Account
 
-* Go to the registration[^registration] link. You'll be able to see a page like this:
+* Go to the [registration](https://account.mongodb.com/account/register) link. You'll be able to see a page like this:
 
     ![MongoDB registration page](./assets/mongo_register.png)
 
@@ -28,7 +28,7 @@ This tutorial guides you through creating an Atlas cluster, connecting to it, an
 
 ## Deploy a Free Tier Cluster
 
-* Go to the Atlas login page[^page], provide your account credentials and sign in to your account.
+* Go to the Atlas login [page](https://account.mongodb.com/account/login), provide your account credentials and sign in to your account.
 
 * You should be able to see the following page where you can start setting up your free MongoDB cluster:
 
@@ -56,7 +56,7 @@ This tutorial guides you through creating an Atlas cluster, connecting to it, an
 
 ## Whitelist Your Connection IP Address
 
-An IP address is a unique numeric identifier for a device connecting to a network. In Atlas, you can only connect to a cluster from a trusted IP address. Within Atlas, you can create a list of trusted IP addresses, referred to as a whitelist, that can be used to connect to your cluster and access your data.
+An IP address is a unique numeric identifier for a device connected to a network. In Atlas, you can only connect to a cluster from a trusted IP address. Within Atlas you can create a list of trusted IP addresses, referred to as a whitelist, that can connect to your cluster and access your data. Any IP address not present in the whitelist will not be able to connect to your cluster.
 
 * From your *clusters* view, click the **Connect** button for your cluster:
 
@@ -66,7 +66,7 @@ An IP address is a unique numeric identifier for a device connecting to a networ
 
     ![MongoDB ip whitelist](./assets/mongo_ip_whitelist.png)
 
-    You can add your static IP address here. To avoid IP related complications, for now, we'll select the third option that says **Allow Access from Anywhere**. This means Atlas will allow you to access the cluster from any IP address.
+    You can add your static IP address here. To avoid IP related complications, for now we'll select the third option that says **Allow Access from Anywhere**. This means Atlas will allow you to access the cluster from any IP address.
 
 * When you select **Allow Access from Anywhere**, a prompt asks for IP description. Provide a description and select the *Add IP Address* button:
 
@@ -129,7 +129,7 @@ Select your newly created database from the left panel of the Compass dashboard.
 
     ![MongoDB add data](./assets/mongo_add_data.png)
 
-    Once you've selected the **Add Data* button, it'll ask you how you want to add the data. You can either import the data from a database file or you can add individual documents.
+    Once you've selected the **Add Data** button, it'll ask you how you want to add the data. You can either import the data from a database file or you can add individual documents.
 
     ![MongoDB add data options](./assets/mongo_add_data_options.png)
 
@@ -156,6 +156,4 @@ Select your newly created database from the left panel of the Compass dashboard.
 In this lesson, you've learned how to set up a free MongoDB Atlas cluster and connect MongoDB Compass client to the cluster. You've also learned how to create a database, add a collection to the database and finally add documents to the collection.
 
 [^atlas]:[MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-[^registration]:[MongoDB Atlas signup](https://account.mongodb.com/account/register)
-[^page]:[MongoDB Atlas login](https://account.mongodb.com/account/login)
 [^compass]:[MongoDB Compass](https://www.mongodb.com/products/compass)
