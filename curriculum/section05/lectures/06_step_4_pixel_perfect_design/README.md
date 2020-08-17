@@ -1,22 +1,24 @@
 # Step 4: Better Design with Figma
 
-In order to build an application, it helps to know exactly how much space will be left between items, how big fonts will be, what colours will be used...
+In order to build an application, it helps to know exactly how much space will be left between items, how big fonts will be, what colours will be used, etc.
 
 It's much easier to make those decisions with a design tool, where things are easy to change, rather than in code, where it can be a bit more difficult.
 
-I like using [Figma](https://figma.com) as my design tool. It's free and very versatile. It runs in the browser, and it's easy to share your designs with others.
+I like using [Figma](https://figma.com) as my design tool. It's free and very versatile. It runs in the browser, and it's easy to share your designs with others. There are others as well, like [Adobe XD](https://www.adobe.com/uk/products/xd.html) (also free) and [Sketch](https://www.sketch.com/).
 
 ## Designing the journal entry feature
 
 For design, it really helps to get inspiration from other products that you enjoy using and find visually appealing. This is not a design course!
 
-Websites are normally created in standard sizes for different devices. Generally at least you'll want two sizes: Desktop and Mobile.
+In terms of starting a design, we need to pick a screen size to work on first. Generally, and for most websites, you'll start with a small mobile screen size, and design for that. The reason we start with mobile is because nowadays mobile devices are the most popular devices in use in the web. Also, designing for a small screen means you must focus on what's most important. Enlarging the design and adding detail later is easier than doing it the other way round.
 
-For this project we'll stick to Desktop only though, to keep things simple.
+After you've designed for mobile, then you'd normally increase the size of the design until it doesn't make sense and it benefits from changing. That'll happen because designs that work well on mobile don't necessarily work well on desktop, and viceversa. At that point, you'd make a new design (which would likely be similar, since it'd be for the same site), but probably with more elements to it and more detail.
 
-I'll create a new Figma document for this project, and inside it create an Artboard (keyboard shortcut: `A`) with standard Desktop size: 1440x1024.
+For this website we'll stick to desktop only. We'll tackle mobile later on in the course!
 
-![Empty Figma artboard with Desktop size](./assets/figma-artboard-empty.png)
+I'll create a new Figma document for this project, and inside it create an Artboard (keyboard shortcut: `A`) with their standard desktop size: 1440x1024.
+
+![Empty Figma artboard with desktop size](./assets/figma-artboard-empty.png)
 
 Then we can create the elements that we had in our wireframe: a header, an entry field, a submit button, and a simple footer.
 
@@ -76,7 +78,7 @@ Slightly circular corners are somewhere in the middle.
 
 For this project I went for fully circular corners in buttons, and square corners in other rectangles such as the text area.
 
-To create a fully circular corner, we need to set the corner radius to half the height of the rectangle. Since my button is 36px high, I'll set the corner radius to 18px:
+To create a fully circular corner, we need to set the corner radius to at least half the height of the rectangle. Since my button is 36px high, I'll set the corner radius to 18px:
 
 ![Changing the button corner radius in Figma](./assets/figma-button-radius.png)
 
@@ -102,6 +104,6 @@ The good thing about having a design tool though, is that we can always come bac
 
 ## Next Step
 
-The next step is to try to identify the actual HTML elements that we might use for this page, as well as how they exist related to each other. What elements are beside other elements? What elements are inside other elements?
+The next step is to try to identify the actual HTML elements that we might use for this page, as well as how they exist relative to each other. What elements are beside other elements? What elements are inside other elements?
 
 Let's do that in the next chapter!

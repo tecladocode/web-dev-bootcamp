@@ -53,7 +53,6 @@ By using a single column approach, we can have a separate header, footer, and gr
 
 Then, the grid element contains the articles, or content items, all of which are related as well.
 
-
 IMAGE
 
 Although here we have more elements and more nesting, I believe it's clearer to work with:

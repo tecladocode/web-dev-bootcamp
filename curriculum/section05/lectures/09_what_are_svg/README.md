@@ -3,7 +3,7 @@
 - What is an SVG? SVG vs. Bitmap
 - Why use that instead of a bitmap image?
 
-An SVG, or **S**calable **V**ector **G**raphics image is a type of image that, instead of being defined in pixels, is defined by mathematical functions.
+An SVG, or **S**calable **V**ector **G**raphics, image is a type of image that, instead of being defined in pixels, is defined by mathematical functions.
 
 That means that, in theory, we can expand or contract an SVG image endlessly without any loss in quality.
 
@@ -18,7 +18,7 @@ You can see that as the bitmap image gets larger, the number of pixels doesn't _
 However, since the SVG is defined as a mathematical function, as it gets larger the function just creates more equally-sized pixels dynamically.
 
 ::: tip SVGs are usually smaller
-Since SVGs generally smaller in size, that means that we can send SVGs to our users over the internet more easily. They'll download faster, and they'll take up less bandwidth in our servers (which in turn, usually lowers our costs).
+Since SVGs generally smaller in size, that means that we can send SVGs to our users over the internet more easily. They'll download faster, and they'll take up less bandwidth in our servers (which in turn, usually lowers our costs). It's important to note that SVGs are not smaller when used for photos!
 :::
 
 ## Embedding SVGs inside HTML documents
@@ -35,7 +35,7 @@ This is what the code for a simple triangle looks like:
 
 You can see that it is similar to HTML: there are tags and attributes.
 
-We won't cover how to code your own SVGs in this course, since Figma will do that for us with a visual interface. However, it is something you _can_ learn. Understanding the code can sometimes be handy though, as you can do things like modify the size (using the `width` and `height` attributes of the `svg` tag).
+We won't cover how to code your own SVGs[^code-own-svg] in this course, since Figma will do that for us with a visual interface. However, it is something you _can_ learn. Understanding the code can sometimes be handy though, as you can do things like modify the size (using the `width` and `height` attributes of the `svg` tag).
 
 Once we have that SVG code, we can just put it inside an HTML document. The browser will be able to understand it, and draw the SVG for us.
 
@@ -56,3 +56,5 @@ The `viewBox` property controls how much of the SVG you can see, while `width` a
 ## Conclusion
 
 For now though, we've learned what SVGs are: XML code that encodes mathematical functions. These functions describe the shape, colours, and other properties of graphics.
+
+[^code-own-svg]: [Everything You Need To Know About SVG (CSS-Tricks)](https://css-tricks.com/lodge/svg/)

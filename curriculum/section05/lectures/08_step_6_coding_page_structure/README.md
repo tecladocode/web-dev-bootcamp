@@ -2,7 +2,7 @@
 
 Finally, we can code the page structure and transfer all our thoughts into HTML.
 
-In programming, and I find especially in HTML, there's no _one way to do things_. Everyone that codes in HTML finds a slightly different way to do the same thing: be that the nesting of elements, or the tags used, the class names, or really anything else.
+In programming, and I find especially in HTML, there's no _one way to do things_. Everyone that codes in HTML finds a slightly different way to do the same thing: be that the nesting of elements, or the elements used, the class names, or really anything else.
 
 ## The main page structure
 
@@ -70,9 +70,7 @@ Inside each element, we'll have the heading, the date of posting, and the conten
 </article>
 ```
 
-I've contained the heading and the date inside a `<div>` element, which doesn't have semantic element. That is so we can keep them together in one line. We'll achieve that with CSS.
-
-So in this case, we're using the `<div>` so that later on we can target it with CSS easily.
+I've contained the heading and the date inside a `<div>` element, because we don't have a more appropriate element that has more meaning. With a `div`, we'll keep the contained elements in one line using CSS.
 
 For each new post we create, we'll add a new `<article>` element with that post's contents!
 

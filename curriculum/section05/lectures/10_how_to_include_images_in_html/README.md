@@ -46,9 +46,9 @@ It will load the SVG image and then place it inside the `body` element.
 
 ![Working HTML document loading the SVG](./assets/working-image.png)
 
-If for any reason the image cannot be loaded (e.g. we mis-spelled it), we'll get a "broken image" symbol and the alternative text (the `alt` property) will be shown.
+If for any reason the image cannot be loaded (e.g. we misspelled it), we'll get a "broken image" symbol and the alternative text (the `alt` property) will be shown.
 
-![Broken HTML document with mis-spelled SVG, showing broken SVG loading](./assets/broken-image.png)
+![Broken HTML document with misspelled SVG, showing broken SVG loading](./assets/broken-image.png)
 
 ::: tip Other image types
 You can include any image type, not just SVG, with the `img` tag. For example:

@@ -4,8 +4,8 @@ For every backlog item that we're tackling, I like to start with a wireframe or 
 
 Since we know we're making a website, I'll make a wireframe of what elements the site should have.
 
-We've decided users will be able to create journal entries which contain text and the date in which they were made.
+We've decided users will be able to create journal entries which contain text and the date in which they were posted.
 
-When an entry is created, we can get the "current date" at that time, so we don't need to ask users for the date of an entry. All we need is the content:
+When an entry is created, we can get the "current date" at that time, so the user doesn't need to enter a date when they submit an entry. All we need is the content:
 
 WIREFRAME IMAGE
