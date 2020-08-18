@@ -28,9 +28,11 @@ To keep things simple, particularly in a new project, it helps to decide on a sm
 
 ![Picked colours for accents, text, and background](./assets/project-colour-swatches.png)
 
-To make the text colour mesh together better with the chosen accent colour, you might slightly "tint" the text colour with the accent colour. Note that my text colour (`#192A30`) has a slight blue hue to it:
+To make the text colour mesh together better with the chosen accent colour you might slightly "tint" the text colour with the accent colour. Note that my text colour (`#192A30`) has a slight blue hue to it:
 
 ![Text colour detailed view](./assets/text-colour-detail-view.png)
+
+In addition to this, using fully black text can look a bit harsh--so if you don't have an accent color, just go slightly off-black with something like a dark grey!
 
 ::: tip
 Picking colours is an art form, which I'm not all that good at!

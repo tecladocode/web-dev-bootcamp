@@ -8,59 +8,32 @@ To understand what we mean by "layout", let me show you a fictitious website:
 
 IMAGE
 
-Here you can see that we've got, in the middle of the page, something that looks like a grid.
+You can see that we have three distinct elements: a header, a footer, and a grid of elements.
 
-That one's pretty clear-cut, but what about the header and footer?
-
-Some people might want to consider the whole page as a grid with 3 columns. With this model, the header and footer span 3 columns (making them full width). The elements in the middle each span one column.
-
-Other people might think of the page as having three elements: header, a grid of content items, and footer.
-
-Coming up with the correct layout depends on what each element means. When two elements are contained by the same parent (i.e. the elements are _siblings_), they should have similar meaning. It's uncommon to have disjointed sibling elements.
-
-For this reason, one of these layouts is correct, and the other is not. Let's take a look!
-
-### The 3-column grid
-
-If we think of the whole page as a single grid, we can place all of the site's content into a grid of 3 columns and 4 rows.
-
-Then we could make the header and footer elements span the 3 columns so that they are full-width.
-
-IMAGE
-
-This way we have less nesting: all the main elements are direct children of the grid, like so:
+A good HTML layout means that the elements used describe their content well. In this case, the layout is relatively simple. With a quick glance we've been able to identify that there'll be three elements:
 
 ```html
-<body class="grid-3-col">
-  <header class="span-3-col"></header>
-  <article class="content-item"></article>
-  <article class="content-item"></article>
-  <article class="content-item"></article>
-  <article class="content-item"></article>
-  <article class="content-item"></article>
-  <article class="content-item"></article>
-  <footer class="span-3-col"></footer>
-</body>
+<header></header>
+<main></main>
+<footer></footer>
 ```
 
-However, by doing this we lose meaning. The header, footer, and content items are all siblings. This suggests they should have similar meaning, but in reality they do not.
+In many cases, it won't be so clear-cut! But we'll get to that later on in the course!
 
-### The single column
+## Placing individual articles
 
-Instead, we should make sure sibling elements are related.
+Although it may sound obvious, the `<main>` element needs to contain the main content of the site. In our example, the main content is the grid of elements.
 
-By using a single column approach, we can have a separate header, footer, and grid. These three elements related in that they are entire sections of a page on their own.
+Imagine each grid element in our example represents an item that is for sale, and it contains an image of the item, the item's name, and its price.
 
-Then, the grid element contains the articles, or content items, all of which are related as well.
+Such a grid element could be displayed on its own, outside the grid, in a different page entirely (e.g. a page created specifically for each item).
 
-IMAGE
-
-Although here we have more elements and more nesting, I believe it's clearer to work with:
+Since the grid elements make sense on their own, we'd use an `<article>` element to contain the information for each item, like so:
 
 ```html
 <body>
   <header></header>
-  <main class="grid-3-col">
+  <main>
     <article class="content-item"></article>
     <article class="content-item"></article>
     <article class="content-item"></article>
@@ -72,13 +45,15 @@ Although here we have more elements and more nesting, I believe it's clearer to 
 </body>
 ```
 
-These decisions of which layout to go for and how to structure the site are one of the main things you need to learn about how to code effectively with HTML. We'll help with that, but also experience will tell you whether you prefer one over the other!
+Using CSS later on, we could lay out the `<article>` elements within `<main>` as a grid of 3 columns, as a single column, or any other way we choose.
+
+The important part is that the content of the site is described accurately at this stage.
 
 ## The Microblog page structure
 
 For our Microblog project, we need to look at the layout and structure of the page before we jump into coding as well.
 
-Fortunately, the Microblog is simpler. We don't have to make decisions regarding grids, as everything can be divided into rows and columns:
+You'll find that the Microblog is very similar, with just one more set of elements being required (the form to submit new entries).
 
 IMAGE SHOWING MICROBLOG COLUMNS
 
@@ -89,9 +64,11 @@ We have:
   - A central content area with a form and previous entries
   - A footer
 
-The entire page is laid out as a column, and the central content area is a column too, with the form at the top and entries stacked one on top of another. Since these are closely related (the form creates new entries), they're OK to be siblings.
+The entire page is laid out as a column, and the central content area is a column too, with the form at the top and entries stacked one on top of another.
 
-However, to differentiate them as two distinct sections of the main content, the form and the articles will each be enclosed in a `section` tag.
+I would say that the main content of the page contains the form _and_ the entries.
+
+To differentiate them as two distinct sections of the main content, the form and the articles will each be enclosed in a `section` tag.
 
 So this is more or less what I'm envisioning the structure of the page will look like:
 
