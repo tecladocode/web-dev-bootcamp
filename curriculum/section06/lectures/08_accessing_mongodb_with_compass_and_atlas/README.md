@@ -4,6 +4,10 @@ Setting up MongoDB and accessing data from it properly can be a bit challenging 
 
 This tutorial guides you through creating an Atlas cluster, connecting to it, and inserting data into it. We'll also use a MongoDB client called Compass to access data from our local machine.
 
+:::tip
+A free cluster is a single database that we can access, but there are also paid clusters that can make and manage multiple copies of the database.
+:::
+
 ## Create an Atlas Account
 
 * Go to the [registration](https://account.mongodb.com/account/register) link. You'll be able to see a page like this:
