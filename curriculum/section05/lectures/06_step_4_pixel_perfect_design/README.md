@@ -12,7 +12,9 @@ For design, it really helps to get inspiration from other products that you enjo
 
 In terms of starting a design, we need to pick a screen size to work on first. Generally, and for most websites, you'll start with a small mobile screen size, and design for that. The reason we start with mobile is because nowadays mobile devices are the most popular devices in use in the web. Also, designing for a small screen means you must focus on what's most important. Enlarging the design and adding detail later is easier than doing it the other way round.
 
-After you've designed for mobile, then you'd normally increase the size of the design until it doesn't make sense and it benefits from changing. That'll happen because designs that work well on mobile don't necessarily work well on desktop, and viceversa. At that point, you'd make a new design (which would likely be similar, since it'd be for the same site), but probably with more elements to it and more detail.
+After designing the interface for a mobile display, you then start increasing the screen size until the existing design would benefit from changes. A design that works well on mobile won't necessarily work well on desktop, and vice versa.
+
+For example, perhaps the screen looks very empty once the design is scaled up, and it makes sense to change how the content is organised.
 
 For this website we'll stick to desktop only. We'll tackle mobile later on in the course!
 
@@ -28,11 +30,11 @@ To keep things simple, particularly in a new project, it helps to decide on a sm
 
 ![Picked colours for accents, text, and background](./assets/project-colour-swatches.png)
 
-To make the text colour mesh together better with the chosen accent colour you might slightly "tint" the text colour with the accent colour. Note that my text colour (`#192A30`) has a slight blue hue to it:
+To make the text colour mesh together better with the chosen accent colour, you might slightly "tint" the text colour with the accent colour. Note that my text colour (`#192A30`) has a slight blue hue to it:
 
 ![Text colour detailed view](./assets/text-colour-detail-view.png)
 
-In addition to this, using fully black text can look a bit harsh--so if you don't have an accent color, just go slightly off-black with something like a dark grey!
+In addition to this, using fully black text can look a bit harsh&mdash;so if you don't have an accent color, just go slightly off-black with something like a dark grey!
 
 ::: tip
 Picking colours is an art form, which I'm not all that good at!

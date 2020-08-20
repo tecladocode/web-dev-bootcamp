@@ -48,7 +48,7 @@ But what are the differences between `GET` and `POST`? To understand this, let's
 <form>
     <label for="sample-field">Sample:</label>
     <input type="text" name="sample" id="sample-field" />
-    <input type="submit" value="Submit" />
+    <button type="submit">Submit</button>
 </form>
 ```
 
