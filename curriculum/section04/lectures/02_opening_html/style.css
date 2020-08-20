@@ -57,7 +57,7 @@ a {
   border-radius: 6px;
 }
 
-/* Here we're targeting all `a` elements, but only while the user is hoverin over them with their mouse */
+/* Here we're targeting any `a` element, but only while the user is hovering over it with their mouse */
 a:hover {
   /*
    * Adds a shadow under the element.
