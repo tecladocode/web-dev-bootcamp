@@ -19,11 +19,11 @@ blockquote {
   font-style: italic;
 }
 
-p.link {
-  text-align: center;
-}
-
 a {
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
   font-size: 24px;
   padding: 8px 16px;
   background-color: #1c2023;
