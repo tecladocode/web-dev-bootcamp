@@ -16,6 +16,18 @@ Take an iPhone 11 Pro, for example. An iPhone 11 Pro has a whopping device resol
 
 This isn't something we usually have to worry about, but we should keep this concept in mind for when we start talking about responsive design.
 
+## Percentages (`%`)
+
+Percentages are generally used to set values relative to a parent element. For example, setting a width of `50%` on a valid element will set it to `50%` of the width of its parent.
+
+::: warning Not everything can have a width!
+Remember that elements which are being displayed inline ignore any width values set for them.
+:::
+
+In some cases, the percentage value is relative to the element itself. For example when using the `transform` property to translate an element to a new position.
+
+Percentages can be used with the `border-radius` property to create effects we can duplicate with things like pixels. Take a look at [some examples on the MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius#Examples).
+
 ## `em` and `rem`
 
 `em` and `rem` are units you've likely never encountered before, but you're going to be getting very familiar with them when working with CSS. They're the most common unit types I personally use.
@@ -28,6 +40,14 @@ When working with `em` units, the font size of the element where the unit is bei
 
 `rem` stands for *root* `em`, and is generally a far more useful unit. `rem` uses the global font size to determine its size, which means that `rem` units are consistent across our entire site.
 
-`rem` is forms the cornerstone of modern responsive design, as we'll see shortly.
+`rem` forms the cornerstone of modern responsive design, as we'll see shortly.
 
-## 
+## Viewport units (`vh`, `vw`)
+
+Viewport units are relatively easy to understand, and can be very useful.
+
+`1vh` is equal to 1% of the height of the "viewport", which is essentially the visible area of the website in the browser window.
+
+`1vw` is the corresponding value for the *width* of the viewport.
+
+We can set values greater than `100` if we like, which will create some amount of horizontal or vertical scrolling.
