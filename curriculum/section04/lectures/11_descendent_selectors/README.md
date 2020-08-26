@@ -94,3 +94,25 @@ So in the following code snippet, only the second `<input>` element would be sel
 
 Note that the `<input>` element need not come directly after the `<label>`. There can be other sibling elements in between the two.
 
+## The Adjacent Sibling Combinator
+
+Much like with the descendent combinator, we have a more specific version of the general sibling combinator for selecting a sibling element which directly follows another element. This is called the adjacent sibling combinator, the symbol for which is `+`.
+
+```css
+label + input {
+    padding: 5px 10px;
+}
+```
+
+In the example form below, the selector above would select the first `<input>` element, but not the second, as only the first of these `<input>` elements directly follows a `<label>`.
+
+<!-- TODO: Create a more realistic form for the example below -->
+
+
+```html
+<form>
+    <label></label>
+    <input><input>
+    <input><input>
+</form>
+```
