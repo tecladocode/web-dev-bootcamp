@@ -110,6 +110,8 @@ HSL uses a cylindrical model to represent the available colour space. The angle 
 
 At an angle of `0°` we find the colour red; at `120°` we find the colour green; and at `240°` we find the colour blue.
 
+<!-- TODO: Replace this diagram with a custom one -->
+
 ![Colour wheel](./assets/colour-wheel.jpg)
 
 As we move from the edge of the cylinder to the centre, the colours change from very vibrant to dull. This change is represented by the saturation value, which we write as a percentage in CSS.
@@ -117,6 +119,8 @@ As we move from the edge of the cylinder to the centre, the colours change from 
 A value of `100%` indicates a fully saturated colour, but what this looks like is dependent on the lightness value. A value of `0%` will be some shade of grey.
 
 Lightness, also represented as a percentage, indicates the amount of white and black added to the colour. A lightness value of `100%` will produce the colour white, while `0%` will produce pure black. At a lightness value of `50%`, a saturation value of `100%` will produce the most saturated version of a given colour.
+
+<!-- TODO: Replace this diagram with a custom one -->
 
 ![The HSL cylinder model](./assets/hsl-cylinder.png)
 
