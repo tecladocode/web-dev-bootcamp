@@ -83,8 +83,7 @@ Now let's change our HTML code to this:
 </html>
 ```
 
-This new `<link>` element is telling the browser that we want to include an external resource in our document, and that resource
-is a stylesheet. The `href` attribute provides a path to the resource.
+This new `<link>` element is telling the browser that we want to include an external resource in our document, and the `rel` attribute &mdash; short for "relationship" &mdash; says that this resource is a stylesheet. The `href` attribute provides a path to the resource.
 
 In this case, my `main.css` file is directly next to `index.html`, inside the same folder, so we can just provide the name of the file.
 
@@ -92,8 +91,15 @@ In this case, my `main.css` file is directly next to `index.html`, inside the sa
 
 It's not pretty, but our styles are being applied, which means the `<link>` element did its job!
 
+
+We can get further confirmation by looking at the developer tools once again.
+
+![Custom h1 styles](./assets/custom-h1-styles.png)
+
 ::: tip Other file locations
-Often our CSS files won't be in the same folder as our HTML code. This can get really cluttered and hard to navigate. Instead, we often place the CSS files in their own subfolder, but how do we refer to the file in this case?
+Often our CSS files won't be in the same folder as our HTML code, as having all our code in a single folder can get really cluttered and hard to navigate. Instead, we often place the CSS files in their own subfolder.
+
+The question is, how do we refer to the files in this case?
 
 If your CSS file is located in a folder called `styles`, you can just write the following:
 
@@ -101,9 +107,5 @@ If your CSS file is located in a folder called `styles`, you can just write the 
 <link rel="stylesheet" href="styles/main.css">
 ```
 :::
-
-We can get further confirmation by looking at the developer tools once again.
-
-![Custom h1 styles](./assets/custom-h1-styles.png)
 
 We can see that one of the default styles has been overwritten, and there's now a line through the property. We can also see the new styles we've applied, and we can also see where these styles came from. Note the `main.css:1` on the right. This means the styles came from `main.css` and the definitions for these particular styles start on line `1` of this file.
