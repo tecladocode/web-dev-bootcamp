@@ -88,6 +88,8 @@ We can represent RGB colours using hexadecimal values, which are much more succi
 
 Hexadecimal is a base-16 number system, with the numerals `0-9`, plus `a`, `b`, `c`, `d` , `e`, and `f`. `f` is therefore equivalent to the number `15` in decimal. `ff` is `15` x `15`, which is `255`. In case you're wondering, the case of the characters doesn't matter.
 
+You can find more information about the hexadecimal number system [here](https://www.electronics-tutorials.ws/binary/bin_3.html).
+
 Hexadecimal values are usually three pairs of two digit values, preceeded by a `#`. This `#` is required in CSS.
 
 To take the example of `purple` again, the hexadecimal equivalent is `#800080`. `128` is `8` lots of `16`, with no remainder, so we get a hexadecimal value of `80` for the red and blue channels, and a value of `00` for the green channel.
@@ -108,11 +110,19 @@ HSL uses a cylindrical model to represent the available colour space. The angle 
 
 At an angle of `0°` we find the colour red; at `120°` we find the colour green; and at `240°` we find the colour blue.
 
+<!-- TODO: Replace this diagram with a custom one -->
+
+![Colour wheel](./assets/colour-wheel.jpg)
+
 As we move from the edge of the cylinder to the centre, the colours change from very vibrant to dull. This change is represented by the saturation value, which we write as a percentage in CSS.
 
 A value of `100%` indicates a fully saturated colour, but what this looks like is dependent on the lightness value. A value of `0%` will be some shade of grey.
 
 Lightness, also represented as a percentage, indicates the amount of white and black added to the colour. A lightness value of `100%` will produce the colour white, while `0%` will produce pure black. At a lightness value of `50%`, a saturation value of `100%` will produce the most saturated version of a given colour.
+
+<!-- TODO: Replace this diagram with a custom one -->
+
+![The HSL cylinder model](./assets/hsl-cylinder.png)
 
 A lightness value of `50%` is sometimes referred to as "normal" lightness.
 

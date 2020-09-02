@@ -120,3 +120,5 @@ We also can't create space above and below an element by applying vertical paddi
 It's worth spending the time to get familiar with the components of the box model, even if you plan to always set the `box-sizing` to `border-box`, as these components are used to determine the effect of other properties.
 
 For example, the `background-origin` property allows us to determine where the background ends. We can set values like `border-box`, `padding-box`, and `content-box`, which directly map onto the components of the box model we saw before.
+
+You can find more information on the `background-origin` property [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin).

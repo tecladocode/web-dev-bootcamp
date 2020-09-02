@@ -36,7 +36,7 @@ The term "em" comes from typography, and historically it was the width of an upp
 
 In modern typography, an em is defined as being the same as the point size of the font, and the same is true in CSS. This also translates to pixels, so if we have a font size of `16px`, then `1em` is `16px`.
 
-When working with `em` units, the font size of the element where the unit is being used. For example, if we have an element with a font size of `10px`, then `1em` is considered to be `10px` when used to size components of that element.
+When working with `em` units, the font size of the element where the unit is being used determines the size of `1em`. For example, if we have an element with a font size of `10px`, then `1em` is considered to be `10px` when used to size components of that element.
 
 `rem` stands for *root* `em`, and is generally a far more useful unit. `rem` uses the global font size to determine its size, which means that `rem` units are consistent across our entire site.
 

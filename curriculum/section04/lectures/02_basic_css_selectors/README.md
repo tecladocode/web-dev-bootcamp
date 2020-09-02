@@ -2,7 +2,7 @@
 
 In this lecture we're going to talk a little bit about the CSS selector syntax, which is how we define which elements a given set of style properties applies to.
 
-For now we're going to keep things simple, and we're just going to be changing the text colour of a few elements on the page. Don't worry, we're going to be moving onto more exciting changes shortly!
+To keep things simple we're just going to be changing the text colour of a few elements on the page. Don't worry, we're going to be moving onto more exciting changes shortly!
 
 The HTML document we're going to be working with looks like this:
 
@@ -88,7 +88,7 @@ In order to use a class selector, we just need to write `.` followed by the clas
 }
 ```
 
-If you save the file and reload the HTML document, you'll see that the second and fourth paragraphs have been turned red, but the rest of the text is set to the default black.
+If you save the file and reload the HTML document, you'll see that the second and fourth paragraphs have been turned red, but the rest of the text is set to the default black. Note, however, that the contents of the `<em>` element were also turned red.
 
 :::tip Combining selector types
 Note that we can combine different selector types if we want. For example, if we want the text in the `<h1>` element to also be red, we can write the following:
@@ -148,6 +148,6 @@ One final selector that we need to talk about is `*`.
 
 If we want styles to apply throughout the site, inheritance is often a better mechanism for this. Many styles will be inherited by child elements, and we can rely on this feature to reduce the amount of code we write.
 
-We've already seen one example of this. Note that the `<em>` element inside the final paragraph also had its text turned red? That's inheritance at work.
+We've already seen one example of this. Remember that the `<em>` element inside the final paragraph also had its text turned red? That's inheritance at work.
 
 We'll be giving inheritance a lot more attention soon, but for now let's turn to colours in CSS.
