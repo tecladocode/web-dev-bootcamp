@@ -108,7 +108,6 @@ In the example form below, the selector above would select the first `<input>` e
 
 <!-- TODO: Create a more realistic form for the example below -->
 
-
 ```html
 <form>
     <label></label>
