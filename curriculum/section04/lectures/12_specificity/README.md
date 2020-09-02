@@ -1,6 +1,6 @@
-<!-- TODO: Replace the diagrams in this lecture with something more professional -->
-
 # Specificity in CSS
+
+<!-- TODO: Replace the diagrams in this lecture with something more professional -->
 
 Specificity is a really important concept to understand in CSS, as it's the mechanism used by the browser to determine which CSS propety declarations get applied to a given element.
 
