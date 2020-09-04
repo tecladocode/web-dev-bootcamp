@@ -163,7 +163,7 @@ body {
 }
 ```
 
-If we write this code and refresh the page, you'll see the fonts have gotten much bigger! We've targetted the `body` element, and because `font-size` is an _inheritable property_, the font size change of the `body` element propagates to all other elements contained within the body (which is all of them!). Later on we'll learn how we can prevent this propagation, or use it selectively.
+If we write this code and refresh the page, you'll see the fonts have gotten much bigger! We've targeted the `body` element, but notice the font sizes for `h1` and `p` have changed too. This is due to inheritance, which we'll learn more about in the next section.
 
 I don't want my text to be this big though, so I'll add slightly different styles:
 
