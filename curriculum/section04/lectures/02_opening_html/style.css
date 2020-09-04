@@ -19,15 +19,6 @@ blockquote {
   margin-bottom: 24px;
 }
 
-.finger {
-  /* This alters the default position of the icon, by separating it from the bottom and left slightly.
-   * We'll learn more about this later in the course!
-   */
-  position: relative;
-  bottom: 0.25rem;
-  margin-left: 0.25rem;
-}
-
 blockquote {
   /*
    * This short-hand for margin sets all 4 sides at once.
@@ -68,4 +59,13 @@ a:hover {
    *  - shadow color: black, at 25% opacity
    */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.finger {
+  /* This alters the default position of the icon, by separating it from the bottom and left slightly.
+   * We'll learn more about this later in the course!
+   */
+  position: relative;
+  bottom: 0.25rem;
+  margin-left: 0.25rem;
 }
