@@ -1,12 +1,12 @@
 # A quick example of using HTML and CSS
 
-In this lecture, let's take a look at some HTML and CSS code. This will be helpful to give you an understanding of what the different pieces of code look like, as well as how HTML and CSS really interact.
+In this lecture, let's take a look at some HTML and CSS code. This will help you get familiar with the syntax of both languages, and understand how they interact with each other.
 
 Although we'll go over the code quite quickly in this lecture, throughout the next two sections we'll dive into everything in detail. Don't worry if things aren't fully clear just yet!
 
 ## HTML
 
-An HTML5 document (the latest version of HTML) almost always starts with similar code:
+Modern websites generally are built using HTML5 — the latest version of HTML. HTML5 documents almost always start with similar code:
 
 ```html
 <!DOCTYPE html>
@@ -28,15 +28,15 @@ An HTML5 document (the latest version of HTML) almost always starts with similar
 </html>
 ```
 
-We have the `DOCTYPE`, which tells the browser that this is an HTML document. The browser will receive this code (which basically, is just text written in a specific way). If we tell the browser this is HTML code, then it can try to understand it by following the HTML rules it knows.
+We have the `DOCTYPE`, which tells the browser that this is an HTML5 document. The browser will receive this code (which basically, is just text written in a specific way). If we tell the browser this is HTML code, then it can try to understand it by following the HTML rules it knows.
 
-Then there's an `<html>` elements, and inside it, we have `<head>` and `<body>`. I've used indentation, or put spaces in front of each element's content, so it's easier for us to know what's inside which element. HTML doesn't care about that though. Everything could be on one line, for all it cares!
+Then there's an `<html>` element, and inside it, we have `<head>` and `<body>`. I've indented some of the elements, which means I've placed spaces in front of the element's tags. We do this to organise our code, making it easy to see what is inside a given element. HTML doesn't care about that though. Everything could be on one line, for all it cares!
 
 The `<head>`, for the most part, contains information for the browser. The `<body>` contains what the user will see in the page.
 
 We've got a couple `<meta>` elements, which include information like the character set the browser uses[^character_sets], or information to help determine how the page will scale with the size of different devices.
 
-Then we've got a `<title>` element, that gives the window a title. This is shown in your browser and in your browser tabs.
+Then we've got a `<title>` element, that gives the window a title. This is shown in your browser and in your browser tabs. Search engines like Google can also use the contents of this element in their search results.
 
 Let's add a bit more code to the `<body>` so something shows up when we open the file:
 
@@ -59,17 +59,17 @@ Let's add a bit more code to the `<body>` so something shows up when we open the
         <!-- A paragraph -->
         <p>Welcome to your first HTML file!</p>
         <p>
-        While we work with HTML documents, designing the pages and their
-        structure, we often don't want to worry about the text contents of the
-        page. We can write those after we write the code for the page.
+          While we work with HTML documents, designing the pages and their
+          structure, we often don't want to worry about the text contents of the
+          page. We can write those after we write the code for the page.
         </p>
     </body>
 </html>
 ```
 
-I've added three new elements inside the body: an `<h1>`, which is the most important title in the page, and two `<p>` tags, which are for paragraphs. We'll discuss both of these in more detail later on!
+I've added three new elements inside the body: an `<h1>`, which is the most important title in the page, and two `<p>` elements, which are for paragraphs. We'll discuss both of these in more detail later on!
 
-If we open the page now though, you can see that the title looks larger and bolder, and the paragraphs look smaller and they're slightly separated from each other. That's because my browser applies some default styles to `<h1>` and `<p>` elements. We can change those, and we will do in a moment!
+If we open the page now though, you can see that the title looks large and bold. The paragraphs, on the other hand, look smaller, and they're slightly separated from each other. That's because my browser applies some default styles to `<h1>` and `<p>` elements. We can change those, and we will do in a moment!
 
 Let's add a bit more code to the HTML file first:
 
@@ -92,9 +92,9 @@ Let's add a bit more code to the HTML file first:
         <!-- A paragraph -->
         <p>Welcome to your first HTML file!</p>
         <p>
-        While we work with HTML documents, designing the pages and their
-        structure, we often don't want to worry about the text contents of the
-        page. We can write those after we write the code for the page.
+          While we work with HTML documents, designing the pages and their
+          structure, we often don't want to worry about the text contents of the
+          page. We can write those after we write the code for the page.
         </p>
         <p>
             For that reason, we use sample placeholder text like this
@@ -125,21 +125,19 @@ Let's add a bit more code to the HTML file first:
 </html>
 ```
 
-I've added another paragraph that has some plain text inside it, as well as another element, `<i>`. These are used for _idiomatic text_. Here I've added an attribute, `lang="la"`, that tells the browser that this is a Latin piece of text. It can be particularly helpful for things like screen readers, and also since it's a separate tag, we can apply different styles to it than the text around it.
+I've added another paragraph that has some plain text and an `<i>` element inside it. These `<i>` elements are used for _idiomatic text_. Here I've added an attribute, `lang="la"`, that tells the browser that this is a Latin piece of text. It can be particularly helpful for things like screen readers. Also, since it's a separate tag, we can apply different styles to it to those of the surrounding text.
 
-The `<blockquote>` element has a similar attribute applied to it. This element is used to quote someone or someplace else, so we'll apply a different set of styles to make that clear to the reader of the page.
+The `<blockquote>` element has a similar attribute applied to it. This element is used to quote someone else, so we'll apply a different set of styles to make that clear to the reader of the page.
 
-Finally, at the bottom, we've added an _anchor_ or `<a>` element to link away to the original site. The `href` attribute is the link that the user will navigate to upon clicking, and inside the element we can put text that will be clickable. Note that I've added a `<span>` element inside it to hold the emoji. That's so we can style that differently. As you'll see, we have to do that to make sure the emoji is centered in the line of text.
+Finally, at the bottom, we've added an _anchor_ or `<a>` element to link away to the original site. The `href` attribute is the link that the user will navigate to upon clicking, and inside the element we can put text that will be clickable. Note that I've added a `<span>` element inside it to hold the emoji. That's so we can style that differently. As you'll see, we have to do that to make sure the emoji is properly vertically aligned, to match the rest of the text.
 
 ## CSS
 
 If I refresh the site, you can see the page loads without a problem, using the default styles of my browser for each element.
 
-It doesn't look so good.
+It doesn't look so good, so let's change that!
 
-So let's change that!
-
-I'll create a CSS file, which I'll call `style.css`, and link to it from the HTML. We put links to other resources that the HTML page needs in the `<head>` of the document:
+I'll create a CSS file, which I'll call `style.css`, and link to it from the HTML document. We put links to stylesheets that the HTML page needs in the `<head>` of the document:
 
 ```html {8}
 <head>
@@ -165,7 +163,7 @@ body {
 }
 ```
 
-If we do that and refresh the page, you'll see the fonts have gotten much bigger! We've targetted the `body` element, and because `font-size` is an _inheritable property_, the font size change of the `body` element propagates to all other elements contained within the body (which is all of them!).
+If we write this code and refresh the page, you'll see the fonts have gotten much bigger! We've targetted the `body` element, and because `font-size` is an _inheritable property_, the font size change of the `body` element propagates to all other elements contained within the body (which is all of them!). Later on we'll learn how we can prevent this propagation, or use it selectively.
 
 I don't want my text to be this big though, so I'll add slightly different styles:
 
@@ -267,4 +265,4 @@ We have to _nudge_ it into place by adding a bit of spacing underneath and to th
 
 ## Conclusion
 
-That's about everything for this lecture! I know we've gone very quickly, but I don't expect you to learn and understand everything we've talked about just yet. This was more of an introduction, so you start seeing what HTML and CSS can do!
+That's about everything for this lecture! I know we've gone very quickly, but I don't expect you to have learned and understood everything we've talked about just yet. This was more of an introduction, so you start seeing what HTML and CSS can do!
