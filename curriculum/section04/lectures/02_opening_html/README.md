@@ -59,9 +59,9 @@ Let's add a bit more code to the `<body>` so something shows up when we open the
         <!-- A paragraph -->
         <p>Welcome to your first HTML file!</p>
         <p>
-          While we work with HTML documents, designing the pages and their
-          structure, we often don't want to worry about the text contents of the
-          page. We can write those after we write the code for the page.
+            While we work with HTML documents, designing the pages and their
+            structure, we often don't want to worry about the text contents of the
+            page. We can write those after we write the code for the page.
         </p>
     </body>
 </html>
@@ -92,9 +92,9 @@ Let's add a bit more code to the HTML file first:
         <!-- A paragraph -->
         <p>Welcome to your first HTML file!</p>
         <p>
-          While we work with HTML documents, designing the pages and their
-          structure, we often don't want to worry about the text contents of the
-          page. We can write those after we write the code for the page.
+            While we work with HTML documents, designing the pages and their
+            structure, we often don't want to worry about the text contents of the
+            page. We can write those after we write the code for the page.
         </p>
         <p>
             For that reason, we use sample placeholder text like this
