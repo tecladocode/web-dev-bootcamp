@@ -58,6 +58,5 @@ module.exports = {
     extendMarkdown: (md) => {
       md.use(require("markdown-it-footnote"));
     },
-    lineNumbers: true
   },
 };
