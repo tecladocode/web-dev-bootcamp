@@ -48,7 +48,7 @@ By default, if a border edge has a style other than `none`, the border thickness
 
 You can change these width values using any sizing units you like, but percentage values are not valid for borders.
 
-Generally we use pixels for border thicknesses, as they tend to be very narrow, so using relative sizing elements like `rem` and `em` don't have a meaningful effect.
+Generally we use pixels for border thicknesses, because we want them to be very narrow, so using relative sizing elements like `rem` and `em` don't have a meaningful effect.
 
 ## The `border` property
 

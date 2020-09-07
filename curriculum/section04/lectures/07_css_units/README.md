@@ -10,6 +10,8 @@ In this lecture we'll cover a few of the most important unit types for CSS.
 
 In terms of hardware, a pixel is a single light-emitting unit capable of displaying full colour independent of its neighbours. You screen is made up of millions of such units, and we can see them with the naked eye if we look closely enough.
 
+![Image of screen showing visible pixels](./assets/pixels.jpg)
+
 A pixel in CSS doesn't quite correspond to these device pixels which make up your screen. Instead, there's a degree of scaling involved to ensure that devices with a high pixel density display objects at an appropriate size.
 
 Take an iPhone 11 Pro, for example. An iPhone 11 Pro has a whopping device resoluton of `2436 x 1125`, but in CSS pixels, the device is only `812 x 375`: a third of the device values.
@@ -32,7 +34,7 @@ Percentages can be used with the `border-radius` property to create effects we c
 
 `em` and `rem` are units you've likely never encountered before, but you're going to be getting very familiar with them when working with CSS. They're the most common unit types I personally use.
 
-The term "em" comes from typography, and historically it was the width of an uppercase "M" character. However, this was really more of an accident, as "M" character was traditionally the same width as the the point size of the font. This is generally no longer the case.
+The term "em" comes from typography, and historically it was the width of an uppercase "M" character. However, this was really more of an accident, as "M" character was traditionally the same width as the point size of the font. This is generally no longer the case.
 
 In modern typography, an em is defined as being the same as the point size of the font, and the same is true in CSS. This also translates to pixels, so if we have a font size of `16px`, then `1em` is `16px`.
 

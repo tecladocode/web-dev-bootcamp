@@ -278,6 +278,8 @@ We can see that the `<label>` elements sit above the `<input>` elements in each 
 
 This tells the browser that we want the child elements of each `form__group` to sit on top of one another. If you're interested in learning more about flex, there's a great guide on [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). It's a really powerful tool that you'll be using all the time.
 
+<!-- TODO: link to our section on flex box when we add it, as well as CSS Tricks -->
+
 That's it for the `form__group` class, so let's look at the `form__label`.
 
 We don't have to do anything crazy here: we just want to add a small amount of margin to the bottom, so that the label and input field aren't so cramped. We also want to bump the font weight up to 600, which is semi-bold.

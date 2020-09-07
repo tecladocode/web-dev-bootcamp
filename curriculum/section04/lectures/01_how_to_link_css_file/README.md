@@ -26,12 +26,12 @@ Let's imagine we have an HTML file like this, called `index.html`:
 </html>
 ```
 
-This is some fairly typical boilerplate HTML which you'll be including in all of your HTML documents.
+This contains typical boilerplate HTML code which you'll be including in all of your HTML documents.
 
 :::tip Top tip
 Because this is code we have to write all the time, many editors give us useful shortcuts to save us writing this tedious markup out by hand.
 
-For example, in VS Code, you can `!` followed by `tab` when inside an HTML document to generate a document similar to the one above.
+For example, in VS Code, you can type `!` followed by `tab` when inside an HTML document to generate a document similar to the one above.
 :::
 
 Now let's say we have a css file called `main.css`, which looks like this:
@@ -58,7 +58,7 @@ Note that the site isn't completely unstyled. If we go into the developer tools 
 
 ![Default h1 styles](./assets/default-h1-styles.png)
 
-Without even knowing any CSS, some of this is fairly obvious. We can see that the font size has been changed somehow, that the text is being rendered in bold, and that there's been some change to how it displays on the screen.
+Without even knowing any CSS, we can at least see that the font size has been changed somehow, and that the text is being rendered in bold.
 
 Now let's change our HTML code to this:
 
@@ -83,14 +83,13 @@ Now let's change our HTML code to this:
 </html>
 ```
 
-This new `<link>` element is telling the browser that we want to include an external resource in our document, and the `rel` attribute &mdash; short for "relationship" &mdash; says that this resource is a stylesheet. The `href` attribute provides a path to the resource.
+This new `<link>` element tells the browser that we want to include an external resource in our document, and the `rel` attribute &mdash; short for "relationship" &mdash; says that this resource is a stylesheet. The `href` attribute provides a path to the resource.
 
 In this case, my `main.css` file is directly next to `index.html`, inside the same folder, so we can just provide the name of the file.
 
 ![Home page with custom styles applied](./assets/home-custom-styles.png)
 
 It's not pretty, but our styles are being applied, which means the `<link>` element did its job!
-
 
 We can get further confirmation by looking at the developer tools once again.
 

@@ -1,6 +1,6 @@
 # Inheritance in CSS
 
-Inheritance is an important concept and a powerful tool which we can leverage when writing CSS code. Inheritance allows us to write less code, reducing repetition, and making our stylesheets easier to maintain.
+Inheritance is an important concept and a powerful tool which we can leverage when writing CSS code. Inheritance allows us to write less code, reduce repetition, and make our stylesheets easier to maintain.
 
 Writing less code also bring us a performance benefit in web development, since smaller stylesheets are downloaded and parsed more quickly by the browser. This makes our pages load faster!
 
@@ -86,11 +86,9 @@ a {
 
 At this point, some of you are probably wondering, why not just set the value to be the same as the parent element directly? There are a few reasons why we should prefer `inherit`.
 
-1) It makes it easier to make changes to our stylesheets. If we decide we want to change the colour of all the text in the container, we don't have to remember to update it for the `<a>` element as well.
-
-2) Imagine we have several `<a>` elements inside different containers, and they have different text colours. In each case, say we want to have the same text colour as the container. By specifying the colours directly, we'd have to write styles for each set of colours. Using `inherit`, our `<a>` elements can share the same styles, because they will independently inherit property values from their respective parents.
-
-3) The colour of our containers may change in response to some trigger. Using `inherit`, the colour of the `<a>` element will be updated as the container text colour changes. If we hardcoded the colours, we'd have to update each of the `<a>` elements when the container colours changed.
+1. It makes it easier to make changes to our stylesheets. If we decide we want to change the colour of all the text in the container, we don't have to remember to update it for the `<a>` element as well.
+2. Imagine we have several `<a>` elements inside different containers, and they have different text colours. In each case, say we want to have the same text colour as the container. By specifying the colours directly, we'd have to write styles for each set of colours. Using `inherit`, our `<a>` elements can share the same styles, because they will independently inherit property values from their respective parents.
+3. The colour of our containers may change in response to some trigger. Using `inherit`, the colour of the `<a>` element will be updated as the container text colour changes. If we hardcoded the colours, we'd have to update each of the `<a>` elements when the container colours changed.
 
 ::: warning A note on interface design
 While we've used the example of an `<a>` tag inheriting colours from a parent element, this is not something you'll want to do in practice. `<a>` elements are a different colour on purpose. It makes them stand out, so the user knows that the link is clickable.

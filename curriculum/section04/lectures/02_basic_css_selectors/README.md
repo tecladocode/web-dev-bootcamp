@@ -78,7 +78,7 @@ When we separate selectors using a comma like this, it's saying that we want to 
 
 ## Class selectors
 
-Instead of selecting elements by type, it's often a much better idea to select elements using classes. Classes are great, because we can use them to apply like styles across dissimilar elements, and we get to choose exactly where they apply. We're not automatically applying styles to every instances of an element type.
+Instead of selecting elements by type, it's often a much better idea to select elements using classes. Classes are great, because we can use them to apply identical styles across different elements, and we get to choose exactly where they apply. We're not automatically applying styles to every instance of an element type.
 
 In order to use a class selector, we just need to write `.` followed by the class name we want to apply our styles to. In our code above, the class we've applied to two of our `<p>` elements is called `red`, so I'm going to replace the contents of `main.css` with the following:
 
@@ -104,7 +104,7 @@ h1, .red {
 
 Ids are supposed to be unique identifiers, so they're generally not a great idea to use when styling our site. Why? Because it makes it really hard to reuse our CSS code.
 
-There are also issues when it comes to the concept of specificity, which we'll be talking about later in this section.
+There are also issues when it comes to the concept of **specificity**, which we'll be talking about later in this section.
 
 Nevertheless, we can use ids as selectors if we have a valid reason to. They work just like class selectors, except we add `#` to the start of the id, rather than the `.` we put before class names.
 
