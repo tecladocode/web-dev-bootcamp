@@ -239,6 +239,10 @@ body {
 }
 ```
 
+:::tip Setting the global font size
+Note that we're setting the font size on the `<html>` element, not the `<body>`. By setting the font size on the `<html>` element, we're changing the *root font size*, which is determines the size of `1rem`.
+:::
+
 Now we can get to writing the styles for the form specifically. Let's start with the form container itself.
 
 If we look at the completed version we can see that the form has a background, there is a small amount of rounding to the corners, and the size of the form is restricted in some way. We can see this because it doesn't fill the window, and it's centered in the available space.
