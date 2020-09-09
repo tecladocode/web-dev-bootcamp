@@ -38,35 +38,45 @@ We can make these chains of selectors arbitrarily long, but it's rarely a good i
 
 ## The Child Combinator
 
-In addition to describing these general ancestry relationships, we can be more precise using a child combinator. Instead of using spaces, we can place `>` between two element instead.
+We can specify a more precise ancestry relationship using a child combinator. When using a child combinator, we place `>` between two selectors instead of a space.
 
-When we do this, we're saying that the element targeted by the left hand selector must be a direct parent of one targeted by the right hand selector.
+When we do this, we're saying that the element targeted by the left hand selector must be a direct parent of any targeted by the right hand selector.
+
+To demonstrate this concept, we're going to use a description list. A description list is used to match terms and definitions, like you might find in a dictionary. Instead of using `<li>` elements, we use `<dt>` and `<dd>` elements in a decription list, which contain terms and the definitions respectively.
+
+For more information, you can look on the [MDN page for description lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl).
+
+Let's say we have a selector like this:
 
 ```css
-ul > li {
-    font-weight: 700;    
+dl > dt {
+    font-weight: 700;
 }
 ```
 
-The child selector above, `ul > li`, selects any `<li>` element which is a direct child of a `<ul>` element.
+Here we're saying that we want to select any `<dt>` element which is a direct child of a `<dl>` element.
 
-That means it would select the `<li>` element featured below:
-
-```html
-<ul>
-    <li>A list item</li>
-</ul>
-```
-
-But it wouldn't select this one:
+If we take the HTML code below, the `<dt>` element will be selected, because the `<dt>` element is a direct child of the `<dl>` element. In other words, the `<dt>` element is directly inside the `<dl>` element.
 
 ```html
-<ul>
-    <div>
-        <li>A list item</li>
-    <div>
-</ul>
+<dl>
+    <dt>Dog<dt>
+    <dd>A man's best friend.</dd>
+</dl>
 ```
+
+However, if we add a container for our `<dt>` and `<dd>` elements &mdash; which is quite common when we want to group the elements for styling purposes &mdash; the selector no longer matches our `<dt>` element.
+
+```html
+<dl>
+    <div>
+        <dt>Dog<dt>
+        <dd>A man's best friend.</dd>
+    </div>
+</dl>
+```
+
+This is because our `<dt>` element is now a direct child of the `<div>`, not the `<dl>` element. If we stick with the family tree metaphor, we might think of `<dt>` being a "grandchild" of our `<dl>` element, but our selector only targets direct children.
 
 ## The General Sibling Combinator
 
