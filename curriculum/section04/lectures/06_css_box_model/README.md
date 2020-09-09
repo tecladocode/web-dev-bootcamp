@@ -115,6 +115,8 @@ For example, when working with an inline element, we can't set an explicit heigh
 
 We also can't create space above and below an element by applying vertical padding and margins. Only horizontal padding and margins will move the content around the element. The same is true of borders.
 
+While vertical padding has no effect on the layout of an inline element in relation to those around it, the padding value is still being applied. This is important to note, as vertical padding will change the position of borders around an inline element. The background will also stretch to fill the space specified by the vertical padding.
+
 ## Beyond sizing
 
 It's worth spending the time to get familiar with the components of the box model, even if you plan to always set the `box-sizing` to `border-box`, as these components are used to determine the effect of other properties.
