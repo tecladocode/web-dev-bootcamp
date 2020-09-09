@@ -230,7 +230,7 @@ While we're doing this, we should also set a global font size and font type.
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
@@ -298,7 +298,7 @@ Now our CSS styles look something like this:
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
@@ -413,7 +413,7 @@ We'd love to see what you come up with!
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
