@@ -78,7 +78,7 @@ When we separate selectors using a comma like this, it's saying that we want to 
 
 ## Class selectors
 
-Instead of selecting elements by type, it's often a much better idea to select elements using classes. Classes are great, because we can use them to apply identical styles across different elements, and we get to choose exactly where they apply. We're not automatically applying styles to every instance of an element type.
+Instead of selecting elements by type, it's often a much better idea to select elements using classes. Classes are great, because we can use them to apply like styles across different elements, and we get to choose exactly where they apply. We're not automatically applying styles to every instance of an element type.
 
 In order to use a class selector, we just need to write `.` followed by the class name we want to apply our styles to. In our code above, the class we've applied to two of our `<p>` elements is called `red`, so I'm going to replace the contents of `main.css` with the following:
 
