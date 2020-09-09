@@ -17,6 +17,9 @@ A *block* in BEM is a meaningful, standalone entity. Some examples might be a he
 Block classes are generally single words which describe the role of a given element, but we can use several words linked by hyphens where more than one word is required.
 
 Here are some example block classes:https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+```css
+.header {
     padding: 1rem 2rem;
 }
 
@@ -24,7 +27,8 @@ Here are some example block classes:https://css-tricks.com/snippets/css/a-guide-
     list-style: none;
 }
 
-.form {    cursor: pointer;
+.form {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
 }
