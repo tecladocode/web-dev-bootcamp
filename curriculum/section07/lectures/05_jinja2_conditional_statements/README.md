@@ -107,7 +107,9 @@ The above template first checks whether the variable `user` is *truthy* and then
 
 Let's define an endpoint named `/conditionals-truthy` in the `app.py` file:
 
-```python{8,19}
+<!-- Lines to highlight: 8, 19 -->
+
+```python
 # app.py
 
 from flask import Flask, render_template

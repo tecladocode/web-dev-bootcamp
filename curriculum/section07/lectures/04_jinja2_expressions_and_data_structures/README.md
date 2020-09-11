@@ -28,33 +28,34 @@ Let's perform some basic operations like **addition**, **subtraction** and **str
 <h3>Interpolation</h3>
 
 <p>
-A quick {{ color }} {{ animal_one }} jumps over the lazy
-{{ animal_two }}.
+    A quick {{ color }} {{ animal_one }} jumps over the lazy
+    {{ animal_two }}.
 </p>
 
 <h3>Addition and Subtraction</h3>
 
 <p>
-Alice bought {{ orange_amount }} oranges and {{ apple_amount }} apples.
+    Alice bought {{ orange_amount }} oranges and {{ apple_amount }} apples.
 </p>
 
 <p>
-In total she has {{ orange_amount + apple_amount }} fruits.
+    In total she has {{ orange_amount + apple_amount }} fruits.
 </p>
 
 <p>
-She gave {{ donate_amount }} fruits to Bob.
+    She gave {{ donate_amount }} fruits to Bob.
 </p>
 
 <p>
-Now she has {{ orange_amount + apple_amount - donate_amount }}
-fruits remaining.
+    Now she has {{ orange_amount + apple_amount - donate_amount }}
+    fruits remaining.
 </p>
 
 <h3>String Concatenation</h3>
 
-<p>A lot of people think {{ first_name + ' ' + last_name }} is the most
-powerful Marvel character.
+<p>
+    A lot of people think {{ first_name + ' ' + last_name }} is the most
+    powerful Marvel character.
 </p>
 ```
 
@@ -100,6 +101,7 @@ def render_expressions():
         "first_name": first_name,
         "last_name": last_name,
     }
+
     return render_template("expressions.html", **kwargs)
 ```
 
@@ -129,21 +131,22 @@ Create a new HTML template named `data_structures.html` in the `/templates` fold
 <h3>List Operations</h3>
 
 <p>
-Jina said her top three favorite movies were {{ movies[0] }},
-{{ movies[1] }} and  {{ movies[2]}}.
+    Jina said her top three favorite movies were {{ movies[0] }},
+    {{ movies[1] }} and  {{ movies[2]}}.
 </p>
 
 <h3>Dictionary Operations</h3>
 
 <p>
-This is a {{ car["brand"] }} {{ car["model"] }}, built in {{ car["year"] }}.
+    This is a {{ car["brand"] }} {{ car["model"] }}, built
+    in {{ car["year"] }}.
 </p>
 
 <h3>Custom Data Structure Operations</h3>
 
 <p>
-The four Galilean moons of Jupiter are {{ moons.first }},
-{{moons.second}}, {{moons.third}} and {{moons.fourth}}.
+    The four Galilean moons of Jupiter are {{ moons.first }},
+    {{ moons.second }}, {{ moons.third }} and {{ moons.fourth }}.
 </p>
 ```
 

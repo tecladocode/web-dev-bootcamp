@@ -54,6 +54,9 @@ If for any reason the image cannot be loaded (e.g. we misspelled it), we'll get 
 You can include any image type, not just SVG, with the `img` tag. For example:
 
 ```html
-<img src="./my-image.png" alt="An image showing something very interesting" />
+<img
+    src="./my-image.png"
+    alt="An image showing something very interesting"
+/>
 ```
 :::
