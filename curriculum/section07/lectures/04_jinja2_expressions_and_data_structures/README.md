@@ -18,7 +18,9 @@ This section explains how you can evaluate Python expressions in Jinja2 and rend
 
 Let's perform some basic operations like **addition**, **subtraction** and **string concatenation** via Jinja template. To follow along, create a new HTML template file named `expressions.html` in the `/templates` folder of your Flask project's directory. The content of the file should look like this:
 
-```html{20,24,28,34}
+<!-- Lines to highlight: 20, 24, 28, 34 -->
+
+```html
 <!-- templates/expressions.html -->
 
 <h2>Expressions in Jinja2</h2>
@@ -60,7 +62,9 @@ The header tags in of the above HTML file denotes what sort of expression operat
 
 Now we'll evaluate these expression operations and render the results using the `render_template` method. Let's create a new endpoint in our `app.py` file named `/expressions/` and perform rendering there.
 
-```python{27,37}
+<!-- Lines to highlight: 27, 37 -->
+
+```python
 # app.py
 
 from flask import Flask
@@ -115,7 +119,9 @@ Let's see how you can perform various operations using Python's built-in data st
 
 Create a new HTML template named `data_structures.html` in the `/templates` folder and add the following contents to it:
 
-```html{8,9,15,16,22,23}
+<!-- Lines to highlight: 8, 9, 15, 16, 22, 23 -->
+
+```html
 <!-- templates/data_structures.html -->
 
 <h2>Data Structures in Jinja2</h2>
@@ -145,7 +151,9 @@ Here, in the above HTML file, the highlighted line show operations concerning a 
 
 To understand how the values will get filled, let's define a new endpoint named `/data-structures/` in the `app.py` file and add the necessary logics to fill in the placeholders mentioned in the `data-structures.html` file:
 
-```python{34}
+<!-- Lines to highlight: 34 -->
+
+```python
 from flask import Flask
 from flask import render_template
 

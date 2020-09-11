@@ -8,7 +8,9 @@
 
 Define a template named `conditionals_basics.html` in your Flask project's `/templates` folder. In this example, we'll render different lists of products depending on the name of different companies provided by a user-defined variable called `company`. Here, we'll directly embed the conditional statements into the template.
 
-```html{6,14,23,26}
+<!-- Lines to highlight: 6, 14, 23, 26 -->
+
+```html
 <!-- templates/conditionals_basics.html -->
 
 <h1>Conditionals in Jinja2</h1>
@@ -38,7 +40,9 @@ Define a template named `conditionals_basics.html` in your Flask project's `/tem
 
 Notice how we added conditional blocks to the template via `{% %}` blocks in line 6, 14 and 22. The `{% endif %}` block in line 25 marks the end of the conditional block. Now let's create an endpoint named `/conditionals-basics/` in your Flask project's `app.py` file to render the template:
 
-```python{10,11}
+<!-- Lines to highlight: 10, 11 -->
+
+```python
 # app.py
 
 from flask import Flask, render_template
@@ -58,7 +62,9 @@ In line 10, we've provided the name of the company and passed that to the `rende
 
 Now change the variable `company` in the `app.py` from `Apple` to `Microsoft` and see what happens. Your `app.py` should look like this:
 
-```python{10}
+<!-- Lines to highlight: 10 -->
+
+```python
 # app.py
 
 from flask import Flask, render_template
@@ -84,7 +90,9 @@ If you assign a different name other than `Apple` and `Microsoft` to the variabl
 
 You can also use conditional statements to test if a variable is *truthy*[^truthy-falsy] (or *falsy*) and take action based on that. For a variable to be *truthy*, it has to be defined, not empty and not false. Make a new template named `conditionals_truthy.html` and add the following contents to it:
 
-```html{6,8}
+<!-- Lines to highlight: 6, 8 -->
+
+```html
 <!-- templates/conditionals_truthy.html -->
 
 <h1>Conditionals in Jinja2</h1>
@@ -130,7 +138,9 @@ Run the Flask application and head over to [http://localhost:5000/conditionals-t
 
 Now if you instantiate the class `User` with a *falsy* value - for example, an empty string `""` - the greeting statement of the template won't be rendered. Here, your `app.py` will look like this:
 
-```python{8,19}
+<!-- Lines to highlight: 8, 19 -->
+
+```python
 # app.py
 
 from flask import Flask, render_template

@@ -31,7 +31,9 @@ The variables and/or logic are placed between tags or delimiters. Jinja template
 
 Let's take a quick look at a self-contained example. In this example, you'll use the `{​{ ...  }​}` syntax to interpolate values to a string. If you've already installed Flask in your current environment, Jinja2 should already be installed. If not, you can always install it to your current development environment via `pip install jinja2`.
 
-```python{7,12}
+<!-- Lines to highlight: 7, 12 -->
+
+```python
 from jinja2 import Template
 
 t = Template("""
@@ -92,7 +94,9 @@ Flask's `render_template` method will be used to send our interpolated HTML file
 
 For this to work, you'll have to create a new endpoint to access this newly created page from browser. Your `app.py` should look like the following:
 
-```python{10}
+<!-- Lines to highlight: 10 -->
+
+```python
 # app.py
 from flask import Flask
 from flask import render_template

@@ -143,10 +143,10 @@ Select your newly created database from the left panel of the Compass dashboard.
 
     ```json
     {
-    "db": "Mongo",
-    "type": "NoSQL",
-    "dbName": "test-database",
-    "collectionName": "test-collection"
+        "db": "Mongo",
+        "type": "NoSQL",
+        "dbName": "test-database",
+        "collectionName": "test-collection"
     }
     ```
     ![MongoDB insert data](./assets/mongo_insert_data.png)
