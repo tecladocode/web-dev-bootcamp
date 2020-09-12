@@ -58,18 +58,18 @@ When you open the developer tools for the first time, you'll be presented with t
 
 The element browser gives us an interactive representation of the current web page. Every element that makes up the page is listed here, and the hierarchy of elements is preserved.
 
-If we want to inspect an element on the page, we can press the button in the top left of the developer tools, and then hover over or click on whatever we like in the browser window.
+If we want to inspect an element on the page, we can press the button in the top left of the developer tools, called the _Element Selector_, and then hover over or click on whatever we like in the browser window.
 
 ![Chrome dev tools element selection](./assets/chrome_element_select.png)
 
-Here I've hovered over an input field for the MDN mailing list sign up form. When I do this, I get this nice tooltip which gives me some information about the element, like its size and background colour. In addition, the element browser has also highlighted the HTML element which I'm currently viewing.
+Here I've clicked on the Element Selector and then hovered over an input field for the MDN mailing list sign up form. When I do this, I get this nice tooltip which gives me some information about the element, like its size and background colour. In addition, the element browser has also highlighted the HTML element which I'm currently viewing.
 
 If we look in the element browser, we can see that it's an `<input>` element of type `email`. We can see that it also has a number of other attributes.
 
 This feature is a great way to get hold of a particular element which may be buried deep inside other elements.
 
 :::tip Selecting elements
-Note that you can also click on elements directly in the element browser. You don't have to use this selection tool.
+Note that you can also click on elements directly in the element browser. You don't have to use this selection tool. However, then you won't get the tooltip with information about the element.
 :::
 
 ## Viewing style information
