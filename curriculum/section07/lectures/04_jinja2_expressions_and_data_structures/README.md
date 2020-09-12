@@ -59,7 +59,7 @@ Let's perform some basic operations like **addition**, **subtraction** and **str
 </p>
 ```
 
-The header tags in of the above HTML file denotes what sort of expression operations are taking place in the template. In line **19**, **23**, **27** and **33** notice how you can perform different operations like addition, subtraction and string concatenation inside the double braces `{​{ }​}`.
+The header tags in of the above HTML file denotes what sort of expression operations are taking place in the template. In line **19**, **23**, **27** and **34** notice how you can perform different operations like addition, subtraction and string concatenation inside the double braces `{​{ }​}`.
 
 Now we'll evaluate these expression operations and render the results using the `render_template` method. Let's create a new endpoint in our `app.py` file named `/expressions/` and perform rendering there.
 
@@ -107,7 +107,7 @@ def render_expressions():
 
 In the above file, we just have to define the placeholder variables and the evaluation part will be taken care by the Jinja2 template engine.
 
-In line **26**, we've taken advantage of Python dictionary to pass keyworded arguments to the `render_template` method. Instead of supplying all the arguments directly, you can use dictionary unpacking operator `**` (in line **36**) to pass the arguments implicitly while keeping the `render_template` method clean.
+In line **26**, we've taken advantage of Python dictionary to pass keyworded arguments to the `render_template` method. Instead of supplying all the arguments directly, you can use dictionary unpacking operator `**` (in line **37**) to pass the arguments implicitly while keeping the `render_template` method clean.
 
 If you run the Flask application and go to [http://localhost:5000/expressions/](http://localhost:5000/expressions/) URL in your browser, you'll see that Jinja2 has evaluated all the expression operations defined in the `expressions.html` file and filled in the corresponding placeholder values.
 
@@ -150,7 +150,7 @@ Create a new HTML template named `data_structures.html` in the `/templates` fold
 </p>
 ```
 
-Here, in the above HTML file, the highlighted line show operations concerning a *list*, *dict* and a *custom class* respectively.
+<!-- Here, in the above HTML file, the highlighted line show operations concerning a *list*, *dict* and a *custom class* respectively. -->
 
 To understand how the values will get filled, let's define a new endpoint named `/data-structures/` in the `app.py` file and add the necessary logics to fill in the placeholders mentioned in the `data-structures.html` file:
 

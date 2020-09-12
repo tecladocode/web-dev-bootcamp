@@ -94,7 +94,7 @@ Flask's `render_template` method will be used to send our interpolated HTML file
 
 For this to work, you'll have to create a new endpoint to access this newly created page from browser. Your `app.py` should look like the following:
 
-<!-- Lines to highlight: 10 -->
+<!-- Lines to highlight: 10, 11, 12 -->
 
 ```python
 # app.py
