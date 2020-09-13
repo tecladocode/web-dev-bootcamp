@@ -17,7 +17,7 @@ Here's the code we're starting with:
 </html>
 ```
 
-One of the first attributes we'll add to any page is one describing the human language the page is written in. We normally do this in the `html` element, with `<html lang="en">`, like so:
+One of the first attributes we'll add to any page is one describing the human language the page is written in. We normally do this in the `<html>` element, with `<html lang="en">`, like so:
 
 ```html
 <!DOCTYPE html>
@@ -32,11 +32,13 @@ One of the first attributes we'll add to any page is one describing the human la
 </html>
 ```
 
+We can also add `lang` attributes to other elements, as required, if they contain text in a different human language.
+
 Image elements require the use of HTML attributes, so let's try our hand at adding some images to this page.
 
 First, you need a small photo of yourself to include in the page. I've taken one and placed it in the same folder as my `index.html` file. I've called the photo `profile.png`.
 
-To add an image element, we use the `img` tag, like so:
+To add an image, we use the [void](../01_elements/README.md) `<img>` element, like so:
 
 ```html
 <img src="profile.png" alt="Rolf's profile picture." />
@@ -47,7 +49,7 @@ This has two attributes:
 - `src` is the image we want to display. The value of the attribute is a path to the image. Since the HTML document and the image are in the same folder, we can refer to the image directly by its file name.
 - `alt` is the text that is displayed if the image can't load. It's also useful for search engines and accessibility tools.
 
-Remember that we can also add any global attributes, like `class`, to `img` elements. I'll add one so that later on we can target the image more easily with CSS:
+Remember that we can also add any global attributes, like `class`, to `<img>` elements. I'll add one so that later on we can target the image more easily with CSS:
 
 ```html
 <!DOCTYPE html>

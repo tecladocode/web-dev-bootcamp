@@ -1,6 +1,6 @@
 # Completing our project with document-level annotations
 
-In this lecture, let's continue with our HTML project. Any HTML document needs some document-level annotations in the `head`.
+In this lecture, let's continue with our HTML project. Every HTML document needs some document-level annotations in the `head`.
 
 This is the code we're starting with:
 
@@ -39,7 +39,7 @@ The first thing to do is add a `title` element. This is used by browsers, so use
 </html>
 ```
 
-We usually also want to add some meta-information. For example, the charset of the page. Normally we also want to add viewport information, which helps browsers resize the page correctly in different devices:
+We usually also want to add some meta-information. For example, the [charset](https://www.w3.org/International/questions/qa-what-is-encoding) of the page. Normally we also want to add viewport information, which helps browsers resize the page correctly on different devices:
 
 ```html
 <!DOCTYPE html>
