@@ -66,7 +66,10 @@ Inside each element, we'll have the heading, the date of posting, and the conten
         <h2>A bit of a chill day today</h2>
         <time datetime="24-10-2019">Oct 24</time>
     </div>
-    <p>Today I couldn’t do much programming, but that’s OK! Can’t be too awesome every day now!</p>
+    <p>
+        Today I couldn’t do much programming, but that’s OK!
+        Can’t be too awesome every day now!
+    </p>
 </article>
 ```
 
@@ -92,14 +95,20 @@ Now that we've got everything, let's take a look at our site structure holistica
                     <h2>A bit of a chill day today</h2>
                     <time datetime="24-10-2019">Oct 24</time>
                 </div>
-                <p>Today I couldn’t do much programming, but that’s OK! Can’t be too awesome every day now!</p>
+                <p>
+                    Today I couldn’t do much programming, but that’s OK!
+                    Can’t be too awesome every day now!
+                </p>
             </article>
             <article>
                 <div>
                     <h2>A bit of a chill day today</h2>
                     <time datetime="24-10-2019">Oct 24</time>
                 </div>
-                <p>Today I couldn’t do much programming, but that’s OK! Can’t be too awesome every day now!</p>
+                <p>
+                    Today I couldn’t do much programming, but that’s OK!
+                    Can’t be too awesome every day now!
+                </p>
             </article>
         </section>
     </main>

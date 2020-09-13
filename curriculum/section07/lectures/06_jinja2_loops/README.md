@@ -23,7 +23,9 @@ In this section, we'll see how you can add *for loop* logic to your Jinja2 templ
 
 In the above template, we've traversed through a Python list containing the names of the planets in our solar system and showed them via an unordered HTML list. To render this, create an endpoint called `/for-loop/` and add the following code to the `app.py` file of your Flask project.
 
-```python{10,21}
+<!-- Lines to highlight: 10, 21-->
+
+```python
 # app.py
 
 from flask import Flask, render_template
@@ -72,7 +74,9 @@ Let's explore another example where you'll traverse through the keys and the val
 
 In the above template, we've looped through the key-value pairs of a dictionary object called `cuisines` and showed them in an unordered HTML list. To render this, add the following code to your Flask project's `app.py`. This will create an endpoint called `/for-loop/dict/`.
 
-```python{10,18}
+<!-- Lines to highlight: 10, 18 -->
+
+```python
 # app.py
 
 from flask import Flask, render_template
@@ -102,7 +106,9 @@ Run the Flask application and head over to [http://localhost:5000/for-loop/dict]
 
 You can combine loops and conditionals to implement more complex logic in Jinja2 template. Let's create another HTML template file named `for_loop_conditionals.html` and place that in our `/template` folder. Add the following content to the file:
 
-```html{6,10,13}
+<!-- Lines to highlight: 6, 10, 13 -->
+
+```html
 <!-- templates/for_loop_conditionals.html -->
 
 <h1>Loops in Jinja2</h1>
@@ -125,7 +131,9 @@ In the above template, we've looped through a list of tuples where each tuple ha
 
 To render the template using Flask, add the following code to your project's `app.py` file:
 
-```python{10,20}
+<!-- Lines to highlight: 10, 20 -->
+
+```python
 # app.py
 
 from flask import Flask, render_template

@@ -18,7 +18,9 @@ This section explains how you can evaluate Python expressions in Jinja2 and rend
 
 Let's perform some basic operations like **addition**, **subtraction** and **string concatenation** via Jinja template. To follow along, create a new HTML template file named `expressions.html` in the `/templates` folder of your Flask project's directory. The content of the file should look like this:
 
-```html{20,24,28,34}
+<!-- Lines to highlight: 20, 24, 28, 34 -->
+
+```html
 <!-- templates/expressions.html -->
 
 <h2>Expressions in Jinja2</h2>
@@ -26,41 +28,44 @@ Let's perform some basic operations like **addition**, **subtraction** and **str
 <h3>Interpolation</h3>
 
 <p>
-A quick {{ color }} {{ animal_one }} jumps over the lazy
-{{ animal_two }}.
+    A quick {{ color }} {{ animal_one }} jumps over the lazy
+    {{ animal_two }}.
 </p>
 
 <h3>Addition and Subtraction</h3>
 
 <p>
-Alice bought {{ orange_amount }} oranges and {{ apple_amount }} apples.
+    Alice bought {{ orange_amount }} oranges and {{ apple_amount }} apples.
 </p>
 
 <p>
-In total she has {{ orange_amount + apple_amount }} fruits.
+    In total she has {{ orange_amount + apple_amount }} fruits.
 </p>
 
 <p>
-She gave {{ donate_amount }} fruits to Bob.
+    She gave {{ donate_amount }} fruits to Bob.
 </p>
 
 <p>
-Now she has {{ orange_amount + apple_amount - donate_amount }}
-fruits remaining.
+    Now she has {{ orange_amount + apple_amount - donate_amount }}
+    fruits remaining.
 </p>
 
 <h3>String Concatenation</h3>
 
-<p>A lot of people think {{ first_name + ' ' + last_name }} is the most
-powerful Marvel character.
+<p>
+    A lot of people think {{ first_name + ' ' + last_name }} is the most
+    powerful Marvel character.
 </p>
 ```
 
-The header tags in of the above HTML file denotes what sort of expression operations are taking place in the template. In line **19**, **23**, **27** and **33** notice how you can perform different operations like addition, subtraction and string concatenation inside the double braces `{​{ }​}`.
+The header tags in of the above HTML file denotes what sort of expression operations are taking place in the template. In line **19**, **23**, **27** and **34** notice how you can perform different operations like addition, subtraction and string concatenation inside the double braces `{​{ }​}`.
 
 Now we'll evaluate these expression operations and render the results using the `render_template` method. Let's create a new endpoint in our `app.py` file named `/expressions/` and perform rendering there.
 
-```python{27,37}
+<!-- Lines to highlight: 27, 37 -->
+
+```python
 # app.py
 
 from flask import Flask
@@ -96,12 +101,13 @@ def render_expressions():
         "first_name": first_name,
         "last_name": last_name,
     }
+
     return render_template("expressions.html", **kwargs)
 ```
 
 In the above file, we just have to define the placeholder variables and the evaluation part will be taken care by the Jinja2 template engine.
 
-In line **26**, we've taken advantage of Python dictionary to pass keyworded arguments to the `render_template` method. Instead of supplying all the arguments directly, you can use dictionary unpacking operator `**` (in line **36**) to pass the arguments implicitly while keeping the `render_template` method clean.
+In line **26**, we've taken advantage of Python dictionary to pass keyworded arguments to the `render_template` method. Instead of supplying all the arguments directly, you can use dictionary unpacking operator `**` (in line **37**) to pass the arguments implicitly while keeping the `render_template` method clean.
 
 If you run the Flask application and go to [http://localhost:5000/expressions/](http://localhost:5000/expressions/) URL in your browser, you'll see that Jinja2 has evaluated all the expression operations defined in the `expressions.html` file and filled in the corresponding placeholder values.
 
@@ -115,7 +121,9 @@ Let's see how you can perform various operations using Python's built-in data st
 
 Create a new HTML template named `data_structures.html` in the `/templates` folder and add the following contents to it:
 
-```html{8,9,15,16,22,23}
+<!-- Lines to highlight: 8, 9, 15, 16, 22, 23 -->
+
+```html
 <!-- templates/data_structures.html -->
 
 <h2>Data Structures in Jinja2</h2>
@@ -123,29 +131,32 @@ Create a new HTML template named `data_structures.html` in the `/templates` fold
 <h3>List Operations</h3>
 
 <p>
-Jina said her top three favorite movies were {{ movies[0] }},
-{{ movies[1] }} and  {{ movies[2]}}.
+    Jina said her top three favorite movies were {{ movies[0] }},
+    {{ movies[1] }} and  {{ movies[2]}}.
 </p>
 
 <h3>Dictionary Operations</h3>
 
 <p>
-This is a {{ car["brand"] }} {{ car["model"] }}, built in {{ car["year"] }}.
+    This is a {{ car["brand"] }} {{ car["model"] }}, built
+    in {{ car["year"] }}.
 </p>
 
 <h3>Custom Data Structure Operations</h3>
 
 <p>
-The four Galilean moons of Jupiter are {{ moons.first }},
-{{moons.second}}, {{moons.third}} and {{moons.fourth}}.
+    The four Galilean moons of Jupiter are {{ moons.first }},
+    {{ moons.second }}, {{ moons.third }} and {{ moons.fourth }}.
 </p>
 ```
 
-Here, in the above HTML file, the highlighted line show operations concerning a *list*, *dict* and a *custom class* respectively.
+<!-- Here, in the above HTML file, the highlighted line show operations concerning a *list*, *dict* and a *custom class* respectively. -->
 
 To understand how the values will get filled, let's define a new endpoint named `/data-structures/` in the `app.py` file and add the necessary logics to fill in the placeholders mentioned in the `data-structures.html` file:
 
-```python{34}
+<!-- Lines to highlight: 34 -->
+
+```python
 from flask import Flask
 from flask import render_template
 

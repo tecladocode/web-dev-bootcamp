@@ -105,7 +105,9 @@ The above static files are kept simple for demonstration purposes. In real life,
 
 Now that you've created the necessary HTML static files, let's see how you can use `render_template` to send the files to the browser. Here, the following code snippet should be familiar to you. Here, we'll be exposing two API endpoints for accessing the static files from your browser:
 
-``` python{4,11,16}
+<!-- Lines to highlight: 4, 11, 16 -->
+
+``` python
 # app.py
 
 from flask import Flask

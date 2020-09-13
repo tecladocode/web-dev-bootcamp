@@ -31,7 +31,9 @@ The variables and/or logic are placed between tags or delimiters. Jinja template
 
 Let's take a quick look at a self-contained example. In this example, you'll use the `{​{ ...  }​}` syntax to interpolate values to a string. If you've already installed Flask in your current environment, Jinja2 should already be installed. If not, you can always install it to your current development environment via `pip install jinja2`.
 
-```python{7,12}
+<!-- Lines to highlight: 7, 12 -->
+
+```python
 from jinja2 import Template
 
 t = Template("""
@@ -48,7 +50,7 @@ print(t.render(name="John Doe"))
 
 This should give you the following output:
 
-```
+```html
 <html>
 <body>
     <h1>Greetings!</h1>
@@ -92,7 +94,9 @@ Flask's `render_template` method will be used to send our interpolated HTML file
 
 For this to work, you'll have to create a new endpoint to access this newly created page from browser. Your `app.py` should look like the following:
 
-```python{10}
+<!-- Lines to highlight: 10, 11, 12 -->
+
+```python
 # app.py
 from flask import Flask
 from flask import render_template
@@ -102,7 +106,9 @@ app = Flask(__name__)
 
 @app.route("/jinja2")
 def render_jinja2_intro():
-    return render_template("jinja2-intro.html", name="John Doe", template_name="Jinja2")
+    return render_template(
+        "jinja2-intro.html", name="John Doe", template_name="Jinja2"
+    )
 ```
 
 Here, we've created a new endpoint `/jinja2`. Pay attention to line 10, where we've passed the name of the HTML file `jinja2-intro.html` as the first argument of the `render_template` method. The other two arguments `name` and `template_name` pass values to the Jinja2 template engine. The `render_template` method replaces the placeholders with actual values and renders the final HTML file into the browser.
