@@ -26,7 +26,7 @@ div ul li {
 }
 ```
 
-![A CSS specificity table showing three type selectors](./assets/specificity_1.png)
+![A CSS specificity table showing three type selectors](./assets/specificity-1-type.png)
 
 ::: tip Pseudo-elements
 Pseudo-elements such as `::before` and `::after` count as type selectors for the purposes of calculating specificity. 
@@ -58,11 +58,11 @@ The specificty of these two selectors is different, however.
 
 The first has one attribute selector and one type selector:
 
-![A CSS specificity table showing one attribute and one type selector](./assets/specificity_2.png)
+![A CSS specificity table showing one attribute and one type selector](./assets/specificity-2-attribute-type.png)
 
 The second has one attribute selector, but no type selectors:
 
-![A CSS specificity table showing one attribute selector](./assets/specificity_3.png)
+![A CSS specificity table showing one attribute selector](./assets/specificity-3-attribute.png)
 
 `button[type="submit"]` therefore has a higher specificity than `[type="submit"]`, and any property declarations we define using that selector will beat those defined under `[type="submit"]` alone.
 
@@ -96,11 +96,11 @@ Despite there being three type selectors for the second block, and the fact this
 
 The table for `.list_item` looks like this:
 
-![A CSS specificity table showing one class selector](./assets/specificity_3.png)
+![A CSS specificity table showing one class selector](./assets/specificity-4-class.png)
 
 While the table for `div ul li` looks like this:
 
-![A CSS specificity table showing three type selectors](./assets/specificity_4.png)
+![A CSS specificity table showing three type selectors](./assets/specificity-5-three-type.png)
 
 Since selectors belonging to a higher weight category beat out any number of selectors from a lower category, having a single class selector is worth more than 50 type selectors. `.list_item` is therefore more specific than `div ul li`, and the font weight of `600` is applied to our `<li>` elements.
 
@@ -124,7 +124,7 @@ In cases where we have two competing id selectors, the class and attributes sele
 
 Here the specificity is as follows:
 
-![A CSS specificity table showing one id selector](./assets/specificity_5.png)
+![A CSS specificity table showing one id selector](./assets/specificity-6-id.png)
 
 ```css
 #main.main{
@@ -134,7 +134,7 @@ Here the specificity is as follows:
 
 While here the specificity is:
 
-![A CSS specificity table showing one id selector and one class selector](./assets/specificity_6.png)
+![A CSS specificity table showing one id selector and one class selector](./assets/specificity-7-id-class.png)
 
 ### Inline styles
 
@@ -146,7 +146,7 @@ Inline styles have the highest specifity and occupy the final category. Inline s
 </div>
 ```
 
-![A CSS specificity table showing inline styles](./assets/specificity_7.png)
+![A CSS specificity table showing inline styles](./assets/specificity-8-inline-style.png)
 
 ::: warning Using inline styles
 Using inline styles is generally a bad idea for a couple of reasons:
@@ -172,6 +172,8 @@ p {
 }
 ```
 
+![How an important property overrides a stronger selector](./assets/important-vs-unimportant.png)
+
 ::: warning A note on bad practice
 While it's important to know about `!important`, it's a very commonly abused tool, and generally has no place in your CSS code. It can lead to situations where you're not able to overwrite a given property value, and like inline styles, it can be a gateway for further bad practices to creep in.
 
@@ -180,19 +182,23 @@ It's often used as a crutch by developers who don't understand how specificity w
 You can find some guidance on when and how to use `!important` [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception).
 :::
 
-### Competing `!important` delcarations
+### Competing `!important` declarations
 
 When two or more competing styles both make use of `!important`, how does the browser decide which property to use?
 
 It actually falls back on specificity. This is where many people get stuck with `!important`, and why it's so vital to learn the concept of specificity well.
 
+![Diagram showing how competing important declarations work](./assets/competing-important-declarations.png)
+
 Let's imagine somebody is working on their site, and they can't get a property to work because of specificity reasons, so they add `!important` to get the style to apply. It works, so as far as they're concerned, they've done a good job.
 
 Now when they want to overwrite this property elsewhere, they might apply `!important` again, only to find that the style still isn't being applied because the specificity of the original `!important` declaration is higher.
 
-We can think of `!important` as creating a new specificity context which fits in above the other four categories, like so:
+So remember:
 
-![A CSS specificity table showing inline styles](./assets/specificity_8.png)
+- If no declarations use `!important`, the most specific selector wins.
+- If a declaration with a weaker selector uses `!important`, and another declaration with a strong selector doesn't use `!important`, the `!important` one wins.
+- If two competing declarations use `!important`, the most specific selector wins.
 
 ## The Universal Selector (`*`)
 
