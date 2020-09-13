@@ -197,7 +197,7 @@ Now when they want to overwrite this property elsewhere, they might apply `!impo
 So remember:
 
 - If no declarations use `!important`, the most specific selector wins.
-- If a declaration with a weaker selector uses `!important`, and another declaration with a strong selector doesn't use `!important`, the `!important` one wins.
+- If there are conflicting property declarations for a given element, and one uses `!important`, then that declaration wins, regardless of specificity.
 - If two competing declarations use `!important`, the most specific selector wins.
 
 ## The Universal Selector (`*`)
