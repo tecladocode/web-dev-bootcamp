@@ -2,20 +2,29 @@
 
 In this lecture, let's continue working on our "Learning HTML" project.
 
-The first thing we're going to do is a single-line change that is surprisingly impactful on any website: changing the font.
+The first thing we're going to do is make a single-line change that is surprisingly impactful on any website: changing the font.
 
 In most operating systems and browsers, the default styles give your HTML pages a serif font like Times New Roman. Although there's nothing wrong with that font, nowadays most operating systems use a very different style of font for their desktop applications.
+
+:::tip Serif and sans-serif typefaces
+Serifs are the little extra lines we see attached to the larger strokes of letters in some typefaces. You can see an example below of a typeface with the serifs highlighted.
+
+![A typeface with the serifs highlighted in red.](./assets/Serif_and_sans-serif_03.svg)
+<small style="display: block;">Image created by Stannered, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0 License.</a></small>
+
+Fonts which include these serifs are called serif fonts, and those without are called sans-serif fonts. Sans just means "without".
+:::
 
 On modern OS X versions, that font is "San Francisco". On Windows 10, it's "Segoe UI", and on Ubuntu it's a font called "Ubuntu".
 
 If we tell our CSS file to use the "San Francisco" font, then it'll use that font if it's available in the user's computer. That'll likely mean the user is on a computer running OS X.
 
-So if we want our website to use the user's computer's default font, we can tell it to:
+So if we want our website to use the default font of the user's computer, we can tell it to try the following:
 
-- Use "San Francisco".
-- If that's not available, use "Segoe UI".
-- If that's not available, use "Ubuntu".
-- If that's not available, use a default sans-serif font.
+1) Use "San Francisco".
+2) If that's not available, use "Segoe UI".
+3) If that's not available, use "Ubuntu".
+4) If that's not available, use a default sans-serif font.
 
 The `font-family` declaration in CSS allows us to pass a list of fonts, where the first one will be used if available, and if not it'll try the second one. Then the third one, and so on:
 
