@@ -30,13 +30,17 @@ We want to limit the size of the content so that lines of text don't become too 
 
 So instead of this:
 
-![Left-aligned, full-width content]()
+![Left-aligned, full-width content](./assets/html-css-no-max-width.png)
 
 We'll get this:
 
-![Center-aligned, small-width content]()
+![Center-aligned, small-width content](./assets/html-css-with-max-width.png)
 
 We can do this by setting a maximum width of the `body`, and setting its left and right margins to be as large as possible so that the two margins + the width of the content will be equal to the size of the page.
+
+::: warning
+Note that the image is still way to big on both screenshots. We'll be getting to that in a minute!
+:::
 
 If we do this, the content will be centered:
 
@@ -64,7 +68,11 @@ img {
 
 Here I've set the `max-width` to `100%`, which always means 100% of the parent's size. In this case we're referring to width, so this talks about 100% of the parent's width.
 
-Therefore, images won't take up more than the width of the parent.
+Therefore, images won't take up more than the width of the parent. 
+
+Our site now looks like this:
+
+![Page with max-width image](./assets/page-with-max-width-images.png)
 
 ## Adding spacing under headings
 
