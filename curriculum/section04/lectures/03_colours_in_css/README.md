@@ -124,6 +124,13 @@ Lightness, also represented as a percentage, indicates the amount of white and b
 
 ![The HSL cylinder model](./assets/hsl-cylinder.png)
 
+<small style="display: block; text-align: right;">
+    Image created by SharkD,
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">
+        CC BY-SA 3.0.
+    </a>
+</small>
+
 A lightness value of `50%` is sometimes referred to as "normal" lightness.
 
 Here is a representation of `purple` in HSL: `hsl(300, 100%, 25%)`.
