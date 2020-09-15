@@ -36,21 +36,43 @@ We'll get this:
 
 ![Center-aligned, small-width content](./assets/html-css-with-max-width.png)
 
-We can do this by setting a maximum width of the `body`, and setting its left and right margins to be as large as possible so that the two margins + the width of the content will be equal to the size of the page.
+We can do this by creating a `main` element and putting everything inside it. Then, we can give it maximum width and set its left and right margins to be as large as possible.
 
 ::: warning
 Note that the image is still way to big on both screenshots. We'll be getting to that in a minute!
 :::
 
-If we do this, the content will be centered:
+If we do this, the content will be centered. This is the new HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Jose Salvatierra - Learning HTML</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <main>
+          <img class="profile" src="profile.png" alt="Jose's profile picture." />
+          <h1>I'm learning HTML and CSS!</h1>
+          <p>Hello, my name is Jose Salvatierra. I’m learning about web development, and I’m starting with HTML and CSS.</p>
+          <p>With HTML and CSS, I can make all sorts of websites. HTML and CSS are the most important languages to learn!</p>
+          <p>This website’s code looks like this:</p>
+          <img class="code" src="code.png" alt="The HTML code for this page." />
+        </main>
+    </body>
+</html>
+```
+
+And this is the CSS code we need to add:
 
 ```css
-body {
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, sans-serif;
-  width: 35rem;
+main {
+  max-width: 35rem;
   margin: 3.75rem auto 0 auto;
-  color: #002240;
 }
 ```
 
@@ -100,9 +122,12 @@ That's about it! Our final CSS code for this project looks like this:
 body {
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, sans-serif;
-  width: 35rem;
-  margin: 3.75rem auto 0 auto;
   color: #002240;
+}
+
+main {
+  max-width: 35rem;
+  margin: 3.75rem auto 0 auto;
 }
 
 h1 {
