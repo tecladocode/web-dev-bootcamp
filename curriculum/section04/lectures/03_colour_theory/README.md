@@ -52,9 +52,7 @@ HSL uses a cylindrical model to represent the available colour space. The angle 
 
 At an angle of `0°` we find the colour red; at `120°` we find the colour green; and at `240°` we find the colour blue.
 
-<!-- TODO: Replace this diagram with a custom one -->
-
-![Colour wheel](./assets/colour-wheel.jpg)
+![Colour wheel](./assets/colour-wheel.png)
 
 As we move from the edge of the cylinder to the centre, the colours change from very vibrant to dull. This change is represented by the saturation value.
 
