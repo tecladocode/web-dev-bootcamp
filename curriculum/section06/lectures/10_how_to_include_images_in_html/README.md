@@ -28,26 +28,27 @@ my_project
 
 Then, we can write some code in the HTML document that will take care of telling the browser to load the SVG and display it in the correct place.
 
-Let's write this code into our `home.html` document:
+We'll do this in our existing code, inside the `<header>` element:
 
 ```html
-<!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        <img src="./logo.svg" alt="The Microblog Logo">
-    </body>
-</html>
+<body>
+    <header>
+        <img src="./logo.svg" alt="The Microblog Logo" />
+    </header>
+    <!-- The rest of the code continues as per earlier lectures -->
+</body>
 ```
 
 When the browser loads this HTML document, it will run through it and find the `img` tag. Then, it will request the SVG from the server (or, in this case, our file system).
 
 It will load the SVG image and then place it inside the `body` element.
 
+<!-- TODO: Fix this image so it contains microblog code -->
 ![Working HTML document loading the SVG](./assets/working-image.png)
 
 If for any reason the image cannot be loaded (e.g. we misspelled it), we'll get a "broken image" symbol and the alternative text (the `alt` property) will be shown.
 
+<!-- TODO: Fix this image so it contains microblog code -->
 ![Broken HTML document with misspelled SVG, showing broken SVG loading](./assets/broken-image.png)
 
 ::: tip Other image types

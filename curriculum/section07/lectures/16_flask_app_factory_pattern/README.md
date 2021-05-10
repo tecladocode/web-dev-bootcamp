@@ -1,0 +1,1 @@
+# Using Flask's app factory pattern

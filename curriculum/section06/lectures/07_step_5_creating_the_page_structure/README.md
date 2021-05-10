@@ -6,7 +6,7 @@ When coming up with a rough HTML structure for a page, the main thing to think a
 
 To understand what we mean by "layout", let me show you a fictitious website:
 
-IMAGE
+![Fictitious website layout](./assets/fictitious-website-layout.png)
 
 You can see that we have three distinct elements: a header, a footer, and a grid of elements.
 
@@ -24,9 +24,9 @@ In many cases, it won't be so clear-cut! But we'll get to that later on in the c
 
 Although it may sound obvious, the `<main>` element needs to contain the main content of the site. In our example, the main content is the grid of elements.
 
-Imagine each grid element in our example represents an item that is for sale, and it contains an image of the item, the item's name, and its price.
+Each grid element in our example represents an item for sale, and it contains an image of the item, the item's name, and its price.
 
-Such a grid element could be displayed on its own, outside the grid, in a different page entirely (e.g. a page created specifically for each item).
+One item could be displayed on its own, outside the grid, in a different page entirely (e.g. a page created specifically for each item).
 
 Since the grid elements make sense on their own, we'd use an `<article>` element to contain the information for each item, like so:
 
@@ -34,12 +34,12 @@ Since the grid elements make sense on their own, we'd use an `<article>` element
 <body>
   <header></header>
   <main>
-    <article class="content-item"></article>
-    <article class="content-item"></article>
-    <article class="content-item"></article>
-    <article class="content-item"></article>
-    <article class="content-item"></article>
-    <article class="content-item"></article>
+    <article class="item"></article>
+    <article class="item"></article>
+    <article class="item"></article>
+    <article class="item"></article>
+    <article class="item"></article>
+    <article class="item"></article>
   </main>
   <footer></footer>
 </body>
@@ -55,7 +55,7 @@ For our Microblog project, we need to look at the layout and structure of the pa
 
 You'll find that the Microblog is very similar, with just one more set of elements being required (the form to submit new entries).
 
-IMAGE SHOWING MICROBLOG COLUMNS
+![Microblog structure showing rows](./assets/microblog-rows.png)
 
 We have:
 
@@ -72,7 +72,7 @@ To differentiate them as two distinct sections of the main content, the form and
 
 So this is more or less what I'm envisioning the structure of the page will look like:
 
-IMAGE
+![Microblog page structure with HTML elements](./assets/microblog-page-structure.png)
 
 ## Conclusion
 
