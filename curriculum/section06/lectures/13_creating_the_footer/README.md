@@ -1,2 +1,0 @@
-# Creating the Microblog footer
-

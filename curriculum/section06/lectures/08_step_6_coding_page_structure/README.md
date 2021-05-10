@@ -8,9 +8,11 @@ In programming, and I find especially in HTML, there's no _one way to do things_
 
 We've discussed that the structure of our Microblog is going to look like this:
 
-IMAGE
+![Final design of the microblog project](./assets/microblog-final-design.png)
 
-There will be a central content column, with the header, main content, and footer. Let's start coding that structure:
+There will be a central content column, with the header, main content, and footer.
+
+I'll create a file , let's call it `home.html`, in my new project, and let's start coding that structure:
 
 ```html
 <body>
@@ -21,7 +23,7 @@ There will be a central content column, with the header, main content, and foote
 </body>
 ```
 
-If you remember our design, you'll notice that the footer occupied the full width of the page. However, the header did not. That's alright! We can style them differently using CSS later on.
+Notice that the footer occupied the full width of the page. The header, however, does not. That's alright! We can style them differently using CSS later on.
 
 Remember, HTML is about meaning. CSS is about styling!
 
@@ -31,7 +33,9 @@ Inside the `<main>` element, we'll add our form and recent posts.
 
 The recent posts part of the page is what HTML considers a "section", because it is a distinct part of the site that can be identified by a heading, and doesn't have meaning on its own.
 
-The form is also its own section because it is also a distinct part of the site. Although `section` normally has a heading, they don't have to have one. We can use the `<section>` element for parts of the site that don't have a more specific semantic element to represent it.
+The form is also its own section because it is also a distinct part of the site. After coming up with the design, I remembered that every `section` element normally has a heading (although it doesn't _have_ to have one). We can use the `<section>` element for parts of the site that don't have a more specific semantic element to represent it.
+
+I'll add headings to each section to more effectively convey what they are.
 
 The form on its own cannot be accurately represented by an `<article>` element (which should have meaning on their own).
 
@@ -40,6 +44,7 @@ The form on its own cannot be accurately represented by an `<article>` element (
     <header></header>
     <main>
         <section>
+            <h1>Add new entry</h1>
             <form></form>
         </section>
         <section>
@@ -86,6 +91,7 @@ Now that we've got everything, let's take a look at our site structure holistica
     <header></header>
     <main>
         <section>
+            <h1>Add new entry</h1>
             <form></form>
         </section>
         <section>

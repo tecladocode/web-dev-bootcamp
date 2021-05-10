@@ -51,7 +51,7 @@ So that elements are later targettable with CSS more easily, we can give them cl
 <form method="POST" class="form">
     <p class="form__input">
         <label for="entry" class="form__label">Entry contents</label>
-        <textarea id="entry" name="content" class="form__text"></textarea>
+        <textarea id="entry" name="content" class="form__textarea"></textarea>
     </p>
     <button type="submit" class="form__submit">Add entry</button>
 </form>
