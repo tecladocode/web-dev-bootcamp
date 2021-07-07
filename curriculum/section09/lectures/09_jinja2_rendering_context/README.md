@@ -87,7 +87,9 @@ def home():
     return render_template("home.html", format_currency=format_currency)
 ```
 
+::: v-pre
 Then, within the template, you could do `{{ format_currency(15.67, "£") }}`.
+:::
 
 However, if you want that same function to be available to _all_ templates, you could register a filter. This would add it to the Environment that Flask uses to render templates.
 
