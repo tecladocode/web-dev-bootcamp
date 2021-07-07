@@ -6,9 +6,9 @@
   },
   "devDependencies": {
     "surge": "^0.21.3",
-    "vuepress": "^1.5.4"
+    "vuepress": "^1.8.2"
   },
   "dependencies": {
-    "markdown-it-footnote": "^3.0.2"
+    "markdown-it-footnote": "^3.0.3"
   }
 }
