@@ -1,3 +1,15 @@
+---
+title: Starting to write our project's CSS file
+slug: starting-project-css-file
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Starting to write our project's CSS file
 
 In this lecture, let's continue working on our "Learning HTML" project.

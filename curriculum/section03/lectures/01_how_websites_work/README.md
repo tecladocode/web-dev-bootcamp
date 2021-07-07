@@ -1,3 +1,15 @@
+---
+title: How websites work
+slug: how-websites-work
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # How websites work
 
 ## A lightning tour of the Internet

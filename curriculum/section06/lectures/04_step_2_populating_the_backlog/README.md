@@ -1,3 +1,15 @@
+---
+title: "Step 2: Populating the Backlog"
+slug: step-2-populating-the-backlog
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Step 2: Populating the Backlog
 
 Let's come up with a backlog of work for this project. That way, it'll be easier to develop _and_ also easier for you to know everything we're going to create.

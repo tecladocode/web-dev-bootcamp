@@ -1,3 +1,15 @@
+---
+title: "Jinja2: Conditional Statements"
+slug: jinja2-conditional-statements
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Jinja2: Conditional Statements
 
 **Conditional statements**[^conditional-statements] perform different computations or actions depending on whether a programmer-specified boolean condition evaluates to *true* or *false*. Simply speaking, the `if-else` construct in your code is generally referred to as conditional statements.

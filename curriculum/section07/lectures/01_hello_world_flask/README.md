@@ -1,3 +1,15 @@
+---
+title: "'Hello, world!' with Flask"
+slug: hello-world-with-flask
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # "Hello, world!" with Flask
 
 ## Why Flask?

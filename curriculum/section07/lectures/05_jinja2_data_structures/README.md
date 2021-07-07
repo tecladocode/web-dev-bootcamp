@@ -1,5 +1,16 @@
+---
+title: "Data Structures in Jinja2"
+slug: data-structures-in-jinja2
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
 
-## Data Structures in Jinja2
+# Data Structures in Jinja2
 
 Jinja2 templating language also lets you use Python's built-in or user defined data structures inside a template. This can give you a lot of power since it means you can basically define many valid Python operations inside an HTML template and the template engine will evaluate that.
 

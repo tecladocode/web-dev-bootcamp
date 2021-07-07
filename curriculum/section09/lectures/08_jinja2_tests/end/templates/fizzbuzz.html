@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fizzbuzz</title>
+</head>
+<body>
+  <ul>
+    {% for n in range(1, 101) %}
+    <li>
+      {% if n is divisibleby(3) and n is divisibleby(5) %}
+        FizzBuzz
+      {% elif n is divisibleby(3) %}
+        Fizz
+      {% elif n is divisibleby(5) %}
+        Buzz
+      {% else %}
+        {{ n }}
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

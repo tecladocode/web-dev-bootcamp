@@ -1,3 +1,15 @@
+---
+title: "Setting the font family in our project"
+slug: setting-font-family-in-our-project
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Setting the font family in our project
 
 ```css

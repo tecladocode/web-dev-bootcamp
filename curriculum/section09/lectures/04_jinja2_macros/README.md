@@ -1,0 +1,108 @@
+---
+title: Simplifying your Jinja code with macros
+slug: simplifying-jinja-code-macros
+tags:
+  - Written
+  - How to
+categories:
+  - Video
+section_number: 9
+excerpt: Jinja macros allow us to re-use blocks of Jinja code, including using arguments for better extensibility.
+---
+
+- [Simplifying your Jinja code with macros](#simplifying-your-jinja-code-with-macros)
+  - [In this video... (TL;DR)](#in-this-video-tldr)
+  - [Code at the start of this lecture](#code-at-the-start-of-this-lecture)
+  - [Code written in this lecture](#code-written-in-this-lecture)
+    - [Step 1](#step-1)
+    - [Step 2](#step-2)
+  - [Final code at the end of this lecture](#final-code-at-the-end-of-this-lecture)
+
+# Simplifying your Jinja code with macros
+
+## In this video... (TL;DR)
+
+Another thing in Jinja similar to functions in Python, but here they're used for composition rather than transformation.
+
+The process for using macros starts by extraction: extract some existing Jinja code into a macro so that you can call it from anywhere, and reuse it in multiple places.
+
+```html
+{% macro alert(title, message) %}
+	<div class="alert alert-warning">
+		<p class="alert__title">{{ title }}</p>
+		<p class="alert__body">{{ message }}</p>
+	</div>
+{% endmacro %}
+```
+
+## Code at the start of this lecture
+
+```html
+{% set num_todos = todos | length %}
+  {% if num_todos > 0 %}
+      <p>You have {{ num_todos }} things to do today.</p>
+      <ul>
+        {% for text, completed in todos %}
+          <li>{{ "[x]" if completed else "[ ]" }} - {{ text }}</li>
+        {% endfor %}
+      </ul>
+  {% else %}
+      <p>Nothing to do today. Relax!</p>
+  {% endif %}
+```
+
+## Code written in this lecture
+
+### Step 1
+
+```html
+{% macro todo_li(text, completed=False) %}
+  <li>{{ "[x]" if completed else "[ ]" }} - {{ text }}</li>
+{% endmacro %}
+
+{% set num_todos = todos | length %}
+  {% if num_todos > 0 %}
+      <p>You have {{ num_todos }} things to do today.</p>
+      <ul>
+        {% for text, completed in todos %}
+          {{ todo_li(text, completed) }}
+        {% endfor %}
+      </ul>
+  {% else %}
+      <p>Nothing to do today. Relax!</p>
+  {% endif %}
+```
+
+### Step 2
+
+```html
+{% import 'macros.jinja2' as macros %}
+<!-- or -->
+{% from 'macros.jinja2' import todo_list %}
+
+{% set num_todos = todos | length %}
+  {% if num_todos > 0 %}
+      <p>You have {{ num_todos }} things to do today.</p>
+
+      {{ macros.todo_list(todos) }}
+      <!-- or -->
+      {{ todo_list(todos) }}
+  {% else %}
+      <p>Nothing to do today. Relax!</p>
+  {% endif %}
+```
+
+## Final code at the end of this lecture
+
+```html
+{% import 'macros.jinja2' as macros %}
+
+{% set num_todos = todos | length %}
+  {% if num_todos > 0 %}
+      <p>You have {{ num_todos }} things to do today.</p>
+
+      {{ macros.todo_list(todos) }}
+  {% else %}
+      <p>Nothing to do today. Relax!</p>
+  {% endif %}
+```

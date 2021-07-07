@@ -51,6 +51,16 @@ module.exports = {
         path: "/section07/",
         children: getChildren("section07", "lectures"),
       },
+      {
+        title: "Section 8: Deploying Flask Apps to Heroku",
+        path: "/section08/",
+        children: getChildren("section08", "lectures"),
+      },
+      {
+        title: "Section 9: Jinja2 Mastery Level I",
+        path: "/section09/",
+        children: getChildren("section09", "lectures"),
+      },
     ],
     sidebarDepth: 0,
   },

@@ -1,3 +1,7 @@
+---
+name: "A Complete Python Refresher"
+---
+
 # Python Refresher
 
 We've included a Python Refresher section in this course to help you, in case you haven't done any Python for a while or you are coming from a different programming language.

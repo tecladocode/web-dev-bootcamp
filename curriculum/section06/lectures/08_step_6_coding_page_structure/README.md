@@ -1,3 +1,15 @@
+---
+title: "Step 6: Coding the Page Structure"
+slug: step-6-coding-the-page-structure
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Step 6: Coding the Page Structure
 
 Finally, we can code the page structure and transfer all our thoughts into HTML.

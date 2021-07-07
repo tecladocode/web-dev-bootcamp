@@ -1,3 +1,15 @@
+---
+title: "Step 1: Become A User"
+slug: step-1-become-a-user
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Step 1: Become A User
 
 Every software project needs users. Otherwise, why build it?

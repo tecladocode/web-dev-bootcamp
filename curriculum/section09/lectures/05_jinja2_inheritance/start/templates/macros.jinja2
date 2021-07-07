@@ -1,0 +1,11 @@
+{% macro todo_li(text, completed=False) %}
+    <li><a href="/{{ text }}">{{ "[x]" if completed else "[ ]" }} - {{ text }}</a></li>
+{% endmacro %}
+
+{% macro todo_ul(todos) %}
+    <ul>
+        {% for text, completed in todos %}
+            {{ todo_li(text, completed) }}
+        {% endfor %}
+    </ul>
+{% endmacro %}

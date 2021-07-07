@@ -1,3 +1,15 @@
+---
+title: Non-inherited Properties
+slug: non-inherited-properties
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Non-inherited Properties
 
 As we discussed in the last lecture, not all properties are inherited by default. In this lecture I want to go over some of the more common non-inherited properties.

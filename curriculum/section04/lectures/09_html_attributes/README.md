@@ -1,3 +1,15 @@
+---
+title: HTML attributes
+slug: html-attributes
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # HTML attributes
 
 In this lecture we're going to take a closer look at a pair of important attributes: `class` and `id`.

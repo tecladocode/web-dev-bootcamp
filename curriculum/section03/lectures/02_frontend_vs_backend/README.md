@@ -1,3 +1,15 @@
+---
+title: Front end vs. back end development
+slug: frontend-vs-backend-development
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Front end vs. back end development
 
 When you first start learning about web development, you'll very quickly encounter the terms *front end* and *back end* development. This can often be an area of confusion for new students, so it's worth spending a little time to understand what these terms mean.

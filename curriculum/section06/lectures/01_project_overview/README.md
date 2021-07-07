@@ -1,3 +1,15 @@
+---
+title: "Overview of this project"
+slug: overview-of-this-project
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Overview of this project
 
 In this section we're going to make use of our HTML and CSS knowledge and start building a micro blog. As you go through the course, you can use the microblog to keep track of the things you've learnt. By the end of the course, you'll have a timeline containing lots of useful notes!

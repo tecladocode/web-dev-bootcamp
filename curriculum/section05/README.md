@@ -1,3 +1,7 @@
+---
+name: "Page style with CSS"
+---
+
 # Page Style with CSS
 
 In this section we're going to learn how to modify the appearance of our websites using CSS (**C**ascading **S**tyle **S**heets). CSS is a tricky area for a lot of front end developers, and unfortunately has a somewhat bad reputation. It's often used poorly, largely because people don't spend the time to properly understand the language.

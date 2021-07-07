@@ -1,3 +1,15 @@
+---
+title: 'Elements: The basic components of HTML'
+slug: elements-basic-components-html
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Elements: The basic components of HTML
 
 In this section we're going to dive into the HTML syntax. Don't worry, HTML is not very complicated, and you'll have a good understanding of what everything means in no time!

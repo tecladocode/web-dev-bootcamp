@@ -1,3 +1,15 @@
+---
+title: "How to include images in an HTML document"
+slug: how-to-include-images-in-an-html-document
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # How to include images in an HTML document
 
 - How to get an SVG from Figma

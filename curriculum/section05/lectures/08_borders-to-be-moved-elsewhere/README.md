@@ -1,3 +1,15 @@
+---
+title: Borders in CSS
+slug: css-borders
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Borders
 
 We've already discussed borders as a component of the CSS box model, but in this lecure we're going to talk about some of the specific border properties available to us in CSS.

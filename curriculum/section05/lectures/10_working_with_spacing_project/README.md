@@ -1,3 +1,15 @@
+---
+title: "Working with spacing in our project"
+slug: working-with-spacing-in-our-project
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Working with spacing in our project
 
 In this lecture, let's continue working on our "Learning HTML" project.

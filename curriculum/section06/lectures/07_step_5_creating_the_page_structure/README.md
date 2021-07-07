@@ -1,3 +1,15 @@
+---
+title: "Step 5: Creating the Page Structure"
+slug: step-5-creating-the-page-structure
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Step 5: Creating the Page Structure
 
 When coming up with a rough HTML structure for a page, the main thing to think about is the meaning of the elements we're using, and how we're nesting them.

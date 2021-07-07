@@ -1,3 +1,15 @@
+---
+title: How to link CSS files with HTML
+slug: link-css-files-with-html
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # How to link CSS files with HTML
 
 When we write CSS for a web page, we generally do so inside a dedicated `.css` file. So how do we hook this CSS file up to our HTML document?

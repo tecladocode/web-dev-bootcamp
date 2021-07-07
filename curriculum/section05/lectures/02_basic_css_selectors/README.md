@@ -1,3 +1,15 @@
+---
+title: How to target specific elements with CSS selectors
+slug: target-specific-elements-css-selectors
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # How to target specific elements with CSS selectors
 
 In this lecture we're going to talk a little bit about the CSS selector syntax, which is how we define which elements a given set of style properties applies to.

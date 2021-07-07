@@ -1,3 +1,15 @@
+---
+title: Completing our project with document-level annotations
+slug: completing-project-document-level-annotations
+tags:
+    - How to
+    - Written
+categories:
+    - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Completing our project with document-level annotations
 
 In this lecture, let's continue with our HTML project. Every HTML document needs some document-level annotations in the `head`.

@@ -1,3 +1,15 @@
+---
+title: Adding images to our project
+slug: adding-images-to-project
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Adding images to our project
 
 Now that we've learned about HTML attributes, let's tackle adding some more code to our HTML project.

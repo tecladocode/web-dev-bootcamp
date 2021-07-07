@@ -1,3 +1,15 @@
+---
+title: What is semantic HTML?
+slug: what-is-semantic-html
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # What is semantic HTML?
 
 In this lecture we need to talk about an important concept in modern HTML which cuts to the core of what HTML is actually for.

@@ -1,3 +1,15 @@
+---
+title: The CSS Box Model
+slug: css-box-model
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # The CSS Box Model
 
 In this lecture we'll be talking about a *very* important concept in CSS: the *box model*.

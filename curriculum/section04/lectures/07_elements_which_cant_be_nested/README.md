@@ -1,3 +1,15 @@
+---
+title: Which HTML elements can't be nested?
+slug: which-html-elements-cant-be-nested
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Which HTML elements can't be nested?
 
 This is not an easy question to answer, because different elements within a given content category permit wildly different content. For example, the `<a>` element and the `<select>` element are both [phrasing content](../06_html_categories/#phrasing-content); however, the `<a>` element is permitted to contain any non-interactive [flow content](../06_html_categories/#flow-content), while `<select>` is limited to zero or more `<option>` or `<optgroup>` elements.

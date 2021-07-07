@@ -1,3 +1,15 @@
+---
+title: "How to start a new software project"
+slug: how-to-start-a-new-software-project
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # How to start a new software project
 
 Planning, running, and keeping a software project alive _really_ doesn't have to be hard. Follow just a couple of systems to stay on top of everything.

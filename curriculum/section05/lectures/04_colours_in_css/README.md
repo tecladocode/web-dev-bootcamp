@@ -1,3 +1,15 @@
+---
+title: "CSS colours: color and background-color"
+slug: css-color-background-color
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Colours in CSS: `color` and `background-color`
 
 In this lecture we're going to talk in depth about two properties &mdash; `color` and `background-color` &mdash; and we're also going to cover several different ways to specify colours in CSS.
