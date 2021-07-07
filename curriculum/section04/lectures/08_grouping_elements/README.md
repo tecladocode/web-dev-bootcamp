@@ -1,3 +1,15 @@
+---
+title: HTML container elements
+slug: html-container-elements
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # HTML container elements
 
 Now that we've looked at which elements *can't* be nested, let's take a look at some elements which are specifically designed to contain other elements.

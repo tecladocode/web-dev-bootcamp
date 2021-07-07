@@ -1,3 +1,15 @@
+---
+title: "Step 3: Wireframing or Rough Design"
+slug: step-3-wireframing-or-rough-design
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Step 3: Wireframing or Rough Design
 
 For every backlog item that we're tackling, I like to start with a wireframe or a rough design of what it will look like and the functionality we'll achieve by implementing it.

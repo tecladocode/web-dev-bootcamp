@@ -1,3 +1,15 @@
+---
+title: "What are SVGs?"
+slug: what-are-svgs
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # What are SVGs?
 
 - What is an SVG? SVG vs. Bitmap

@@ -1,3 +1,15 @@
+---
+title: A quick example of using HTML and CSS
+slug: quick-html-css-example
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # A quick example of using HTML and CSS
 
 In this lecture, let's take a look at some HTML and CSS code. This will help you get familiar with the syntax of both languages, and understand how they interact with each other.

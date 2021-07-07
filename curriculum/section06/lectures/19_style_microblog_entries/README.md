@@ -1,3 +1,15 @@
+---
+title: "How to style the Microblog entries"
+slug: how-to-style-the-microblog-entries
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # How to style the Microblog entries
 
 ## Starting code

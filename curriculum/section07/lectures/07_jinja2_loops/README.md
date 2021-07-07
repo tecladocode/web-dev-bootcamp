@@ -1,3 +1,15 @@
+---
+title: "Jinja2: Loops"
+slug: jinja2-loops
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Jinja2: Loops
 
 Like conditional statements, the Jinja2 templating language also allows you to write loop[^loop-jinja2] structures. However, Jinja2 only supports *for loops*. If you want to use a while loop, you'll need to simulate its behaviour with a for loop.

@@ -1,3 +1,15 @@
+---
+title: "A Better Approach to CSS Selectors"
+slug: a-better-approach-to-css-selectors
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # A Better Approach to CSS Selectors
 
 In this section I want to present an approach to writing CSS selectors which you'll find in lots of production code. As part of this, we're going to talk about a naming scheme called BEM, which will provide a natural way to group our styles, while keeping specificity low throughout out stylesheets.

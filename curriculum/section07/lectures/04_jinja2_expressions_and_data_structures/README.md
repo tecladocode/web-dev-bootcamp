@@ -1,3 +1,15 @@
+---
+title: "Jinja2: Expressions & Data Structures"
+slug: jinja2-expressions-data-structures
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Jinja2: Expressions & Data Structures
 
 By now you already know how to use Jinja2 and Flask's `render_template` method to interpolate placeholder values into HTML files and send them to the browser. Jinja2 also lets you evaluate a limited[^jinja2-limitations] number of Python expressions and data structures.

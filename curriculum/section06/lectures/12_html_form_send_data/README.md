@@ -1,3 +1,15 @@
+---
+title: "HTML forms: sending form data"
+slug: html-forms-sending-form-data
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # HTML forms: sending form data
 
 Let's continue the Microblog project by working on the form users will submit to create new entries.

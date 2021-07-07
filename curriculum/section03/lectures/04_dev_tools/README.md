@@ -1,3 +1,15 @@
+---
+title: 'The Browser Inspector: using the developer tools'
+slug: browser-inspector-developer-tools
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # The Browser Inspector: using the developer tools
 
 When developing web sites and web applications, we use a number of tools to help us during the development process. One of the most important tools in our toolbox is the browser itself, and every major browser includes a suite of development tools that we can use.

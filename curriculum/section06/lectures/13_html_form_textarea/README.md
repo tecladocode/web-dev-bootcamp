@@ -1,3 +1,15 @@
+---
+title: "HTML forms: working with textareas"
+slug: html-forms-working-with-textareas
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # HTML forms: working with textareas
 
 Now that we've learned how to send data using HTML forms, let's look at the specific form elements that we'll need for the microblog project.

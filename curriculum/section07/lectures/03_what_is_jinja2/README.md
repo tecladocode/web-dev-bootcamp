@@ -1,4 +1,16 @@
-# What is Jinja2
+---
+title: "What is Jinja2?"
+slug: what-is-jinja2
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
+# What is Jinja2?
 
 ## What is a Template Language
 

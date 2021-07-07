@@ -1,3 +1,15 @@
+---
+title: "How to style HTML forms and inputs"
+slug: style-html-forms-and-inputs
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # How to style HTML forms and inputs
 
 Remember to add `class="main"` to the `main` element in HTML so that we can target it with our styles.

@@ -1,3 +1,15 @@
+---
+title: Starting our first HTML project
+slug: starting-html-project
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Starting our first HTML project
 
 The best way to learn how to code is by writing code. In this lecture we'll get started with our very first HTML project.

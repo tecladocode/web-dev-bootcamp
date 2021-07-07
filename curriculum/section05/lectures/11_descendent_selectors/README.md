@@ -1,3 +1,15 @@
+---
+title: "More CSS Selectors: Descendents and Siblings"
+slug: more-css-selectors-descendents-and-siblings
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # More CSS Selectors: Descendents and Siblings
 
 In this lecture we're going to explore some more complex CSS selectors for targeting descendent and sibling elements.

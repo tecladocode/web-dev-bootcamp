@@ -1,3 +1,15 @@
+---
+title: Representing colour
+slug: representing-colour
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Representing colour
 
 There are many ways we can represent colours in a computer. You might have heard about RGB, CYMK, and maybe even HSL. Each of these is a different colour model, and they each represent colours in a different way.

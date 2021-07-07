@@ -1,3 +1,15 @@
+---
+title: Common HTML elements
+slug: common-html-elements
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Common HTML elements
 
 In this lecture we're going to introduce a handful of really common HTML elements so that we can start writing some real HTML code for ourselves.

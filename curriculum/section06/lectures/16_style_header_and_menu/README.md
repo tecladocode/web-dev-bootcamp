@@ -1,3 +1,15 @@
+---
+title: "How to style the header and menu bar"
+slug: how-to-style-the-header-and-menu-bar
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # How to style the header and menu bar
 
 First, create a new CSS file and link it:

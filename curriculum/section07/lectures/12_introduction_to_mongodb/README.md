@@ -1,3 +1,15 @@
+---
+title: "Introduction to MongoDB"
+slug: introduction-to-mongodb
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Introduction to MongoDB
 
 MongoDB[^mongodb] is a document-oriented NoSQL database used for high volume data storage.

@@ -1,3 +1,15 @@
+---
+title: Nesting HTML elements
+slug: nesting-html-elements
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Nesting HTML elements
 
 As we discussed earlier in this section, we can place more than just text between the opening and closing tags of a given element. We can place elements inside one another to create a hierarchy within our document.

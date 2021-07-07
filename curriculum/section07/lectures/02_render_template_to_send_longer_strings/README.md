@@ -1,3 +1,15 @@
+---
+title: "Using render_template to Send Longer HTML Strings"
+slug: using-render-template-to-send-longer-html-strings
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Using render_template to Send Longer HTML Strings
 
 You've already learned about APIs, endpoints and how you can make quick APIs with Flask. Also, you've seen how Flask lets you send HTML decorated texts to your browser.

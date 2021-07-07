@@ -1,3 +1,15 @@
+---
+title: "Accessing MongoDB with Compass & Atlas"
+slug: accessing-mongodb-with-compass-atlas
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Accessing MongoDB with Compass & Atlas
 
 Setting up MongoDB and accessing data from it properly can be a bit challenging for beginners. MongoDB Atlas[^atlas] provides an easy way to host and manage data in the cloud without setting anything up locally.

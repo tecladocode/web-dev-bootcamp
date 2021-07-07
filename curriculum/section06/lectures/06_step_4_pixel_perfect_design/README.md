@@ -1,3 +1,15 @@
+---
+title: "Step 4: Better Design with Figma"
+slug: step-4-better-design-with-figma
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Step 4: Better Design with Figma
 
 In order to build an application, it helps to know exactly how much space will be left between items, how big fonts will be, what colours will be used, etc.

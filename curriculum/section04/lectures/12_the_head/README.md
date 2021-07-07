@@ -1,3 +1,15 @@
+---
+title: Document level annotations
+slug: document-level-annotations
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Document level annotations
 
 In this last lecture of the section I want to talk briefly about the `<head>` and `<body>` elements, the `<html>` element, and the `DOCTYPE` preamble.

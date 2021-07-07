@@ -1,3 +1,15 @@
+---
+title: 'Key web technologies: HTML, CSS, JavaScript'
+slug: key-web-technologies-html-css-javascript
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Key web technologies: HTML, CSS, JavaScript
 
 In this lecture we're going to talk about HTML, CSS, and Javascript. In particular, we're going to talk about what each of these languages is for, and how we use them in modern web development.

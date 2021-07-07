@@ -1,3 +1,15 @@
+---
+title: "The best HTML resource: MDN"
+slug: best-html-resource-mdn
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # The best HTML resource: MDN
 
 The **M**ozilla **D**eveloper **N**etwork (or MDN) is a fantastic resource for learning more about HTML and CSS. It contains up-to-date, comprehensive examples and descriptions of HTML elements and CSS properties.

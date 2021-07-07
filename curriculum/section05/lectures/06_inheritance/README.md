@@ -1,3 +1,15 @@
+---
+title: Inheritance in CSS
+slug: css-inheritance
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Inheritance in CSS
 
 Inheritance is an important concept and a powerful tool which we can leverage when writing CSS code. Inheritance allows us to write less code, reduce repetition, and make our stylesheets easier to maintain.

@@ -1,3 +1,15 @@
+---
+title: "Finishing the header and navigation"
+slug: finishing-the-header-and-navigation
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Finishing the header and navigation
 
 This is the code we've got in the header at the moment:

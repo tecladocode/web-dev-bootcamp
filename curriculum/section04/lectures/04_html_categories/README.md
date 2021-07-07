@@ -1,3 +1,15 @@
+---
+title: HTML content categories
+slug: html-content-categories
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # HTML content categories
 
 HTML elements are grouped into content categories based on their function. These categories are important for understanding what constitutes valid markup in HTML. We'll see some examples of this in the next lecture when we talk about nesting HTML elements.

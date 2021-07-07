@@ -1,3 +1,15 @@
+---
+title: Basic CSS Units
+slug: basic-css-units
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Basic CSS Units
 
 So far we've mostly been using pixels to specify sizes, but in practice, pixels are not a great option for most use cases.

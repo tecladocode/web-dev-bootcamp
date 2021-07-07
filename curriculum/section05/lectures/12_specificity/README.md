@@ -1,3 +1,15 @@
+---
+title: "Specificity in CSS"
+slug: specificity-in-css
+tags:
+  - How to
+  - Written
+categories:
+  - Video
+section_number: 3
+excerpt: An excerpt of the lecture's content goes here.
+---
+
 # Specificity in CSS
 
 <!-- TODO: Replace the diagrams in this lecture with something more professional -->
