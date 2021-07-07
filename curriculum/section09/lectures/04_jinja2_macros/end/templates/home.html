@@ -1,0 +1,36 @@
+<!-- step 1-->
+{% macro todo_li(text, completed=False) %}
+  <li>{{ "[x]" if completed else "[ ]" }} - {{ text }}</li>
+{% endmacro %}
+
+<!-- step 2 -->
+{% import 'macros.jinja2' as macros %}
+<!-- or -->
+{% from 'macros.jinja2' import todo_list %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos</title>
+</head>
+<body>
+  {% set num_todos = todos | length %}
+  {% if num_todos > 0 %}
+      <p>You have {{ num_todos }} things to do today.</p>
+      <!-- step 1 -->
+      <ul>
+        {% for text, completed in todos %}
+          {{ todo_li(text, completed) }}
+        {% endfor %}
+      </ul>
+      <!-- step 2 -->
+      {{ macros.todo_list(todos) }}
+      <!-- or -->
+      {{ todo_list(todos) }}
+  {% else %}
+      <p>Nothing to do today. Relax!</p>
+  {% endif %}
+</body>
+</html>

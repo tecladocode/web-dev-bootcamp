@@ -1,0 +1,9 @@
+.inner {
+  width: 100px;
+  height: 50px;
+  background-color: #bbbbbb;
+}
+
+.outer {
+  background-color: red;
+}

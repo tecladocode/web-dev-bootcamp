@@ -27,24 +27,39 @@ module.exports = {
         path: "/section02/",
       },
       {
-        title: "Section 3: Page Structure with HTML",
+        title: "Section 3: Website Basics",
         path: "/section03/",
         children: getChildren("section03", "lectures"),
       },
       {
-        title: "Section 4: Page Style with CSS",
+        title: "Section 4: Page Structure with HTML",
         path: "/section04/",
         children: getChildren("section04", "lectures"),
       },
       {
-        title: "Section 5: Project 1: Micro Blog (design+site)",
+        title: "Section 5: Page Style with CSS",
         path: "/section05/",
         children: getChildren("section05", "lectures"),
       },
       {
-        title: "Section 6: Introduction to Flask and MongoDB",
+        title: "Section 6: Project 1: Micro Blog (design+site)",
         path: "/section06/",
         children: getChildren("section06", "lectures"),
+      },
+      {
+        title: "Section 7: Introduction to Flask and MongoDB",
+        path: "/section07/",
+        children: getChildren("section07", "lectures"),
+      },
+      {
+        title: "Section 8: Deploying Flask Apps to Heroku",
+        path: "/section08/",
+        children: getChildren("section08", "lectures"),
+      },
+      {
+        title: "Section 9: Jinja2 Mastery Level I",
+        path: "/section09/",
+        children: getChildren("section09", "lectures"),
       },
     ],
     sidebarDepth: 0,

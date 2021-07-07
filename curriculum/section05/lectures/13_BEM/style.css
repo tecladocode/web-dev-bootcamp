@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.button {
+    display: block;
+    margin: 1.5rem auto .5rem auto;
+    padding: .5rem 2rem;
+    font-size: 1.1rem;
+    color: #f4f1de;
+    background: #e07a5f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ec8164;
+}
+
+.form {
+    width: 25rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    color: #f2cc8f;
+    background: #3d405b;
+    border-radius: 8px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    margin-bottom: .25rem;
+    font-weight: 600;
+}
+
+.input {
+    font-size: inherit;
+    padding: .5rem .75rem;
+    background: #eee;
+    border: none;
+    border-radius: 4px;
+}

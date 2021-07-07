@@ -1,1 +1,5 @@
-# Section 6: Introduction to Flask and MongoDB
+---
+name: "Project 1: Micro Blog (design+site)"
+---
+
+# Project 1: Micro Blog (design+site)

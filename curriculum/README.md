@@ -1,16 +1,24 @@
 # What is this course?
 
-Welcome to The Complete Python/PostgreSQL Course 2.0! Thank you for embarking in this journey with me.
+Welcome to the Web Developer Bootcamp with Flask and Python! Thank you for embarking in this journey with me.
 
-Throughout the course I'm going to help you master PostgreSQL and how to use it effectively from within Python. We'll start at fundamental required knowledge of SQL and relational databases, and move to using databases in Python code with psycopg2. We'll learn about Object-Relational Mappings with SQLAlchemy, as well as a bunch more stuff:
+In this course, you'll learn how to develop complete web applications using HTML, CSS, Flask, and MongoDB. You'll learn to get user data and return dynamic pages, and you'll learn how to deploy and share your applications with users.
 
-- Best practices for working with dates and times in databases;
-- Charting data from your database with matplotlib;
-- Working with JSON natively in PostgreSQL;
-- Using cloud PostgreSQL providers;
-- Displaying data on the web using Python, Flask, and Jinja2;
-- We'll build a Polling app to show you how to use AWS Lambda and RDS;
-- We'll talk about NoSQL databases and how they compare to SQL databases.
+Through building projects, you'll master HTML and CSS, and you'll extend their capabilities with Jinja2.
+
+For backend development you'll use Python with the Flask framework, and MongoDB as a database.
+
+Here are the projects you'll build:
+
+- About me page
+- Microblog
+- Habit tracker
+- Portfolio page
+- Movie watchlist
+
+Each one builds upon all the knowledge you'll have gained up to that point, getting increasingly large and complex. Due to how the course is structured though, you'll never be confused!
+
+Every lecture of the course has its corresponding page in this e-book, where you can find notes and code.
 
 Let's get started!
 
@@ -20,7 +28,7 @@ Don't have the course yet?
 Feel free to follow along this complete e-book, but if you'd like access to the 20+ hours of video-content, check it out by clicking below!
 
 <p class="cta-container">
-    <a href="https://www.udemy.com/course/complete-python-postgresql-database-course/?referralCode=B3ED9B12EBC114C0C306" class="cta-link" target="_blank">Get the video course →</a>
+    <a href="https://www.udemy.com/course/web-developer-bootcamp-flask-python/?referralCode=2E6C9295CA26EA212CE8" class="cta-link" target="_blank">Get the video course →</a>
 </p>
 :::
 

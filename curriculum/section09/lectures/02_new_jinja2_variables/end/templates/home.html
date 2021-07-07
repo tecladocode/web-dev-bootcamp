@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos</title>
+</head>
+<body>
+  <ul>
+    {% for todo in todos %}
+      <li>{{ todo }}</li>
+    {% endfor %}
+  </ul>
+
+  <!-- step 2 -->
+  {% set friends = 50 %}
+  <p>You have {{ friends }} friends.</p>
+
+  <!-- step 3 -->
+  {% set num_todos = len(todos) %}
+  {% if num_todos > 0 %}
+      <p>You have {{ num_todos }} things to do today.</p>
+  {% else %}
+      <p>Nothing to do today. Relax!</p>
+  {% endif %}
+</body>
+</html>
