@@ -18,9 +18,9 @@ Before we start creating websites of our own, it pays to have a rough idea of wh
 
 ### Step 1: Finding the IP address of the domain
 
-We're used to accessing websites using addresses like [www.google.com](www.google.com) and [www.facebook.com](www.facebook.com), but our browsers don't make use of these names directly. Instead they use IP addresses, which are used to identify Internet connected devices.
+We're used to accessing websites using addresses like [www.google.com](www.google.com) and [www.facebook.com](www.facebook.com), but our browsers don't make use of these domain names directly. Instead they use IP addresses, which are used to identify Internet connected devices.
 
-When we type the URL for a given site, our browser has to figure out which IP address corresponds to the site we're trying to access. This process is called *name resolution*.
+When we type the URL for a given site, our browser has to figure out which IP address corresponds to the site we're trying to access. This process is called *domain name resolution*.
 
 Your browser does this through the use of a DNS (or **D**omain **N**ame **S**ystem) server, which checks an index of URLs and corresponding IP addresses. This index is a little like a phone book for computers.
 

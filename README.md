@@ -1,8 +1,8 @@
-# Full Stack Development with Python and Flask in 2020
+# Web Developer Bootcamp with Flask and Python
 
 Thank you for checking out the course code!
 
-Access the course notes here: https://pysql.tecladocode.com
+Access the course notes here: https://python-web.teclado.com
 
 ## Contributing
 
@@ -22,7 +22,7 @@ pre-commit install
 Then, set up the Vuepress project:
 
 ```
-yarn
+npm install
 ```
 
 That should install everything!
@@ -32,5 +32,5 @@ That should install everything!
 To run the project, you can just do:
 
 ```
-yarn cur:dev
+npm run cur:dev
 ```
