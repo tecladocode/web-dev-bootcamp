@@ -69,4 +69,5 @@ module.exports = {
       md.use(require("markdown-it-footnote"));
     },
   },
+  plugins: [["plausible", { domain: "python-web.teclado.com" }]],
 };
