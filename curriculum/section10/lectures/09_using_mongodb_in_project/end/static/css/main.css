@@ -1,0 +1,184 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  background: #000;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.header,
+.main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s ease-in-out;
+  outline: none;
+}
+
+.header__link:hover {
+  color: #f9dba0;
+}
+
+.header__logo {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* The form class is used for the form where new habits are added. It's not for 
+all form elements */
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  resize: none;
+  border: 3px solid #000;
+  border-radius: 6px;
+  background: #fafafa;
+  margin-bottom: 1rem;
+  outline: 0;
+}
+
+.form__button {
+  font-size: inherit;
+  background: #f9dba0;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0.5rem 2.5rem;
+  align-self: flex-end;
+  border: none;
+  outline: none;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-around;
+  color: #000;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.dates__link {
+  /* Removes the default styles applied to links */
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+}
+
+/* Selects the first, second, penultimate and final elements in the dates__link section
+and hides them on small screens. As the screen gets larger, we gradually display more 
+and more of the date elements.
+
+See the media queries below */
+.dates__link:first-of-type,
+.dates__link:nth-of-type(2),
+.dates__link:last-of-type,
+.dates__link:nth-last-of-type(2) {
+  display: none;
+}
+
+/* Comes into effect when the screen is 400px wide. Reveals the second and second-to-last date link*/
+@media screen and (min-width: 25rem) {
+  .dates__link:nth-of-type(2),
+  .dates__link:nth-last-of-type(2) {
+    display: block;
+  }
+}
+
+/* Comes into effect when the screen is 560px wide. Reveals the first and last date link */
+@media screen and (min-width: 35rem) {
+  .dates__link:first-of-type,
+  .dates__link:last-of-type {
+    display: block;
+  }
+}
+
+/* Changes the background colour of the current date. This class is applied conditionall
+by logic in the jinja template */
+.dates__link--current {
+  background: #f9dba0;
+}
+
+/* Ensures the day of the week and the date number sit on top of each other and are
+centered within the allotted space */
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff2d8;
+  border: 3px solid black;
+  border-radius: 6px;
+}
+
+.habit:not(.completed) {
+  padding: 0;
+}
+
+.habit:not(.completed):hover {
+  background-color: #e9cd87;
+}
+
+.habit__icon {
+  display: inline-flex;
+  align-self: flex-start;
+  justify-self: flex-end;
+  width: 1em;
+  height: 1em;
+}
+
+.habit__name {
+  margin: 0;
+}
+
+.habit__form {
+  width: 100%;
+}
+
+.habit__button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: left;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
