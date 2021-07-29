@@ -59,7 +59,6 @@ all form elements */
   border-radius: 6px;
   background: #fafafa;
   margin-bottom: 1rem;
-  outline: 0;
 }
 
 .form__button {
@@ -70,7 +69,6 @@ all form elements */
   padding: 0.5rem 2.5rem;
   align-self: flex-end;
   border: none;
-  outline: none;
 }
 
 .dates {
@@ -119,7 +117,7 @@ See the media queries below */
   }
 }
 
-/* Changes the background colour of the current date. This class is applied conditionall
+/* Changes the background colour of the current date. This class is applied conditionally
 by logic in the jinja template */
 .dates__link--current {
   background: #f9dba0;
@@ -132,4 +130,3 @@ centered within the allotted space */
   flex-direction: column;
   align-items: center;
 }
-

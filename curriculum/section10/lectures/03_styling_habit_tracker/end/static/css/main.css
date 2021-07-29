@@ -50,7 +50,6 @@ all form elements */
 }
 
 .form__input {
-  width: 100%;
   padding: 1rem;
   font-family: inherit;
   font-size: inherit;
@@ -59,7 +58,6 @@ all form elements */
   border-radius: 6px;
   background: #fafafa;
   margin-bottom: 1rem;
-  outline: 0;
 }
 
 .form__button {
@@ -70,5 +68,4 @@ all form elements */
   padding: 0.5rem 2.5rem;
   align-self: flex-end;
   border: none;
-  outline: none;
 }

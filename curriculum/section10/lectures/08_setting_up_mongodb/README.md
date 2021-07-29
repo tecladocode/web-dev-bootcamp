@@ -2,33 +2,14 @@
 title: Setting up MongoDB
 slug: setting-up-mongodb
 tags:
-  - Not started
+  - Written
   - How to
 categories:
   - Video
 section_number: 0
-excerpt: An excerpt of the lecture's content goes here.
+excerpt: A quick reminder on how to find how to set up a free MongoDB Atlas Cluster.
 ---
 
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
+# Setting up MongoDB
 
-- [Lecture Title](#lecture-title)
-  - [In this video... (TL;DR)](#in-this-video-tldr)
-  - [Code at the start of this lecture](#code-at-the-start-of-this-lecture)
-  - [Code written in this lecture](#code-written-in-this-lecture)
-  - [Final code at the end of this lecture](#final-code-at-the-end-of-this-lecture)
-
-# Lecture Title
-
-## In this video... (TL;DR)
-
-## Code at the start of this lecture
-
-## Code written in this lecture
-
-## Final code at the end of this lecture
+We've already learned how to set up a MongoDB Atlas Cluster. Review [the lecture](../../../section07/lectures/13_accessing_mongodb_with_compass_and_atlas/) if you've forgotten how to do it! We'll follow exactly the same process as before.

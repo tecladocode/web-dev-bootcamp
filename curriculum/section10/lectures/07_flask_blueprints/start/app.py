@@ -3,7 +3,7 @@ from collections import defaultdict
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
-habits = ["Bob"]
+habits = ["Test habit"]
 completions = defaultdict(list)
 
 
@@ -29,7 +29,7 @@ def index():
         habits=habits,
         selected_date=selected_date,
         completions=completions[selected_date],
-        title="Habit Tracker - Home"
+        title="Habit Tracker - Home",
     )
 
 
