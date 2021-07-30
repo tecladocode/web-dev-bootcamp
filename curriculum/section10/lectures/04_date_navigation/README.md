@@ -246,3 +246,7 @@ Below you can find the final code written in this lecture.
 +        selected_date=datetime.date.today(),
 +    )
 ```
+
+## Resources
+
+- [For loop variables in Jinja2](https://jinja.palletsprojects.com/en/3.0.x/templates/#for)
