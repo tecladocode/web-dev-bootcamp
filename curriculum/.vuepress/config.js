@@ -61,12 +61,18 @@ module.exports = {
         path: "/section09/",
         children: getChildren("section09", "lectures"),
       },
+      {
+        title: "Section 10: Project 2: Habit Tracker",
+        path: "/section10/",
+        children: getChildren("section10", "lectures"),
+      },
     ],
     sidebarDepth: 0,
   },
   markdown: {
     extendMarkdown: (md) => {
       md.use(require("markdown-it-footnote"));
+      md.use(require("markdown-it-task-lists"));
     },
   },
   plugins: [["plausible", { domain: "python-web.teclado.com" }]],

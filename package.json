@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "markdown-it-footnote": "^3.0.3",
+    "markdown-it-task-lists": "^2.1.1",
     "vuepress-plugin-plausible": "0.0.2"
   }
 }

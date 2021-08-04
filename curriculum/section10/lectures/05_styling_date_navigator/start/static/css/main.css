@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  background: #000;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.header,
+.main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s ease-in-out;
+  outline: none;
+}
+
+.header__link:hover {
+  color: #f9dba0;
+}
+
+.header__logo {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* The form class is used for the form where new habits are added. It's not for 
+all form elements */
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  resize: none;
+  border: 3px solid #000;
+  border-radius: 6px;
+  background: #fafafa;
+  margin-bottom: 1rem;
+}
+
+.form__button {
+  font-size: inherit;
+  background: #f9dba0;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0.5rem 2.5rem;
+  align-self: flex-end;
+  border: none;
+}
