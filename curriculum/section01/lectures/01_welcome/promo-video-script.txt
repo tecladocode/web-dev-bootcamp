@@ -1,0 +1,39 @@
+Welcome to the Web Developer Bootcamp with Flask and Python, where you will learn how to develop complete websites using HTML, CSS, Flask, and Python, and MongoDB as a database.
+
+My name is Jose Salvatierra, and I'll be leading you through the course.
+
+I've been teaching online for over 8 years, and in that time I've produced multiple best-selling courses. A few years ago I started my own company, Teclado, to help me bring software development to everyone.
+
+My personal goal with this course is to get you working on real projects with modern technologies, to make you job-ready as a full-stack web developer.
+
+By the end of the course, you'll be able to conceive, design, and implement any feature on any website. You'll know how to gather and use user data, and how all the components of a modern website work together.
+
+But the best way to learn how to make websites is to actually make websites!
+
+So in this course, I'll help you build a few of them. We'll start with a simple one, to get you familiar with the most important programming languages used in the web, which are HTML and CSS.
+
+After that, you'll build your first full-stack website that uses HTML, CSS, and Python and MongoDB for receiving, using, and storing user data.
+
+You'll then build a dynamic habit tracker, where I'll teach you all about templating with Jinja2, as well as mobile-first, responsive design.
+
+Then you'll take everything you've learned and make your own portfolio page to showcase everything you make in this course. Since you'll be coding it from scratch, you'll know exactly how to modify it to suit your tastes and needs (as well as add more projects to it when you build them!). Having an active portfolio is a sure way to impress potential employers!
+
+Finally, the capstone project for this course is a movie watchlist app that includes everything you'd expect from a complete website: from user registration and login, to data storage and search, multiple pages, and much more.
+
+Taking this course is akin to attending a super-comprehensive workshop or bootcamp, but for a fraction of the price. Also, you get to do it on your own time, and it's much better planned and edited than any live event because we've put hundreds of hours into it.
+
+There is one thing that we won't cover in this course, and that is JavaScript in detail. That's because, contrary to what you might believe, you don't need JavaScript for the vast majority of websites! With HTML, CSS, and a server, you can do almost anything your users might want. You can always learn about it later on, to add extra functionality to your websites.
+
+I initially designed this course for my Python students who wanted to get into web development. If you want to create something that lives online, that anyone can access, and that lets you get user data, process it, and display something in return, then take this course, and I will show you how!
+
+With that said, this is not a complete beginner course. I will teach you HTML and CSS from scratch, but I will assume you know the fundamentals of programming, like variables and loops.
+
+But if you don’t know Python specifically, don’t worry! I have included a Python refresher section in this course, so you can be productive from the get-go, without having to take a beginner course.
+
+If you are completely new to programming as a whole, you could take this course alongside a beginner Python course, or you could take a beginner Python course first and then come back to this one after.
+
+Thank you so much for watching, I hope this course makes you as excited to take it, as I was to make it. I know that the skills you'll learn in this course will be essential if you want to develop websites.
+
+If you're still not sure, please watch the next few preview videos, see what you think.
+
+And after that, I'll see you on the inside!
