@@ -29,3 +29,19 @@ node_modules
 data.db
 .env
 venv
+*.prproj
+*.cfa
+*.pek
+*.mov
+*.xml
+*.aegraphic
+subs/
+exports/
+raw/
+videos/
+captions/
+intro-screens/
+premiere-projects/
+Adobe Premiere Pro Auto-Save/
+Motion Graphics Template Media/
+premiere/
