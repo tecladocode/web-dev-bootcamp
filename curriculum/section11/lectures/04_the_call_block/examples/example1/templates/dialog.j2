@@ -1,0 +1,8 @@
+{% macro render_dialog(title) -%}
+    <div>
+        <h2>{{ title }}</h2>
+        <div class="contents">
+            {{ caller() }}
+        </div>
+    </div>
+{%- endmacro %}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/items.css') }}" />
+</head>
+<body>
+	<h1>Items in this store</h1>
+	<ol>
+		{% for item in items %}
+			<li>{{ item['name'] }} - Stock: {{ item['stock'] }}</li>
+		{% endfor %}
+	</ol>
+</body>
+</html>

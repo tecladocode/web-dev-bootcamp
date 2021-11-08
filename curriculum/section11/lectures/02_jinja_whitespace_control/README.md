@@ -10,14 +10,6 @@ section_number: 11
 excerpt: "Learn about the whitespace that Jinja adds automatically, and how to remove it if you don't want it!"
 ---
 
-- [x] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
-
 # Jinja Whitespace
 
 When we use Jinja blocks, we may end up with some unwanted whitespace when the blocks get evaluated.

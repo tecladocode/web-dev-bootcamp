@@ -1,0 +1,7 @@
+{% macro item_table(items) %}
+<table>
+    {% for item in items %}
+        {{ caller(item) }}
+    {% endfor %}
+</table>
+{% endmacro %}

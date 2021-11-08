@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<h1>Items in this store</h1>
+	<ol>
+		{% for item in items %}
+			<li>{{ item['name'] }} - Stock: {{ item['stock'] }}</li>
+		{% endfor %}
+	</ol>
+</body>
+</html>
