@@ -10,7 +10,7 @@ The example on the [official Jinja2 documentation](https://jinja.palletsprojects
 
 Here's a macro that renders a dialog, but notice that inside the contents `div`, we've got a new keyword: `{{ caller() }}`.
 
-```language-jinja2
+```jinja2
 {% macro render_dialog(title) -%}
     <div>
         <h2>{{ title }}</h2>
@@ -23,7 +23,7 @@ Here's a macro that renders a dialog, but notice that inside the contents `div`,
 
 We use `{{ caller() }}` to get data from the `call` block. This way it's easier to give the `render_dialog` its contents, without passing them as an argument.
 
-```language-jinja2
+```jinja2
 {% call render_dialog('Hello World') %}
     This is a <strong>simple dialog</strong> rendered by using a macro and
     a call block.
@@ -32,7 +32,7 @@ We use `{{ caller() }}` to get data from the `call` block. This way it's easier 
 
 This would render into this:
 
-```language-html
+```html
 <div>
     <h2>Hello World</h2>
     <div class="contents">
@@ -59,7 +59,7 @@ In both cases you need a list of items, but in one case each row has more data.
 
 Here's how we could do this with HTML and Jinja2:
 
-```language-jinja2
+```jinja2
 <table>
     {% for item in items %}
         <tr>
@@ -72,7 +72,7 @@ Here's how we could do this with HTML and Jinja2:
 
 and:
 
-```language-jinja2
+```jinja2
 <table>
     {% for item in items %}
         <tr>
@@ -93,7 +93,7 @@ But there is a part of the code we definitely _can_ reuse: the table and the loo
 
 We can make that into a macro, and let the caller of the macro define what data to include in each row:
 
-```language-jinja2
+```jinja2
 {% macro item_table(items) %}
 <table>
     {% for item in items %}
@@ -107,7 +107,7 @@ Note that `caller()` is the Jinja keyword, and here we're using it to pass the `
 
 Assume that `all_items` is a list of all the items in the store. This value would be passed from our Flask app.
 
-```language-jinja2
+```jinja2
 {% call(item) item_table(all_items) %}
 <tr>
     <td>{{ item['name'] }}</td>
@@ -120,7 +120,7 @@ Assume that `all_items` is a list of all the items in the store. This value woul
 
 In the page where we require less information about each item, we could just do this:
 
-```language-jinja2
+```jinja2
 {% call(item) item_table(all_items) %}
 <tr>
     <td>{{ item['name'] }}</td>

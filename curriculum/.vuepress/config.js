@@ -57,7 +57,7 @@ module.exports = {
         children: getChildren("section08", "lectures"),
       },
       {
-        title: "Section 9: Jinja2 Mastery Level I",
+        title: "Section 9: Jinja Mastery Level I",
         path: "/section09/",
         children: getChildren("section09", "lectures"),
       },
@@ -65,6 +65,11 @@ module.exports = {
         title: "Section 10: Project 2: Habit Tracker",
         path: "/section10/",
         children: getChildren("section10", "lectures"),
+      },
+      {
+        title: "Section 11: Jinja Mastery: Level II",
+        path: "/section11/",
+        children: getChildren("section11", "lectures"),
       },
     ],
     sidebarDepth: 0,

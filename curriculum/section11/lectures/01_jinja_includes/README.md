@@ -37,7 +37,7 @@ An include passes the rendering context to the included template, then renders i
 
 Here's `header.j2`, a navigation bar that you might find in any page. Note that it uses `{{ title }}` in it, so it needs access to that variable.
 
-```language-jinja2
+```jinja2
 <header>
 	<p class="brand">Header</p>
 	{% if title %}
@@ -55,7 +55,7 @@ Here's `header.j2`, a navigation bar that you might find in any page. Note that 
 
 And here's `main.j2`, using that template:
 
-```language-jinja2
+```jinja2
 <!DOCTYPE html>
 <html>
 <head></head>
@@ -71,7 +71,7 @@ When we use `include`, Jinja automatically passes the rendering context--so `hea
 
 Seems like a reasonable thing to do! And it is, but if you are going to use the header in multiple pages, I think it's clearer if we make it a macro:
 
-```language-jinja2
+```jinja2
 {% macro header(title) %}
 <header>
 	<p class="brand">Header</p>
@@ -91,7 +91,7 @@ Seems like a reasonable thing to do! And it is, but if you are going to use the 
 
 Then, in `main.j2`, we'd call it like this:
 
-```language-jinja2
+```jinja2
 {% from 'header.j2' import header %}
 <!DOCTYPE html>
 <html>
@@ -114,7 +114,7 @@ In the first example we looked at including a fragment of a page. Now let's look
 
 Here's a Jinja template, `items.j2`, that renders a list of items that a store has in stock:
 
-```language-jinja2
+```jinja2
 <!DOCTYPE html>
 <html>
 <head></head>
@@ -131,7 +131,7 @@ Here's a Jinja template, `items.j2`, that renders a list of items that a store h
 
 And here's another Jinja template, `store.j2`, that renders some information about a store:
 
-```language-jinja2
+```jinja2
 <!DOCTYPE html>
 <html>
 <head></head>
@@ -148,7 +148,7 @@ That means you can't just make it a macro, because macros can't be rendered on t
 
 So an idea could be to do this in `store.j2`:
 
-```language-jinja2
+```jinja2
 <!DOCTYPE html>
 <html>
 <head></head>
@@ -165,7 +165,7 @@ And this will work fine.
 
 But the problem starts when `items.j2` uses an HTML `head` element. Let's say that our items list template looks like this:
 
-```language-jinja2
+```jinja2
 <!DOCTYPE html>
 <html>
 <head>
@@ -184,7 +184,7 @@ But the problem starts when `items.j2` uses an HTML `head` element. Let's say th
 
 Now when we include it from `store.j2`, the resulting HTML looks like this:
 
-```language-html
+```html
 <!DOCTYPE html>
 <html>
 <head></head>
@@ -206,7 +206,7 @@ And this is not valid HTML, because `link` elements should not be inside `body`.
 
 Instead, a better choice would be to extract the item list HTML code into a macro, in say `item-list.j2`:
 
-```language-jinja2
+```jinja2
 {% macro item_list(items) %}
 <ol>
 	{% for item in items %}
@@ -218,7 +218,7 @@ Instead, a better choice would be to extract the item list HTML code into a macr
 
 And then use this macro in both places:
 
-```language-jinja2
+```jinja2
 {% from 'item-list.j2' import item_list %}
 
 <!DOCTYPE html>
@@ -235,7 +235,7 @@ And then use this macro in both places:
 
 And:
 
-```language-jinja2
+```jinja2
 {% from 'item-list.j2' import item_list %}
 
 <!DOCTYPE html>
