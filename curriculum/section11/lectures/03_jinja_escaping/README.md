@@ -14,7 +14,7 @@ excerpt: Escaping in Jinja allows us to treat code that would be parsed by eithe
 
 Sometimes we may need to include some text in our HTML templates that Jinja2 will want to parse. For example, if we're writing a tutorial about Jinja2!
 
-```language-jinja2
+```jinja2
 <p>This is how you write a Jinja2 for loop:</p>
 
 <pre><code>
@@ -28,7 +28,7 @@ If we do this, Jinja2 will try to run through the loop and evaluate it. If we do
 
 This is where the Jinja2 `raw` block comes in handy:
 
-```language-jinja2
+```jinja2
 <p>This is how you write a Jinja2 for loop:</p>
 
 <pre><code>
@@ -58,7 +58,7 @@ As of Jinja 3, **autoescaping is disabled**, which means that you should manuall
 
 - `app.py`
 
-```language-python
+```python
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -73,7 +73,7 @@ def home():
 
 - `main.j2`
 
-```language-jinja2
+```jinja2
 <!DOCTYPE html>
 <html>
 <head></head>
@@ -95,7 +95,7 @@ def home():
 
 - Here's the browser output:
 
-```language-html
+```html
 <html><head></head>
 <body>
 <div>

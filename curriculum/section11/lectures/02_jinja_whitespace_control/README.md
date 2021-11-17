@@ -16,7 +16,7 @@ When we use Jinja blocks, we may end up with some unwanted whitespace when the b
 
 Take a look at this example:
 
-```language-jinja2
+```jinja2
 <div>
     {% if True %}
         yay
@@ -26,7 +26,7 @@ Take a look at this example:
 
 Renders into this:
 
-```language-html
+```html
 <div>
     
         yay
@@ -56,7 +56,7 @@ We can use the `-` operator in Jinja blocks to remove some or all of the spacing
 
 To get rid of (1) above:
 
-```language-jinja2
+```jinja2
 <div>
     {%- if True %}
         yay
@@ -66,7 +66,7 @@ To get rid of (1) above:
 
 Renders into this:
 
-```language-html
+```html
 <div>
         yay
     
@@ -75,7 +75,7 @@ Renders into this:
 
 To get rid of (2) and (3) above:
 
-```language-jinja2
+```jinja2
 <div>
     {% if True -%}
         yay
@@ -85,7 +85,7 @@ To get rid of (2) and (3) above:
 
 Renders into this:
 
-```language-html
+```html
 <div>
     yay
     
@@ -98,7 +98,7 @@ We can do the same with the closing block: `{%- endif %}` would get rid of spaci
 
 Applying all of the whitespace removal signs, we end up with this:
 
-```language-jinja2
+```jinja2
 <div>
     {%- if True -%}
         yay
@@ -108,7 +108,7 @@ Applying all of the whitespace removal signs, we end up with this:
 
 Which renders:
 
-```language-html
+```html
 <div>yay</div>
 ```
 
@@ -121,7 +121,7 @@ Adding `-` signs everywhere may not be what we want, so there are some settings 
 
 Here's how we'd set these in a Flask app:
 
-```language-python
+```python
 app = Flask(__name__)
 app.jinja_env.lstrip_blocks = True
 app.jinja_env.trim_blocks = True
@@ -129,7 +129,7 @@ app.jinja_env.trim_blocks = True
 
 With **these two settings enabled**, we can make all the spacing caused by the blocks themselves to be removed. The spacing inside the content is not removed:
 
-```language-jinja2
+```jinja2
 <div>
     {% if True %}
         yay
@@ -137,7 +137,7 @@ With **these two settings enabled**, we can make all the spacing caused by the b
 </div>
 ```
 
-```language-html
+```html
 <div>
         yay
 </div>
@@ -147,7 +147,7 @@ Note that this is the only way to remove spacings (1), (2), (4), and (5), withou
 
 In addition to this you can use the `-` sign to remove spacing within the content if desired. Note that this does not remove the spacing after the `div` and after the `yay`, as that is usually not desired:
 
-```language-jinja2
+```jinja2
 <div>
     {% if True -%}
         yay
@@ -155,7 +155,7 @@ In addition to this you can use the `-` sign to remove spacing within the conten
 </div>
 ```
 
-```language-html
+```html
 <div>
 yay
 </div>
@@ -163,7 +163,7 @@ yay
 
 And you can also include the `-` sign at the start of the blocks to remove the newlines after the `div` element and after the `yay` text:
 
-```language-jinja2
+```jinja2
 <div>
     {%- if True -%}
         yay
@@ -171,6 +171,6 @@ And you can also include the `-` sign at the start of the blocks to remove the n
 </div>
 ```
 
-```language-html
+```html
 <div>yay</div>
 ```
