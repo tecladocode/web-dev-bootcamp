@@ -1,0 +1,7 @@
+{% macro item_list(items) %}
+<ol>
+    {% for item in items %}
+        <li>{{ item['name'] }} - Stock: {{ item['stock'] }}</li>
+    {% endfor %}
+</ol>
+{% endmacro %%}

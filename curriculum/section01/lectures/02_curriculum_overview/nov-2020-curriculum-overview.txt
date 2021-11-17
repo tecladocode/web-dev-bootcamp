@@ -1,0 +1,19 @@
+Hey guys, welcome to the course! Let me tell you a bit about how this course is going to go.
+
+The first 7 sections of this course are essential, and they will set you up for success.
+
+You're now in section 1, a short section to get you started. Section 2 is the Python refresher. You should go through this if you're new to Python. If you're not new to Python, feel free to skip the lectures you already know. I recommend looking through and see if there's something you do want to revise.
+
+Sections 3 and 4 cover HTML and CSS, and you'll build your first project. Even if you already know HTML and CSS, don't skip these sections. That’s because we cover many topics that just aren’t talked about all that often in most HTML and CSS courses! For example, HTML content categories or the CSS box model in depth. You can always use the Udemy playback speed control to go through videos faster if you want to.
+
+Throughout sections 5 to 7, we will design and code the microblog project, which is the first full-stack project in this course. To do this, you'll learn even more HTML and CSS, you'll start using Flask with Python for server-side development, and you'll get acquainted with MongoDB for data storage.
+
+As of November 2020, we're still making massive updates to this course. Sections 8 onwards haven't been updated yet, and contain legacy course content (which is still very much valid, it's just a bit older!). Over the next few weeks I'll be updating those sections to cover the new projects you saw in the first video of this course.
+
+Until then, feel free to watch the legacy sections which cover entirely different projects, and then you can also watch the new sections as they come out!
+
+Throughout the entire course you really should code alongside me. Don't copy-paste code! Certainly, don't just watch the videos. If you code with me and you make changes to the projects and play around with the code as you along, you'll learn way more than if you just watch the videos.
+
+I'm really excited to take you through this course.
+
+Let's get started!

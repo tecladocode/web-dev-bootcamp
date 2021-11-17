@@ -1,0 +1,15 @@
+{% macro header(title) %}
+<header>
+	<p class="brand">Header</p>
+	{% if title %}
+		<p class="page-title">{{ title }}</p>
+	{% endif %}
+	<nav>
+		<ul class="links">
+			<li class="links__link"><a href="#">Home</a></li>
+			<li class="links__link"><a href="#">Blog</a></li>
+			<li class="links__link"><a href="#">Profile</a></li>
+		</ul>
+	</nav>
+</header>
+{% endmacro %}
