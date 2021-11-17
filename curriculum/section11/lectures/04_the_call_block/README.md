@@ -5,8 +5,9 @@ The call block is used to pass a macro to another macro. This is one of the only
 I know that's a bit vague, so let's look at some examples!
 
 ## Call block without arguments
-
+::: v-pre
 The example on the [official Jinja2 documentation](https://jinja.palletsprojects.com/en/3.0.x/templates/#call) is very good, and it's a perfect example for using the call block: message dialogs.
+
 
 Here's a macro that renders a dialog, but notice that inside the contents `div`, we've got a new keyword: `{{ caller() }}`.
 
@@ -130,3 +131,4 @@ In the page where we require less information about each item, we could just do 
 ```
 
 So this is a way to still reduce code duplication in a way that we couldn't do without the `call` block!
+:::

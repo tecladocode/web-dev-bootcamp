@@ -105,7 +105,9 @@ def home():
     return render_template("home.html")
 ```
 
+::: v-pre
 That template (and all other templates) would be able to use the filter like so: `{{ 15.67 | format_currency("£") }}`.
+:::
 
 Note that when defining custom filters, the value before the pipe (`15.67` in this case) is passed as the first argument.
 
