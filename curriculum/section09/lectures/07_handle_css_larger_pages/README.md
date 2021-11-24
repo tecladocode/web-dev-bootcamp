@@ -24,9 +24,9 @@ Using BEM and an external stylesheet (or more than one) is still the best way to
 
 ```html
 {% if completed %}
-    <p class="todo todo__completed">You've completed this todo! 🚀</p>
+    <p class="todo todo--completed">You've completed this todo! 🚀</p>
   {% else %}
-    <p class="todo todo__pending">You haven't completed this yet. Why not do it now?</p>
+    <p class="todo todo--pending">You haven't completed this yet. Why not do it now?</p>
   {% endif %}
 ```
 
