@@ -3,11 +3,12 @@ title: "What is Jinja2?"
 slug: what-is-jinja2
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # What is Jinja2?

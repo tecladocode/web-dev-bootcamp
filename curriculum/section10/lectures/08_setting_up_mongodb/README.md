@@ -2,12 +2,13 @@
 title: Setting up MongoDB
 slug: setting-up-mongodb
 tags:
-  - Written
+  - Published
   - How to
 categories:
   - Video
 section_number: 0
 excerpt: A quick reminder on how to find how to set up a free MongoDB Atlas Cluster.
+draft: false
 ---
 
 # Setting up MongoDB

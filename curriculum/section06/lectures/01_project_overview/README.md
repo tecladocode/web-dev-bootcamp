@@ -3,11 +3,12 @@ title: "Overview of this project"
 slug: overview-of-this-project
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Overview of this project

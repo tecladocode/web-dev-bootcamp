@@ -3,11 +3,12 @@ title: HTML content categories
 slug: html-content-categories
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # HTML content categories

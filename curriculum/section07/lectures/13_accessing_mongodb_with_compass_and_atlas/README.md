@@ -3,11 +3,12 @@ title: "Accessing MongoDB with Compass & Atlas"
 slug: accessing-mongodb-with-compass-atlas
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Accessing MongoDB with Compass & Atlas

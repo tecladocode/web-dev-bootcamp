@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 0
 excerpt: Escaping in Jinja allows us to treat code that would be parsed by either Jinja or the browser, and tell them to treat it as plain text to be displayed instead.
+draft: false
 ---
 
 # Jinja Escaping

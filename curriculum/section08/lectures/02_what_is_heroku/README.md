@@ -8,6 +8,7 @@ categories:
   - Presentation
 section_number: 8
 excerpt: "Learn about what Heroku is and how it can help us share our application with users."
+draft: false
 ---
 
 # What is Heroku?

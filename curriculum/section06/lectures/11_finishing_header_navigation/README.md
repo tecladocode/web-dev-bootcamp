@@ -3,11 +3,12 @@ title: "Finishing the header and navigation"
 slug: finishing-the-header-and-navigation
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Finishing the header and navigation

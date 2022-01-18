@@ -3,11 +3,12 @@ title: "Jinja2: Expressions & Data Structures"
 slug: jinja2-expressions-data-structures
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Jinja2: Expressions & Data Structures

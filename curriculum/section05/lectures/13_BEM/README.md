@@ -3,11 +3,12 @@ title: "A Better Approach to CSS Selectors"
 slug: a-better-approach-to-css-selectors
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # A Better Approach to CSS Selectors

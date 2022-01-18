@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 11
 excerpt: "Learn about the whitespace that Jinja adds automatically, and how to remove it if you don't want it!"
+draft: false
 ---
 
 # Jinja Whitespace

@@ -2,12 +2,13 @@
 title: Deploying our app to Heroku
 slug: deploying-our-app-to-heroku
 tags:
-  - Written
+  - Published
   - How to
 categories:
   - Video
 section_number: 10
 excerpt: Easily deploy the habit tracker project to Heroku.
+draft: false
 ---
 
 # Deploying our app to Heroku

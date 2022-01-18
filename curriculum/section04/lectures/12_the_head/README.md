@@ -3,11 +3,12 @@ title: Document level annotations
 slug: document-level-annotations
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Document level annotations

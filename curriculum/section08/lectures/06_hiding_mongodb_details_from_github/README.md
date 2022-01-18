@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 8
 excerpt: "Learn how to share your sensitive data with Heroku, without storing it in your GitHub repository."
+draft: false
 ---
 
 - [Hiding our MongoDB details from GitHub](#hiding-our-mongodb-details-from-github)
