@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 0
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Curriculum overview

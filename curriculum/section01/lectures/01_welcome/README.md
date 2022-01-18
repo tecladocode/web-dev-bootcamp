@@ -3,11 +3,12 @@ title: Welcome to the course!
 slug: welcome-to-the-course
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 1
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Welcome to the course!

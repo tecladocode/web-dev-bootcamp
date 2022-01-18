@@ -3,11 +3,12 @@ title: "Step 3: Wireframing or Rough Design"
 slug: step-3-wireframing-or-rough-design
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Step 3: Wireframing or Rough Design

@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 8
 excerpt: "Here we'll add some files that Heroku needs in order to run our application."
+draft: false
 ---
 
 - [Getting our app ready for Heroku](#getting-our-app-ready-for-heroku)

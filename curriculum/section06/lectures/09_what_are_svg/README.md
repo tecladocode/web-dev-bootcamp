@@ -3,11 +3,12 @@ title: "What are SVGs?"
 slug: what-are-svgs
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # What are SVGs?

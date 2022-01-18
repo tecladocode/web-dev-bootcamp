@@ -3,11 +3,12 @@ title: Custom CSS for each Jinja template using inheritance
 slug: custom-css-jinja-template-inheritance
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 9
 excerpt: 'Learn how to apply different CSS to each of your Jinja templates in a very straightforward way, by using inheritance.'
+draft: false
 ---
 
 - [Custom CSS for each Jinja template using inheritance](#custom-css-for-each-jinja-template-using-inheritance)

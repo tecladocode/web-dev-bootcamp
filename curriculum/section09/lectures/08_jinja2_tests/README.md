@@ -3,11 +3,12 @@ title: What are Jinja2 tests?
 slug: working-with-jinja2-tests
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 9
 excerpt: Learn about the 'is' keyword in Jinja2 and how to use it to write simple conditionals.
+draft: false
 ---
 
 - [What are Jinja2 tests?](#what-are-jinja2-tests)

@@ -3,11 +3,12 @@ title: "How to include images in an HTML document"
 slug: how-to-include-images-in-an-html-document
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # How to include images in an HTML document

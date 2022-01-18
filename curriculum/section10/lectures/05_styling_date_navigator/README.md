@@ -2,12 +2,13 @@
 title: Styling the date navigator
 slug: styling-the-date-navigator
 tags:
-  - Written
+  - Published
   - How to
 categories:
   - Video
 section_number: 10
 excerpt: Improve the look and feel of our date navigator using CSS.
+draft: false
 ---
 
 

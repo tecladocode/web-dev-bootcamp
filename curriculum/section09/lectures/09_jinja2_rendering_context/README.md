@@ -2,12 +2,13 @@
 title: The Jinja2 Environment and Rendering Context
 slug: jinja2-environment-rendering-context
 tags:
-    - How to
-    - Written
+    - Concept
+    - Published
 categories:
     - Video
 section_number: 9
 excerpt: Learn what names Jinja2 has access to during rendering by looking at the Environment and Context.
+draft: false
 ---
 
 # Jinja2 Environment and Context
@@ -16,7 +17,7 @@ The Environment and Context are two key parts of how Jinja evaluates templates.
 
 The Environment contains things like the available **filters**, **configuration**, or **tests** (and more). The Context contains the variables that will be available in the rendered template, as well as any exported variables from evaluating the template (such as macros).
 
-Something important to note is that if we render one template and pass it a Context, but that template tries to include or import another, the latter won't have access to the Context. It will have access to the Environment though.
+Something important to note is that if we render one template and pass it a Context, but that template tries to import something from another, the latter won't have access to the Context. It will have access to the Environment though. When we include a template, it does have access to the Context by default.
 
 This means that the Context is used on a per-template basis, but the Environment is global to all templates.
 

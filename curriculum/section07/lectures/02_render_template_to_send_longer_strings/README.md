@@ -3,11 +3,12 @@ title: "Using render_template to Send Longer HTML Strings"
 slug: using-render-template-to-send-longer-html-strings
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Using render_template to Send Longer HTML Strings

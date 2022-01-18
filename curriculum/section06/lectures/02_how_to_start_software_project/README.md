@@ -3,11 +3,12 @@ title: "How to start a new software project"
 slug: how-to-start-a-new-software-project
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # How to start a new software project

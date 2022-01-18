@@ -3,11 +3,12 @@ title: "How to style the header and menu bar"
 slug: how-to-style-the-header-and-menu-bar
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # How to style the header and menu bar

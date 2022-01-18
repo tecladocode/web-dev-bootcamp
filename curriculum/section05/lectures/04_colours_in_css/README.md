@@ -3,11 +3,12 @@ title: "CSS colours: color and background-color"
 slug: css-color-background-color
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Colours in CSS: `color` and `background-color`

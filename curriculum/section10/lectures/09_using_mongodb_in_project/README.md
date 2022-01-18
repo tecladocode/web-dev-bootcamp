@@ -2,12 +2,13 @@
 title: Using MongoDB in the habit tracker
 slug: using-mongodb-in-the-habit-tracker
 tags:
-  - Written
+  - Published
   - How to
 categories:
   - Video
 section_number: 10
 excerpt: Transition to using MongoDB instead of storing data locally in variables for our habit tracker project.
+draft: false
 ---
 
 # Using MongoDB in the habit tracker

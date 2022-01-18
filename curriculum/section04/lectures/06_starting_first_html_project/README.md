@@ -3,11 +3,12 @@ title: Starting our first HTML project
 slug: starting-html-project
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Starting our first HTML project

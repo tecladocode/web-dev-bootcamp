@@ -2,12 +2,13 @@
 title: Working with filters in Jinja2
 slug: working-with-filters-jinja2
 tags:
-  - Written
   - How to
+  - Published
 categories:
   - Video
 section_number: 9
 excerpt: Filters in Jinja are similar to Python functions. Learn how they work in this lecture.
+draft: false
 ---
 
 - [Working with filters in Jinja2](#working-with-filters-in-jinja2)

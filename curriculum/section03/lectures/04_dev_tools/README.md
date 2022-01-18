@@ -3,11 +3,12 @@ title: 'The Browser Inspector: using the developer tools'
 slug: browser-inspector-developer-tools
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # The Browser Inspector: using the developer tools

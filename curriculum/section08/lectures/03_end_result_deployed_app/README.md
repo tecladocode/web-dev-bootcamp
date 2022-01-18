@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 8
 excerpt: Take a look at what we will achieve in this section.
+draft: false
 ---
 
 # The end result: a deployed app

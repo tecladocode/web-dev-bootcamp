@@ -3,11 +3,12 @@ title: Inheritance in CSS
 slug: css-inheritance
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Inheritance in CSS

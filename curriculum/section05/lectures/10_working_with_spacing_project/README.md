@@ -3,11 +3,12 @@ title: "Working with spacing in our project"
 slug: working-with-spacing-in-our-project
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Working with spacing in our project
