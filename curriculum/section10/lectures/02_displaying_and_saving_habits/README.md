@@ -2,13 +2,13 @@
 title: Displaying and saving habits
 slug: displaying-and-saving-habits
 tags:
-  - Published
+  - Written
   - How to
 categories:
   - Video
 section_number: 10
 excerpt: "In this lecture we allow users to add new habits and display the habits they've already added to the database."
-draft: false
+draft: true
 ---
 
 # Displaying and saving habits

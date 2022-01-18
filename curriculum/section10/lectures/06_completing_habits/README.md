@@ -2,13 +2,13 @@
 title: Completing habits
 slug: completing-habits
 tags:
-    - Published
+    - Written
     - How to
 categories:
     - Video
 section_number: 10
 excerpt: "Implement the habit completion functionality and work on the styling for it!"
-draft: false
+draft: true
 ---
 
 # Lecture Title

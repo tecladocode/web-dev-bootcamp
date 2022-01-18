@@ -2,13 +2,13 @@
 title: Styling the habit tracker
 slug: styling-the-habit-tracker
 tags:
-  - Published
+  - Written
   - How to
 categories:
   - Video
 section_number: 10
 excerpt: Styling the header bar and the add header form for our habit tracker app.
-draft: false
+draft: true
 ---
 
 # Styling the habit tracker

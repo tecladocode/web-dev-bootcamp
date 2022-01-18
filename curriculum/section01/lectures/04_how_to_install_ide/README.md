@@ -6,7 +6,7 @@ tags:
   - How to
 categories:
   - Video
-section_number: 0
+section_number: 1
 excerpt: An excerpt of the lecture's content goes here.
 draft: false
 ---

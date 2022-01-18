@@ -2,13 +2,13 @@
 title: Project overview
 slug: habit-tracker-project-overview
 tags:
-    - Not started
+    - Written
     - Concept
 categories:
     - Video
-section_number: 0
+section_number: 10
 excerpt: Start looking at what the habit tracker project will be like when you've completed it.
-draft: false
+draft: true
 ---
 
 # Habit tracker project overview

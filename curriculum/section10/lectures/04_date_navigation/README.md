@@ -2,13 +2,13 @@
 title: Adding date navigation
 slug: adding-date-navigation
 tags:
-  - Published
+  - Written
   - How to
 categories:
   - Video
 section_number: 10
 excerpt: "Add a set of links at the top of the app to let the user go to the habits of a different date."
-draft: false
+draft: true
 ---
 
 # Adding date navigation

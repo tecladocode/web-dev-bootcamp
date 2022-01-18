@@ -2,13 +2,13 @@
 title: Jinja Includes
 slug: jinja-includes
 tags:
-  - Not started
+  - Written
   - How to
 categories:
   - Video
 section_number: 11
 excerpt: Learn about Jinja includes and how to render one template inside of another.
-draft: false
+draft: true
 ---
 
 
