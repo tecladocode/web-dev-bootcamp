@@ -11,13 +11,6 @@ excerpt: 'In this lecture we''ll add a ''contact'' page to our Portfolio project
 draft: true
 ---
 
-- [x] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Adding a contact page to our Flask app
 
