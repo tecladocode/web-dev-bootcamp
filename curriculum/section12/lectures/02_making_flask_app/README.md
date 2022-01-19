@@ -161,4 +161,4 @@ pip install -r requirements-dev.txt
 
 ## Conclusion
 
-Now we've got all our requirements installed, we're ready to go on to the next lecture and start coding the "About" page!
+Now we've got all our requirements installed, we're ready to go on to the next lecture and start coding!
