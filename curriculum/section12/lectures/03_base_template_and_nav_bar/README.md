@@ -2,7 +2,7 @@
 title: Creating the base template and navbar
 slug: portfolio-base-template-navbar
 tags:
-    - Not Started
+    - Written
     - Project
 categories:
     - Video
