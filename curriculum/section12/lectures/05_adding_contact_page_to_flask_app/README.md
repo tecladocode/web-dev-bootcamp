@@ -3,7 +3,7 @@ title: Adding a contact page to our Flask app
 slug: portfolio-add-contact-page
 tags:
     - Project
-    - Not Started
+    - Written
 categories:
     - Video
 section_number: 12
