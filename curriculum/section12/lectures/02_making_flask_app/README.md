@@ -97,7 +97,7 @@ from portfolio import app
 The Flask part of this project is simple: one route for each page that we want to show, plus a single route for all the project pages.
 
 ```py
-from flask import Flask, render_template, abort
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
