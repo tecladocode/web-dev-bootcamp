@@ -15,3 +15,20 @@ body {
     ". footer";
   padding: 8px;
 }
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
