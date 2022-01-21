@@ -2,7 +2,7 @@
 title: Introduction to CSS Grid
 slug: intro-css-grid
 tags:
-    - Not Started
+    - Written
     - Concept
 categories:
     - Video
@@ -10,7 +10,6 @@ section_number: 12
 excerpt: Learn about CSS Grid with some examples.
 draft: true
 ---
-
 
 # Introduction to CSS Grid
 
