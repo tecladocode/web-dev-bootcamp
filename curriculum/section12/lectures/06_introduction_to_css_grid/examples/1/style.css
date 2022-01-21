@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 body * {
   border: 1px dashed red;
 }

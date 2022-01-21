@@ -71,6 +71,11 @@ module.exports = {
         path: "/section11/",
         children: getChildren("section11", "lectures"),
       },
+      {
+        title: "Section 12: Project 3: Portfolio Page",
+        path: "/section12/",
+        children: getChildren("section12", "lectures"),
+      },
     ],
     sidebarDepth: 0,
   },
