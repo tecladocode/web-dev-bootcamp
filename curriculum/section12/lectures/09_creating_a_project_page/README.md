@@ -11,14 +11,6 @@ excerpt: In this lecture we create the first project to include in our portfolio
 draft: true
 ---
 
-- [x] Set metadata above
-- [ ] Start writing!
-- [x] Create `start` folder
-- [x] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
-
 # Creating an individual project page
 
 ## The content and HTML

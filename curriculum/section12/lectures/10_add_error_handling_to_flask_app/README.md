@@ -11,14 +11,6 @@ excerpt: "In this lecture we look at adding error handling to a Flask app using 
 draft: true
 ---
 
-- [x] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
-
 # How to add error handling to a Flask app
 
 Adding error handling to a Flask app is fairly straightforward when we use the `@app.errorhandler` decorator.

@@ -11,14 +11,6 @@ excerpt: In this lecture we move to the Portfolio project homepage to display in
 draft: true
 ---
 
-- [x] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
-
 # Displaying projects in the portfolio
 
 Let's work on displaying all our projects in the homepage.
