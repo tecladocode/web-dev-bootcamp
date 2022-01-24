@@ -2,7 +2,7 @@
 title: How to install Python
 slug: how-to-install-python
 tags:
-  - Not started
+  - Written
   - How to
 categories:
   - Video

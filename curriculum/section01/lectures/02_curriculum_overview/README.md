@@ -2,7 +2,7 @@
 title: Curriculum overview
 slug: curriculum-overview
 tags:
-  - Not started
+  - Written
   - How to
 categories:
   - Video

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Bob Smith | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+
+<body>
+    <header class="header">
+        <h1>Bob Smith</h1>
+
+        <nav class="nav">
+            <a href="{{ url_for('home') }}" class="nav__link {{ 'nav__link--active' if request.path == url_for('home') }}">
+                Projects
+            </a>
+            <a href="{{ url_for('about') }}" class="nav__link {{ 'nav__link--active' if request.path == url_for('about') }}">
+                About
+            </a>
+            <a href="{{ url_for('contact') }}" class="nav__link {{ 'nav__link--active' if request.path == url_for('contact') }}">
+                Contact
+            </a>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

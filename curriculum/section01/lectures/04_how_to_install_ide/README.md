@@ -2,7 +2,7 @@
 title: How to install an IDE
 slug: how-to-install-an-ide
 tags:
-  - Not started
+  - Written
   - How to
 categories:
   - Video

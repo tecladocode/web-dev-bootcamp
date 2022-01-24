@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+body * {
+  border: 1px dashed red;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 8px;
+}

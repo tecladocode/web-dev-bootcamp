@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Lato, "sans-serif";
+}
+
+body {
+  margin-top: 80px;
+}
+
+.header {
+  text-align: center;
+}
+
+.nav {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #1c2023;
+}
+
+.nav__link:not(:last-of-type) {
+  margin-right: 2.5rem;
+}
+
+.nav__link--active,
+.nav__link:hover {
+  font-weight: bold;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.main--about {
+  max-width: 500px;
+  padding: 0 1rem;
+  line-height: 150%;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact__details {
+  /* 1ch is equivalent to the width of the 0 character at the current
+       font size. This allows to create a roughly one letter gap bewteen
+       the contact label and the associated contact detail */
+
+  margin-left: 1ch;
+}
+
+.contact__link {
+  color: #000;
+  text-decoration: none;
+
+  /* We can modify the text decoration colour and thickness to
+       create a custom underline, but the text-decoration-thickness
+       property isn't currently supported on Chrome.
+       
+       Using box-shadow to simulate the underline gives us a
+       cross-browser solution. */
+
+  box-shadow: 0 3px 0 0 #4cafda;
+}
+
+.contact__link:hover {
+  color: #4cafda;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bob Smith | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+
+<body>
+    <main class="main main--error">
+        <h1>404 - Page Not Found</h1>
+        <p>
+            Sorry, we couldn't find the page you're looking for.
+            It may have been mis-spelled, or it doesn't exist anymore.
+        </p>
+        <a href="{{ url_for('home') }}">Go to home</a>
+    </main>
+</body>
+
+</html>

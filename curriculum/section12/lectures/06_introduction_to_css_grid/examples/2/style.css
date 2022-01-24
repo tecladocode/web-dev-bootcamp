@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+body * {
+  border: 1px dashed red;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 8px;
+  column-gap: 50px;
+  row-gap: 30px;
+  /* justify-items: stretch is the default. center moves them to the center but they no longer stretch! */
+  justify-items: center; /* start | end | center | stretch */
+  align-items: center; /* start | end | center | stretch | baseline */
+  /* You can use place-items for both align-items and justify-items */
+}
+
+.grid__item {
+  background-color: #50e3c2;
+  /* justify-self, align-self, place-self */
+}
