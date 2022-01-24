@@ -179,9 +179,9 @@ I'll add the following CSS:
 
 ### New CSS properties
 
-- `background-image`
-- `background-size`
-- `background-repeat`
+- `background-image`[^mdn_bg_image]: adds an image in the background of an item, taking up the entire content + padding area.
+- `background-size`[^mdn_bg_size]: usually one of `cover` (fill element area, stretching the image if necessary) or `contain` (fill element area but without cropping or stretching the image--can result in image tiling).
+- `background-repeat`[^mdn_bg_repeat]: if there is image tiling, configures it. For example only horizontally, or not repeating at all.
 
 ## Loading the appropriate template in the Flask app
 
@@ -212,3 +212,7 @@ from flask import Flask, render_template, abort
 ```
 
 And with that, when we access `/project/any-project-slug`, that will load the appropriate project template (if it exists), and it will receive the data belonging to that project (again, if it exists).
+
+[^mdn_bg_repeat]: [background-repeat (MDN Documentation)](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat)
+[^mdn_bg_size]: [background-size (MDN Documentation)](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
+[^mdn_bg_image]: [background-image (MDN Documentation)](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
