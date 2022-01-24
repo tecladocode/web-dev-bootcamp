@@ -3,11 +3,12 @@ title: 'Elements: The basic components of HTML'
 slug: elements-basic-components-html
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 4
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Elements: The basic components of HTML

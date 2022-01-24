@@ -1,3 +1,27 @@
 {
-  "$schema": "https://frontmatter.codes/frontmatter.schema.json"
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.tags": [
+    "Written",
+    "Not Started",
+    "Published",
+    "Recorded",
+    "Edited",
+    "Concept",
+    "Project",
+    "How to"
+  ],
+  "frontMatter.taxonomy.categories": [
+    "Video",
+    "Text",
+    "Presentation",
+    "Talking head"
+  ],
+  "frontMatter.framework.id": "gatsby",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "curriculum",
+      "path": "[[workspace]]/curriculum"
+    }
+  ]
 }

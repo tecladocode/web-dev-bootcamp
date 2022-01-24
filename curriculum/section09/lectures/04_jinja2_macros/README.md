@@ -2,12 +2,13 @@
 title: Simplifying your Jinja code with macros
 slug: simplifying-jinja-code-macros
 tags:
-  - Written
   - How to
+  - Published
 categories:
   - Video
 section_number: 9
-excerpt: Jinja macros allow us to re-use blocks of Jinja code, including using arguments for better extensibility.
+excerpt: 'Jinja macros allow us to re-use blocks of Jinja code, including using arguments for better extensibility.'
+draft: false
 ---
 
 - [Simplifying your Jinja code with macros](#simplifying-your-jinja-code-with-macros)

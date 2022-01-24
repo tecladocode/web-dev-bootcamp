@@ -3,11 +3,12 @@ title: Routing between pages with Jinja
 slug: routing-between-pages-with-jinja
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 9
-excerpt: Learn how to use url_for to get the endpoint for a given function name, which will simplify navigating between pages in your Flask apps.
+excerpt: 'Learn how to use url_for to get the endpoint for a given function name, which will simplify navigating between pages in your Flask apps.'
+draft: false
 ---
 - [Routing between pages with Jinja](#routing-between-pages-with-jinja)
   - [In this video... (TL;DR)](#in-this-video-tldr)

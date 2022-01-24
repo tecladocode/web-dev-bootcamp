@@ -3,11 +3,12 @@ title: 'Welcome to Jinja2 Mastery, Level 1'
 slug: jinja2-mastery-level-1
 tags:
   - Concept
-  - Written
+  - Published
 categories:
   - Talking head
 section_number: 9
 excerpt: Welcome to the first level of the Jinja2 Mastery sections.
+draft: false
 ---
 
 # Welcome to Jinja2 Mastery, Level 1

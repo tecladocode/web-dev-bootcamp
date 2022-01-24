@@ -3,11 +3,12 @@ title: How to handle CSS in larger pages
 slug: handle-css-larger-pages
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 9
 excerpt: 'When we start working on larger applications, having CSS styles in the HTML can become too cumbersome. In this lecture, let''s revisit BEM and how to use it!'
+draft: false
 ---
 
 - [How to handle CSS in larger pages](#how-to-handle-css-in-larger-pages)

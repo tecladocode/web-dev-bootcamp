@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 8
 excerpt: "Learn how to get your GitHub repository added to Heroku and deployed in their platform."
+draft: false
 ---
 
 # Deploying our app to Heroku

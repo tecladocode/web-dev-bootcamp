@@ -3,11 +3,12 @@ title: "Setting the font family in our project"
 slug: setting-font-family-in-our-project
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 6
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Setting the font family in our project

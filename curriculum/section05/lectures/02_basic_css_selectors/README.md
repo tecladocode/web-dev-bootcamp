@@ -3,11 +3,12 @@ title: How to target specific elements with CSS selectors
 slug: target-specific-elements-css-selectors
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 5
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # How to target specific elements with CSS selectors

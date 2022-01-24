@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 10
 excerpt: Transition to using MongoDB instead of storing data locally in variables for our habit tracker project.
+draft: true
 ---
 
 # Using MongoDB in the habit tracker

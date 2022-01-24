@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 10
 excerpt: "In this lecture we allow users to add new habits and display the habits they've already added to the database."
+draft: true
 ---
 
 # Displaying and saving habits

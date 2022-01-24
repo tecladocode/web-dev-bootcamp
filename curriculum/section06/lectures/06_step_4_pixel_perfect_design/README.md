@@ -3,11 +3,12 @@ title: "Step 4: Better Design with Figma"
 slug: step-4-better-design-with-figma
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 6
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Step 4: Better Design with Figma

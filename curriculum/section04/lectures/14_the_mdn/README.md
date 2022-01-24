@@ -3,11 +3,12 @@ title: "The best HTML resource: MDN"
 slug: best-html-resource-mdn
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 4
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # The best HTML resource: MDN

@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 10
 excerpt: Easily deploy the habit tracker project to Heroku.
+draft: true
 ---
 
 # Deploying our app to Heroku

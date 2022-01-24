@@ -3,11 +3,12 @@ title: "Step 5: Creating the Page Structure"
 slug: step-5-creating-the-page-structure
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 6
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Step 5: Creating the Page Structure

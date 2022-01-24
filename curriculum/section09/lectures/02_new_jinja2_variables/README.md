@@ -3,11 +3,12 @@ title: Creating new variables in Jinja2
 slug: creating-variables-jinja2
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 9
 excerpt: Learn how to create variables within a Jinja2 template so you don't have to re-calculate values in multiple places.
+draft: false
 ---
 
 - [Creating new Jinja2 variables](#creating-new-jinja2-variables)

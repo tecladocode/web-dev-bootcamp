@@ -6,8 +6,9 @@ tags:
   - How to
 categories:
   - Video
-section_number: 0
+section_number: 10
 excerpt: A quick reminder on how to find how to set up a free MongoDB Atlas Cluster.
+draft: true
 ---
 
 # Setting up MongoDB

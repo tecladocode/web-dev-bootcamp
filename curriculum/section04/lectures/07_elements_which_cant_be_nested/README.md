@@ -3,11 +3,12 @@ title: Which HTML elements can't be nested?
 slug: which-html-elements-cant-be-nested
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 4
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Which HTML elements can't be nested?

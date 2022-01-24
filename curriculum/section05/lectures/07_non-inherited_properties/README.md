@@ -3,11 +3,12 @@ title: Non-inherited Properties
 slug: non-inherited-properties
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 5
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Non-inherited Properties

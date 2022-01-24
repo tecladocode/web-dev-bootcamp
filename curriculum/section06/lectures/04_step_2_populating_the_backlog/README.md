@@ -3,11 +3,12 @@ title: "Step 2: Populating the Backlog"
 slug: step-2-populating-the-backlog
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 6
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Step 2: Populating the Backlog

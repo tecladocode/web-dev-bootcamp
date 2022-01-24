@@ -3,11 +3,12 @@ title: A quick example of using HTML and CSS
 slug: quick-html-css-example
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 4
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # A quick example of using HTML and CSS

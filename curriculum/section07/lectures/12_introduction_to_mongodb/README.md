@@ -3,11 +3,12 @@ title: "Introduction to MongoDB"
 slug: introduction-to-mongodb
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 7
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Introduction to MongoDB

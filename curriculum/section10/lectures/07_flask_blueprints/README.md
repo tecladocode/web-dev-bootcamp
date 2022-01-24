@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 10
 excerpt: Learn how to add blueprints to an existing Flask application, and why you may want to do so.
+draft: true
 ---
 # Adding Flask blueprints
 

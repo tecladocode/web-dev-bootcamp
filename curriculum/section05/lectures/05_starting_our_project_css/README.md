@@ -3,11 +3,12 @@ title: Starting to write our project's CSS file
 slug: starting-project-css-file
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 5
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Starting to write our project's CSS file

@@ -1,3 +1,16 @@
+---
+title: The call block
+slug: the-call-block
+tags:
+  - Written
+  - How to
+categories:
+  - Video
+section_number: 11
+excerpt: The call block allows us to pass a macro to another macro.
+draft: true
+---
+
 # The call block
 
 The call block is used to pass a macro to another macro. This is one of the only ways we have in Jinja to extend the functionality of a macro dynamically.

@@ -3,11 +3,12 @@ title: Adding images to our project
 slug: adding-images-to-project
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 4
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Adding images to our project

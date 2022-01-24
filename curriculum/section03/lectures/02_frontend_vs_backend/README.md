@@ -3,11 +3,12 @@ title: Front end vs. back end development
 slug: frontend-vs-backend-development
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Front end vs. back end development

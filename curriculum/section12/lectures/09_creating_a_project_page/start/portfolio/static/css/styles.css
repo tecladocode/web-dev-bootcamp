@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Lato, "sans-serif";
+}
+
+body {
+  margin-top: 80px;
+}
+
+.header {
+  text-align: center;
+}
+
+.nav {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #1c2023;
+}
+
+.nav__link:not(:last-of-type) {
+  margin-right: 2.5rem;
+}
+
+.nav__link--active,
+.nav__link:hover {
+  font-weight: bold;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.main--about {
+  max-width: 500px;
+  padding: 0 1rem;
+  line-height: 150%;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact__details {
+  /* 1ch is equivalent to the width of the 0 character at the current
+       font size. This allows to create a roughly one letter gap bewteen
+       the contact label and the associated contact detail */
+
+  margin-left: 1ch;
+}
+
+.contact__link {
+  color: #000;
+  text-decoration: none;
+
+  /* We can modify the text decoration colour and thickness to
+       create a custom underline, but the text-decoration-thickness
+       property isn't currently supported on Chrome.
+       
+       Using box-shadow to simulate the underline gives us a
+       cross-browser solution. */
+
+  box-shadow: 0 3px 0 0 #4cafda;
+}
+
+.contact__link:hover {
+  color: #4cafda;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 1.25rem;
+  justify-content: center;
+  justify-items: center;
+  max-width: 21.875rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 48.75em) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 45rem;
+  }
+}
+
+@media (min-width: 70em) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 68rem;
+  }
+}
+
+.project-card {
+  padding: 0.75rem 0;
+}
+
+.project-card__image {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card__meta {
+  padding: 0 1.25rem;
+}
+
+.project-card__name {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #1c2023;
+}
+
+.project-card:hover .project-card__image {
+  transform: translateY(-0.5rem);
+}
+
+.project-card:hover .project-card__name {
+  text-decoration: underline;
+}
+
+.categories {
+  display: flex;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  color: #3d84a3;
+  list-style: none;
+  line-height: 1.45;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.075rem;
+}
+
+/* Adds an ::after pseudo-element to each category tag, except the last one.
+   This psuedo-element contains a pipe character (|), which acts as a seperator
+   between the tags. */
+
+.categories__tag:not(:last-of-type)::after {
+  content: "|";
+  margin: 0 0.25rem;
+}
+
+/* Utility class to remove link styles */
+.u-bare-link {
+  text-decoration: none;
+}

@@ -3,11 +3,12 @@ title: Common HTML elements
 slug: common-html-elements
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 4
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Common HTML elements

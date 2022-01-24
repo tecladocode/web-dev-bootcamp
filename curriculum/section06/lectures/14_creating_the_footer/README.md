@@ -3,11 +3,12 @@ title: "Creating the Microblog footer"
 slug: creating-the-microblog-footer
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 6
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Creating the Microblog footer

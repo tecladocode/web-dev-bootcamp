@@ -3,11 +3,12 @@ title: "Jinja2: Conditional Statements"
 slug: jinja2-conditional-statements
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 7
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Jinja2: Conditional Statements

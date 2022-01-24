@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 10
 excerpt: "Add a set of links at the top of the app to let the user go to the habits of a different date."
+draft: true
 ---
 
 # Adding date navigation

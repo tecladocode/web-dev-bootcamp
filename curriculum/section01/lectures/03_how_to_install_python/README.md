@@ -2,12 +2,13 @@
 title: How to install Python
 slug: how-to-install-python
 tags:
-  - Not started
+  - Written
   - How to
 categories:
   - Video
-section_number: 0
+section_number: 1
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # How to install Python on your computer <!-- omit in toc -->

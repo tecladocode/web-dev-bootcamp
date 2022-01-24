@@ -3,11 +3,12 @@ title: Nesting HTML elements
 slug: nesting-html-elements
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 4
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Nesting HTML elements

@@ -3,11 +3,12 @@ title: "Specificity in CSS"
 slug: specificity-in-css
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 5
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Specificity in CSS

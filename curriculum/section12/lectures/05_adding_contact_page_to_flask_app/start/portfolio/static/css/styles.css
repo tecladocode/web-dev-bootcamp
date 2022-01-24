@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Lato, "sans-serif";
+}
+
+body {
+  margin-top: 80px;
+}
+
+.header {
+  text-align: center;
+}
+
+.nav {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #1c2023;
+}
+
+.nav__link:not(:last-of-type) {
+  margin-right: 2.5rem;
+}
+
+.nav__link--active,
+.nav__link:hover {
+  font-weight: bold;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.main--about {
+  max-width: 500px;
+  padding: 0 1rem;
+  line-height: 150%;
+}

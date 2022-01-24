@@ -3,11 +3,12 @@ title: 'Key web technologies: HTML, CSS, JavaScript'
 slug: key-web-technologies-html-css-javascript
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 3
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Key web technologies: HTML, CSS, JavaScript

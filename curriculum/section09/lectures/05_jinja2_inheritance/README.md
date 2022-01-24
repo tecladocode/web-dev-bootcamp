@@ -3,11 +3,12 @@ title: Reducing code duplication using inheritance
 slug: reducing-code-duplication-inheritance
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
 section_number: 0
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 - [Reducing code duplication using inheritance](#reducing-code-duplication-using-inheritance)

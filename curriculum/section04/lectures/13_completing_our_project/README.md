@@ -3,11 +3,12 @@ title: Completing our project with document-level annotations
 slug: completing-project-document-level-annotations
 tags:
     - How to
-    - Written
+    - Published
 categories:
     - Video
-section_number: 3
+section_number: 4
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Completing our project with document-level annotations

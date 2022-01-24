@@ -3,11 +3,12 @@ title: "Data Structures in Jinja2"
 slug: data-structures-in-jinja2
 tags:
   - How to
-  - Written
+  - Published
 categories:
   - Video
-section_number: 3
+section_number: 7
 excerpt: An excerpt of the lecture's content goes here.
+draft: false
 ---
 
 # Data Structures in Jinja2

@@ -8,6 +8,7 @@ categories:
   - Video
 section_number: 8
 excerpt: "Learn how to store any dependencies your project needs so that others can easily run it."
+draft: false
 ---
 
 # What is requirements.txt?
