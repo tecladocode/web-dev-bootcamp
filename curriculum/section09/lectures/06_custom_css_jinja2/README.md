@@ -22,7 +22,7 @@ draft: false
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: https://diff-store.com/diff/3feb8bc5492849c182629df53776a768
+List of all code changes made in this lecture: [https://diff-store.com/diff/3feb8bc5492849c182629df53776a768](https://diff-store.com/diff/3feb8bc5492849c182629df53776a768)
 :::
 
 Let's create another `block` in our base template so that we can change things there per template. In this video I'll show you how you can use that together with `style` tags to customize the CSS easily.

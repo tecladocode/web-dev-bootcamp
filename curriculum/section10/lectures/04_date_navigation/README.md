@@ -18,7 +18,7 @@ draft: true
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: https://diff-store.com/diff/ba9f5dd5fe6f41d589f1b39c867d3389
+List of all code changes made in this lecture: [https://diff-store.com/diff/ba9f5dd5fe6f41d589f1b39c867d3389](https://diff-store.com/diff/ba9f5dd5fe6f41d589f1b39c867d3389)
 :::
 
 Let's add the date navigator: a few links under the header that allow the user to go to a date a few days in the past or in the future, to check past habits or what they'll be doing the next day.

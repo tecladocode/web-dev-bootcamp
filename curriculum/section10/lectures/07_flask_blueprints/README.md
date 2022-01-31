@@ -17,7 +17,7 @@ draft: true
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: https://diff-store.com/diff/ce6051701cc947e5b5f2626eaf95fa59
+List of all code changes made in this lecture: [https://diff-store.com/diff/ce6051701cc947e5b5f2626eaf95fa59](https://diff-store.com/diff/ce6051701cc947e5b5f2626eaf95fa59)
 :::
 
 A blueprint in Flask is basically a collection of routes. We can register zero or more blueprints with an application so that our routes can be split across different files and not all in `app.py`.
