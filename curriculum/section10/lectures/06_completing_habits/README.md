@@ -17,7 +17,7 @@ draft: true
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: https://diff-store.com/diff/568e68ad5fd84f5faa9abdc938f9074c
+List of all code changes made in this lecture: [https://diff-store.com/diff/568e68ad5fd84f5faa9abdc938f9074c](https://diff-store.com/diff/568e68ad5fd84f5faa9abdc938f9074c)
 :::
 
 Let's add habit completion so that our users can complete habits on the day they've got currently selected.
