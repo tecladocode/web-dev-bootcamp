@@ -22,6 +22,10 @@ draft: false
 
 ## In this video... (TL;DR)
 
+::: tip
+List of all code changes made in this lecture: https://folder-diff-store.herokuapp.com/diff/6a481a2959a8483b83b5415cdef3c981
+:::
+
 Jinja2 tests allow us to evaluate conditionals using the `is` keyword.
 
 For example:
