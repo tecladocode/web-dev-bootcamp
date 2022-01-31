@@ -20,6 +20,14 @@ draft: false
 
 ## In this video... (TL;DR)
 
+::: tip
+List of all code changes made in this lecture: https://diff-store.com/diff/d57f52bee7a74e9991a8d26fad928011
+
+Note that the code diffs are split into two. One implements a plain menu bar into the app (inside `/templates`), without using `url_for`.
+
+The other implements navigation using `url_for`, and that's in `templates_urlfor`.
+:::
+
 Flask has a function that, given an endpoint's function name, will give us the URL. We can use that for routing in Jinja2 as well.
 
 Let's say we've got these two endpoints in a Flask app:

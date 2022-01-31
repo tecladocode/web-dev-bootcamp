@@ -23,6 +23,10 @@ draft: false
 
 ## In this video... (TL;DR)
 
+::: tip
+List of all code changes made in this lecture: https://diff-store.com/diff/f906ce3bb3d3403eb179770ffeda0743
+:::
+
 Another thing in Jinja similar to functions in Python, but here they're used for composition rather than transformation.
 
 The process for using macros starts by extraction: extract some existing Jinja code into a macro so that you can call it from anywhere, and reuse it in multiple places.

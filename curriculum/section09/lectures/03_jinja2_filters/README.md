@@ -20,6 +20,11 @@ draft: false
 # Working with filters in Jinja2
 
 ## In this video... (TL;DR)
+
+::: tip
+List of all code changes made in this lecture: https://diff-store.com/diff/1b9f968ca55a408ea6b352730f3a336d
+:::
+
 In a nutshell, filters are to Jinja what functions are to Python. They take inputs, and return outputs. We use them where we use values, to transform them.
 
 ```python

@@ -17,6 +17,10 @@ draft: true
 
 ## In this video... (TL;DR)
 
+::: tip
+List of all code changes made in this lecture: https://diff-store.com/diff/18ad1f56e51d4239bc2ac024b877ae68
+:::
+
 Let's start off our project by allowing users to add new habits and display the habits they've already added to the database.
 
 This will be relatively simple, and will be done in two pages.

@@ -21,6 +21,10 @@ draft: false
 
 ## In this video... (TL;DR)
 
+::: tip
+List of all code changes made in this lecture: https://diff-store.com/diff/f5d286715a154b448343cbdce1318fd7
+:::
+
 Instead of coding whole HTML documents in every Jinja template, we can code specific parts of a document and place them within a predefined HTML structure.
 
 That way we don't have to rewrite parts of the HTML that may never change, such as the `html`, `head`, and `body` tags--and also HTML within those.

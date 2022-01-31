@@ -15,6 +15,10 @@ draft: true
 
 ## In this video... (TL;DR)
 
+::: tip
+List of all code changes made in this lecture: https://diff-store.com/diff/b898d123dec44165a886b32b0ab599fe
+:::
+
 Recap what we need in order to deploy a Flask app to Heroku: a GitHub repo, the `Procfile`, and `runtime.txt`.
 
 Every Python app also needs `requirements.txt`: a file that contains the libraries the app needs in order to run. Heroku will install libraries from this file before running your app.
