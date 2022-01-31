@@ -22,7 +22,7 @@ draft: false
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: https://folder-diff-store.herokuapp.com/diff/b95f3d07a8cd4a3aa02d1ce1f1a3844a
+List of all code changes made in this lecture: https://diff-store.com/diff/b95f3d07a8cd4a3aa02d1ce1f1a3844a
 :::
 
 Using BEM and an external stylesheet (or more than one) is still the best way to go, for example by giving out `todo.html` paragraphs classes:

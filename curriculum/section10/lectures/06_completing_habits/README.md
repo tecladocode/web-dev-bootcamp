@@ -16,6 +16,10 @@ draft: true
 [[toc]]
 ## In this video... (TL;DR)
 
+::: tip
+List of all code changes made in this lecture: https://diff-store.com/diff/568e68ad5fd84f5faa9abdc938f9074c
+:::
+
 Let's add habit completion so that our users can complete habits on the day they've got currently selected.
 
 As part of this, we'll also write some CSS to improve the look of habits in the `index` page.

@@ -18,6 +18,10 @@ draft: true
 
 ## In this video... (TL;DR)
 
+::: tip
+List of all code changes made in this lecture: https://diff-store.com/diff/0e898f37ca13458ba8cfacba3cfe0fa4
+:::
+
 ## Implementation
 
 At the moment our date navigator looks _not very good_. Let's fix that!

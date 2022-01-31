@@ -21,7 +21,7 @@ draft: false
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: https://folder-diff-store.herokuapp.com/diff/d57f52bee7a74e9991a8d26fad928011
+List of all code changes made in this lecture: https://diff-store.com/diff/d57f52bee7a74e9991a8d26fad928011
 
 Note that the code diffs are split into two. One implements a plain menu bar into the app (inside `/templates`), without using `url_for`.
 
