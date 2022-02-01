@@ -2,7 +2,7 @@
 title: Completing habits
 slug: completing-habits
 tags:
-    - Written
+    - Recorded
     - How to
 categories:
     - Video
