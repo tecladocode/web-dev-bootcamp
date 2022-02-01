@@ -2,7 +2,7 @@
 title: Styling the habit tracker
 slug: styling-the-habit-tracker
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video

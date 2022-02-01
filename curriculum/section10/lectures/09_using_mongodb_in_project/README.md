@@ -2,7 +2,7 @@
 title: Using MongoDB in the habit tracker
 slug: using-mongodb-in-the-habit-tracker
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video

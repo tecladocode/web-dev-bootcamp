@@ -2,7 +2,7 @@
 title: Displaying and saving habits
 slug: displaying-and-saving-habits
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video

@@ -2,7 +2,7 @@
 title: Deploying our app to Heroku
 slug: deploying-our-app-to-heroku
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video
