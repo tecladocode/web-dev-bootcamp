@@ -52,7 +52,7 @@ More information available in the [Heroku Python runtimes page](https://devcente
 This is what my `runtime.txt` contains:
 
 ```
-python-3.9.6
+python-3.10.2
 ```
 
 Add those two files to your GitHub repo, and then let's create a project in Heroku. Link it to your GitHub repo as we've already seen, and deploy the `main` branch.
