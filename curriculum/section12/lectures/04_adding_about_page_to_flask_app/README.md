@@ -13,6 +13,10 @@ draft: true
 
 # Adding an about page to our Flask app
 
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/af011a44b5aa42fcad724641709ecdd9](https://diff-store.com/diff/af011a44b5aa42fcad724641709ecdd9)
+:::
+
 Let's continue our Portfolio project by adding the "About" page. These are usually very simple, often with a photo and some text telling the reader about you.
 
 We can start by writing the HTML:

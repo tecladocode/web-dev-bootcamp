@@ -39,7 +39,7 @@ The contents of this file are very specific. You need to pick from the available
 In our case, we're going with this content inside the file:
 
 ```
-python-3.9.6
+python-3.10.2
 ```
 
 ::: tip
