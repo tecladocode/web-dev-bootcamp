@@ -2,7 +2,7 @@
 title: Using MongoDB in the habit tracker
 slug: using-mongodb-in-the-habit-tracker
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video
@@ -141,7 +141,7 @@ We want to include a unique ID for each habit, as well as when the habit was add
 -        "add_habit.html",
 -        title="Habit Tracker - Add Habit",
 -        selected_date=datetime.date.today(),
-+        "add_habit.jinja2", title="Habit Tracker - Add Habit", selected_date=today
++        "add_habit.html", title="Habit Tracker - Add Habit", selected_date=today
      )
 ```
 
@@ -226,16 +226,17 @@ Let's deal with the `complete` endpoint next:
 ```diff
  def complete():
      date_string = request.form.get("date")
-     date = datetime.date.fromisoformat(date_string)
+-    date = datetime.date.fromisoformat(date_string)
 -    habit = request.form.get("habitName")
 -    completions[date].append(habit)
++    date = datetime.datetime.fromisoformat(date_string)
 +    habit = request.form.get("habitId")
 +    current_app.db.completions.insert_one({"date": date, "habit": habit})
  
      return redirect(url_for(".index", date=date_string))
 ```
 
-As you can see, not much going on there: we're getting the habit ID instead of the name, and inserting that along with the date into the database.
+As you can see, not much going on there: we're getting the habit ID instead of the name, and inserting that along with the date into the database. Remember to also change your `datetime.date` to `datetime.datetime` since we're setting the time to midnight!
 
 ## Finished code changes
 
@@ -327,9 +328,10 @@ As you can see, not much going on there: we're getting the habit ID instead of t
 @@ -39,19 +48,21 @@
  def complete():
      date_string = request.form.get("date")
-     date = datetime.date.fromisoformat(date_string)
+-    date = datetime.date.fromisoformat(date_string)
 -    habit = request.form.get("habitName")
 -    completions[date].append(habit)
++    date = datetime.datetime.fromisoformat(date_string)
 +    habit = request.form.get("habitId")
 +    current_app.db.completions.insert_one({"date": date, "habit": habit})
  
@@ -350,7 +352,7 @@ As you can see, not much going on there: we're getting the habit ID instead of t
 -        "add_habit.html",
 -        title="Habit Tracker - Add Habit",
 -        selected_date=datetime.date.today(),
-+        "add_habit.jinja2", title="Habit Tracker - Add Habit", selected_date=today
++        "add_habit.html", title="Habit Tracker - Add Habit", selected_date=today
      )
 ```
 

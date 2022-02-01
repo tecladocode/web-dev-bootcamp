@@ -2,7 +2,7 @@
 title: Styling the date navigator
 slug: styling-the-date-navigator
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video

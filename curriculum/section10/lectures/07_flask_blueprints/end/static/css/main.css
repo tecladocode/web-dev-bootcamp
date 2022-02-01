@@ -29,7 +29,6 @@ body {
   text-decoration: none;
   color: inherit;
   transition: color 0.1s ease-in-out;
-  outline: none;
 }
 
 .header__link:hover {
@@ -153,9 +152,6 @@ centered within the allotted space */
 }
 
 .habit__icon {
-  display: inline-flex;
-  align-self: flex-start;
-  justify-self: flex-end;
   width: 1em;
   height: 1em;
 }

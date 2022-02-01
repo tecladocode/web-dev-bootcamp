@@ -2,7 +2,7 @@
 title: Adding date navigation
 slug: adding-date-navigation
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video

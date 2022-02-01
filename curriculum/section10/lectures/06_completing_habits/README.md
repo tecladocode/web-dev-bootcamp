@@ -2,7 +2,7 @@
 title: Completing habits
 slug: completing-habits
 tags:
-    - Written
+    - Recorded
     - How to
 categories:
     - Video
@@ -156,9 +156,6 @@ We'll also add the `complete` endpoint which handles the submission of the form 
 +}
 +
 +.habit__icon {
-+  display: inline-flex;
-+  align-self: flex-start;
-+  justify-self: flex-end;
 +  width: 1em;
 +  height: 1em;
 +}

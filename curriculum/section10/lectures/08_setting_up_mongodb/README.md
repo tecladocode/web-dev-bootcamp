@@ -2,7 +2,7 @@
 title: Setting up MongoDB
 slug: setting-up-mongodb
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video

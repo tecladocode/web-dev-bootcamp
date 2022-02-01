@@ -2,7 +2,7 @@
 title: Styling the habit tracker
 slug: styling-the-habit-tracker
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video
@@ -57,7 +57,6 @@ The code here is for you to copy if needed! Under this code there's a step by st
 +  text-decoration: none;
 +  color: inherit;
 +  transition: color 0.1s ease-in-out;
-+  outline: none;
 +}
 +
 +.header__link:hover {
@@ -165,7 +164,6 @@ At this point I'll also remove the underline which comes with links by default, 
   text-decoration: none;
   color: inherit;
   transition: color 0.1s ease-in-out;
-  outline: none;
 }
 ```
 

@@ -2,7 +2,7 @@
 title: Adding Flask blueprints
 slug: adding-flask-blueprints
 tags:
-  - Written
+  - Recorded
   - How to
 categories:
   - Video
