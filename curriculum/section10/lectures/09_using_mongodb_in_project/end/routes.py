@@ -47,7 +47,7 @@ def index():
 @pages.route("/complete", methods=["POST"])
 def complete():
     date_string = request.form.get("date")
-    date = datetime.date.fromisoformat(date_string)
+    date = datetime.datetime.fromisoformat(date_string)
     habit = request.form.get("habitId")
     current_app.db.completions.insert_one({"date": date, "habit": habit})
 
@@ -64,5 +64,5 @@ def add_habit():
         )
 
     return render_template(
-        "add_habit.jinja2", title="Habit Tracker - Add Habit", selected_date=today
+        "add_habit.html", title="Habit Tracker - Add Habit", selected_date=today
     )
