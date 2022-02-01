@@ -2,7 +2,7 @@
 title: Project overview
 slug: habit-tracker-project-overview
 tags:
-    - Written
+    - Recorded
     - Concept
 categories:
     - Video
