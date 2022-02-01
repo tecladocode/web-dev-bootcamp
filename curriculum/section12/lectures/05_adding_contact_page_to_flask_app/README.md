@@ -14,6 +14,10 @@ draft: true
 
 # Adding a contact page to our Flask app
 
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/401766ee7dce439585678a83f6a7e314](https://diff-store.com/diff/401766ee7dce439585678a83f6a7e314)
+:::
+
 Let's continue our Portfolio project by working on the contact page. Here, we'll display our contact information. Optionally you could add a contact form here, although that feels a bit too formal and businesslike, rather than belonging to a personal portfolio page.
 
 That's why in our contact page we'll just put links to the three ways to get in touch: e-mail, GitHub, and Twitter.

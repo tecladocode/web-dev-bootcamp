@@ -14,6 +14,10 @@ draft: true
 
 # Creating the base template and navbar
 
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/a97d12da472546a2966a5198bcac71cd](https://diff-store.com/diff/a97d12da472546a2966a5198bcac71cd)
+:::
+
 Let's get started by creating a base template for all our other templates.
 
 In our base template, we'll link the CSS file and add the navigation bar. Then we'll use a Jinja `block` to define where child templates may include their content:

@@ -13,6 +13,10 @@ draft: true
 
 # How to add error handling to a Flask app
 
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/ebafb589868c46dc947fc522930b5423](https://diff-store.com/diff/ebafb589868c46dc947fc522930b5423)
+:::
+
 Adding error handling to a Flask app is fairly straightforward when we use the `@app.errorhandler` decorator.
 
 Let's add this to our `__init__.py`:
