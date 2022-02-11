@@ -6,7 +6,7 @@ tags:
     - How to
 categories:
     - Video
-section_number: 0
+section_number: 13
 excerpt: Make sure passwords are encrypted in your database so they are secure.
 draft: true
 ---

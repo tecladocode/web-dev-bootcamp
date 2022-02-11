@@ -6,7 +6,7 @@ tags:
     - How to
 categories:
     - Video
-section_number: 0
+section_number: 13
 excerpt: How to perform authentication (log in) using Flask.
 draft: true
 ---

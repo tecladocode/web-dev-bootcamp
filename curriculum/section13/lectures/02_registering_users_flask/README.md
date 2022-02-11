@@ -6,7 +6,7 @@ tags:
     - How to
 categories:
     - Video
-section_number: 0
+section_number: 13
 excerpt: Learn how to sign up (register) users with your Flask app.
 draft: true
 ---

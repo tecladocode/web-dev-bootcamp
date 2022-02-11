@@ -2,22 +2,14 @@
 title: What are cookies and sessions?
 slug: what-are-cookies-sessions
 tags:
-    - Not Started
+    - Written
     - Concept
 categories:
     - Video
-section_number: 0
+section_number: 13
 excerpt: Learn about browser cookies and data stored per-cookie in sessions.
 draft: true
 ---
-
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # What are cookies and sessions?
 
