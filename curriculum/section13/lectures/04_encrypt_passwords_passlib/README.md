@@ -1,13 +1,13 @@
 ---
-title: The lecture title goes here
-slug: lecture-title
+title: Password encryption with Flask and passlib
+slug: password-encryption-flask-passlib
 tags:
     - Not started
     - How to
 categories:
     - Video
 section_number: 0
-excerpt: An excerpt of the lecture's content goes here.
+excerpt: Make sure passwords are encrypted in your database so they are secure.
 draft: true
 ---
 
@@ -19,7 +19,7 @@ draft: true
 - [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 
-# Lecture Title
+# Password encryption with Flask and passlib
 
 [[toc]]
 

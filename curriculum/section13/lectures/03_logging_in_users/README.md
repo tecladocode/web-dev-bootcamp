@@ -1,13 +1,13 @@
 ---
-title: The lecture title goes here
-slug: lecture-title
+title: Logging in with Flask
+slug: log-in-users-flask
 tags:
     - Not started
     - How to
 categories:
     - Video
 section_number: 0
-excerpt: An excerpt of the lecture's content goes here.
+excerpt: How to perform authentication (log in) using Flask.
 draft: true
 ---
 
@@ -19,7 +19,7 @@ draft: true
 - [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 
-# Lecture Title
+# Logging in with Flask
 
 [[toc]]
 

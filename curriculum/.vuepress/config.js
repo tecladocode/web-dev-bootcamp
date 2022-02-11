@@ -76,6 +76,11 @@ module.exports = {
         path: "/section12/",
         children: getChildren("section12", "lectures"),
       },
+      {
+        title: "Section 13: Authentication with Flask",
+        path: "/section13/",
+        children: getChildren("section13", "lectures"),
+      },
     ],
     sidebarDepth: 0,
   },

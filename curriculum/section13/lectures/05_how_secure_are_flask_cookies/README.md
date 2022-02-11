@@ -1,13 +1,13 @@
 ---
-title: The lecture title goes here
-slug: lecture-title
+title: How secure are Flask cookies?
+slug: secure-flask-cookies
 tags:
     - Not started
-    - How to
+    - Concept
 categories:
     - Video
 section_number: 0
-excerpt: An excerpt of the lecture's content goes here.
+excerpt: A discussion on security of Flask cookies and what kind of data you can put in them.
 draft: true
 ---
 
@@ -19,7 +19,7 @@ draft: true
 - [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 
-# Lecture Title
+# How secure are Flask cookies?
 
 [[toc]]
 

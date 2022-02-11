@@ -1,13 +1,13 @@
 ---
-title: The lecture title goes here
-slug: lecture-title
+title: Register users with Flask
+slug: register-users-flask
 tags:
     - Not started
     - How to
 categories:
     - Video
 section_number: 0
-excerpt: An excerpt of the lecture's content goes here.
+excerpt: Learn how to sign up (register) users with your Flask app.
 draft: true
 ---
 
