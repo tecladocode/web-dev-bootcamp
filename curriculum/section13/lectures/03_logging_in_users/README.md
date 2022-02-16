@@ -13,6 +13,10 @@ draft: true
 
 # Logging in with Flask
 
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/59e5830d277c44768f368b6807036f33](https://diff-store.com/diff/59e5830d277c44768f368b6807036f33)
+:::
+
 Logging in is extremely similar to signing up! The main (and only) difference is that we don't add the user data to our `users` dictionary.
 
 All we do is populate the `session`, since that is what tells us the user is logged in.

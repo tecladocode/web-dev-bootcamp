@@ -13,6 +13,10 @@ draft: true
 
 # Register users with Flask
 
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/9601b2eec48942b2a1a6357d079abf42](https://diff-store.com/diff/9601b2eec48942b2a1a6357d079abf42)
+:::
+
 ## Overview of the starter code
 
 In the starter code for this section we've got a simple Flask app with 4 routes and 4 templates:
