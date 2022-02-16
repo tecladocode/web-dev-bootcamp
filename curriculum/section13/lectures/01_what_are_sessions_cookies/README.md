@@ -43,10 +43,12 @@ But session data doesn't have to be stored in cookies. It could be stored in a d
 
 Sessions stored in the browser are called "client-side sessions". When stored in a database, they are called "server-side sessions".
 
-Cookies are not 100% safe, so any user can look at the contents of the cookie. That is why we shouldn't store anything in the cookie that we wouldn't want the user to see.
+Cookies are not 100% safe, so any user can look at the contents of the cookie. That is why we shouldn't store anything in the cookie that we wouldn't want the user to see[^flask_cookie_security].
 
 That's one of the primary reasons for using a database instead.
 
 Here's a quick data flow diagram for server-side sessions (you can enlarge by opening in a new tab):
 
 ![Server-side cookies data diagram](./assets/server-side-cookies.jpg)
+
+[^flask_cookie_security]: [Cookie security for Flask applications (Miguel Grinberg)](https://blog.miguelgrinberg.com/post/cookie-security-for-flask-applications)
