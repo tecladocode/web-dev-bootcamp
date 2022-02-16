@@ -38,7 +38,7 @@ def login():
 
         if pbkdf2_sha256.verify(password, users.get(email)):
             session["email"] = email
-            return redirect(url_for("home"))
+            return redirect(url_for("protected"))
         else:
             abort(401)
     return render_template("login.html")

@@ -37,7 +37,7 @@ def login():
 
         if users.get(email) == password:
             session["email"] = email
-            return redirect(url_for("home"))
+            return redirect(url_for("protected"))
         else:
             abort(401)
     return render_template("login.html")
