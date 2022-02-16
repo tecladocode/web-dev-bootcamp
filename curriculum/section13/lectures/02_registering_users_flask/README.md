@@ -2,7 +2,7 @@
 title: Register users with Flask
 slug: register-users-flask
 tags:
-    - Not started
+    - Written
     - How to
 categories:
     - Video
@@ -10,7 +10,6 @@ section_number: 13
 excerpt: Learn how to sign up (register) users with your Flask app.
 draft: true
 ---
-
 
 # Register users with Flask
 

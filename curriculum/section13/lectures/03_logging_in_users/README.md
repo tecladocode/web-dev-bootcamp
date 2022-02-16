@@ -2,7 +2,7 @@
 title: Logging in with Flask
 slug: log-in-users-flask
 tags:
-    - Not started
+    - Written
     - How to
 categories:
     - Video
@@ -10,7 +10,6 @@ section_number: 13
 excerpt: How to perform authentication (log in) using Flask.
 draft: true
 ---
-
 
 # Logging in with Flask
 
