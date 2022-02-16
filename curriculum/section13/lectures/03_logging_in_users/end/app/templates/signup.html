@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+<form method="POST">
+  <label>
+    E-mail
+    <input type="email" name="email" />
+  </label>
+  <label>
+    Password
+    <input type="password" name="password" />
+  </label>
+  <input type="submit" value="Sign up" />
+</form>
+<p><a href="{{ url_for('login') }}">Log in</a> instead</p>
+{% endblock %}
