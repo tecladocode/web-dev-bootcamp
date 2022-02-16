@@ -1,6 +1,6 @@
 ---
-title: Password encryption with Flask and passlib
-slug: password-encryption-flask-passlib
+title: Password hashing with Flask and passlib
+slug: password-hashing-flask-passlib
 tags:
     - Written
     - How to
@@ -11,9 +11,9 @@ excerpt: Make sure passwords are encrypted in your database so they are secure.
 draft: true
 ---
 
-# Password encryption with Flask and passlib
+# Password hashing with Flask and passlib
 
-Encrypting a password means turning it into a string of letters, numbers, and symbols in such a way that it cannot be turned back into the original text.
+Hashing a password means turning it into a string of letters, numbers, and symbols in such a way that it cannot be turned back into the original text.
 
 There are a few terms that are often conflated:
 
