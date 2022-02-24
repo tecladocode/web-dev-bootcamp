@@ -8,17 +8,18 @@ items = [
     {"name": "Pen", "stock": 7},
 ]
 
+
 @app.route("/")
 def home():
     return render_template(
-        "store.j2",
+        "store.html",
         name="My Store",
         address="23 No Name Street",
         employees=["Rolf", "Bob", "Anne"],
-        items=items
+        items=items,
     )
 
 
 @app.route("/items")
-def items():
-    return render_template("items.j2", items=items)
+def items_list():
+    return render_template("items.html", items=items)

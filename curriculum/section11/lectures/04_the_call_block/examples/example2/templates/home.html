@@ -1,17 +1,19 @@
-{% from 'item_table.j2' import item_table %}
+{% from 'item_table.html' import item_table %}
 
 <!DOCTYPE html>
 <html>
 <head></head>
 <body>
-    <h1>All items in store</h1>
+    <h1>Store information</h1>
+
+    <p>This store is at {{ address }}. It employs {{ employees | length }} employees.</p>
+
+    <h2>Items in store</h2>
 
     {% call(item) item_table(all_items) %}
     <tr>
         <td>{{ item['name'] }}</td>
         <td>{{ item['stock'] }}</td>
-        <td>{{ item['price'] }}</td>
-        <td>{{ item['supplier'] }}</td>
     </tr>
     {% endcall %}
 </body>
