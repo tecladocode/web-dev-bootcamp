@@ -23,7 +23,7 @@ Let's continue our Portfolio project by working on the contact page. Here, we'll
 That's why in our contact page we'll just put links to the three ways to get in touch: e-mail, GitHub, and Twitter.
 
 ```html
-{% extends 'base.jinja2' %}
+{% extends 'base.html' %}
 {% block content %}
     <main class="main main--contact">
         <dl>

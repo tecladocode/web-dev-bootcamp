@@ -55,7 +55,9 @@ Do you need to use both `safe` and `e`?
 
 No. Just use one of the two, depending on your application settings.
 
-As of Jinja 3, **autoescaping is disabled**, which means that you should manually escape any potentially unsafe code. Take a look at exactly what that means with this example:
+As of Jinja 3, **autoescaping is disabled** when used on its own, but **autoescaping is enabled in Flask apps**[^flask_autoescaping] in certain templates. You don't need to escape variables in `.html`, `.htm`, `.xml`, or `.xhtml` templates.
+
+You do need to escape variables if you use `.jinja2`, `.j2`, or `.jinja` templates.
 
 - `app.py`
 
@@ -69,10 +71,10 @@ html_code = """<div><p>This is a <strong>Test</strong>.</p></div>"""
 
 @app.route("/")
 def home():
-    return render_template("main.j2", html_code=html_code)
+    return render_template("main.jinja2", html_code=html_code)
 ```
 
-- `main.j2`
+- `main.jinja2`
 
 ```jinja2
 <!DOCTYPE html>

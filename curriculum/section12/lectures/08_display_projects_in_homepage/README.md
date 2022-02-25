@@ -65,15 +65,15 @@ We also have to pass the projects to the homepage endpoint:
 ```py
 @app.route("/")
 def home():
-    return render_template("home.jinja2", projects=projects)
+    return render_template("home.html", projects=projects)
 ```
 
 ## The HTML
 
-Now that we've got the project data being passed to `home.jinja2`, let's write the HTML.
+Now that we've got the project data being passed to `home.html`, let's write the HTML.
 
 ```html
-{% extends 'base.jinja2' %}
+{% extends 'base.html' %}
 {% block content %}
     <main class="main main--home">
         <section class="projects">

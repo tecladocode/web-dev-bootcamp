@@ -81,9 +81,9 @@ The process for using macros starts by extraction: extract some existing Jinja c
 ### Step 2
 
 ```html
-{% import 'macros.jinja2' as macros %}
+{% import 'macros.html' as macros %}
 <!-- or -->
-{% from 'macros.jinja2' import todo_list %}
+{% from 'macros.html' import todo_list %}
 
 {% set num_todos = todos | length %}
   {% if num_todos > 0 %}
@@ -100,7 +100,7 @@ The process for using macros starts by extraction: extract some existing Jinja c
 ## Final code at the end of this lecture
 
 ```html
-{% import 'macros.jinja2' as macros %}
+{% import 'macros.html' as macros %}
 
 {% set num_todos = todos | length %}
   {% if num_todos > 0 %}
