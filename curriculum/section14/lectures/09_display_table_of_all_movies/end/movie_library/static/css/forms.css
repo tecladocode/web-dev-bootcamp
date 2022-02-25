@@ -1,0 +1,136 @@
+.form {
+  margin: 0 auto;
+  max-width: 30rem;
+  border: var(--border);
+  font-size: 1.2rem;
+
+  /* An explicit background is required here, as it's actually transparent by default, and we
+       don't want to see the shadow element behind */
+  background: var(--background-color);
+
+  /* As this is the closest parent widget to the pseudo-element below, this setting position: relative
+       sets the form as the anchor for any absolute positioning we do on the psuedo-element */
+  position: relative;
+}
+
+/* Creates a pseudo element the same size as our form which we can offset and place behind
+   to make a sharp shadow effect */
+.form:after {
+  /* All :after elements need to have some content, but "" is enough */
+  content: "";
+
+  /* Position absolute takes the element outside of the normal document flow, allowing
+       us to position it precisely relative to another element. In this case, the form */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--accent-colour);
+
+  /* Offsets the pseudo-element 0.75rem down and to the right of the relative element */
+  top: 0.75rem;
+  left: 0.75rem;
+
+  /* Places the pseudo-element behind the form */
+  z-index: -1;
+}
+
+.form__container {
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* The following media queries allow for more padding inside the form as the window
+   size increases */
+@media screen and (min-width: 24.75em) {
+  .form__container {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .form__container {
+    padding-left: 2.5rem;
+  }
+}
+
+.form__group {
+  /* Surrounds the label and input fields, placing the label above the input */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form__label {
+  margin-bottom: 0.5rem;
+}
+
+.form__field {
+  /* Removes the border and the outline highlight when the text field is in focus */
+  outline: none;
+  border: none;
+
+  /* Re-adds a bottom border which will be replaces when the field is in focus. This
+       is going to prevent any jumping when we add the border later */
+  border-bottom: 3px solid #fff;
+
+  /* We have to be explicit about our text fields inheriting font properties */
+  font-size: inherit;
+  font-family: inherit;
+
+  padding: 0.75rem 0.5rem;
+  background: var(--background-color);
+}
+
+/* When the field is in focus, we change the border colour at the bottom to the accent colour */
+.form__field:focus {
+  border-bottom: var(--border);
+}
+
+.form__small {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+}
+
+.form__link {
+  text-decoration: none;
+  color: var(--accent-colour);
+}
+
+.form__link:hover {
+  color: #d05656;
+}
+
+.form__error {
+  margin-top: 0.5rem;
+}
+
+.form__error,
+.form__flash {
+  display: block;
+  padding: 0.5rem;
+  color: var(--text);
+}
+
+.form__error,
+.form__flash--danger {
+  background: var(--accent-colour);
+}
+
+.form__flash {
+  margin: 0.5rem;
+}
+
+.form__flash--success {
+  background: var(--accent-colour-2);
+}
+
+/* Styles specific to the form buttons */
+.button--form {
+  margin: 2rem 0 0 auto;
+  padding: 0.75rem 3rem;
+  border: none;
+  background: var(--background-color);
+}
+
+.button--form:hover {
+  background: var(--background-color-hover);
+}
