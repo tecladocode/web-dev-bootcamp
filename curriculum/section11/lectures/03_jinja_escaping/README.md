@@ -126,3 +126,5 @@ See this image for what that actually looks like:
 ![Jinja example: autoescaping vs. raw vs. safe \(Screenshot\)](Jinja%20example:%20autoescaping%20vs.%20raw%20vs.%20safe%20(Screenshot).png)
 
 If you enable autoescaping (which the documentation suggests [would result in a performance hit](https://jinja.palletsprojects.com/en/3.0.x/templates/#html-escaping)), then you **should** escape all potentially unsafe strings, such as those that could contain untrusted HTML code. For example, any text that is coming from your users.
+
+[^flask_autoescaping]: [Jinja setup (Flask docs)](https://flask.palletsprojects.com/en/2.0.x/templating/#jinja-setup)
