@@ -31,21 +31,21 @@ slug_to_project = {project["slug"]: project for project in projects}
 
 @app.route("/")
 def home():
-    return render_template("home.jinja2", projects=projects)
+    return render_template("home.html", projects=projects)
 
 
 @app.route("/about")
 def about():
-    return render_template("about.jinja2")
+    return render_template("about.html")
 
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.jinja2")
+    return render_template("contact.html")
 
 
 # Two ways to do this:
-# - either store everything about a project in Python and populate a generic `project.jinja2` template.
+# - either store everything about a project in Python and populate a generic `project.html` template.
 # - or as done here, have separate templates for each project
 # At the end of the day, we have to write the project info somewhere, and HTML is a great tool for that.
 # This allows each project to be slightly different as we choose,
@@ -54,5 +54,4 @@ def contact():
 def project(slug):
     if slug not in slug_to_project:
         abort(404)
-    return render_template(f"project_{slug}.jinja2", project=slug_to_project[slug])
-
+    return render_template(f"project_{slug}.html", project=slug_to_project[slug])

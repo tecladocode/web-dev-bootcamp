@@ -28,7 +28,7 @@ However, different projects may require different layouts, and HTML is already a
 First let's look at what we want our project to display. Remember that since it's an HTML file that we're writing, we can put anything we want in here!
 
 ```html
-{% extends 'base.jinja2' %}
+{% extends 'base.html' %}
 {% block content %}
     <main class="main main--project">
         <div>
@@ -191,7 +191,7 @@ I'll add the following CSS:
 
 When a user accesses a particular project, they are going to be accessing `/project/project-slug`, where `project-slug` is different for each project.
 
-We'll take the slug, check if it's in our list of projects, and then return the template with name `project_project-slug.jinja2`. If it's not in the list, we'll return a 404 page instead (more on that in the next lecture).
+We'll take the slug, check if it's in our list of projects, and then return the template with name `project_project-slug.html`. If it's not in the list, we'll return a 404 page instead (more on that in the next lecture).
 
 It will be easier if we start off by constructing a dictionary that maps project slugs to projects:
 
@@ -206,7 +206,7 @@ Then with this we can modify our existing project route:
 def project(slug):
     if slug not in slug_to_project:
         abort(404)
-    return render_template(f"project_{slug}.jinja2", project=slug_to_project[slug])
+    return render_template(f"project_{slug}.html", project=slug_to_project[slug])
 ```
 
 We'll need to import `abort` from Flask:

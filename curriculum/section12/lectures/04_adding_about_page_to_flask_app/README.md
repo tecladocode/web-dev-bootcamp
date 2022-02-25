@@ -22,7 +22,7 @@ Let's continue our Portfolio project by adding the "About" page. These are usual
 We can start by writing the HTML:
 
 ```html
-{% extends 'base.jinja2' %}
+{% extends 'base.html' %}
 {% block content %}
     <main class="main main--about">
         <p>

@@ -24,7 +24,7 @@ Let's add this to our `__init__.py`:
 ```py
 @app.errorhandler(404)
 def page_not_found(error):
-    return render_template("404.jinja2"), 404
+    return render_template("404.html"), 404
 ```
 
 This function is like a normal Flask route, but it only triggers when we raise an exception of type `HTTPException` with a response code of `404`.
@@ -33,7 +33,7 @@ If we define an `errorhandler(500)`, then that will also trigger when there is a
 
 Flask provides the `abort()` function, which is a shorthand for raising an `HTTPException` with a given response code. Therefore, `abort(404)` will trigger this error handler.
 
-Now let's create the `404.jinja2` template so that we can show our users a nicer error page:
+Now let's create the `404.html` template so that we can show our users a nicer error page:
 
 ```html
 <!DOCTYPE html>
@@ -61,4 +61,4 @@ Now let's create the `404.jinja2` template so that we can show our users a nicer
 </html>
 ```
 
-Notice I'm not extending `base.jinja2` here because I don't want the navbar showing up in the error page, but feel free to change this!
+Notice I'm not extending `base.html` here because I don't want the navbar showing up in the error page, but feel free to change this!

@@ -108,17 +108,17 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("home.jinja2")
+    return render_template("home.html")
 
 
 @app.route("/about")
 def about():
-    return render_template("about.jinja2")
+    return render_template("about.html")
 
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.jinja2")
+    return render_template("contact.html")
 ```
 
 The homepage doesn't have any information about the projects that it will display yet. We will work on that in a couple of lectures' time.
@@ -129,10 +129,10 @@ Let's also make some of the template files we'll need:
 
 ```
 templates/
-  | - base.jinja2
-  | - home.jinja2
-  | - about.jinja2
-  | - contact.jinja2
+  | - base.html
+  | - home.html
+  | - about.html
+  | - contact.html
 ```
 
 These can be empty for now, we'll populate them as we go!
