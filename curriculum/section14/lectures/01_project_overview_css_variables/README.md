@@ -7,13 +7,13 @@ tags:
 categories:
     - Video
 section_number: 14
-excerpt: Look at the movie library project and the starter code files, as well as learn about CSS variables.
+excerpt: Look at the movie watchlist project and the starter code files, as well as learn about CSS variables.
 draft: true
 ---
 
 # Project Overview and CSS Variables
 
-Let's work on our final project: the movie library!
+Let's work on our final project: the movie watchlist!
 
 In this project you will implement a full app that allows users to store movies they have or intend to watch. Each movie will have its own page with information about the movie, cast, and trailer. Also, users will be able give each movie a rating.
 

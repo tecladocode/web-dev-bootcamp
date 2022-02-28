@@ -2,8 +2,8 @@
 title: Adding a nav bar
 slug: add-nav-bar-movie-library-project
 tags:
-    - Not started
-    - How to
+    - Written
+    - Project
 categories:
     - Video
 section_number: 14
@@ -14,7 +14,7 @@ draft: true
 - [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 
-# Adding a nav bar to the movie library
+# Adding a nav bar to the movie watchlist
 
 Let's take a look at the nav bar that we'll be adding to our app.
 
