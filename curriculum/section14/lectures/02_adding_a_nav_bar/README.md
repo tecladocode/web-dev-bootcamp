@@ -11,11 +11,6 @@ excerpt: Add a styled navigation bar to the project, including an icon.
 draft: true
 ---
 
-- [x] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
 - [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 
@@ -140,3 +135,93 @@ When the user is logged in, we will display "Movies" and "Log out":
 
 ## Writing the CSS for our nav bar
 
+This is the CSS for the nav bar. The CSS is explained line by line in the video lecture.
+
+```css
+.header {
+  padding: 0 2rem;
+  border-bottom: var(--border);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.header__logo:hover {
+  color: var(--accent-colour);
+}
+
+.logo__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.logo__name {
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+
+  /* limits the width of the navigation area to 1200px and centres it within the header */
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  /* Setting display: flex and align-items: center places the links inside the list items
+       vertically in the center of the list item */
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+
+  /* Removes standard underlines from these links. Explicitly inherits text colour from the body */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Sets the background colour and text colour of our navigation items when the item has 
+   the .nav__link--active class, indicating the current page */
+.nav__link--active {
+  background: var(--accent-colour);
+  color: var(--text-light);
+}
+
+/* Adds 1 relative unit of padding (determined by font size) to the right margin of all .nav__item
+   elements as long as they are not the last element in their parent */
+.nav__link:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Adds a bottom border and applies a negative margin to the element, to nudge it over the
+   existing header bar border */
+.nav__link:hover {
+  margin-bottom: -3px;
+  border-bottom: var(--border);
+}
+
+.nav__item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Sets the size of the icon (light/dark theme toggle) to be the same as the font size
+    So that it takes up more or less the same amount of space as the links */
+.nav__icon {
+  width: 1em;
+  height: 1em;
+}
+```
