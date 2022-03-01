@@ -24,7 +24,7 @@ To toggle dark mode all we have to do is change the CSS variables under `:root`.
 
 Before we do any "toggling", let's just try to change the variables into dark mode.
 
-This are the "light mode" variables in `main.css`:
+These are the "light mode" variables in `main.css`:
 
 ```css
 :root {
