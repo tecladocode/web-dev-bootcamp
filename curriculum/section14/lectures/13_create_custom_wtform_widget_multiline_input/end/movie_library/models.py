@@ -1,6 +1,5 @@
 from dataclasses import dataclass, field
 from datetime import datetime
-from uuid import uuid4
 
 
 @dataclass
@@ -9,10 +8,10 @@ class Movie:
     title: str
     director: str
     year: int
-    cast: list[str] = field(default_factory=lambda: [])
-    series: list[str] = field(default_factory=lambda: [])
+    cast: list[str] = field(default_factory=list)
+    series: list[str] = field(default_factory=list)
     last_watched: datetime = None
     rating: int = 0
-    tags: list[str] = field(default_factory=lambda: [])
+    tags: list[str] = field(default_factory=list)
     description: str = None
     video_link: str = None
