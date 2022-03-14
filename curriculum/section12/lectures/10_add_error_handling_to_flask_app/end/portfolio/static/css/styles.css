@@ -36,11 +36,14 @@ body {
 }
 
 .main {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
 
 .main--about,
 .main--error {
+  flex-direction: column;
   max-width: 500px;
   padding: 0 1rem;
   line-height: 150%;

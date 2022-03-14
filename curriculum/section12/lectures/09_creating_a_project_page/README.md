@@ -181,6 +181,27 @@ I'll add the following CSS:
 }
 ```
 
+But notice that the project page takes up 100% of the width of the window, so what we want to do is constrain it so it only takes up the space needed by its content.
+
+We can do this by changing this:
+
+```css
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.main--about {
+  flex-direction: column;
+  max-width: 500px;
+  padding: 0 1rem;
+  line-height: 150%;
+}
+```
+
+I've also changed the `flex-direction` of `.main--about` so that it is a column. Otherwise it would be a row, and the three paragraphs in it would appear side by side.
+
 ### New CSS properties
 
 - `background-image`[^mdn_bg_image]: adds an image in the background of an item, taking up the entire content + padding area.
