@@ -256,3 +256,129 @@ Adding the sharp shadow is a bit trickier! We need to play with the `box-shadow`
 }
 ```
 
+Then, let's add padding into our `form__container` so that there's room around the fields up to the border:
+
+```css
+.form__container {
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* The following media queries allow for more padding inside the form as the window
+   size increases */
+@media screen and (min-width: 24.75em) {
+  .form__container {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .form__container {
+    padding-left: 2.5rem;
+  }
+}
+```
+
+Next up, let's start styling the `.form__group` and `.form__label` classes. By displaying the group using `flex`, we can make it a column so the label will appear on top of the field, and the errors below the field:
+
+```css
+.form__group {
+  /* Surrounds the label and input fields, placing the label above the input */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form__label {
+  margin-bottom: 0.5rem;
+}
+```
+
+We've got some styling to do in the fields also! Nothing much new here:
+
+```css
+.form__field {
+  /* Removes the border and the outline highlight when the text field is in focus */
+  outline: none;
+  border: none;
+
+  /* Re-adds a bottom border which will be replaces when the field is in focus. This
+       is going to prevent any jumping when we add the border later */
+  border-bottom: 3px solid #fff;
+
+  /* We have to be explicit about our text fields inheriting font properties */
+  font-size: inherit;
+  font-family: inherit;
+
+  padding: 0.75rem 0.5rem;
+  background: var(--background-color);
+}
+
+/* When the field is in focus, we change the border colour at the bottom to the accent colour */
+.form__field:focus {
+  border-bottom: var(--border);
+}
+```
+
+I will also add a few other pieces of styling that we will use in other forms in the application. To make life a bit easier for you, I'll add them now:
+
+```css
+.form__small {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+}
+
+.form__link {
+  text-decoration: none;
+  color: var(--accent-colour);
+}
+
+.form__link:hover {
+  color: #d05656;
+}
+
+.form__error {
+  margin-top: 0.5rem;
+}
+
+.form__error,
+.form__flash {
+  display: block;
+  padding: 0.5rem;
+  color: var(--text);
+}
+
+.form__error,
+.form__flash--danger {
+  background: var(--accent-colour);
+}
+
+.form__flash {
+  margin: 0.5rem;
+}
+
+.form__flash--success {
+  background: var(--accent-colour-2);
+}
+```
+
+Most of these are to do with **flashed messages** that we will be using in our authentication forms.
+
+Finally, we need to add button styling:
+
+```css
+/* Styles specific to the form buttons */
+.button--form {
+  margin: 2rem 0 0 auto;
+  padding: 0.75rem 3rem;
+  border: none;
+  background: var(--background-color);
+}
+
+.button--form:hover {
+  background: var(--background-color-hover);
+}
+```
+
+And with that, we're done! Quite a lot of CSS, but not many new properties that you haven't seen before.
+
+As usual, I recommend you code along with me and play around with the CSS properties we're using. Make the design your own by changing certain parts, and truly understand what each property is doing!
