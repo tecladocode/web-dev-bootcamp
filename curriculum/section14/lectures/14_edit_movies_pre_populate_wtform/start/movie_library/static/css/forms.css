@@ -8,30 +8,9 @@
        don't want to see the shadow element behind */
   background: var(--background-color);
 
-  /* As this is the closest parent widget to the pseudo-element below, this setting position: relative
-       sets the form as the anchor for any absolute positioning we do on the psuedo-element */
-  position: relative;
-}
-
-/* Creates a pseudo element the same size as our form which we can offset and place behind
-   to make a sharp shadow effect */
-.form:after {
-  /* All :after elements need to have some content, but "" is enough */
-  content: "";
-
-  /* Position absolute takes the element outside of the normal document flow, allowing
-       us to position it precisely relative to another element. In this case, the form */
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: var(--accent-colour);
-
-  /* Offsets the pseudo-element 0.75rem down and to the right of the relative element */
-  top: 0.75rem;
-  left: 0.75rem;
-
-  /* Places the pseudo-element behind the form */
-  z-index: -1;
+  /* This shadow is separated from the edges by 0.75rem, and shrunk by 0.2rem on the
+  top and bottom. */
+  box-shadow: 0.75rem 0.75rem 0 -0.2rem var(--accent-colour);
 }
 
 .form__container {
