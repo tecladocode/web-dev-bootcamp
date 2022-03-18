@@ -349,6 +349,7 @@ Finally let's make the "View" link look a bit more in line with the styling of t
 When there are no movies and we display a paragraph, let's center it and increase the font size a bit:
 
 ```css
+.table__empty {
   display: block;
   text-align: center;
   font-size: 1.2rem;
