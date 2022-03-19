@@ -40,8 +40,3 @@ def about():
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
-
-
-@app.route("/project/<string:slug>")
-def project(slug):
-    return f"Project page {slug}"

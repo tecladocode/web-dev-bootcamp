@@ -3,7 +3,7 @@
     <main class="main main--home">
         <section class="projects">
             {% for project in projects %}
-                <a class="u-bare-link" href="{{ url_for('project', slug=project['slug']) }}">
+                <a class="u-bare-link" href="#">
                     <article class="project-card">
                         <img
                             class="project-card__image"
@@ -18,7 +18,7 @@
                                 {% endfor %}
                             </ul>
 
-                            <h2 class="project-card__name" ">{{ project['name'] }}<h2/>
+                            <h2 class="project-card__name">{{ project['name'] }}<h2/>
                         </header>
                     </article>
                 </a>

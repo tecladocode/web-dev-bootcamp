@@ -17,15 +17,49 @@ draft: true
 List of all code changes made in this lecture: [https://diff-store.com/diff/12bfcfcef6654d89a7c57001af8beefd](https://diff-store.com/diff/12bfcfcef6654d89a7c57001af8beefd)
 :::
 
-## The content and HTML
-
 Next up: for each project we've built, we'll write an HTML file.
 
 Another way to do this would be to create a single HTML template for all projects. Then each project would populate the template from a database or even just text in the Python code.
 
 However, different projects may require different layouts, and HTML is already a great language for adding structure and content to a page. Therefore instead of overcomplicating, we can just make a different Jinja template per project and keep it simple!
 
-First let's look at what we want our project to display. Remember that since it's an HTML file that we're writing, we can put anything we want in here!
+To create a route that can serve a different file for each project, we'll use the project slugs that we've already defined:
+
+```py
+from flask import abort  # among other things
+
+...
+
+slug_to_project = {project["slug"]: project for project in projects}
+
+...
+
+@app.route("/project/<string:slug>")
+def project(slug):
+    if slug not in slug_to_project:
+        abort(404)
+    return render_template(f"project_{slug}.html", project=slug_to_project[slug])
+```
+
+Let's use our new endpoint in the `home.html` template:
+
+```diff
+ <main class="main main--home">
+     <section class="projects">
+         {% for project in projects %}
+-            <a class="u-bare-link" href="#">
++            <a class="u-bare-link" href="{{ url_for('project', slug=project ['slug']) }}">
+                 <article class="project-card">
+                     <img
+                         class="project-card__image"
+                         src="{{ url_for('static', filename=project['thumb']) }}"
+                         alt="{{ project['name'] }} hero image"
+                     />
+```
+
+## The content and HTML
+
+Let's look at what we want our project to display. Remember that since it's an HTML file that we're writing, we can put anything we want in here!
 
 ```html
 {% extends 'base.html' %}
