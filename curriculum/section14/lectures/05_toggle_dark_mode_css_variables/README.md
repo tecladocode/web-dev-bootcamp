@@ -2,7 +2,7 @@
 title: Toggling dark mode
 slug: toggle-dark-mode-flask-app
 tags:
-    - Not started
+    - Written
     - How to
 categories:
     - Video

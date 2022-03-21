@@ -2,20 +2,15 @@
 title: Displaying a table of all movies
 slug: display-table-all-movies
 tags:
-    - Not started
+    - Written
     - How to
 categories:
     - Video
-section_number: 0
-excerpt: An excerpt of the lecture's content goes here.
+section_number: 14
+excerpt: Learn how to load all movie data and display a table of all movies.
 draft: true
 ---
 
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
 - [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 

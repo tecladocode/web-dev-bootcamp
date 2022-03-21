@@ -2,7 +2,7 @@
 title: "Showing only the user's movies"
 slug: showing-only-logged-in-user-movies
 tags:
-    - Not started
+    - Written
     - How to
 categories:
     - Video

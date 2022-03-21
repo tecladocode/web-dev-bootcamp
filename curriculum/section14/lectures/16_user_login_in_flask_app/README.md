@@ -2,7 +2,7 @@
 title: Add user logins
 slug: add-user-login-movie-watchlist
 tags:
-    - Not started
+    - Written
     - How to
 categories:
     - Video

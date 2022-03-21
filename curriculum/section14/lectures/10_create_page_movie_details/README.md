@@ -2,7 +2,7 @@
 title: Creating the movie details page
 slug: movie-details-page
 tags:
-    - Not started
+    - Written
     - How to
 categories:
     - Video
@@ -11,11 +11,7 @@ excerpt: Display detailed information about a single movie in one page.
 draft: true
 ---
 
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
+
 - [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 
