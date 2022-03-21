@@ -7,7 +7,7 @@ tags:
 categories:
     - Video
 section_number: 0
-excerpt: "Learn how to easily set the last watched date for a movie, using today's date as a value.""
+excerpt: "Learn how to easily set the last watched date for a movie, using today's date as a value."
 draft: true
 ---
 
