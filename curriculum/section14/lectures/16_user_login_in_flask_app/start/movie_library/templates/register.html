@@ -9,6 +9,11 @@
 {% block main_content %}
 
     <form name="register" method="post" novalidate class="form">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {%- for category, message in messages %}
+                <span class="form__flash form__flash--{{category}}"> {{ message }}</span>
+            {% endfor %}
+        {% endwith %}
         <div class="form__container">
             {{ form.hidden_tag() }}
 
