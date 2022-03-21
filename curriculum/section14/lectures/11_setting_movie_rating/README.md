@@ -6,7 +6,7 @@ tags:
     - How to
 categories:
     - Video
-section_number: 0
+section_number: 14
 excerpt: Learn how to use Jinja loops and query string parameters to set the movie rating using icons.
 draft: true
 ---
