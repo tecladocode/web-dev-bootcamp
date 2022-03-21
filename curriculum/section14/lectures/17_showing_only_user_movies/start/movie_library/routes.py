@@ -1,4 +1,3 @@
-import functools
 import uuid
 import datetime
 from dataclasses import asdict
