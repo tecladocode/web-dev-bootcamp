@@ -15,7 +15,7 @@
                 <div class="movie__rating">
                     {% for i in range(5) %}
                         <a class="rating__link" href="{{ url_for('pages.rate_movie', _id=movie._id, rating=i+1) }}">
-                            {{ star("star " + ("star--filled" if movie.rating > loop.index0 else "")) }}
+                            {{ star("star " + ("star--filled" if movie.rating > i else "")) }}
                         </a>
                     {% endfor %}
                 </div>

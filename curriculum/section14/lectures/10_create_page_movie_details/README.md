@@ -283,34 +283,7 @@ Below is the full code for our movie details page!
 }
 
 .movie__rating {
-  display: flex;
   margin-left: 1rem;
-}
-
-.rating__link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: unset;
-}
-
-.star {
-  width: 1.5em;
-  height: 1.5em;
-  fill: none;
-}
-
-.star:hover {
-  fill: #ffd02a;
-  stroke: #cca311;
-}
-
-.star--filled {
-  fill: #ffd02a;
-}
-
-.star:not(:first-of-type) {
-  margin-left: 2px;
 }
 
 .movie__watched {
