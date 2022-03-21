@@ -162,6 +162,12 @@ This template just renders the form using our macros:
 {% block main_content %}
 
     <form name="register" method="post" novalidate class="form">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {%- for category, message in messages %}
+                <span class="form__flash form__flash--{{category}}"> {{ message }}</span>
+            {% endfor %}
+        {% endwith %}
+        
         <div class="form__container">
             {{ form.hidden_tag() }}
 
@@ -186,7 +192,7 @@ This template just renders the form using our macros:
 
 The last thing to do is make sure users can actually navigate to our new endpoint!
 
-Let's change `nav.html`:
+Let's change `macros/nav.html`:
 
 ```diff
  {%- if not email %}
