@@ -106,7 +106,7 @@ We are going to store a setting in the Flask session, which will tell us whether
 
 <!DOCTYPE html>
 -<html lang="en">
-+<html lang="en" class="{{ 'dark-mode' if session.get('theme') == 'dark' else '' }}">
++<html lang="en" class="{{ 'dark-mode' if session.get('theme') == 'dark' }}">
      <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

@@ -208,7 +208,7 @@ Let's change `macros/nav.html`:
 -    >
 +    <a
 +        href="{{ url_for('pages.register') }}"
-+        class="nav__link {{ 'nav__link--active' if url_for('pages.register') in request.path }}"
++        class="nav__link {{ 'nav__link--active' if request.path == url_for('pages.register') }}"
 +    >
          <span class="nav__item">Register</span>
      </a>

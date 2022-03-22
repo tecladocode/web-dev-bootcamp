@@ -23,7 +23,7 @@
             {% else %}
                 <a 
                     href="{{ url_for('pages.index') }}"
-                    class="nav__link {{ 'nav__link--active' if url_for('pages.index') in request.path }}"
+                    class="nav__link {{ 'nav__link--active' if request.path == url_for('pages.index') }}"
                 >
                     <span class="nav__item">Movies</span>
                 </a>
