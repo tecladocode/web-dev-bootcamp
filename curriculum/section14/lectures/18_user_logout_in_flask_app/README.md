@@ -1,28 +1,50 @@
 ---
-title: The lecture title goes here
-slug: lecture-title
+title: Add user logouts
+slug: handle-user-logout-portfolio-project
 tags:
     - Not started
     - How to
 categories:
     - Video
-section_number: 0
-excerpt: An excerpt of the lecture's content goes here.
+section_number: 14
+excerpt: Learn how to add a logout endpoint and what to do when users log out.
 draft: true
 ---
 
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
 - [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 
-# Lecture Title
+# Add user logouts to the portfolio project
 
-[[toc]]
+Handling user logouts is very straightforward: clear the session, and the user will be logged out!
 
-## In this video... (TL;DR)
+The `session` variable has a `.clear()` method you can call which will do this for you!
 
-## Code written in this lecture
+In `routes.py`:
+
+```py
+@pages.route("/logout")
+def logout():
+    session.clear()
+
+    return redirect(url_for(".login"))
+```
+
+An alternative, if you wanted to keep some data in the `session` but remove other data, could be to do this:
+
+```py
+del session["user_id"]
+del session["email"]
+```
+
+With that, we can include a link in the nav bar to the logout endpoint:
+
+```diff
+ <a
+-    href="#"
++    href="{{ url_for('pages.logout') }}"
+     class="nav__link"
+ >
+     <span class="nav__item">Log out</span>
+ </a>
+```
