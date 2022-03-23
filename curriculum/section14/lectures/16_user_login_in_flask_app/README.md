@@ -3,10 +3,10 @@ title: Add user logins
 slug: add-user-login-movie-watchlist
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
-section_number: 0
+section_number: 14
 excerpt: Learn how to allow users to log in by adding it to the movie watchlist project.
 draft: true
 ---

@@ -3,7 +3,7 @@ title: Add user signups
 slug: add-user-signups-movie-watchlist
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

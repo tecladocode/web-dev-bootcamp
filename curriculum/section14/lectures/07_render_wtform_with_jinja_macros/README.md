@@ -3,7 +3,7 @@ title: Render a WTForm in our template
 slug: render-wtform-form-jinja-html
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

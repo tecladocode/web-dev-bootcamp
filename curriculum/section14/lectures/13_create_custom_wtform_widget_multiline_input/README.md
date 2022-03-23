@@ -3,7 +3,7 @@ title: Create a custom WTForm Widget
 slug: create-custom-wtform-widget
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

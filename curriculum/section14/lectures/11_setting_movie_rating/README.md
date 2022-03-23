@@ -3,7 +3,7 @@ title: Setting movie ratings
 slug: setting-movie-ratings
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

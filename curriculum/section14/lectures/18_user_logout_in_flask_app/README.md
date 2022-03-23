@@ -2,8 +2,8 @@
 title: Add user logouts
 slug: handle-user-logout-portfolio-project
 tags:
-    - Not started
-    - How to
+    - Written
+    - Project
 categories:
     - Video
 section_number: 14

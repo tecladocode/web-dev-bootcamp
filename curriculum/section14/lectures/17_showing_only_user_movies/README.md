@@ -3,7 +3,7 @@ title: "Showing only the user's movies"
 slug: showing-only-logged-in-user-movies
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

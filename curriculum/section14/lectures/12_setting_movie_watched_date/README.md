@@ -3,7 +3,7 @@ title: Set the last watched date
 slug: setting-last-watched-date
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

@@ -3,7 +3,7 @@ title: Creating the movie details page
 slug: movie-details-page
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

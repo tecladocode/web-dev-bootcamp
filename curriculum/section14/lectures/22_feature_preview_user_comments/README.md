@@ -3,10 +3,10 @@ title: The lecture title goes here
 slug: lecture-title
 tags:
     - Not started
-    - How to
+    - Project
 categories:
     - Video
-section_number: 0
+section_number: 14
 excerpt: An excerpt of the lecture's content goes here.
 draft: true
 ---

@@ -3,7 +3,7 @@ title: Receive and validate data using WTForms
 slug: receive-validate-data-wtforms
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

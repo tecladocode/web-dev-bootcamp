@@ -3,7 +3,7 @@ title: Create a form with WTForms
 slug: create-form-wtforms
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

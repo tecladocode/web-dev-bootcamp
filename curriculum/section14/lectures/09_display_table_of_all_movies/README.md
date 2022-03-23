@@ -3,7 +3,7 @@ title: Displaying a table of all movies
 slug: display-table-all-movies
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14

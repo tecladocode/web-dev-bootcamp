@@ -3,7 +3,7 @@ title: Editing movies and pre-populating a form
 slug: edit-movies-prepopulate-wtform
 tags:
     - Written
-    - How to
+    - Project
 categories:
     - Video
 section_number: 14
