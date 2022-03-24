@@ -1,15 +1,15 @@
 var getChildren = require("./childscript");
 
 module.exports = {
-  title: "Full Stack Development with Python and Flask in 2020",
-  description: "The complete course notes and guide.",
+  title: "Web Developer Bootcamp with Flask and Python",
+  description:
+    "The complete course notes and guide for web development with Flask and Python in 2022.",
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
       {
         text: "Get the course",
-        link:
-          "https://www.udemy.com/course/complete-python-postgresql-database-course/?referralCode=B3ED9B12EBC114C0C306",
+        link: "https://go.tecla.do/web-dev-course-sale",
       },
     ],
     sidebar: [
@@ -80,6 +80,11 @@ module.exports = {
         title: "Section 13: Authentication with Flask",
         path: "/section13/",
         children: getChildren("section13", "lectures"),
+      },
+      {
+        title: "Section 14: Project 4: Movie Library",
+        path: "/section14/",
+        children: getChildren("section14", "lectures"),
       },
     ],
     sidebarDepth: 0,

@@ -1,0 +1,34 @@
+{% from "macros/fields.jinja2" import render_text_field %}
+
+{% extends "layout.html" %}
+
+{%- block head_content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}" />
+{% endblock %} 
+
+{% block main_content %}
+
+    <form name="login" method="post" novalidate class="form">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {%- for category, message in messages %}
+                <span class="form__flash form__flash--{{category}}"> {{ message }}</span>
+            {% endfor %}
+        {% endwith %}
+
+        <div class="form__container">
+            {{ form.hidden_tag() }}
+    
+            {{ render_text_field(form.email) }}
+            {{ render_text_field(form.password) }}
+    
+            <span class="form__small">
+                Don't have an account? <a href="{{ url_for('pages.register') }}" class="form__link">Register here</a>.
+            </span>
+    
+            <div>
+                {{ form.submit(class_="button button--form") }}
+            </div>
+        </div>
+    </form>
+
+{% endblock %}
