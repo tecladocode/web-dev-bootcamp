@@ -65,7 +65,7 @@ def login():
 At this point, we can also change the `register` endpoint to redirect users to the `login` endpoint when registration is successful:
 
 ```diff
-         current_app.db.user.insert(asdict(user))
+         current_app.db.user.insert_one(asdict(user))
 
          flash("User registered successfully", "success")
 

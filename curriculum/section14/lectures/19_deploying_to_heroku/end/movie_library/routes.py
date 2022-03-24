@@ -59,12 +59,12 @@ def register():
 
     if form.validate_on_submit():
         user = User(
-            _id=uuid.uuid4(),
+            _id=uuid.uuid4().hex,
             email=form.email.data,
             password=pbkdf2_sha256.hash(form.password.data),
         )
 
-        current_app.db.user.insert(asdict(user))
+        current_app.db.user.insert_one(asdict(user))
 
         flash("User registered successfully", "success")
 
@@ -118,7 +118,7 @@ def add_movie():
             year=form.year.data,
         )
 
-        current_app.db.movie.insert(asdict(movie))
+        current_app.db.movie.insert_one(asdict(movie))
 
         current_app.db.user.update_one(
             {"_id": session["user_id"]}, {"$push": {"movies": movie._id}}

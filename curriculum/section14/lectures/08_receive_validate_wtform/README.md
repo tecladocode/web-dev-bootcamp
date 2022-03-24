@@ -64,7 +64,7 @@ def add_movie():
             "year": form.year.data
         }
 
-        current_app.db.movie.insert(movie)
+        current_app.db.movie.insert_one(movie)
 
         return redirect(url_for(".index"))
 
@@ -180,7 +180,7 @@ def add_movie():
             year=form.year.data,
         )
 
-        current_app.db.movie.insert(asdict(movie))
+        current_app.db.movie.insert_one(asdict(movie))
 
         return redirect(url_for(".index"))
 ```
