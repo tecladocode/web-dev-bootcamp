@@ -246,7 +246,7 @@ The first thing I'll do in our new CSS file is position the "Add movie" button s
   border-radius: 50%;
   color: var(--text-dark);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.75rem;
   align-items: center;
   justify-content: center;
