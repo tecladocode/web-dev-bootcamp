@@ -45,9 +45,7 @@ Note that I've made it be able to receive `GET` and `POST` requests. The templat
 
 For now, the `POST` request does nothing. Let's render our form first, and handle receiving the data in the next lecture.
 
-## Render the WTForms form in the template
-
-### How to render a WTForms field
+## How to render a WTForms field
 
 First things first, let's create our `templates/new_form.html` file. This is where our form will live:
 
@@ -109,7 +107,8 @@ A field consists of three parts:
 
 You can pass CSS classes to the label and field with the `class_` keyword argument.
 
-### Extract the rendering of a field into a macro
+## Extract the rendering of a field into a macro
+
 We have three fields in our form: `title`, `director`, and `year`. All three fields will be rendered in exactly the same way: with `field.label()`, `field()`, and a list of errors.
 
 Therefore this is a perfect candidate for a Jinja macro!
@@ -147,7 +146,7 @@ Now we can just import that from `templates/new_form.html` and use it three time
 {% endblock %}
 ```
 
-### Render all the form fields
+## Render all the form fields (including CSRF field)
 
 There are two more fields we need to include in our form: the CSRF protection field, and the submit button.
 

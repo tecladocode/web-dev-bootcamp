@@ -47,10 +47,9 @@ First we'll start with creating the table and defining the columns and their siz
     {% if movies_data %}
         <table class="table">
             <colgroup>
-                <col style="width: 55%">
-                <col style="width: 20%">
+                <col style="width: 60%">
+                <col style="width: 25%">
                 <col style="width: 15%">
-                <col style="width: 10%">
             </colgroup>
             <thead>
                 
@@ -72,10 +71,9 @@ Next, we'll define the headers:
     {% if movies_data %}
         <table class="table">
             <colgroup>
-                <col style="width: 55%">
-                <col style="width: 20%">
+                <col style="width: 60%">
+                <col style="width: 25%">
                 <col style="width: 15%">
-                <col style="width: 10%">
             </colgroup>
             <thead>
                 <th class="table__cell table__cell--header">Title</th>
@@ -101,10 +99,9 @@ And finally, with a `for` loop, put the data in the table:
     {% if movies_data %}
         <table class="table">
             <colgroup>
-                <col style="width: 55%">
-                <col style="width: 20%">
+                <col style="width: 60%">
+                <col style="width: 25%">
                 <col style="width: 15%">
-                <col style="width: 10%">
             </colgroup>
             <thead>
                 <tr class="table__header">
@@ -141,10 +138,9 @@ Let's add some text in there to tell users to add a new movie when that happens:
     {% if movies_data %}
         <table class="table">
             <colgroup>
-                <col style="width: 55%">
-                <col style="width: 20%">
+                <col style="width: 60%">
+                <col style="width: 25%">
                 <col style="width: 15%">
-                <col style="width: 10%">
             </colgroup>
             <thead>
                 <tr class="table__header">
@@ -181,10 +177,9 @@ Finally, we also need a way to add new movies even if there is already a movie i
     {% if movies_data %}
         <table class="table">
             <colgroup>
-                <col style="width: 55%">
-                <col style="width: 20%">
+                <col style="width: 60%">
+                <col style="width: 25%">
                 <col style="width: 15%">
-                <col style="width: 10%">
             </colgroup>
             <thead>
                 <tr class="table__header">

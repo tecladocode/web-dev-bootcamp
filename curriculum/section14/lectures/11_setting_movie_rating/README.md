@@ -79,7 +79,7 @@ Now we've got this, but the icons are not filled even if the rating of the movie
 
 To change the styling of some icons but not others we'll need to give them an additional CSS class, which I'll call `.star--filled`.
 
-### Jinja `loop` variables
+### CSS classes in the loop
 
 Since the Jinja loop goes from 0 to 4, what we need to do is:
 
@@ -148,7 +148,7 @@ So what we can do is, in each link, include a `rating` query string parameter eq
 Here's how to do that:
 
 ```jinja2
-% for i in range(5) %}
+{% for i in range(5) %}
     <a class="rating__link" href="{{ url_for('pages.rate_movie', _id=movie._id, rating=i+1) }}">
         {{ star("star " + ("star--filled" if movie.rating > i else "")) }}
     </a>

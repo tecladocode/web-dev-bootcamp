@@ -14,7 +14,7 @@ draft: true
 - [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 
-# Lecture Title
+# Create a custom WTForm widget
 
 We're now going to begin working on movie editing. To do this, we'll be creating a longer form where users can change all of the form data.
 
