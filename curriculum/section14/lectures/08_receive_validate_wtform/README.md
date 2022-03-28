@@ -84,6 +84,12 @@ I think one of the best ways to do this is a `dataclass`. This is a Python objec
 ## Create a class for storing movie data
 Let's start by creating a `movie_library/models.py` file. Inside it, we'll define a class that represents a movie.
 
+::: tip
+I made a diagram to help you visualize the change from dictionary to class for handling data and interacting with MongoDB. Hope it helps!
+
+Link: [https://snappify.io/view/b0880dd5-59c8-4d4b-902b-ca26b1681bb2](https://snappify.io/view/b0880dd5-59c8-4d4b-902b-ca26b1681bb2)
+:::
+
 To "represent" a movie we'll define the properties of an object of said class, so that when we create an object, it will have all those properties.
 
 Using the `dataclasses` module, you'd do it like this:
