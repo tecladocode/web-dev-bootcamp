@@ -11,10 +11,11 @@ excerpt: Add a styled navigation bar to the project, including an icon.
 draft: true
 ---
 
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
-
 # Adding a nav bar to the movie library
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/422036bb6641424b84c1011675eac445](https://diff-store.com/diff/422036bb6641424b84c1011675eac445)
+:::
 
 Let's take a look at the nav bar that we'll be adding to our app.
 

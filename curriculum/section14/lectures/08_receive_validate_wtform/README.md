@@ -11,9 +11,13 @@ excerpt: Learn to receive data from an HTML form and validate it using WTForms.
 draft: true
 ---
 
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 # Receive and validate data using WTForms
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/37b94bc3a3344c27b45a6a4e93da36eb](https://diff-store.com/diff/37b94bc3a3344c27b45a6a4e93da36eb)
+:::
+
 ## Validate form data
 Now that we've got our form and our endpoint, it's time to connect them and receive the form data in Flask!
 

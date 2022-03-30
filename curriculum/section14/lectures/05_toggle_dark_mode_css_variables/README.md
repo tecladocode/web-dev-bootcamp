@@ -11,14 +11,12 @@ excerpt: Learn how to toggle between light and dark mode in a Flask app using se
 draft: true
 ---
 
-- [x] Set metadata above
-- [x] Start writing!
-- [x] Create `start` folder
-- [x] Create `end` folder
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Toggling dark mode in the movie watchlist project
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/dd9e6043ca734167b4fd06de3d1b05cd](https://diff-store.com/diff/dd9e6043ca734167b4fd06de3d1b05cd)
+:::
 
 To toggle dark mode all we have to do is change the CSS variables under `:root`. At the moment, all the variables are set up to support light mode. If we change them to support dark mode, the site will become dark.
 

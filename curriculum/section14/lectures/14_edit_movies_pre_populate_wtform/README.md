@@ -11,9 +11,12 @@ excerpt: Learn about pre-populating WTForm forms while adding movie editing func
 draft: true
 ---
 
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
 
 # Editing movies and pre-populating a form
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/f1ab983f36ca49088c491b771d9580aa](https://diff-store.com/diff/f1ab983f36ca49088c491b771d9580aa)
+:::
 
 Now that we've create the `ExtendedMovieForm` for movie editing, let's add a Flask endpoint to serve it to our users and handle form submissions, as well as a template to display the form.
 

@@ -12,10 +12,13 @@ draft: true
 ---
 
 
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Create the movie details page
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/ee701882aede4ba4a4e644b1df665825](https://diff-store.com/diff/ee701882aede4ba4a4e644b1df665825)
+:::
+
 ## Add an endpoint for the movie details page
 Let's start by adding an endpoint that will:
 

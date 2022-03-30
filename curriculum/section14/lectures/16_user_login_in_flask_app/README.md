@@ -11,15 +11,12 @@ excerpt: Learn how to allow users to log in by adding it to the movie watchlist 
 draft: true
 ---
 
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Adding user logins to the movie watchlist
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/de666ee57fea4e4ead460380608dfc2f](https://diff-store.com/diff/de666ee57fea4e4ead460380608dfc2f)
+:::
 
 ## Creating the login form
 

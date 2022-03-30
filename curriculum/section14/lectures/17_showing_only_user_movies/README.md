@@ -11,15 +11,12 @@ excerpt: "Learn how to add personalization to our app by showing only the curren
 draft: true
 ---
 
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Showing only the logged in user's movies
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/532c113cec1d48909a2f1fd0aec5d27e](https://diff-store.com/diff/532c113cec1d48909a2f1fd0aec5d27e)
+:::
 
 ## Adding the `login_required` decorator
 

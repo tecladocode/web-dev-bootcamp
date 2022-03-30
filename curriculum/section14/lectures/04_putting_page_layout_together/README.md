@@ -11,15 +11,12 @@ excerpt: Put together the page layout, including the navigation, main content, a
 draft: true
 ---
 
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Putting the page layout together
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/f3d05e2353764824a91003cbfd8aecd9](https://diff-store.com/diff/f3d05e2353764824a91003cbfd8aecd9)
+:::
 
 Now that we've got our header navigation and our footer, it's time to add them to `layout.html`.
 

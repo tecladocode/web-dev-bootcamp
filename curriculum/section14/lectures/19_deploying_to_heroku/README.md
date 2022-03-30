@@ -12,10 +12,12 @@ draft: true
 ---
 
 
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Deploy the movie watchlist project to Heroku
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/ea65a956d06b4969a85d73ecafc2218b](https://diff-store.com/diff/ea65a956d06b4969a85d73ecafc2218b)
+:::
 
 ## Files we need to add for Heroku deployment
 

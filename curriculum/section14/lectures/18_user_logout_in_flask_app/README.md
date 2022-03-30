@@ -11,10 +11,12 @@ excerpt: Learn how to add a logout endpoint and what to do when users log out.
 draft: true
 ---
 
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Add user logouts to the portfolio project
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/aa0bfb9ce7bf4db782c9cc225b030215](https://diff-store.com/diff/aa0bfb9ce7bf4db782c9cc225b030215)
+:::
 
 Handling user logouts is very straightforward: clear the session, and the user will be logged out!
 

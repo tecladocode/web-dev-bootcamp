@@ -11,10 +11,13 @@ excerpt: Learn how to load all movie data and display a table of all movies.
 draft: true
 ---
 
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Displaying a table of all movies
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/b93744ff420c414aadb2023677d752f4](https://diff-store.com/diff/b93744ff420c414aadb2023677d752f4)
+:::
+
 ## Load the data from MongoDB
 Let's start with getting data from MongoDB and into our template! Let's go to our `index` route:
 

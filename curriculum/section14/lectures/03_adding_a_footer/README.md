@@ -11,15 +11,12 @@ excerpt: Learn how to add a footer that is stuck to the bottom of the screen, or
 draft: true
 ---
 
-- [x] Set metadata above
-- [x] Start writing!
-- [x] Create `start` folder
-- [x] Create `end` folder
-- [x] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Adding a footer to the movie watchlist project
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/08856f2be5b2491eb502b68c82214654](https://diff-store.com/diff/08856f2be5b2491eb502b68c82214654)
+:::
 
 Let's start by creating `templates/macros/footer.html`. Inside it, we'll place another Jinja macro that renders the footer HTML code:
 

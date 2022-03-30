@@ -12,11 +12,14 @@ draft: true
 ---
 
 
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
-
 # Creating a form with WTForms
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/23ce5362567a4858aa1cb217082e2cd9](https://diff-store.com/diff/23ce5362567a4858aa1cb217082e2cd9)
+:::
+
 ## Dependencies
+
 To use WTForms in a Flask application, the easiest thing to do is install two dependencies: `wtforms` and `flask-wtf`.
 
 WTForms will help us define the forms, and Flask-WTF will add extra functionality such as that to deal with CSRF tokens.

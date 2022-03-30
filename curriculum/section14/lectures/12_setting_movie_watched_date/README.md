@@ -11,15 +11,12 @@ excerpt: "Learn how to easily set the last watched date for a movie, using today
 draft: true
 ---
 
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Setting the last watched date
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/44ccd7a46e9848ebae94d350f32aec48](https://diff-store.com/diff/44ccd7a46e9848ebae94d350f32aec48)
+:::
 
 At the moment we're showing "Not watched yet" on every movie. If the have a date in the database for when the movie was last watched, we're using it, formatted with `%d %b %Y`.
 
