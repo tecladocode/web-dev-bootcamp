@@ -123,4 +123,6 @@ I've included the `raw` block in there to show you that that simply displays `{{
 
 If you disable autoescaping (which the documentation suggests [would result in a performance boost](https://jinja.palletsprojects.com/en/3.0.x/templates/#html-escaping)), then you **should** escape all potentially unsafe strings, such as those that could contain untrusted HTML code. For example, any text that is coming from your users.
 
+<BottomCallout></BottomCallout>
+
 [^flask_autoescaping]: [Jinja setup (Flask docs)](https://flask.palletsprojects.com/en/2.0.x/templating/#jinja-setup)

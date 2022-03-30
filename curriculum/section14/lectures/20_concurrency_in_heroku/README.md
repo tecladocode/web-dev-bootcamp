@@ -11,13 +11,6 @@ excerpt: Learn how to get Heroku to run multiple copies of your Flask app in a s
 draft: true
 ---
 
-- [ ] Set metadata above
-- [ ] Start writing!
-- [ ] Create `start` folder
-- [ ] Create `end` folder
-- [ ] Write TL;DR
-- [ ] Create per-file diff between `end` and `start` (use "Compare Folders")
-
 
 # Concurrency in Heroku with gunicorn
 

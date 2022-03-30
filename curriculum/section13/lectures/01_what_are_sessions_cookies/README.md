@@ -51,4 +51,6 @@ Here's a quick data flow diagram for server-side sessions (you can enlarge by op
 
 ![Server-side cookies data diagram](./assets/server-side-cookies.jpg)
 
+<BottomCallout></BottomCallout>
+
 [^flask_cookie_security]: [Cookie security for Flask applications (Miguel Grinberg)](https://blog.miguelgrinberg.com/post/cookie-security-for-flask-applications)

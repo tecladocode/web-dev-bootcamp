@@ -186,6 +186,8 @@ This time if you go to the [http://localhost:5000/conditionals-truthy](http://lo
 
 In this post, you've learned how to perform basic comparisons in Jinja2 templates using conditional statements. You've also seen how you can leverage *truthy* and *falsy* values of variables to control your logic directly from the Jinja2 template.
 
+<BottomCallout></BottomCallout>
+
 [^conditional-statements]: [Conditional (computer programming)](https://en.wikipedia.org/wiki/Conditional_(computer_programming)#:~:text=In%20computer%20science%2C%20conditional%20statements,evaluates%20to%20true%20or%20false.)
 
 [^truthy-falsy]: [What is Truthy and Falsy? How is it different from True and False?](https://stackoverflow.com/questions/39983695/what-is-truthy-and-falsy-how-is-it-different-from-true-and-false)
