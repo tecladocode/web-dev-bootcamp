@@ -55,7 +55,9 @@ Do you need to use both `safe` and `e`?
 
 No. Just use one of the two, depending on your application settings.
 
-As of Jinja 3, **autoescaping is disabled**, which means that you should manually escape any potentially unsafe code. Take a look at exactly what that means with this example:
+As of Jinja 3, **autoescaping is disabled** when used on its own, but **autoescaping is enabled in Flask apps**[^flask_autoescaping] in certain templates. You don't need to escape variables in `.html`, `.htm`, `.xml`, or `.xhtml` templates.
+
+You do need to escape variables if you use `.jinja2`, `.j2`, or `.jinja` templates.
 
 - `app.py`
 
@@ -69,10 +71,10 @@ html_code = """<div><p>This is a <strong>Test</strong>.</p></div>"""
 
 @app.route("/")
 def home():
-    return render_template("main.j2", html_code=html_code)
+    return render_template("main.jinja2", html_code=html_code)
 ```
 
-- `main.j2`
+- `main.jinja2`
 
 ```jinja2
 <!DOCTYPE html>
@@ -119,8 +121,8 @@ The `| e` filter does do something: it escapes the HTML. Then the browser treats
 
 I've included the `raw` block in there to show you that that simply displays `{{ html_code }}`. Jinja2 never ran that, so it is shown as plain text.
 
-See this image for what that actually looks like:
+If you disable autoescaping (which the documentation suggests [would result in a performance boost](https://jinja.palletsprojects.com/en/3.0.x/templates/#html-escaping)), then you **should** escape all potentially unsafe strings, such as those that could contain untrusted HTML code. For example, any text that is coming from your users.
 
-![Jinja example: autoescaping vs. raw vs. safe \(Screenshot\)](Jinja%20example:%20autoescaping%20vs.%20raw%20vs.%20safe%20(Screenshot).png)
+<BottomCallout></BottomCallout>
 
-If you enable autoescaping (which the documentation suggests [would result in a performance hit](https://jinja.palletsprojects.com/en/3.0.x/templates/#html-escaping)), then you **should** escape all potentially unsafe strings, such as those that could contain untrusted HTML code. For example, any text that is coming from your users.
+[^flask_autoescaping]: [Jinja setup (Flask docs)](https://flask.palletsprojects.com/en/2.0.x/templating/#jinja-setup)

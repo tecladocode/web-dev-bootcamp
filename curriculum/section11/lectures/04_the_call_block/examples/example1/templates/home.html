@@ -1,0 +1,14 @@
+{% from 'dialog.html' import render_dialog %}
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <h1>Dialog example</h1>
+
+    {% call render_dialog('Hello World') %}
+        This is a <strong>simple dialog</strong> rendered by using a macro and
+        a call block.
+    {% endcall %}
+</body>
+</html>

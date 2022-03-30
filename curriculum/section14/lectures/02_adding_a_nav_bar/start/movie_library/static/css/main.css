@@ -1,0 +1,85 @@
+:root {
+  --text-dark: #000;
+  --text-light: #fbf2f2;
+  --text-muted: #595959;
+
+  --background-color: #fff;
+  --accent-colour: #f56565;
+  --accent-colour-2: #3bb54a;
+  --tag-colour: #e5e5e5;
+
+  --border: 3px solid #000;
+}
+
+.button {
+  --background-color: #e2e8f0;
+  --background-color-hover: #bdd1eb;
+}
+
+.form__field {
+  --background-color: #e8e5e5;
+}
+
+.form__field,
+.nav__link {
+  --border: 3px solid #f56565;
+}
+
+html {
+  /* Sets global font size on small devices */
+  font-size: 12px;
+}
+
+/* When the screen width hits 960px, we increase the global font size to 14px. This changes
+   the scale of all of our relative units (the rems), keeping everything in proportion */
+@media screen and (min-width: 60em) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* When the screen width hits 1200px, we once again increase the global font size, this time to 16px */
+@media screen and (min-width: 75em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  /* Sets the shared font characteristics, so that that they can be inherited globally */
+  font-family: "Public Sans", sans-serif;
+  color: var(--text-dark);
+  line-height: 1.45;
+  background-color: var(--background-color);
+}
+
+/* Button styles that we'll share across our site */
+.button {
+  /* In order to easily position our buttons, we're making them block level elements */
+  display: block;
+
+  /* Removes any outlines added when the button is in focus */
+  outline: none;
+
+  /* Setting the cursor to pointer indicates to a user that the button is a clickable element */
+  cursor: pointer;
+
+  /* Again, with buttons we have to be explicit about inheriting font properties */
+  font-size: inherit;
+  font-family: inherit;
+
+  /* Slows the background colour change effect when we hover over the button, making
+       it take 0.1s with an accelerating colour change */
+  transition: background 0.1s ease-in;
+}
+
+/* Utility class to use on links within text. */
+.link {
+  text-decoration: none;
+  color: var(--accent-colour);
+  white-space: nowrap;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

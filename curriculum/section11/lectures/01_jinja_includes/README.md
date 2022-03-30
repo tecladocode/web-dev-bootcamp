@@ -36,7 +36,9 @@ I'll show you how includes work real quick, because it is a feature of Jinja and
 
 An include passes the rendering context to the included template, then renders it, and then copies the _result_ onto the template that did the including.
 
-Here's `header.j2`, a navigation bar that you might find in any page. Note that it uses `{{ title }}` in it, so it needs access to that variable.
+::: v-pre
+Here's `header.html`, a navigation bar that you might find in any page. Note that it uses `{{ title }}` in it, so it needs access to that variable.
+:::
 
 ```jinja2
 <header>
@@ -54,21 +56,21 @@ Here's `header.j2`, a navigation bar that you might find in any page. Note that 
 </header>
 ```
 
-And here's `main.j2`, using that template:
+And here's `main.html`, using that template:
 
 ```jinja2
 <!DOCTYPE html>
 <html>
 <head></head>
 <body>
-	{% include 'header.j2' %}
+	{% include 'header.html' %}
 
 	<h1 class="title">{{ title }}</h1>
 </body>
 </html>
 ```
 
-When we use `include`, Jinja automatically passes the rendering context--so `header.j2` has access to all the same variables that `main.j2` has access to.
+When we use `include`, Jinja automatically passes the rendering context--so `header.j2` has access to all the same variables that `main.html` has access to.
 
 Seems like a reasonable thing to do! And it is, but if you are going to use the header in multiple pages, I think it's clearer if we make it a macro:
 
@@ -90,10 +92,10 @@ Seems like a reasonable thing to do! And it is, but if you are going to use the 
 {% endmacro %}
 ```
 
-Then, in `main.j2`, we'd call it like this:
+Then, in `main.html`, we'd call it like this:
 
 ```jinja2
-{% from 'header.j2' import header %}
+{% from 'header.html' import header %}
 <!DOCTYPE html>
 <html>
 <head></head>
@@ -113,7 +115,7 @@ Since using a macro vs. doing an include is basically the same amount of work, I
 
 In the first example we looked at including a fragment of a page. Now let's look at including a whole page.
 
-Here's a Jinja template, `items.j2`, that renders a list of items that a store has in stock:
+Here's a Jinja template, `items.html`, that renders a list of items that a store has in stock:
 
 ```jinja2
 <!DOCTYPE html>
@@ -130,7 +132,7 @@ Here's a Jinja template, `items.j2`, that renders a list of items that a store h
 </html>
 ```
 
-And here's another Jinja template, `store.j2`, that renders some information about a store:
+And here's another Jinja template, `store.html`, that renders some information about a store:
 
 ```jinja2
 <!DOCTYPE html>
@@ -147,7 +149,7 @@ Now let's say that you want to include the item list in the store information te
 
 That means you can't just make it a macro, because macros can't be rendered on their own: they need to be called by a template.
 
-So an idea could be to do this in `store.j2`:
+So an idea could be to do this in `store.html`:
 
 ```jinja2
 <!DOCTYPE html>
@@ -157,14 +159,14 @@ So an idea could be to do this in `store.j2`:
 	<h1>Store {{ name }}</h1>
 	<p>This store is in {{ address }}. It employs {{ employees | length }} people.</p>
 
-	{% include 'items.j2' %}
+	{% include 'items.html' %}
 </body>
 </html>
 ```
 
 And this will work fine.
 
-But the problem starts when `items.j2` uses an HTML `head` element. Let's say that our items list template looks like this:
+But the problem starts when `items.html` uses an HTML `head` element. Let's say that our items list template looks like this:
 
 ```jinja2
 <!DOCTYPE html>
@@ -183,7 +185,7 @@ But the problem starts when `items.j2` uses an HTML `head` element. Let's say th
 </html>
 ```
 
-Now when we include it from `store.j2`, the resulting HTML looks like this:
+Now when we include it from `store.html`, the resulting HTML looks like this:
 
 ```html
 <!DOCTYPE html>
@@ -205,7 +207,7 @@ Now when we include it from `store.j2`, the resulting HTML looks like this:
 
 And this is not valid HTML, because `link` elements should not be inside `body`.
 
-Instead, a better choice would be to extract the item list HTML code into a macro, in say `item-list.j2`:
+Instead, a better choice would be to extract the item list HTML code into a macro, in say `item-list.html`:
 
 ```jinja2
 {% macro item_list(items) %}
@@ -220,7 +222,7 @@ Instead, a better choice would be to extract the item list HTML code into a macr
 And then use this macro in both places:
 
 ```jinja2
-{% from 'item-list.j2' import item_list %}
+{% from 'item-list.html' import item_list %}
 
 <!DOCTYPE html>
 <html>
@@ -237,7 +239,7 @@ And then use this macro in both places:
 And:
 
 ```jinja2
-{% from 'item-list.j2' import item_list %}
+{% from 'item-list.html' import item_list %}
 
 <!DOCTYPE html>
 <html>
@@ -254,3 +256,44 @@ And:
 Unfortunately these are the only two situation where I could imagine using an include, and in both cases the macro is a better approach. Therefore although you should know that includes exist, you should be aware of its limitations.
 
 If you find a situation where using an include is better than a macro, please let me know! I'm still looking for one!
+
+## What are Jinja partials?
+
+Many people use the term "partial" and "include" interchangeably, but I think that's a small inaccuracy.
+
+A partial (meaning _partial template_) is a Jinja template that is a subset of another template.
+
+Partials can be implemented using macros (as we saw above), or includes.
+
+There are times where you may want to render the partial template on its own, without rendering the template that includes it (or uses the macro).
+
+In those occasions, I would create **a macro template** and **a partial template**, using this structure:
+
+```
+templates
+  | macros/
+  |    - item_list.html
+  | partials/
+  |    - item_list.html
+  | - store.html
+```
+
+The partial then would just import the macro and use it, like this:
+
+```j2
+{% from "macros/item_list.html" import item_list %}
+
+{{ item_list(items) }}
+```
+
+This is more verbose than only having a partial, and using `include` in `store.html`, but in exchange it's easier to see where variables are used. Plus, if you have a partial template, you know it's getting rendered on its own in one of your endpoints.
+
+If you used includes for everything and not macros, you wouldn't know which Jinja files are rendered on their own and which are only used in includes.
+
+### Why might you render partials on their own?
+
+In some cases you can render a partial on its own, and then use the resultant HTML to replace existing content on a page, using JavaScript.
+
+That can give you a dynamic feel on your website because the content changes without having to reload the page.
+
+It's a very common pattern when using libraries such as [HTMX](https://htmx.org/docs).

@@ -1,0 +1,212 @@
+:root {
+  --text-dark: #000;
+  --text-light: #fbf2f2;
+  --text-muted: #595959;
+
+  --background-color: #fff;
+  --accent-colour: #f56565;
+  --accent-colour-2: #3bb54a;
+  --tag-colour: #e5e5e5;
+
+  --border: 3px solid #000;
+}
+
+:root.dark-mode {
+  --text-dark: #fbf2f2;
+  --text-light: #000;
+  --text-muted: #595959;
+
+  --background-color: #1c2023;
+  --accent-colour: #f56565;
+  --accent-colour-2: #3bb54a;
+  --tag-colour: var(--accent-colour-2);
+
+  --border: 3px solid #fff;
+}
+
+.button {
+  --background-color: #e2e8f0;
+  --background-color-hover: #bdd1eb;
+}
+
+.form__field {
+  --background-color: #e8e5e5;
+}
+
+.form__field,
+.nav__link {
+  --border: 3px solid #f56565;
+}
+
+html {
+  /* Sets global font size on small devices */
+  font-size: 12px;
+}
+
+/* When the screen width hits 960px, we increase the global font size to 14px. This changes
+   the scale of all of our relative units (the rems), keeping everything in proportion */
+@media screen and (min-width: 60em) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* When the screen width hits 1200px, we once again increase the global font size, this time to 16px */
+@media screen and (min-width: 75em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  /* Setting display flex, and a column flex direcion means we can force the footer
+       to the bottom of the page, by allowing the main element to grow to fill the window */
+  display: flex;
+  flex-direction: column;
+
+  /* Sets the shared font characteristics, so that that they can be inherited globally */
+  font-family: "Public Sans", sans-serif;
+  color: var(--text-dark);
+  line-height: 1.45;
+  background-color: var(--background-color);
+}
+
+.header {
+  padding: 0 2rem;
+  border-bottom: var(--border);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.header__logo:hover {
+  color: var(--accent-colour);
+}
+
+.logo__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.logo__name {
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+
+  /* limits the width of the navigation area to 1200px and centres it within the header */
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  /* Setting display: flex and align-items: center places the links inside the list items
+       vertically in the center of the list item */
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+
+  /* Removes standard underlines from these links. Explicitly inherits text colour from the body */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Sets the background colour and text colour of our navigation items when the item has 
+   the .nav__link--active class, indicating the current page */
+.nav__link--active {
+  background: var(--accent-colour);
+  color: var(--text-light);
+}
+
+/* Adds 1 relative unit of padding (determined by font size) to the right margin of all .nav__item
+   elements as long as they are not the last element in their parent */
+.nav__link:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Adds a bottom border and applies a negative margin to the element, to nudge it over the
+   existing header bar border */
+.nav__link:hover {
+  margin-bottom: -3px;
+  border-bottom: var(--border);
+}
+
+.nav__item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Sets the size of the icon (light/dark theme toggle) to be the same as the font size
+    So that it takes up more or less the same amount of space as the links */
+.nav__icon {
+  width: 1em;
+  height: 1em;
+}
+
+/* Setting flex-grow makes the main content grow as much as possible to fill the body.
+    This pushes the footer to the bottom of the page, where the page would otherwise
+    be smaller than the viewport height. */
+.main {
+  flex-grow: 1;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+}
+
+/* The following media query increase the distance of the main content from the header
+   as the window size increases. */
+@media screen and (min-width: 30em) {
+  .main {
+    padding-top: 5rem;
+  }
+}
+
+.footer {
+  padding: 1rem 0;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Button styles that we'll share across our site */
+.button {
+  /* In order to easily position our buttons, we're making them block level elements */
+  display: block;
+
+  /* Removes any outlines added when the button is in focus */
+  outline: none;
+
+  /* Setting the cursor to pointer indicates to a user that the button is a clickable element */
+  cursor: pointer;
+
+  /* Again, with buttons we have to be explicit about inheriting font properties */
+  font-size: inherit;
+  font-family: inherit;
+
+  /* Slows the background colour change effect when we hover over the button, making
+       it take 0.1s with an accelerating colour change */
+  transition: background 0.1s ease-in;
+}
+
+/* Utility class to use on links within text. */
+.link {
+  text-decoration: none;
+  color: var(--accent-colour);
+  white-space: nowrap;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

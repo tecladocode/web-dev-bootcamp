@@ -1,0 +1,18 @@
+{% from 'item_table.html' import item_table %}
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <h1>All items in store</h1>
+
+    {% call(item) item_table(all_items) %}
+    <tr>
+        <td>{{ item['name'] }}</td>
+        <td>{{ item['stock'] }}</td>
+        <td>{{ item['price'] }}</td>
+        <td>{{ item['supplier'] }}</td>
+    </tr>
+    {% endcall %}
+</body>
+</html>

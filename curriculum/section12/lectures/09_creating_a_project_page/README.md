@@ -17,18 +17,52 @@ draft: true
 List of all code changes made in this lecture: [https://diff-store.com/diff/12bfcfcef6654d89a7c57001af8beefd](https://diff-store.com/diff/12bfcfcef6654d89a7c57001af8beefd)
 :::
 
-## The content and HTML
-
 Next up: for each project we've built, we'll write an HTML file.
 
 Another way to do this would be to create a single HTML template for all projects. Then each project would populate the template from a database or even just text in the Python code.
 
 However, different projects may require different layouts, and HTML is already a great language for adding structure and content to a page. Therefore instead of overcomplicating, we can just make a different Jinja template per project and keep it simple!
 
-First let's look at what we want our project to display. Remember that since it's an HTML file that we're writing, we can put anything we want in here!
+To create a route that can serve a different file for each project, we'll use the project slugs that we've already defined:
+
+```py
+from flask import abort  # among other things
+
+...
+
+slug_to_project = {project["slug"]: project for project in projects}
+
+...
+
+@app.route("/project/<string:slug>")
+def project(slug):
+    if slug not in slug_to_project:
+        abort(404)
+    return render_template(f"project_{slug}.html", project=slug_to_project[slug])
+```
+
+Let's use our new endpoint in the `home.html` template:
+
+```diff
+ <main class="main main--home">
+     <section class="projects">
+         {% for project in projects %}
+-            <a class="u-bare-link" href="#">
++            <a class="u-bare-link" href="{{ url_for('project', slug=project ['slug']) }}">
+                 <article class="project-card">
+                     <img
+                         class="project-card__image"
+                         src="{{ url_for('static', filename=project['thumb']) }}"
+                         alt="{{ project['name'] }} hero image"
+                     />
+```
+
+## The content and HTML
+
+Let's look at what we want our project to display. Remember that since it's an HTML file that we're writing, we can put anything we want in here!
 
 ```html
-{% extends 'base.jinja2' %}
+{% extends 'base.html' %}
 {% block content %}
     <main class="main main--project">
         <div>
@@ -181,6 +215,27 @@ I'll add the following CSS:
 }
 ```
 
+But notice that the project page takes up 100% of the width of the window, so what we want to do is constrain it so it only takes up the space needed by its content.
+
+We can do this by changing this:
+
+```css
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.main--about {
+  flex-direction: column;
+  max-width: 500px;
+  padding: 0 1rem;
+  line-height: 150%;
+}
+```
+
+I've also changed the `flex-direction` of `.main--about` so that it is a column. Otherwise it would be a row, and the three paragraphs in it would appear side by side.
+
 ### New CSS properties
 
 - `background-image`[^mdn_bg_image]: adds an image in the background of an item, taking up the entire content + padding area.
@@ -191,7 +246,7 @@ I'll add the following CSS:
 
 When a user accesses a particular project, they are going to be accessing `/project/project-slug`, where `project-slug` is different for each project.
 
-We'll take the slug, check if it's in our list of projects, and then return the template with name `project_project-slug.jinja2`. If it's not in the list, we'll return a 404 page instead (more on that in the next lecture).
+We'll take the slug, check if it's in our list of projects, and then return the template with name `project_project-slug.html`. If it's not in the list, we'll return a 404 page instead (more on that in the next lecture).
 
 It will be easier if we start off by constructing a dictionary that maps project slugs to projects:
 
@@ -206,7 +261,7 @@ Then with this we can modify our existing project route:
 def project(slug):
     if slug not in slug_to_project:
         abort(404)
-    return render_template(f"project_{slug}.jinja2", project=slug_to_project[slug])
+    return render_template(f"project_{slug}.html", project=slug_to_project[slug])
 ```
 
 We'll need to import `abort` from Flask:

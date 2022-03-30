@@ -1,0 +1,84 @@
+{% from "macros/svgs.jinja2" import star, pencil %}
+
+{% extends "layout.html" %}
+
+{%- block head_content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/movie_details.css') }}" />
+{% endblock %}
+
+{% block main_content %}
+<div class="container">
+    <header class="movie__header">
+        <div class="header__row">
+            <div class="movie__name">
+                <h1>{{ movie.title }}</h1>
+                <div class="movie__rating">
+                    {% for i in range(5) %}
+                        <a class="rating__link" href="{{ url_for('pages.rate_movie', _id=movie._id, rating=i+1) }}">
+                            {{ star("star " + ("star--filled" if movie.rating > i else "")) }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="movie__watched">
+                {% if movie.last_watched %}
+                    <p>
+                        Last watched: <a href="{{ url_for('pages.watch_today', _id=movie._id) }}" class="watched__link">
+                            <time datetime="{{ movie.last_watched }}">{{movie.last_watched.strftime("%d %b %Y")}}</time>
+                        </a>
+                    </p>
+                {% else %}
+                    <p><a href="{{ url_for('pages.watch_today', _id=movie._id) }}" class="watched__link">Not watched yet</a></p>
+                {% endif %}
+                <a class="movie__edit" href="{{ url_for('pages.edit_movie', _id=movie._id) }}">Edit {{ pencil("pencil") }}</a>
+            </div>
+        </div>
+        <div class="header__row">
+            <ul class="movie__tags">
+            {% for tag in movie.tags %}
+                <li class="movie__tag">{{ tag }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+    </header>
+    {% if movie.video_link %}
+    <iframe
+        class="movie__video"
+        src="{{ movie.video_link }}"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    {% endif %}
+
+    {% if movie.description %}
+        <p class="movie__description">{{ movie.description }}</p>
+    {% else %}
+        <p class="movie__description">No description yet. <a class="link" href="{{ url_for('pages.edit_movie', _id=movie._id) }}">Add one?</a></p>
+    {% endif %}
+    
+    <div class="movie__meta">
+        {% if movie.cast %}
+            <div class="movie__casting">
+                <h2>Casting</h2>
+                <ul class="list">
+                {% for actor in movie.cast %}
+                    <li class="list__item">{{ actor }}</li>
+                {% endfor %}
+                <ul>
+            </div>
+        {% endif %}
+        {% if movie.series | length %}
+            <div class="movie__series">
+                <h2>Series</h2>
+                <ul class="list">
+                {% for movie_in_series in movie.series %}
+                    <li class="list__item">{{ movie_in_series }}</li>
+                {% endfor %}
+                <ul>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

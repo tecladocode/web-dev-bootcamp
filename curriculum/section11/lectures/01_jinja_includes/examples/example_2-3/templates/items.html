@@ -1,0 +1,13 @@
+{% from 'item-list.html' import item_list %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/items.css') }}" />
+</head>
+<body>
+	<h1>Items in this store</h1>
+	
+	{{ item_list(items) }}
+</body>
+</html>

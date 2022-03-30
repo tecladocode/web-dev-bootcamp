@@ -178,4 +178,6 @@ Run the application and head over to [http://localhost:5000/for-loop/conditional
 
 In this lesson, you've learned about using *for loops* in a Jinja2 template. You've also learned how you can traverse through dictionary objects and combine *for loops* with conditional statements to implement more complex logic directly in the template.
 
+<BottomCallout></BottomCallout>
+
 [^loop-jinja2]: [Loops in Jinja2 Template](https://jinja.palletsprojects.com/en/2.11.x/templates/#for)

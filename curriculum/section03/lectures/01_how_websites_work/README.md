@@ -79,5 +79,7 @@ In this course we're going to be predominantly focusing on steps 3 and 4. We're 
 
 Throughout the next couple of sections we're going to be taking a closer look at the technologies involved in actually displaying a web page to the user, and then we're going to look into writing server-side code to handle user requests with Python and Flask.
 
+<BottomCallout></BottomCallout>
+
 [^ipv6]: [IPv6](https://www.networkworld.com/article/3254575/what-is-ipv6-and-why-aren-t-we-there-yet.html)
 [^server]: [What is a server?](https://www.techopedia.com/definition/2282/server)

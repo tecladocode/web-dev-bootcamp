@@ -1,0 +1,31 @@
+{% from "macros/fields.jinja2" import render_text_field, render_area_field %}
+
+{% extends "layout.html" %}
+
+{%- block head_content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}" />
+{% endblock %}
+
+{% block main_content %}
+
+    <form name="add_movie" method="post" novalidate class="form">
+        <div class="form__container">
+            {{ form.hidden_tag() }}
+            {{ render_text_field(form.title) }}
+            {{ render_text_field(form.director) }}
+            {{ render_text_field(form.year) }}
+
+            {{ render_area_field(form.cast) }}
+            {{ render_area_field(form.series) }}
+            {{ render_area_field(form.tags) }}
+
+            {{ render_area_field(form.description) }}
+            {{ render_text_field(form.video_link) }}
+    
+            <div>
+                {{ form.submit(class_="button button--form") }}
+            </div>
+        </div>
+    </form>
+
+{% endblock %}
