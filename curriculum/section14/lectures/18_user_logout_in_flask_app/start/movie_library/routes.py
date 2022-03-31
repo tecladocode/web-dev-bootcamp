@@ -85,7 +85,7 @@ def login():
     if form.validate_on_submit():
         user_data = current_app.db.user.find_one({"email": form.email.data})
         if not user_data:
-            flash("Incorrect e-mail or password.", category="danger")
+            flash("Login credentials not correct", category="danger")
             return redirect(url_for(".login"))
         user = User(**user_data)
 
@@ -95,7 +95,7 @@ def login():
 
             return redirect(url_for(".index"))
 
-        flash("Login credentials not correct", "danger")
+        flash("Login credentials not correct", category="danger")
 
     return render_template("login.html", title="Movies Watchlist - Login", form=form)
 
