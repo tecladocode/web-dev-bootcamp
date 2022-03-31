@@ -69,7 +69,7 @@ def login():
     if form.validate_on_submit():
         user_data = current_app.db.user.find_one({"email": form.email.data})
         if not user_data:
-            flash("Incorrect e-mail or password.", category="danger"))
+            flash("Incorrect e-mail or password.", category="danger")
             return redirect(url_for(".login"))
         user = User(**user_data)
 

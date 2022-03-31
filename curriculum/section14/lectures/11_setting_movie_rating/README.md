@@ -72,7 +72,7 @@ A word of caution on SVGs: sometimes the SVG code itself contains `fill` and `st
   fill: none;
 }
 
-.star:not(:first-of-type) {
+.rating__link:not(:first-of-type) {
   margin-left: 2px;
 }
 ```
