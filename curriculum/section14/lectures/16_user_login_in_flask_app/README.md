@@ -46,6 +46,9 @@ def login():
 
     if form.validate_on_submit():
         user_data = current_app.db.user.find_one({"email": form.email.data})
+        if not user_data:
+            flash("Incorrect e-mail or password.")
+            return redirect(url_for(".login"))
         user = User(**user_data)
 
         if user and pbkdf2_sha256.verify(form.password.data, user.password):
