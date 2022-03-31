@@ -35,12 +35,12 @@ from wtforms.validators import Email, EqualTo, Length  # among others
 
 
 class RegisterForm(FlaskForm):
-    email = StringField("Email", validators=[DataRequired(), Email()])
+    email = StringField("Email", validators=[InputRequired(), Email()])
 
     password = PasswordField(
         "Password",
         validators=[
-            DataRequired(),
+            InputRequired(),
             Length(
                 min=4,
                 max=20,
@@ -52,7 +52,7 @@ class RegisterForm(FlaskForm):
     confirm_password = PasswordField(
         "Confirm Password",
         validators=[
-            DataRequired(),
+            InputRequired(),
             EqualTo(
                 "password",
                 message="This password did not match the one in the password field.",

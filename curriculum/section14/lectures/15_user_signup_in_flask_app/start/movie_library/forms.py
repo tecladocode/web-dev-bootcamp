@@ -8,19 +8,19 @@ from wtforms import (
 )
 
 from wtforms.validators import (
-    DataRequired,
+    InputRequired,
     NumberRange,
 )
 
 
 class MovieForm(FlaskForm):
-    title = StringField("Title", validators=[DataRequired()])
-    director = StringField("Director", validators=[DataRequired()])
+    title = StringField("Title", validators=[InputRequired()])
+    director = StringField("Director", validators=[InputRequired()])
 
     year = IntegerField(
         "Year",
         validators=[
-            DataRequired(),
+            InputRequired(),
             NumberRange(min=1878, message="Please enter a year in the format YYYY."),
         ],
     )

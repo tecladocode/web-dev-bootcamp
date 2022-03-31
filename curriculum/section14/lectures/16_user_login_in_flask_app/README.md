@@ -24,8 +24,8 @@ Let's start by creating a WTForms form for user logins. Similar to the registrat
 
 ```py
 class LoginForm(FlaskForm):
-    email = StringField("Email", validators=[DataRequired(), Email()])
-    password = PasswordField("Password", validators=[DataRequired()])
+    email = StringField("Email", validators=[InputRequired(), Email()])
+    password = PasswordField("Password", validators=[InputRequired()])
     submit = SubmitField("Login")
 ```
 

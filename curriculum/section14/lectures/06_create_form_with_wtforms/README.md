@@ -77,7 +77,7 @@ However, one of the key benefits of WTForms is how easy it is to include validat
 ## Data Validation with WTForms
 We will be including two types of validation in this form:
 
-- `DataRequired`, which makes it so the field cannot be empty when submitted
+- `InputRequired`, which makes it so the field cannot be empty when submitted
 - `NumberRange`, which makes it so the field must have a value between two provided numbers
 
 WTForms ships with many more validators[^wtforms_validators] that you can use.
@@ -88,17 +88,17 @@ For now though, let's add the validation to our fields:
 from flask_wtf import FlaskForm
 from wtforms import IntegerField, StringField, SubmitField
 
-from wtforms.validators import DataRequired, NumberRange
+from wtforms.validators import InputRequired, NumberRange
 
 
 class MovieForm(FlaskForm):
-    title = StringField("Title", validators=[DataRequired()])
-    director = StringField("Director", validators=[DataRequired()])
+    title = StringField("Title", validators=[InputRequired()])
+    director = StringField("Director", validators=[InputRequired()])
 
     year = IntegerField(
         "Year",
         validators=[
-            DataRequired(),
+            InputRequired(),
             NumberRange(min=1878, message="Please enter a year in the format YYYY."),
         ],
     )
@@ -112,7 +112,7 @@ A few things to note:
 
 - `validators` is a keyword argument which takes a list of validator objects.
 - Each validator object takes an optional `message` keyword argument which will be displayed to users if the validation fails at that step.
-- Validators are validated in the order in which they are defined, so that's why I put `DataRequired()` first.
+- Validators are validated in the order in which they are defined, so that's why I put `InputRequired()` first.
 
 Now that we've defined our form using WTForms, a few questions still remain!
 
