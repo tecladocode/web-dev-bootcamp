@@ -34,6 +34,9 @@ def edit_movie(_id: str):
     movie = Movie(**current_app.db.movie.find_one({"_id": _id}))
     form = ExtendedMovieForm(obj=movie)
     if form.validate_on_submit():
+        movie.title = form.title.data
+        movie.director = form.director.data
+        movie.year = form.year.data
         movie.cast = form.cast.data
         movie.series = form.series.data
         movie.tags = form.tags.data
@@ -54,7 +57,7 @@ Note that the form pre-population mechanism is the `obj=movie` part.
 Let's create the `templates/movie_form.html` template:
 
 ```jinja2
-{% from "macros/fields.jinja2" import render_text_field, render_area_field %}
+{% from "macros/fields.html" import render_text_field, render_area_field %}
 
 {% extends "layout.html" %}
 

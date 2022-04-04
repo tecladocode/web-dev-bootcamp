@@ -106,7 +106,7 @@ from passlib.hash import pbkdf2_sha256
 
 @pages.route("/register", methods=["GET", "POST"])
 def register():
-    if session.get("email") is not None:
+    if session.get("email"):
         return redirect(url_for(".index"))
 
     form = RegisterForm()
@@ -126,7 +126,7 @@ When the user submits `register.html`, we will want to hash their password and a
 ```py
 @pages.route("/register", methods=["POST", "GET"])
 def register():
-    if session.get("email") is not None:
+    if session.get("email"):
         return redirect(url_for(".index"))
 
     form = RegisterForm()
@@ -154,7 +154,7 @@ def register():
 This template just renders the form using our macros:
 
 ```jinja2
-{% from "macros/fields.jinja2" import render_text_field %}
+{% from "macros/fields.html" import render_text_field %}
 
 {% extends "layout.html" %} 
 

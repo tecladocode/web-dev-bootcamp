@@ -39,7 +39,7 @@ from movie_library.forms import LoginForm  # among others
 
 @pages.route("/login", methods=["GET", "POST"])
 def login():
-    if session.get("email") is not None:
+    if session.get("email"):
         return redirect(url_for(".index"))
 
     form = LoginForm()
@@ -82,7 +82,7 @@ At this point, we can also change the `register` endpoint to redirect users to t
 The login template is very similar to the register template:
 
 ```jinja2
-{% from "macros/fields.jinja2" import render_text_field %}
+{% from "macros/fields.html" import render_text_field %}
 
 {% extends "layout.html" %}
 

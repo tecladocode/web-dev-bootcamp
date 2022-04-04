@@ -36,7 +36,7 @@ def index():
 
 @pages.route("/register", methods=["POST", "GET"])
 def register():
-    if session.get("email") is not None:
+    if session.get("email"):
         return redirect(url_for(".index"))
 
     form = RegisterForm()
@@ -61,7 +61,7 @@ def register():
 
 @pages.route("/login", methods=["GET", "POST"])
 def login():
-    if session.get("email") is not None:
+    if session.get("email"):
         return redirect(url_for(".index"))
 
     form = LoginForm()
@@ -116,6 +116,9 @@ def edit_movie(_id: str):
     movie = Movie(**current_app.db.movie.find_one({"_id": _id}))
     form = ExtendedMovieForm(obj=movie)
     if form.validate_on_submit():
+        movie.title = form.title.data
+        movie.director = form.director.data
+        movie.year = form.year.data
         movie.cast = form.cast.data
         movie.series = form.series.data
         movie.tags = form.tags.data
