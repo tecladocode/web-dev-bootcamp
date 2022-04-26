@@ -116,7 +116,7 @@ We have three fields in our form: `title`, `director`, and `year`. All three fie
 
 Therefore this is a perfect candidate for a Jinja macro!
 
-Let's create `templates/macros/fields.jinja2` and place this inside it:
+Let's create `templates/macros/fields.html` and place this inside it:
 
 ```jinja2
 {% macro render_text_field(field) %}
@@ -134,7 +134,7 @@ Let's create `templates/macros/fields.jinja2` and place this inside it:
 Now we can just import that from `templates/new_form.html` and use it three times, once per field:
 
 ```jinja2
-{% from "macros/fields.jinja2" import render_text_field %}
+{% from "macros/fields.html" import render_text_field %}
 
 {% extends "layout.html" %}
 
@@ -156,7 +156,7 @@ There are two more fields we need to include in our form: the CSRF protection fi
 Fortunately with Flask-WTF, including CSRF protection is super easy. Every form class already has a field defined, which we just need to render:
 
 ```jinja2 {8}
-{% from "macros/fields.jinja2" import render_text_field %}
+{% from "macros/fields.html" import render_text_field %}
 
 {% extends "layout.html" %}
 
@@ -177,7 +177,7 @@ The submit button is a label-less field, so we will render it just as we have do
 :::
 
 ```jinja2 {13-15}
-{% from "macros/fields.jinja2" import render_text_field %}
+{% from "macros/fields.html" import render_text_field %}
 
 {% extends "layout.html" %}
 
@@ -201,7 +201,7 @@ The submit button is a label-less field, so we will render it just as we have do
 The last bit to do is our form styling! To do that, let's create a CSS file in `movie_library/static/css/forms.css`, and link it to our template:
 
 ```jinja2 {5-7}
-{% from "macros/fields.jinja2" import render_text_field %}
+{% from "macros/fields.html" import render_text_field %}
 
 {% extends "layout.html" %}
 

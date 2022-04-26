@@ -24,8 +24,8 @@ Let's start by creating a WTForms form for user logins. Similar to the registrat
 
 ```py
 class LoginForm(FlaskForm):
-    email = StringField("Email", validators=[DataRequired(), Email()])
-    password = PasswordField("Password", validators=[DataRequired()])
+    email = StringField("Email", validators=[InputRequired(), Email()])
+    password = PasswordField("Password", validators=[InputRequired()])
     submit = SubmitField("Login")
 ```
 
@@ -39,13 +39,16 @@ from movie_library.forms import LoginForm  # among others
 
 @pages.route("/login", methods=["GET", "POST"])
 def login():
-    if session.get("email") is not None:
+    if session.get("email"):
         return redirect(url_for(".index"))
 
     form = LoginForm()
 
     if form.validate_on_submit():
         user_data = current_app.db.user.find_one({"email": form.email.data})
+        if not user_data:
+            flash("Login credentials not correct", category="danger")
+            return redirect(url_for(".login"))
         user = User(**user_data)
 
         if user and pbkdf2_sha256.verify(form.password.data, user.password):
@@ -54,7 +57,7 @@ def login():
 
             return redirect(url_for(".index"))
 
-        flash("Login credentials not correct", "danger")
+        flash("Login credentials not correct", category="danger")
 
     return render_template("login.html", title="Movies Watchlist - Login", form=form)
 ```
@@ -79,7 +82,7 @@ At this point, we can also change the `register` endpoint to redirect users to t
 The login template is very similar to the register template:
 
 ```jinja2
-{% from "macros/fields.jinja2" import render_text_field %}
+{% from "macros/fields.html" import render_text_field %}
 
 {% extends "layout.html" %}
 

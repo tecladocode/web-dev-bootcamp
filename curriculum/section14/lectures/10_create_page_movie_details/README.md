@@ -41,7 +41,7 @@ While you're here, create a `static/css/movie_details.css` file as well. Leave i
 Then let's set up our template:
 
 ```jinja2
-{% from "macros/svgs.jinja2" import star, pencil %}
+{% from "macros/svgs.html" import star, pencil %}
 
 {% extends "layout.html" %}
 
@@ -66,7 +66,7 @@ In the movie details page, the heading is very important. It will show us a few 
 - An edit button so we can add more information to the movie
 
 ```jinja2
-{% from "macros/svgs.jinja2" import star, pencil %}
+{% from "macros/svgs.html" import star, pencil %}
 
 {% extends "layout.html" %}
 
@@ -174,7 +174,7 @@ Finally, we can show a description, cast list, and series information if each is
 Below is the full code for our movie details page!
 
 ```jinja2
-{% from "macros/svgs.jinja2" import star, pencil %}
+{% from "macros/svgs.html" import star, pencil %}
 
 {% extends "layout.html" %}
 

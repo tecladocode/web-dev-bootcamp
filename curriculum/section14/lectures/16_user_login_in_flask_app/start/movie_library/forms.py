@@ -9,7 +9,7 @@ from wtforms import (
 )
 
 from wtforms.validators import (
-    DataRequired,
+    InputRequired,
     Email,
     EqualTo,
     Length,
@@ -18,12 +18,12 @@ from wtforms.validators import (
 
 
 class RegisterForm(FlaskForm):
-    email = StringField("Email", validators=[DataRequired(), Email()])
+    email = StringField("Email", validators=[InputRequired(), Email()])
 
     password = PasswordField(
         "Password",
         validators=[
-            DataRequired(),
+            InputRequired(),
             Length(
                 min=4,
                 max=20,
@@ -35,7 +35,7 @@ class RegisterForm(FlaskForm):
     confirm_password = PasswordField(
         "Confirm Password",
         validators=[
-            DataRequired(),
+            InputRequired(),
             EqualTo(
                 "password",
                 message="This password did not match the one in the password field.",
@@ -47,13 +47,13 @@ class RegisterForm(FlaskForm):
 
 
 class MovieForm(FlaskForm):
-    title = StringField("Title", validators=[DataRequired()])
-    director = StringField("Director", validators=[DataRequired()])
+    title = StringField("Title", validators=[InputRequired()])
+    director = StringField("Director", validators=[InputRequired()])
 
     year = IntegerField(
         "Year",
         validators=[
-            DataRequired(),
+            InputRequired(),
             NumberRange(min=1878, message="Please enter a year in the format YYYY."),
         ],
     )

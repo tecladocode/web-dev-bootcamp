@@ -5,7 +5,7 @@
     "deploy": "npm run cur:build && surge --project ./curriculum/.vuepress/dist/ --domain https://python-web.teclado.com"
   },
   "devDependencies": {
-    "surge": "^0.21.3",
+    "surge": "^0.21.7",
     "vuepress": "^1.8.2"
   },
   "dependencies": {

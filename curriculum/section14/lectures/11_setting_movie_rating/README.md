@@ -34,7 +34,7 @@ We want to display 5 stars beside the movie name, all of which will be clickable
 So the first thing to do is to display the five star icons in a row:
 
 ```jinja2
-{% from "macros/svgs.jinja2" import star, pencil %}
+{% from "macros/svgs.html" import star, pencil %}
 
 {% for i in range(5) %}
     <a class="rating__link" href="#">
@@ -72,7 +72,7 @@ A word of caution on SVGs: sometimes the SVG code itself contains `fill` and `st
   fill: none;
 }
 
-.star:not(:first-of-type) {
+.rating__link:not(:first-of-type) {
   margin-left: 2px;
 }
 ```

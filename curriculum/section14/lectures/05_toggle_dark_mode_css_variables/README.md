@@ -156,7 +156,7 @@ The current page will be sent in a query string, such as `?current_page=/movies`
 
 We are going to use an icon in the nav bar that, when clicked, will send a request to the endpoint defined above.
 
-First let's create `templates/macros/svgs.jinja2`, where we will define two macros: one for the "light theme" icon and one for the "dark theme" icon.
+First let's create `templates/macros/svgs.html`, where we will define two macros: one for the "light theme" icon and one for the "dark theme" icon.
 
 While we're at it, let's also define two other icons we'll need later: a star for the ratings and a pencil for the "Edit" button in the movies page. Just copy the code below.
 
@@ -218,7 +218,7 @@ Again, this goes at the end of the `nav` element.
 Remember to import the SVG macros at the top of the file:
 
 ```jinja2
-{% from "macros/svgs.jinja2" import moon, sun %}
+{% from "macros/svgs.html" import moon, sun %}
 ```
 
 And with that, we're done! Now there's an icon in the nav bar that, when clicked, goes to the `/toggle-theme` endpoint. It passes the current page as a query string parameter, so that the endpoint can send us back to where we were. Since it changes the session data, when the HTML reloads it will have the `dark-mode` class, which uses the new CSS variables to change the whole page to dark mode.

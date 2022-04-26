@@ -52,7 +52,7 @@ def index():
 
 @pages.route("/register", methods=["POST", "GET"])
 def register():
-    if session.get("email") is not None:
+    if session.get("email"):
         return redirect(url_for(".index"))
 
     form = RegisterForm()
@@ -77,13 +77,16 @@ def register():
 
 @pages.route("/login", methods=["GET", "POST"])
 def login():
-    if session.get("email") is not None:
+    if session.get("email"):
         return redirect(url_for(".index"))
 
     form = LoginForm()
 
     if form.validate_on_submit():
         user_data = current_app.db.user.find_one({"email": form.email.data})
+        if not user_data:
+            flash("Login credentials not correct", category="danger")
+            return redirect(url_for(".login"))
         user = User(**user_data)
 
         if user and pbkdf2_sha256.verify(form.password.data, user.password):
@@ -92,7 +95,7 @@ def login():
 
             return redirect(url_for(".index"))
 
-        flash("Login credentials not correct", "danger")
+        flash("Login credentials not correct", category="danger")
 
     return render_template("login.html", title="Movies Watchlist - Login", form=form)
 
@@ -135,6 +138,9 @@ def edit_movie(_id: str):
     movie = Movie(**current_app.db.movie.find_one({"_id": _id}))
     form = ExtendedMovieForm(obj=movie)
     if form.validate_on_submit():
+        movie.title = form.title.data
+        movie.director = form.director.data
+        movie.year = form.year.data
         movie.cast = form.cast.data
         movie.series = form.series.data
         movie.tags = form.tags.data
