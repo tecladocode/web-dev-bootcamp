@@ -280,7 +280,7 @@ templates
 
 The partial then would just import the macro and use it, like this:
 
-```j2
+```jinja2
 {% from "macros/item_list.html" import item_list %}
 
 {{ item_list(items) }}
