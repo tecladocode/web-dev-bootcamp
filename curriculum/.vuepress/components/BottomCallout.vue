@@ -1,19 +1,6 @@
 <script>
 export default {
-  props: ['title', 'subtitle'],
-  mounted() {
-      this.plausibleEvent = function(eventName, props) {
-          if (props) {
-              props['path'] = window.location.pathname;
-          } else {
-            props = {
-                path: window.location.pathname
-            }
-          }
-          var plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) };
-          plausible(eventName, props);
-      }
-  }
+  props: ['title', 'subtitle']
 }
 </script>
 
@@ -89,7 +76,7 @@ export default {
             </li>
         </ul>
         <p class="bottom-callout__text">
-            <a v-on:click="plausibleEvent('Course CTA Clicked')" href="https://go.tecla.do/web-dev-course-sale" class="bottom-callout__link">
+            <a href="https://go.tecla.do/web-dev-course-sale" class="bottom-callout__link">
                 Get the video course <svg class="bottom-callout__feature-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1,0,0,1,0,0)"><path d="M10.5,9.121h6V6.011c0-.272.163-.343.362-.158L23,11.54a.751.751,0,0,1-.017,1.142l-6.116,5.336c-.2.185-.362.114-.362-.157v-2.74h-6" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M7.5 9.121L5.25 9.121" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M3 9.121L0.75 9.121" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M7.5 15.121L5.25 15.121" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M3 15.121L0.75 15.121" fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></g></svg>
             </a>
         </p>
