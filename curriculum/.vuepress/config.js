@@ -95,5 +95,10 @@ module.exports = {
       md.use(require("markdown-it-task-lists"));
     },
   },
-  plugins: [["plausible", { domain: "python-web.teclado.com" }]],
+  plugins: [
+    [
+      "plausible",
+      { domain: "python-web.teclado.com", outboundLinkTracking: true },
+    ],
+  ],
 };
