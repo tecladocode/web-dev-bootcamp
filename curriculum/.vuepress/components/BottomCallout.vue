@@ -1,9 +1,8 @@
 <script>
-window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
 export default {
   props: ['title', 'subtitle'],
-  methods: {
-      plausibleEvent: function(eventName, props) {
+  mounted() {
+      this.plausibleEvent = function(eventName, props) {
           if (props) {
               props['path'] = window.location.pathname;
           } else {
@@ -11,7 +10,8 @@ export default {
                 path: window.location.pathname
             }
           }
-          window.plausible(eventName, props);
+          var plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) };
+          plausible(eventName, props);
       }
   }
 }
