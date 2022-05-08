@@ -131,7 +131,7 @@ Let's create `templates/macros/fields.html` and place this inside it:
 {% endmacro %}
 ```
 
-Now we can just import that from `templates/new_form.html` and use it three times, once per field:
+Now we can just import that from `templates/new_movie.html` and use it three times, once per field:
 
 ```jinja2
 {% from "macros/fields.html" import render_text_field %}
