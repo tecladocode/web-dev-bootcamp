@@ -50,7 +50,7 @@ For now, the `POST` request does nothing. Let's render our form first, and handl
 
 ## How to render a WTForms field
 
-First things first, let's create our `templates/new_form.html` file. This is where our form will live:
+First things first, let's create our `templates/new_movie.html` file. This is where our form will live:
 
 ```jinja2
 {% extends "layout.html" %}
