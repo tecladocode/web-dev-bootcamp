@@ -54,7 +54,22 @@ Note that the form pre-population mechanism is the `obj=movie` part.
 
 ## Rendering the extended movie form
 
-Let's create the `templates/movie_form.html` template:
+First, let's edit the `templates/macros/fields.html` template to add the a new macro in order to render the custom field:
+
+```jinja2
+{% macro render_area_field(field) %}
+<div class="form__group">
+    {{ field.label(class_="form__label") }}
+    {{ field(rows=4, class_="form__field", style="resize: none") }}
+
+    {%- for error in field.errors %}
+        <span class="form__error">{{ error }}</span>
+    {% endfor %}
+</div>
+{% endmacro %}
+```
+
+And then create the `templates/movie_form.html` template:
 
 ```jinja2
 {% from "macros/fields.html" import render_text_field, render_area_field %}
