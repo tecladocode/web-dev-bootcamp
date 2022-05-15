@@ -105,6 +105,32 @@ And then create the `templates/movie_form.html` template:
 {% endblock %}
 ```
 
+Finally we can update the anchor tags in the `templates/movie_details.html` template since we now can edit the fields:
+
+```diff
+...
+                 {% else %}
+                     <p><a href="{{ url_for('pages.watch_today', _id=movie._id) }}" class="watched__link">Not watched yet</a></p>
+                 {% endif %}
+-                <a class="movie__edit" href="#">Edit {{ pencil("pencil") }}</a>
++                <a class="movie__edit" href="{{ url_for('pages.edit_movie', _id=movie._id) }}">Edit {{ pencil("pencil") }}</a>
+             </div>
+         </div>
+         <div class="header__row">
+...
+```
+
+```diff
+...
+     {% if movie.description %}
+         <p class="movie__description">{{ movie.description }}</p>
+     {% else %}
+-        <p class="movie__description">No description yet. <a class="link" href="#">Add one?</a></p>
++        <p class="movie__description">No description yet. <a class="link" href="{{ url_for('pages.edit_movie', _id=movie._id) }}">Add one?</a></p>
+     {% endif %}
+...
+```
+
 Also nothing new here!
 
 Note that our custom WTForm field is identical to the `TextAreaField`, except when it comes to receiving form data and putting it in our Python object. Everything else behaves the same way as the parent class.
