@@ -12,3 +12,7 @@ draft: false
 ---
 
 # Setting up the Microblog project with Flask
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/60ac442d39c7427d815e1d4abd74526d](https://diff-store.com/diff/60ac442d39c7427d815e1d4abd74526d)
+:::

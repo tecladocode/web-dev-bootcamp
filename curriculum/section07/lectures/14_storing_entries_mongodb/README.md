@@ -12,3 +12,7 @@ draft: false
 ---
 
 # Storing Microblog entries in MongoDB
+
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/0c3715d611e148a78f6150003f689f74](https://diff-store.com/diff/0c3715d611e148a78f6150003f689f74)
+:::
