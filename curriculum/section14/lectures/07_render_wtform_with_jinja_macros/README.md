@@ -50,7 +50,7 @@ For now, the `POST` request does nothing. Let's render our form first, and handl
 
 ## How to render a WTForms field
 
-First things first, let's create our `templates/new_form.html` file. This is where our form will live:
+First things first, let's create our `templates/new_movie.html` file. This is where our form will live:
 
 ```jinja2
 {% extends "layout.html" %}
@@ -131,7 +131,7 @@ Let's create `templates/macros/fields.html` and place this inside it:
 {% endmacro %}
 ```
 
-Now we can just import that from `templates/new_form.html` and use it three times, once per field:
+Now we can just import that from `templates/new_movie.html` and use it three times, once per field:
 
 ```jinja2
 {% from "macros/fields.html" import render_text_field %}
