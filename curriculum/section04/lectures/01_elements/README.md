@@ -29,7 +29,7 @@ We'll look at some examples thoughout this chapter.
 
 We can place other tags between the start and end tags of other elements, and this is how we construct a hierarchy within the document. We can also place plain text between tags, which is generally how we add text content to a page.
 
-We'll covered nesting HTML elements in more detail [later in this section](../07_nesting_elements/README.md).
+We'll covered nesting HTML elements in more detail [later in this section](../05_nesting_elements/README.md).
 
 ## An example HTML element
 
