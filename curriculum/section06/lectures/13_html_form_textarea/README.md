@@ -30,7 +30,7 @@ So we can add a textarea to our form like this:
 There are a few things to note here:
 
 - I'm using `POST` because an entry could be quite long, and extremely long URLs can lead to problems and are unsightly.
-- The `<textarea>` is not a [void element](/section03/lectures/01_elements/), but it doesn't have any content. You can place pre-written content inside the textarea within the tags.
+- The `<textarea>` is not a [void element](/section04/lectures/01_elements/), but it doesn't have any content. You can place pre-written content inside the textarea within the tags.
 
 ## Grouping inputs and their labels
 
