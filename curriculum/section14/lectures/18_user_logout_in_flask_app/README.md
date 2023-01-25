@@ -15,7 +15,7 @@ draft: true
 # Add user logouts to the portfolio project
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/aa0bfb9ce7bf4db782c9cc225b030215](https://diff-store.com/diff/aa0bfb9ce7bf4db782c9cc225b030215)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__18_user_logout_in_flask_app](https://diff-store.com/diff/section14__18_user_logout_in_flask_app)
 :::
 
 Handling user logouts is very straightforward: clear the session, and the user will be logged out!

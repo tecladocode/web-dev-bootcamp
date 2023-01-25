@@ -15,7 +15,7 @@ draft: true
 # Receive and validate data using WTForms
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/37b94bc3a3344c27b45a6a4e93da36eb](https://diff-store.com/diff/37b94bc3a3344c27b45a6a4e93da36eb)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__08_receive_validate_wtform](https://diff-store.com/diff/section14__08_receive_validate_wtform)
 :::
 
 ## Validate form data

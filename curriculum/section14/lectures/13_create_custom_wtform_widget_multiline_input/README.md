@@ -15,7 +15,7 @@ draft: true
 # Create a custom WTForm widget
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/95d7b638140145b5a9f1307f621da941](https://diff-store.com/diff/95d7b638140145b5a9f1307f621da941)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__13_create_custom_wtform_widget_multiline_input](https://diff-store.com/diff/section14__13_create_custom_wtform_widget_multiline_input)
 :::
 
 We're now going to begin working on movie editing. To do this, we'll be creating a longer form where users can change all of the form data.

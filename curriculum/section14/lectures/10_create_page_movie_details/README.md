@@ -16,7 +16,7 @@ draft: true
 # Create the movie details page
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/ee701882aede4ba4a4e644b1df665825](https://diff-store.com/diff/ee701882aede4ba4a4e644b1df665825)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__10_create_page_movie_details](https://diff-store.com/diff/section14__10_create_page_movie_details)
 :::
 
 ## Add an endpoint for the movie details page

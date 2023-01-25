@@ -24,7 +24,7 @@ draft: false
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/f906ce3bb3d3403eb179770ffeda0743](https://diff-store.com/diff/f906ce3bb3d3403eb179770ffeda0743)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section09__04_jinja2_macros](https://diff-store.com/diff/section09__04_jinja2_macros)
 :::
 
 Another thing in Jinja similar to functions in Python, but here they're used for composition rather than transformation.

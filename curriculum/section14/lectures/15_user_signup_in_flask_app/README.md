@@ -16,7 +16,7 @@ draft: true
 # Adding user signups to the movie watchlist
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/2c2610d4766c41e099e677cde029e696](https://diff-store.com/diff/2c2610d4766c41e099e677cde029e696)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__15_user_signup_in_flask_app](https://diff-store.com/diff/section14__15_user_signup_in_flask_app)
 :::
 
 In Section 13, we learned about user authentication in Flask apps, and now we're going to follow exactly what we did in that section to add user signups to our app. In the next lecture, we'll add user logins.

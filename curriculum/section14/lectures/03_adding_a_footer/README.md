@@ -15,7 +15,7 @@ draft: true
 # Adding a footer to the movie watchlist project
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/08856f2be5b2491eb502b68c82214654](https://diff-store.com/diff/08856f2be5b2491eb502b68c82214654)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__03_adding_a_footer](https://diff-store.com/diff/section14__03_adding_a_footer)
 :::
 
 Let's start by creating `templates/macros/footer.html`. Inside it, we'll place another Jinja macro that renders the footer HTML code:

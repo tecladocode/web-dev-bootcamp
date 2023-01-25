@@ -16,7 +16,7 @@ draft: true
 # Render a WTForms form with Jinja and HTML
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com//diff/b134a41dc9ac4e4a99128d94cf21a886](https://diff-store.com/diff/b134a41dc9ac4e4a99128d94cf21a886)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__07_render_wtform_with_jinja_macros](https://diff-store.com/diff/section14__07_render_wtform_with_jinja_macros)
 :::
 
 ## Create a new Flask route for adding movies

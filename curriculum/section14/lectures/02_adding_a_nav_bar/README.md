@@ -14,7 +14,7 @@ draft: true
 # Adding a nav bar to the movie library
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/422036bb6641424b84c1011675eac445](https://diff-store.com/diff/422036bb6641424b84c1011675eac445)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__02_adding_a_nav_bar](https://diff-store.com/diff/section14__02_adding_a_nav_bar)
 :::
 
 Let's take a look at the nav bar that we'll be adding to our app.

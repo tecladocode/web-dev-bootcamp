@@ -19,7 +19,7 @@ draft: true
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/0e898f37ca13458ba8cfacba3cfe0fa4](https://diff-store.com/diff/0e898f37ca13458ba8cfacba3cfe0fa4)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section10__05_styling_date_navigator](https://diff-store.com/diff/section10__05_styling_date_navigator)
 :::
 
 ## Implementation

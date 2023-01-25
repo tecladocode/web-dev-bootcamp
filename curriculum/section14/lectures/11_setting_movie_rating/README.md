@@ -16,7 +16,7 @@ draft: true
 # Setting movie ratings
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/79d93fd986564b0ebebbf65f0f5b5033](https://diff-store.com/diff/79d93fd986564b0ebebbf65f0f5b5033)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__11_setting_movie_rating](https://diff-store.com/diff/section14__11_setting_movie_rating)
 :::
 
 At the moment we're showing the movie's rating as a number beside the movie name. We want to show 5 stars instead, with a visual indication as to what the rating of the movie is, out of five.

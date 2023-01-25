@@ -15,7 +15,7 @@ draft: true
 # Toggling dark mode in the movie watchlist project
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/dd9e6043ca734167b4fd06de3d1b05cd](https://diff-store.com/diff/dd9e6043ca734167b4fd06de3d1b05cd)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__05_toggle_dark_mode_css_variables](https://diff-store.com/diff/section14__05_toggle_dark_mode_css_variables)
 :::
 
 To toggle dark mode all we have to do is change the CSS variables under `:root`. At the moment, all the variables are set up to support light mode. If we change them to support dark mode, the site will become dark.

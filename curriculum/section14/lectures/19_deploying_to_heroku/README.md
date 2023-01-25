@@ -16,7 +16,7 @@ draft: true
 # Deploy the movie watchlist project to Heroku
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/ea65a956d06b4969a85d73ecafc2218b](https://diff-store.com/diff/ea65a956d06b4969a85d73ecafc2218b)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__19_deploying_to_heroku](https://diff-store.com/diff/section14__19_deploying_to_heroku)
 :::
 
 ## Files we need to add for Heroku deployment

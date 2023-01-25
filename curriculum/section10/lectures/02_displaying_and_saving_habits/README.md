@@ -18,7 +18,7 @@ draft: true
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/18ad1f56e51d4239bc2ac024b877ae68](https://diff-store.com/diff/18ad1f56e51d4239bc2ac024b877ae68)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section10__02_displaying_and_saving_habits](https://diff-store.com/diff/section10__02_displaying_and_saving_habits)
 :::
 
 Let's start off our project by allowing users to add new habits and display the habits they've already added to the database.

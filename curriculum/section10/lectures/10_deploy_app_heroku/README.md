@@ -16,7 +16,7 @@ draft: true
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/b898d123dec44165a886b32b0ab599fe](https://diff-store.com/diff/b898d123dec44165a886b32b0ab599fe)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section10__10_deploy_app_heroku](https://diff-store.com/diff/section10__10_deploy_app_heroku)
 :::
 
 Recap what we need in order to deploy a Flask app to Heroku: a GitHub repo, the `Procfile`, and `runtime.txt`.
