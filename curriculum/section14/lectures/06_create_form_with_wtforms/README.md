@@ -15,7 +15,7 @@ draft: true
 # Creating a form with WTForms
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/23ce5362567a4858aa1cb217082e2cd9](https://diff-store.com/diff/23ce5362567a4858aa1cb217082e2cd9)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__06_create_form_with_wtforms](https://diff-store.com/diff/section14__06_create_form_with_wtforms)
 :::
 
 ## Dependencies

@@ -15,7 +15,7 @@ draft: true
 # Putting the page layout together
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/f3d05e2353764824a91003cbfd8aecd9](https://diff-store.com/diff/f3d05e2353764824a91003cbfd8aecd9)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__04_putting_page_layout_together](https://diff-store.com/diff/section14__04_putting_page_layout_together)
 :::
 
 Now that we've got our header navigation and our footer, it's time to add them to `layout.html`.

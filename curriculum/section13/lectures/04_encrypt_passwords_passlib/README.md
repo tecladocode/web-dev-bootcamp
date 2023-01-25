@@ -13,6 +13,10 @@ draft: true
 
 # Password hashing with Flask and passlib
 
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/section13__04_encrypt_passwords_passlib](https://diff-store.com/diff/section13__04_encrypt_passwords_passlib)
+:::
+
 Hashing a password means turning it into a string of letters, numbers, and symbols in such a way that it cannot be turned back into the original text.
 
 There are a few terms that are often conflated:

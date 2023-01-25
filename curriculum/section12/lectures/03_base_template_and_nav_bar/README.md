@@ -15,7 +15,7 @@ draft: true
 # Creating the base template and navbar
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/a97d12da472546a2966a5198bcac71cd](https://diff-store.com/diff/a97d12da472546a2966a5198bcac71cd)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section12__03_base_template_and_nav_bar](https://diff-store.com/diff/section12__03_base_template_and_nav_bar)
 :::
 
 Let's get started by creating a base template for all our other templates.

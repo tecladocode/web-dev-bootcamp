@@ -18,7 +18,7 @@ draft: true
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/0e9a679a73a94df2ae3380772d0443ff](https://diff-store.com/diff/0e9a679a73a94df2ae3380772d0443ff)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section10__09_using_mongodb_in_project](https://diff-store.com/diff/section10__09_using_mongodb_in_project)
 :::
 
 We'll store habit data in MongoDB: a unique `_id` for each habit alongside the habit `name`.

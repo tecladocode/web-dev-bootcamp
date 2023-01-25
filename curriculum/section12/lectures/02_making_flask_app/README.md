@@ -15,7 +15,7 @@ draft: true
 # Making the Flask app for our project
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/014e90fa830a48b8b7fea88ddff11c77](https://diff-store.com/diff/014e90fa830a48b8b7fea88ddff11c77)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section12__02_making_flask_app](https://diff-store.com/diff/section12__02_making_flask_app)
 :::
 
 So far we've been writing Flask apps using a very simple project structure:

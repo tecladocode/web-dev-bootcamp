@@ -15,7 +15,7 @@ draft: true
 # Displaying a table of all movies
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/b93744ff420c414aadb2023677d752f4](https://diff-store.com/diff/b93744ff420c414aadb2023677d752f4)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__09_display_table_of_all_movies](https://diff-store.com/diff/section14__09_display_table_of_all_movies)
 :::
 
 ## Load the data from MongoDB

@@ -14,5 +14,5 @@ draft: false
 # Using Flask's app factory pattern
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/b474a5eb637c475db58af2bae2dab9b9](https://diff-store.com/diff/b474a5eb637c475db58af2bae2dab9b9)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section07__16_flask_app_factory_pattern](https://diff-store.com/diff/section07__16_flask_app_factory_pattern)
 :::

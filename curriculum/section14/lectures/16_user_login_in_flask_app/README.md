@@ -15,7 +15,7 @@ draft: true
 # Adding user logins to the movie watchlist
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/de666ee57fea4e4ead460380608dfc2f](https://diff-store.com/diff/de666ee57fea4e4ead460380608dfc2f)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__16_user_login_in_flask_app](https://diff-store.com/diff/section14__16_user_login_in_flask_app)
 :::
 
 ## Creating the login form

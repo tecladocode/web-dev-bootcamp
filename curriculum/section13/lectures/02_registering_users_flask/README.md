@@ -14,7 +14,7 @@ draft: true
 # Register users with Flask
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/9601b2eec48942b2a1a6357d079abf42](https://diff-store.com/diff/9601b2eec48942b2a1a6357d079abf42)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section13__02_registering_users_flask](https://diff-store.com/diff/section13__02_registering_users_flask)
 :::
 
 ## Overview of the starter code
