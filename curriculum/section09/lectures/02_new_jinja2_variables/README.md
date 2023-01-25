@@ -25,7 +25,7 @@ draft: false
 ## TL;DR (on this video...)
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/925a06fbecaf46fd998785a731e18af3](https://diff-store.com/diff/925a06fbecaf46fd998785a731e18af3)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section09__02_new_jinja2_variables](https://diff-store.com/diff/section09__02_new_jinja2_variables)
 :::
 
 Learn how to create variables inside a template, so that you can calculate values and re-use them in multiple places within a template.

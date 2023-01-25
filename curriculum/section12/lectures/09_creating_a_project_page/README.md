@@ -14,7 +14,7 @@ draft: true
 # Creating an individual project page
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/12bfcfcef6654d89a7c57001af8beefd](https://diff-store.com/diff/12bfcfcef6654d89a7c57001af8beefd)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section12__09_creating_a_project_page](https://diff-store.com/diff/section12__09_creating_a_project_page)
 :::
 
 Next up: for each project we've built, we'll write an HTML file.

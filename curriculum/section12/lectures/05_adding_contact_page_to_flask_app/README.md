@@ -15,7 +15,7 @@ draft: true
 # Adding a contact page to our Flask app
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/401766ee7dce439585678a83f6a7e314](https://diff-store.com/diff/401766ee7dce439585678a83f6a7e314)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section12__05_adding_contact_page_to_flask_app](https://diff-store.com/diff/section12__05_adding_contact_page_to_flask_app)
 :::
 
 Let's continue our Portfolio project by working on the contact page. Here, we'll display our contact information. Optionally you could add a contact form here, although that feels a bit too formal and businesslike, rather than belonging to a personal portfolio page.

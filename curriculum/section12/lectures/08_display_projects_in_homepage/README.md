@@ -14,7 +14,7 @@ draft: true
 # Displaying projects in the portfolio
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/aaccb6d7a5d14a6d9bbc2b037f21d4eb](https://diff-store.com/diff/aaccb6d7a5d14a6d9bbc2b037f21d4eb)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section12__08_display_projects_in_homepage](https://diff-store.com/diff/section12__08_display_projects_in_homepage)
 :::
 
 Let's work on displaying all our projects in the homepage.

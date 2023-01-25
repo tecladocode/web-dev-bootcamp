@@ -18,7 +18,7 @@ draft: true
 ## In this video... (TL;DR)
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/cf80936ec06e4a8c984c3bd2f41221e9](https://diff-store.com/diff/cf80936ec06e4a8c984c3bd2f41221e9)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section10__03_styling_habit_tracker](https://diff-store.com/diff/section10__03_styling_habit_tracker)
 :::
 
 Let's code some CSS! In this video we'll style the header and the add habit form. We won't worry about the habits themselves yet, that's coming later on when we talk about completions.

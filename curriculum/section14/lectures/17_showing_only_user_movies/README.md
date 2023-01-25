@@ -15,7 +15,7 @@ draft: true
 # Showing only the logged in user's movies
 
 ::: tip
-List of all code changes made in this lecture: [https://diff-store.com/diff/532c113cec1d48909a2f1fd0aec5d27e](https://diff-store.com/diff/532c113cec1d48909a2f1fd0aec5d27e)
+List of all code changes made in this lecture: [https://diff-store.com/diff/section14__17_showing_only_user_movies](https://diff-store.com/diff/section14__17_showing_only_user_movies)
 :::
 
 ## Adding the `login_required` decorator

@@ -13,6 +13,10 @@ draft: true
 
 # Making a 'login required' decorator
 
+::: tip
+List of all code changes made in this lecture: [https://diff-store.com/diff/section13__05_login_required_decorator](https://diff-store.com/diff/section13__05_login_required_decorator)
+:::
+
 Earlier this section we wrote a simple check in our `/protected` endpoint which acted as a gate for logged-out users.
 
 If the user is not logged in, they are redirected to the login page. Otherwise, the rest of the route runs as normal.
