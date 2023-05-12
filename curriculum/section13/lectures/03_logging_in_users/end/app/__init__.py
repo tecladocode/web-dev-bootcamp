@@ -60,5 +60,5 @@ def signup():
 
 
 @app.errorhandler(401)
-def auth_error():
+def auth_error(error):
     return "Not authorized"
