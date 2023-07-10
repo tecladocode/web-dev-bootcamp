@@ -47,9 +47,10 @@ def login():
         email = request.form.get("email")
         password = request.form.get("password")
 
-        if pbkdf2_sha256.verify(password, users.get(email)):
-            session["email"] = email
-            return redirect(url_for("protected"))
+        if email in users.keys():
+            if pbkdf2_sha256.verify(password, users.get(email)):
+                session["email"] = email
+                return redirect(url_for("protected"))
         else:
             abort(401)
     return render_template("login.html")
@@ -72,5 +73,5 @@ def signup():
 
 
 @app.errorhandler(401)
-def auth_error():
+def auth_error(error):
     return "Not authorized"

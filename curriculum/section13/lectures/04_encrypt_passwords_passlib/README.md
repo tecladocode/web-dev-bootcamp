@@ -93,9 +93,10 @@ Instead, we need to use `pbkdf2_sha256.verify`:
          password = request.form.get("password")
 
 -        if users.get(email) == password:
-+        if pbkdf2_sha256.verify(password, users.get(email)):
-             session["email"] = email
-             return redirect(url_for("protected"))
++        if email in users.keys():
++            if pbkdf2_sha256.verify(password, users.get(email)):
+                 session["email"] = email
+                 return redirect(url_for("protected"))
          else:
              abort(401)
      return render_template("login.html")
