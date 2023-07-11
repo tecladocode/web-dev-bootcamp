@@ -1,6 +1,6 @@
 ---
 title: "Using Flask's app factory pattern"
-slug: using-flask-s-app-factory-pattern
+slug: using-flasks-app-factory-pattern
 tags:
   - How to
   - Published

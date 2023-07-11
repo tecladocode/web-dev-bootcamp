@@ -1,8 +1,8 @@
 ---
-name: 'Project 3: Portfolio'
+name: 'Project 3: Portfolio Page'
 ---
 
-# Project 3: Portfolio
+# Project 3: Portfolio Page
 
 In this section you'll be making a Portfolio page to showcase the projects you've built!
 

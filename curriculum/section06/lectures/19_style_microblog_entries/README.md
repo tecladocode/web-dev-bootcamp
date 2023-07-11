@@ -1,6 +1,6 @@
 ---
 title: "How to style the Microblog entries"
-slug: how-to-style-the-microblog-entries
+slug: style-the-microblog-entries
 tags:
   - How to
   - Published

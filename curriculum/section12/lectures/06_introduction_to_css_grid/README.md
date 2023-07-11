@@ -1,6 +1,6 @@
 ---
 title: Introduction to CSS Grid
-slug: intro-css-grid
+slug: introduction-to-css-grid
 tags:
     - Written
     - Concept

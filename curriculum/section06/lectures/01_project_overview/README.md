@@ -1,6 +1,6 @@
 ---
 title: "Overview of this project"
-slug: overview-of-this-project
+slug: overview-of-microblog-project
 tags:
   - How to
   - Published
